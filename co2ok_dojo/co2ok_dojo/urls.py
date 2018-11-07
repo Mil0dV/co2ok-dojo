@@ -8,6 +8,7 @@ from wagtail.documents import urls as wagtaildocs_urls
 
 from search import views as search_views
 from users import views as users_views
+from ninja_partner_stores import views as ninja_partner_stores_views
 
 urlpatterns = [
     url(r'^django-admin/', admin.site.urls),
@@ -18,6 +19,7 @@ urlpatterns = [
     url(r'^search/$', search_views.search, name='search'),
     url(r'^login/$', users_views.register, name='login'),
     url(r'^profile/$', users_views.profile, name='profile'),
+    url(r'^ninja-partner-stores/$', ninja_partner_stores_views.ninja_partner_stores, name='ninja-partner-stores'),
 
     # For anything not caught by a more specific rule above, hand over to
     # Wagtail's page serving mechanism. This should be the last pattern in
