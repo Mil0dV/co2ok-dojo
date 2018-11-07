@@ -7,5 +7,5 @@ from django import forms
 
 class RegisterForm(forms.Form):
     username = forms.CharField(label="Gebruikersnaam", max_length=100)
-    email = forms.EmailField(label="Votre adresse e-mail")
+    email = forms.EmailField(label="E-mail adres")
     password = forms.CharField(label="Wachtwoord", widget=forms.PasswordInput)
