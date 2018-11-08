@@ -27,6 +27,7 @@ INSTALLED_APPS = [
     'home',
     'search',
     'users',
+    'ninja_partner_stores',
 
     'wagtail.contrib.forms',
     'wagtail.contrib.redirects',
