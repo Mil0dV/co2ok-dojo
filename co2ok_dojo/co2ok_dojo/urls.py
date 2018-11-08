@@ -1,5 +1,6 @@
 from django.conf import settings
 from django.conf.urls import include, url
+from django.urls import path
 from django.contrib import admin
 
 from wagtail.admin import urls as wagtailadmin_urls
@@ -17,7 +18,9 @@ urlpatterns = [
 
     url(r'^search/$', search_views.search, name='search'),
     url(r'^login/$', users_views.register, name='login'),
-    url(r'^profile/$', users_views.profile, name='profile'),
+    url(r'^(?P<id>\d+)/$', users_views.profil, name='profil'),
+    url(r'^(?P<user_id>\d+)/$', users_views.invited_sign, name='invitation_page'),
+    #path('profil', users_views.profil, name='profil'),
 
     # For anything not caught by a more specific rule above, hand over to
     # Wagtail's page serving mechanism. This should be the last pattern in

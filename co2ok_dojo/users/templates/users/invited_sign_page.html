@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+   <div class="invitedUser">
+
+     <h1>id van gebruiker die de link heeft gedeeld: {{userid}}</h1>
+     <img src="" alt="">
+
+     <form method="post">
+       {% csrf_token %}
+       {{ form.as_p }}
+       <button type="submit">Register</button>
+     </form>
+
+   </div>
+
+{% endblock %}

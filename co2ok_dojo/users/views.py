@@ -3,7 +3,9 @@ from django.core.paginator import EmptyPage, PageNotAnInteger, Paginator
 from django.contrib.auth import login, authenticate
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.models import User
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404
+from django.http import HttpResponse, Http404
+
 
 from wagtail.core.models import Page
 from wagtail.search.models import Query
@@ -30,7 +32,7 @@ def register(request):
             #Profil.objects.create(point=0, uniq_link=request.user.id)
             user = authenticate(username=username, email=email, password=password)
             login(request, user)
-            return redirect('/profile')
+            return redirect('/{0}'.format(user.id))
     else:
         form = RegisterForm()
 
@@ -61,7 +63,18 @@ def register(request):
 #     return render(request,'users/login.html')
 
 
-def profile(request):
-    username = request.user
-    password = request.user.password
-    return render(request,'users/profile.html', {'username': username, 'password': password})
+def profil(request, id):
+    # username = request.user
+    # password = request.user.password
+    user_id = request.user.id
+    if int(id) == int(user_id):
+        return render(request,'users/profile.html',{'id':id, 'current_path': request.get_full_path()})
+    else:
+        #return HttpResponse('you are not connected! {0}'.format(user_id))
+        #return redirect('/{0}'.format(id))
+        form = RegisterForm(request.POST)
+        return render(request, 'users/invited_sign_page.html', {'userid': id, 'form': form})
+
+
+def invited_sign(request, user_id):
+    return render('users/invited_sign_page.html',{'username': request.user.username})

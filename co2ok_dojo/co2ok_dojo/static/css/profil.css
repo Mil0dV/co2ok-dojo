@@ -1,0 +1,56 @@
+.shareUniqLink
+{
+
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.shareUniqLink input
+{
+
+   width: 200px;
+   height: 30px;
+   border: 1px solid green;
+   border-radius: 3px;
+   text-align: center;
+
+}
+
+.socialsMedia
+{
+
+   width: auto;
+   height: auto;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   margin-top: 10px;
+
+}
+
+
+.socialsMedia a
+{
+
+   width: 40px;
+   height: 40px;
+   margin-left: 10px;
+   margin-right: 10px;
+   border: 1px solid black;
+   border-radius: 100%;
+
+}
+
+.socialsMedia a img
+{
+
+  width: 30px;
+  height: 30px;
+
+}

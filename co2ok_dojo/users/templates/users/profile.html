@@ -2,13 +2,27 @@
 {% load static %}
 
 {% block content %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/profil.css' %}">
 
   {% if user.is_authenticated %}
 
-     <h1>{{user.email}}</h1>
+     <div class="shareUniqLink">
+
+       <h3>Username: {{user.username}}</h3>
+       <h3>Email: {{user.email}}</h3>
+
+        <input type="text" name="" value="http://127.0.0.1:8000{{current_path}}">
+        <div class="socialsMedia">
+
+          <a href='facebook.com' class="facebook"><img src="" alt=""></a>
+          <a href='twitter.com' class="twitter"><img src="" alt=""></a>
+
+        </div>
+
+     </div>
 
   {% else %}
-
+    <h1>user.username</h1>
   {% endif %}
 
 {% endblock %}
