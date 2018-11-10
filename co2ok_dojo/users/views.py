@@ -88,11 +88,36 @@ def profil(request):
 
 
 def invited_sign(request, user_id):
-    current_user = User.objects.get(id=user_id)
+    user_who_invite_id = User.objects.get(id=user_id)
     form = RegisterForm(request.POST)
+    if request.method == "POST":
+
+        form = RegisterForm(request.POST)
+
+        if form.is_valid():
+
+            #form.save()
+            username = form.cleaned_data['username']
+            email = form.cleaned_data['email']
+            password = form.cleaned_data['password']
+
+            User.objects.create_user(username, email, password)
+            invited_user = authenticate(username=username, email=email, password=password)
+            Rewards.objects.create(user_id=invited_user.id, points=0)
+            #updating user points
+            user_who_invite_points = Rewards.objects.get(user_id=user_id).points
+            updated_user_who_invite_points = user_who_invite_points + 1
+            Rewards.objects.filter(user_id=user_id).update(points=updated_user_who_invite_points)
+
+            login(request, invited_user)
+            return redirect('/profil')
+    else:
+        #messages.error(request, 'Form not valid')
+        form = RegisterForm()
+
     user_obj = {
 
-     'username':current_user.username,
+     'username':user_who_invite_id.username,
      'user_id': user_id,
      'form': form
 
