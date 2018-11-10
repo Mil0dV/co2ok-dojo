@@ -32,6 +32,7 @@ def register(request):
             User.objects.create_user(username, email, password)
             #Profil.objects.create(point=0, uniq_link=request.user.id)
             user = authenticate(username=username, email=email, password=password)
+            Rewards.objects.create(user_id=user.id, points=0)
             login(request, user)
             # return redirect('/{0}'.format(user.id))
             return redirect('/profil')
@@ -71,7 +72,7 @@ def profil(request):
     # password = request.user.password
     user_id = request.user.id
     # if int(id) == int(user_id):
-    user_points = Rewards.objects.get(user_id = 18).points
+    user_points = Rewards.objects.get(user_id = int(request.user.id)).points
     profil_data = {
 
       'current_path': user_id,
