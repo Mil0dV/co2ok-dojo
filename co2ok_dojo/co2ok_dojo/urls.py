@@ -2,6 +2,7 @@ from django.conf import settings
 from django.conf.urls import include, url
 from django.urls import path
 from django.contrib import admin
+#from django.contrib.auth import views as auth_views
 
 from wagtail.admin import urls as wagtailadmin_urls
 from wagtail.core import urls as wagtail_urls
@@ -22,11 +23,19 @@ urlpatterns = [
 
     url(r'^search/$', search_views.search, name='search'),
     url(r'^register/$', users_views.register, name='register'),
-    url(r'^login/$', LoginView.as_view(authentication_form=AuthenticationForm), name='login'),
     # url(r'^signup/$', SignupView.as_view(authentication_form=UserCreationForm), name='signup'),
+ 
+    # deze werkt gek genoeg niet:
+    # url(r'^login/$', auth_views.LoginView, name='login'),
+    url(r'^login/$', LoginView.as_view(authentication_form=AuthenticationForm), name='login'),
+    # url( r'^login/$',auth_views.LoginView.as_view(template_name="registration/login.html"), name="login"),
+    
+    url(r'^logout/$', auth_views.LogoutView, name='logout'),
+    url(r'^oauth/', include('social_django.urls', namespace='social')),
 
     # url(r'^(?P<id>\d+)/$', users_views.profil, name='profil'),
      url(r'^accounts/profile/$', users_views.profil, name='profil'),
+
     url(r'^(?P<user_id>\d+)/$', users_views.invited_sign, name='invitation_page'),
 
     url(r'^ninja-partner-stores/$', ninja_partner_stores_views.ninja_partner_stores, name='ninja-partner-stores'),
