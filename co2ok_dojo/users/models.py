@@ -9,3 +9,11 @@ from django.db import models
 #
 #     def __str__(self):
 #         return self.user.username
+
+
+class Rewards(models.Model):
+    user_id = models.IntegerField()
+    points = models.IntegerField()
+
+    # def __str__(self):
+    #     return self.username

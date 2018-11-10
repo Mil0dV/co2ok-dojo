@@ -31,6 +31,8 @@ INSTALLED_APPS = [
 
     'wagtail.contrib.forms',
     'wagtail.contrib.redirects',
+    # 'django.contrib.messages',
+    # 'django.contrib.messages.context_processors.messages',
     'wagtail.embeds',
     'wagtail.sites',
     'wagtail.users',

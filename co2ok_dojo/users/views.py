@@ -5,6 +5,7 @@ from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.models import User
 from django.shortcuts import render, redirect, get_object_or_404
 from django.http import HttpResponse, Http404
+# from django.contrib import messages
 
 
 from wagtail.core.models import Page
@@ -12,7 +13,7 @@ from wagtail.search.models import Query
 
 #from .forms import LoginForm
 from .forms import RegisterForm
-#from .models import Profil
+from .models import Rewards
 
 
 def register(request):
@@ -32,8 +33,10 @@ def register(request):
             #Profil.objects.create(point=0, uniq_link=request.user.id)
             user = authenticate(username=username, email=email, password=password)
             login(request, user)
-            return redirect('/{0}'.format(user.id))
+            # return redirect('/{0}'.format(user.id))
+            return redirect('/profil')
     else:
+        #messages.error(request, 'Form not valid')
         form = RegisterForm()
 
     #return render(request,'users/login.html',{'form': register_form})
@@ -63,18 +66,34 @@ def register(request):
 #     return render(request,'users/login.html')
 
 
-def profil(request, id):
+def profil(request):
     # username = request.user
     # password = request.user.password
     user_id = request.user.id
-    if int(id) == int(user_id):
-        return render(request,'users/profile.html',{'id':id, 'current_path': request.get_full_path()})
-    else:
-        #return HttpResponse('you are not connected! {0}'.format(user_id))
-        #return redirect('/{0}'.format(id))
-        form = RegisterForm(request.POST)
-        return render(request, 'users/invited_sign_page.html', {'userid': id, 'form': form})
+    # if int(id) == int(user_id):
+    user_points = Rewards.objects.get(user_id = int(request.user.id)).points
+    profil_data = {
+
+      'current_path': user_id,
+      'user_points': user_points
+
+    }
+    return render(request,'users/profile.html', profil_data)
+    # else:
+    #     #return HttpResponse('you are not connected! {0}'.format(user_id))
+    #     #return redirect('/{0}'.format(id))
+    #     form = RegisterForm(request.POST)
+    #     return render(request, 'users/invited_sign_page.html', {'userid': id, 'form': form})
 
 
 def invited_sign(request, user_id):
-    return render('users/invited_sign_page.html',{'username': request.user.username})
+    current_user = User.objects.get(id=user_id)
+    form = RegisterForm(request.POST)
+    user_obj = {
+
+     'username':current_user.username,
+     'user_id': user_id,
+     'form': form
+
+    }
+    return render(request,'users/invited_sign_page.html', user_obj)
