@@ -20,10 +20,10 @@ print(ROOT_DIR)
 
 env = environ.Env()
 
-READ_DOT_ENV_FILE = env.bool('DJANGO_READ_DOT_ENV_FILE', default=False)
-if READ_DOT_ENV_FILE:
+# .env file wordt altijd gelezen nu
+# READ_DOT_ENV_FILE = env.bool('DJANGO_READ_DOT_ENV_FILE', default=False)
+# if READ_DOT_ENV_FILE:
     # OS environment variables take precedence over variables from .env
-    print('read env')
 env.read_env(str(ROOT_DIR.path('.env')))
 # else:
 #     print('YU no read env')
@@ -31,10 +31,10 @@ env.read_env(str(ROOT_DIR.path('.env')))
 PROJECT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BASE_DIR = os.path.dirname(PROJECT_DIR)
 
-
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.1/howto/deployment/checklist/
 
+ALLOWED_HOSTS = ['co2ok.ninja.dev', 'test.co2ok.ninja', 'co2ok.ninja'] 
 
 # Application definition
 
@@ -46,7 +46,9 @@ INSTALLED_APPS = [
     'cuser',
 
     'social_django',
-    "sslserver",
+
+    # alleen DEV
+    #"sslserver",
 
     'wagtail.contrib.forms',
     'wagtail.contrib.redirects',
@@ -92,7 +94,7 @@ ROOT_URLCONF = 'co2ok_dojo.urls'
 
 LOGIN_URL = 'login'
 LOGOUT_URL = 'logout'
-LOGIN_REDIRECT_URL = 'home'
+LOGIN_REDIRECT_URL = 'profile'
 
 # SOCIAL_AUTH_FACEBOOK_KEY = '269455067106457' # App ID
 # SOCIAL_AUTH_FACEBOOK_SECRET = 'd4b298dd3e3b90fd9a5e3c43ceacbfb6'

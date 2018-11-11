@@ -79,7 +79,7 @@ from django.shortcuts import render
 
 
 @login_required
-def profil(request):
+def profile(request):
     # username = request.user
     # password = request.user.password
     user_id = request.user.id
