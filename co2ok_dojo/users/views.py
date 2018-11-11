@@ -84,7 +84,10 @@ def profile(request):
     # password = request.user.password
     user_id = request.user.id
     # if int(id) == int(user_id):
-    user_points = Rewards.objects.get(user_id = int(request.user.id)).points
+    try: 
+        user_points = Rewards.objects.get(user_id).points 
+    except:
+        user_points = 0
     profil_data = {
 
       'current_path': user_id,
