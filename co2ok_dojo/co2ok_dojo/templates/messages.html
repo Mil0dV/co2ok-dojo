@@ -1,1 +1,50 @@
 {% load static wagtailuserbar %}
+
+{% block messages %}
+
+   {% if messages %}
+
+       {% for message in messages %}
+
+          <p {% if message.tags %}class="{{message.tags}}"{% endif %}>{{message}}</p>
+
+       {% endfor %}
+
+   {% endif %}
+
+{% endblock %}
+
+
+<style media="screen" type="text/css">
+
+.success
+{
+
+   color: #5FD080;
+   font-size: 20px;
+   text-align: center;
+
+}
+
+
+.error
+{
+
+  color: red;
+  font-size: 20px;
+  text-align: center;
+
+}
+
+
+.warning
+{
+
+  color: #5F021F;
+  font-size: 20px;
+  text-align: center;
+
+}
+
+
+</style>

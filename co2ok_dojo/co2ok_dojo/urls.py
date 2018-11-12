@@ -6,6 +6,9 @@ from django.contrib import admin
 from wagtail.admin import urls as wagtailadmin_urls
 from wagtail.core import urls as wagtail_urls
 from wagtail.documents import urls as wagtaildocs_urls
+from cuser.forms import AuthenticationForm, UserCreationForm
+from django.contrib.auth.views import LoginView
+# from django.contrib.auth.views import RegisterView
 
 from search import views as search_views
 from users import views as users_views
@@ -18,10 +21,12 @@ urlpatterns = [
     url(r'^documents/', include(wagtaildocs_urls)),
 
     url(r'^search/$', search_views.search, name='search'),
-    url(r'^login/$', users_views.register, name='login'),
+    url(r'^register/$', users_views.register, name='register'),
+    url(r'^login/$', LoginView.as_view(authentication_form=AuthenticationForm), name='login'),
+    # url(r'^signup/$', SignupView.as_view(authentication_form=UserCreationForm), name='signup'),
 
     # url(r'^(?P<id>\d+)/$', users_views.profil, name='profil'),
-     url(r'^profil/$', users_views.profil, name='profil'),
+     url(r'^accounts/profile/$', users_views.profil, name='profil'),
     url(r'^(?P<user_id>\d+)/$', users_views.invited_sign, name='invitation_page'),
 
     url(r'^ninja-partner-stores/$', ninja_partner_stores_views.ninja_partner_stores, name='ninja-partner-stores'),
