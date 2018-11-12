@@ -1,22 +1,24 @@
 from django.core.paginator import EmptyPage, PageNotAnInteger, Paginator
 
-from django.contrib.auth import login, authenticate
-from django.contrib.auth.forms import UserCreationForm
-from django.contrib.auth.models import User
+from django.contrib.auth import login, authenticate, get_user_model
+# from django.contrib.auth.forms import UserCreationForm
+from cuser.forms import UserCreationForm
+
+# from django.contrib.auth.models import User
 from django.shortcuts import render, redirect, get_object_or_404
 from django.http import HttpResponse, Http404
-# from django.contrib import messages
+from django.contrib import messages
 
 
 from wagtail.core.models import Page
 from wagtail.search.models import Query
 
-#from .forms import LoginForm
-from .forms import RegisterForm
+from .forms import RegisterForm, LoginForm
 from .models import Rewards
 
 
 def register(request):
+    cuser = get_user_model()
 
     if request.method == "POST":
 
@@ -25,22 +27,26 @@ def register(request):
         if form.is_valid():
 
             #form.save()
-            username = form.cleaned_data['username']
+            #username = form.cleaned_data['username']
+            # username = 'random'
             email = form.cleaned_data['email']
             password = form.cleaned_data['password']
-
-            User.objects.create_user(username, email, password)
-            #Profil.objects.create(point=0, uniq_link=request.user.id)
-            user = authenticate(username=username, email=email, password=password)
-            login(request, user)
-            # return redirect('/{0}'.format(user.id))
-            return redirect('/profil')
+            user_email_count = cuser.objects.filter(email=email).count()
+            if user_email_count == 0:
+                cuser.objects.create_user(email, password)
+                user = authenticate(email=email, password=password)
+                Rewards.objects.create(user_id=user.id, points=0)
+                login(request, user)
+                # return redirect('/{0}'.format(user.id))
+                return redirect('/accounts/profile')
+            else:
+                messages.error(request, "This email already exist")
     else:
-        #messages.error(request, 'Form not valid')
+        messages.error(request, 'Form not valid')
         form = RegisterForm()
 
     #return render(request,'users/login.html',{'form': register_form})
-    return render(request, 'users/login.html', {'form': form})
+    return render(request, 'registration/register.html', {'form': form})
 
 
 
@@ -48,7 +54,7 @@ def register(request):
 #
 #     if request.method == "POST":
 #
-#         login_form = LoginForm(request.POST or None)
+#         login_form = LoginForm(request.POST)
 #         if login_form.is_valid():
 #             username = form.cleaned_data['username']
 #             password = form.cleaned_data['password']
@@ -63,7 +69,7 @@ def register(request):
 #     else:
 #        form: LoginForm()
 #
-#     return render(request,'users/login.html')
+#     return render(request,'users/login.html', {'login_form': login_form})
 
 
 def profil(request):
@@ -71,7 +77,7 @@ def profil(request):
     # password = request.user.password
     user_id = request.user.id
     # if int(id) == int(user_id):
-    user_points = Rewards.objects.get(user_id = 18).points
+    user_points = Rewards.objects.get(user_id = int(request.user.id)).points
     profil_data = {
 
       'current_path': user_id,
@@ -87,11 +93,37 @@ def profil(request):
 
 
 def invited_sign(request, user_id):
-    current_user = User.objects.get(id=user_id)
+    cuser = get_user_model()
+    user_who_invite_id = cuser.objects.get(id=user_id)
     form = RegisterForm(request.POST)
+    if request.method == "POST":
+
+        form = RegisterForm(request.POST)
+
+        if form.is_valid():
+
+            #form.save()
+            email = form.cleaned_data['email']
+            password = form.cleaned_data['password']
+            user_email_count = cuser.objects.filter(email=email).count()
+            if user_email_count == 0:
+                cuser.objects.create_user(email, password)
+                invited_user = authenticate(email=email, password=password)
+                Rewards.objects.create(user_id=invited_user.id, points=0)
+                #updating user points
+                user_who_invite_points = Rewards.objects.get(user_id=user_id).points
+                updated_user_who_invite_points = user_who_invite_points + 1
+                Rewards.objects.filter(user_id=user_id).update(points=updated_user_who_invite_points)
+
+                login(request, invited_user)
+                return redirect('/accounts/profile')
+    else:
+        #messages.error(request, 'Form not valid')
+        form = RegisterForm()
+
     user_obj = {
 
-     'username':current_user.username,
+     'email':user_who_invite_id.email,
      'user_id': user_id,
      'form': form
 
