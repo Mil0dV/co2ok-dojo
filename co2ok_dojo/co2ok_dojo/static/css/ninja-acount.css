@@ -1,0 +1,61 @@
+.list-inline {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+.co2ok-logo-account-ninja {
+    width: auto;
+    height: 211px;
+    margin: 0px;
+    padding: 10px;
+    box-sizing: border-box;
+    max-height: 60px !important;
+}
+
+.custom-nav-account-ninja-btn {
+    max-height: 43px;
+    margin-right: 5px;
+}
+
+.co2ok-ninja-level-01 {
+    width: 200px;
+    height: auto;
+    background-color: orange;
+    box-sizing: border-box;
+    border: 1px solid black;
+    border-radius: 20px;
+    margin: 20px;
+}
+
+.ninja-auto-link {
+    box-sizing: border-box;
+    border: 1px solid rgb(223, 223, 223);
+    color: gray;
+    border-radius: 8px;
+    padding: 5px;
+    max-width: 300px;
+    text-align: center;
+}
+
+.co2ok-ninja-account-title {
+    background-image: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,0.9) , rgba(255,255,255,0.9) , rgba(255,255,255,0.9), rgba(255,255,255,0)); /* Standard syntax (must be last) */
+
+}
+
+.co2ok-social-img-ninja {
+    width: auto;
+    height: 211px;
+    margin: auto;
+    box-sizing: border-box;
+    max-height: 60px !important;
+    display: inline-block;
+}
+
+.social-image-align {
+    display:block;
+  margin-left:auto;
+  margin-right:auto;
+  box-sizing: border-box;
+}
