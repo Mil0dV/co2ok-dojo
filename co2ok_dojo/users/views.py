@@ -71,13 +71,23 @@ def register(request):
 #
 #     return render(request,'users/login.html', {'login_form': login_form})
 
+from django.contrib.auth.decorators import login_required
+from django.shortcuts import render
 
-def profil(request):
+# def home(request):
+#     return render(request, 'core/home.html')
+
+
+@login_required
+def profile(request):
     # username = request.user
     # password = request.user.password
     user_id = request.user.id
     # if int(id) == int(user_id):
-    user_points = Rewards.objects.get(user_id = int(request.user.id)).points
+    try: 
+        user_points = Rewards.objects.get(user_id).points 
+    except:
+        user_points = 0
     profil_data = {
 
       'current_path': user_id,
