@@ -9,6 +9,7 @@ Django = "<2.2,>=2.1"
 django-environ = "*"
 social-auth-app-django = "*"
 gunicorn = "*"
+django-username-email = "*"
 
 [dev-packages]
 

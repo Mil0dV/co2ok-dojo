@@ -8,7 +8,7 @@ from wagtail.admin import urls as wagtailadmin_urls
 from wagtail.core import urls as wagtail_urls
 from wagtail.documents import urls as wagtaildocs_urls
 from cuser.forms import AuthenticationForm, UserCreationForm
-from django.contrib.auth.views import LoginView
+from django.contrib.auth.views import LoginView, LogoutView
 # from django.contrib.auth.views import RegisterView
 
 from search import views as search_views
@@ -30,11 +30,11 @@ urlpatterns = [
     url(r'^login/$', LoginView.as_view(authentication_form=AuthenticationForm), name='login'),
     # url( r'^login/$',auth_views.LoginView.as_view(template_name="registration/login.html"), name="login"),
     
-    url(r'^logout/$', auth_views.LogoutView, name='logout'),
+    url(r'^logout/$', LogoutView, name='logout'),
     url(r'^oauth/', include('social_django.urls', namespace='social')),
 
     # url(r'^(?P<id>\d+)/$', users_views.profil, name='profil'),
-     url(r'^accounts/profile/$', users_views.profil, name='profil'),
+     url(r'^accounts/profile/$', users_views.profile, name='profile'),
 
     url(r'^(?P<user_id>\d+)/$', users_views.invited_sign, name='invitation_page'),
 
