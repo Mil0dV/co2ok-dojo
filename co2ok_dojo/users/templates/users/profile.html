@@ -2,27 +2,55 @@
 {% load static %}
 
 {% block content %}
-<link rel="stylesheet" type="text/css" href="{% static 'css/profil.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'css/ninja-main.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'css/ninja-acount.css' %}">
 
   {% if user.is_authenticated %}
+      {% include 'light_box.html' %}
+      <div class="header-wrapper" style="margin-top: 0px;">
+          <div class="header custom-mobile-co2ok" >
 
-     <div class="shareUniqLink">
+              <nav class="navbar navbar-expand-lg navbar-success bg-light list-inline" >
+                  <div class="navbar-inner">
+                      <div class="container">
+                          <div class="row">
+                              <div class=""> <img src="images/co2ok-logo.png" class="co2ok-logo-account-ninja"></div>
+                              <a class="nav-link btn btn-success custom-nav-account-ninja-btn" href="#">Home <span class="sr-only">(current)</span></a>
+                              <a class="nav-link btn btn-success custom-nav-account-ninja-btn" href="#">Link</a>
+                              <a class="nav-link btn btn-success custom-nav-account-ninja-btn" href="#">Link</a>
+                          </div>
+                      </div>
+                  </div>
+              </nav>
 
-       <h3>Email: {{user.email}}</h3>
-       <h4>User points: {{user_points}}</h4>
+              <div class="col-12 co2ok-ninja-account-title" style="text-align: center; margin-top: 30px; margin-bottom: 30px;"><h1>Account</h1></div>
 
-        <input type="text" name="" value="https://{{domainname}}/{{current_path}}">
-        <div class="socialsMedia">
 
-          <a href='facebook.com' class="facebook"><img src="" alt=""></a>
-          <a href='twitter.com' class="twitter"><img src="" alt=""></a>
+          </div>
+      </div>
 
-        </div>
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-4 col-sm-8"><img src="{% static 'images/ninja-level01.jpg' %}" class="co2ok-ninja-level-01"></div>
 
-     </div>
+              <div class="col-lg-8 col-sm-12"><h5>Email: {{user.email}}</h5> <h5>Punten: {{user_points}}</h5></br>
+                  <div class="ninja-auto-link col-12">
+                      <input type="text" name="" value="https://{{domainname}}/{{current_path}}" readonly>
+                    </div></br>
+                  <div class="social-image-align col-12">
+                    <a href="https://www.facebook.com/sharer?u=https%3A%2F%2Ftest.co2ok.ninja%2F{{user.id}}" class="facebook" target="_blank"><i class="fa fa-facebook-official" style="font-size: 30px; color: black;"></i>FB</a>
+                    <a href="https://twitter.com/intent/tweet?text=Help%20me%20fight%20climate%20change%20while%20shopping%20-%20easy%20and%20for%20free!%20http%3A%2F%2Ftest.co2ok.ninja%2F{{user.id}}" class="twitter" target="_blank"><i class="fa fa-twitter-square" style="font-size: 30px; color: black;"></i>Twit</a>
+                  <!-- <a href="#"><img src="{% static 'images/fb-logo.png' %}" class="co2ok-social-img-ninja text-center pagination-centered"></a>
+                  <a href="#"><img src="{% static 'images/twitter-logo.png' %}" class="co2ok-social-img-ninja text-center pagination-centered"></a> -->
+                  </div>
+
+              </div>
+              </div>
+          </div>
+      </div>
 
   {% else %}
-    <h1>user.username</h1>
+    <h1>user.email</h1>
   {% endif %}
 
 {% endblock %}

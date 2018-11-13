@@ -42,7 +42,7 @@ def register(request):
             else:
                 messages.error(request, "This email already exist")
     else:
-        messages.error(request, 'Form not valid')
+        messages.error(request, 'Sign up with email:')
         form = RegisterForm()
 
     #return render(request,'users/login.html',{'form': register_form})
@@ -92,6 +92,7 @@ def profile(request):
 
       'current_path': user_id,
       'user_points': user_points,
+      # Milo: ik denk dat de strip niet nodig is. YOLO 'm weg als je je dapper voelt, maar test wel op productie :P
       'domainname': request.get_host() if request.get_host().strip() else 'test.co2ok.ninja'
 
     }

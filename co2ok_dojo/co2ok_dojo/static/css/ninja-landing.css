@@ -1,0 +1,59 @@
+.install-button {
+    font-family: "Open Sans";
+    /* font-size: 0.85rem; */
+    background: linear-gradient(#1DEFAC 10.09%, #11D071 51.05%, #10CC6B 56.81%, #05B139 100%);
+    border-color: linear-gradient(#1DEFAC 10.09%, #11D071 51.05%, #10CC6B 56.81%, #05B139 100%);
+    border-color: #11D073;
+    border-radius: 5px;
+    /* padding: .55rem 1.5rem; */
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-block;
+    line-height: 1.5rem;
+    border-radius: 8px;
+    vertical-align: middle;
+    -webkit-appearance: none;
+    /* margin-bottom: .75rem; */
+    background-color: #05b139;
+    border-color: #05b139;
+    word-wrap: break-word;
+    box-sizing: border-box;
+    color: #ffffff;
+}
+
+.black-bg-bar {
+    background-image: linear-gradient(to right, rgba(010,010,010,0), rgba(010,010,010,0.9) , rgba(010,010,010,0.9) , rgba(010,010,010,0.9), rgba(010,010,010,0));
+}
+
+.white-bg-bar {
+    background-image: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,0.9) , rgba(255,255,255,0.9) , rgba(255,255,255,0.9), rgba(255,255,255,0));
+}
+
+.top-text-landing {
+    padding: 0px 50px;
+}
+@media (min-width: 768px) {
+    .top-text-landing {
+        padding: 0px 300px;
+    }
+}
+
+.owl-nav{
+    margin-top: -5px;
+    margin-bottom: -10px;
+}
+.owl-dots {
+    display: none !important;
+}
+
+.landing-container-padder {
+    padding-top: 20px;
+    padding-bottom: 0px;
+}
+
+.social-icon {
+    font-size: 30px;
+}
