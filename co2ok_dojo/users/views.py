@@ -85,16 +85,16 @@ def profile(request):
     user_id = request.user.id
     # if int(id) == int(user_id):
     try: 
-        user_points = Rewards.objects.get(user_id).points 
+        user_points = Rewards.objects.get(user_id = user_id).points 
     except:
-        user_points = 0
-    profil_data = {
+        user_points = 9042
+    profile_data = {
 
       'current_path': user_id,
       'user_points': user_points
 
     }
-    return render(request,'users/profile.html', profil_data)
+    return render(request,'users/profile.html', profile_data)
     # else:
     #     #return HttpResponse('you are not connected! {0}'.format(user_id))
     #     #return redirect('/{0}'.format(id))
@@ -120,11 +120,12 @@ def invited_sign(request, user_id):
                 cuser.objects.create_user(email, password)
                 invited_user = authenticate(email=email, password=password)
                 Rewards.objects.create(user_id=invited_user.id, points=0)
+                print('updated_user_who_invite_points' + updated_user_who_invite_points)
                 #updating user points
                 user_who_invite_points = Rewards.objects.get(user_id=user_id).points
                 updated_user_who_invite_points = user_who_invite_points + 1
                 Rewards.objects.filter(user_id=user_id).update(points=updated_user_who_invite_points)
-
+                print('updated_user_who_invite_points' + updated_user_who_invite_points)
                 login(request, invited_user)
                 return redirect('/accounts/profile')
     else:
