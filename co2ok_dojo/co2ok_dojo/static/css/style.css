@@ -168,7 +168,7 @@ section {
 --------------------*/
 
 header {
-    /* background-image: url(../images/banner_co2ok_wereldbol.svg); */
+    background-image: url(../images/banner_co2ok_wereldbol.svg); 
     background-repeat: none;
     background-attachment: scroll;
     background-position: center center;
