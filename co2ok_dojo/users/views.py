@@ -91,7 +91,8 @@ def profile(request):
     profile_data = {
 
       'current_path': user_id,
-      'user_points': user_points
+      'user_points': user_points,
+      'domainname': request.get_host()
 
     }
     return render(request,'users/profile.html', profile_data)
