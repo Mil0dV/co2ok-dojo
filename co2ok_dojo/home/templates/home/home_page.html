@@ -33,7 +33,7 @@
           <a class="page-scroll" href="#FAQ">FAQ</a>
         </li>
         <li>
-          <a class="page-scroll btn btn-sm install-button" style="max-width: 150px;  font-size: 15px; padding:10px; margin-top:4px;"href="#about">Sign up</a>
+          <a class="page-scroll btn btn-sm install-button" style="max-width: 150px;  font-size: 15px; padding:10px; margin-top:4px;"href="/signup">Sign up</a>
         </li>
       </ul>
     </div>
@@ -56,7 +56,7 @@
 
         <div class="row" style="padding-top:100px; margin-top:150px;">
           <div class="col-lg-12 text-center"><img src="{% static 'images/ninjaDesign_callToAction.svg' %}" style="height:130px; display:inline-block; margin-left:-250px; margin-top:25px;">
-            <a href="#about" class="page-scroll btn install-button" style="margin-top:-28px; background-color:#05b139; display:inline-block; width: 150px; font-size: 15px; padding: 20px;" >GET THE APP!</a>
+            <a href="/signup" class="page-scroll btn install-button" style="margin-top:-28px; background-color:#05b139; display:inline-block; width: 150px; font-size: 15px; padding: 20px;" >GET THE APP!</a>
           </div>
         </div>
 
@@ -164,7 +164,7 @@
             <p style="color: #000 !important; margin: 0px;"><strong>There are no extra costs for you.</strong> The CO₂ compensation is fully covered by the shop.</p>
 
             </div>
-            <a class="install-button color2 install-ninja-button btn btn-xl install-button" target="_blank" data-cp-link="1" data-icon="fa-chrome" unknown="" rel="noopener"><span class="button-icon fa fa-chrome"></span> Get involved & fight climate change</a>
+            <a class="install-button color2 install-ninja-button btn btn-xl install-button" data-cp-link="1" data-icon="fa-chrome" unknown="" rel="noopener" href="/signup"><span class="button-icon fa fa-chrome"></span> Get involved & fight climate change</a>
 
             </div>
             </div>
@@ -216,37 +216,24 @@
   <section style="background-color: whitesmoke;">
     <div class="container text-center">
       <div class="row">
-
+        
         <div class="col-md-12">
           <div class="skills-text">
             <h4 style="font-weight: 600;margin-bottom: 30px;">Zo is je aankoop klimaatneutraal!.</h4>
           </div>
         </div>
+        <p style="margin-top: 15px; text-align: left;">DEZE TEKST MOET NOG ONDER DE VERSCHILLENDE PROJECTEN IN DE CAROUSEL HIERONDER ============= Voorbeelden van de verschillende projecten. Midden: de Save80 kookstellen die 5x minder hout verbruiken, dus 5x minder uitstoot. Rechts een biogasinstallatie in aanbouw.</p>
 
-        <div class="col-md-3 mb-sm-30">
-          <div class="counter-item">
-            <img src="{% static 'images/cropped-cropped-zon-en-wind-winter.jpg' %}" alt="" style="width: 300px;position:relative;left:80px;">
-          </div>
-        </div>
-        <div class="col-md-3 mb-sm-30" style="z-index: 3;">
-          <div class="counter-item">
-            <img src="{% static 'images/Save80cookingstove.jpg' %}" alt="" style="width: 500px;">
-          </div>
-        </div>
-        <div class="col-md-3 mb-sm-30">
-          <div class="counter-item">
-            <img src="{% static 'images/cropped-cropped-klimaschutzprojekt-indien.jpg' %}" alt="" style="width: 300px;position:relative;left:130px;">
-          </div>
-        </div>
+        {% include 'caroussel.html' %}
+
       </div>
-      <p style="margin-top: 15px; text-align: left;">Voorbeelden van de verschillende projecten. Midden: de Save80 kookstellen die 5x minder hout verbruiken, dus 5x minder uitstoot. Rechts een biogasinstallatie in aanbouw.</p>
     </div>
   </section>
   <section id="portfolio" class="light-bg">
     <div class="container">
     <div class="row">
       <div class="col-lg-12 text-center">
-        <a href="#" target="_blank" data-cp-link="1" data-icon="fa-chrome" rel="noopener" class="install-button color2 install-ninja-button btn btn-xl install-button">
+        <a href="/signup" target="_blank" data-cp-link="1" data-icon="fa-chrome" rel="noopener" class="install-button color2 install-ninja-button btn btn-xl install-button">
           <span class="button-icon fa fa-chrome"> INSTALLEER OM TE HELPEN</span>
        </a>
 
@@ -273,7 +260,6 @@
   </section>
   <section>
 
-    {% include 'caroussel.html' %}
 
   </section>
   <section id="team" class="light-bg">

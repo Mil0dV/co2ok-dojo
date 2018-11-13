@@ -17,7 +17,7 @@ from .forms import RegisterForm, LoginForm
 from .models import Rewards
 
 
-def register(request):
+def signup(request):
     cuser = get_user_model()
 
     if request.method == "POST":
