@@ -1,0 +1,36 @@
+{% load static %}
+<link href="{% static 'css/light_box.css' %}" rel="stylesheet">
+<script type="text/javascript" src="{% static 'js/light_box.js' %}"></script>
+{% block light_box %}
+
+  <div class="light_box_container">
+
+     <div class="close_light_box">
+        <img src="{% static 'images/close.svg' %}" alt="">
+     </div>
+
+     <div class="light_box_header">
+       <h3>co2ok logo</h3>
+     </div>
+
+     <div class="light_box_body">
+
+       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat .</p>
+
+      <div class="images">
+
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+
+      </div>
+
+     </div>
+
+     <div class="light_box_footer">
+       <button>Co2ok ninja dojo</button>
+     </div>
+
+  </div>
+
+{% endblock %}

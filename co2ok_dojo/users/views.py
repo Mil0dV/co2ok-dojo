@@ -42,7 +42,7 @@ def register(request):
             else:
                 messages.error(request, "This email already exist")
     else:
-        messages.error(request, 'Form not valid')
+        messages.error(request, 'Sign up with email:')
         form = RegisterForm()
 
     #return render(request,'users/login.html',{'form': register_form})

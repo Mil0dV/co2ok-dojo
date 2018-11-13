@@ -1,0 +1,49 @@
+.header-register {
+    background-image: url(../images/ninjaDesign_install_BG.svg);
+}
+.register-container-padder{
+    padding-top: 100px;
+    padding-bottom: 340px;
+}
+.register_form
+{
+
+   width: auto;
+   height: auto;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+
+}
+
+.form_input
+{
+
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+.form_input p input{
+
+  width: 400px;
+  height: 45px;
+  border: 1px solid #e3e3e3;
+  border-radius: 5px;
+  font-size: 17px;
+  padding-left: 10px;
+
+}
+
+.form_input
+{
+
+
+
+}
