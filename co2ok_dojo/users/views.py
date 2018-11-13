@@ -92,15 +92,8 @@ def profile(request):
 
       'current_path': user_id,
       'user_points': user_points,
-<<<<<<< 99c204a14303e34ba65c32843dbfeb3a6ebe434f
-<<<<<<< 6cbb9a4afb87b31a5390ffd7ab164826f1045f0e
+      # Milo: ik denk dat de strip niet nodig is. YOLO 'm weg als je je dapper voelt, maar test wel op productie :P
       'domainname': request.get_host() if request.get_host().strip() else 'test.co2ok.ninja'
-=======
-      'domainname': request.get_host()
->>>>>>> Fixes domainname
-=======
-      'domainname': request.get_host() if request.get_host().strip() else 'test.co2ok.ninja'
->>>>>>> Encrypt all the things!
 
     }
     return render(request,'users/profile.html', profile_data)

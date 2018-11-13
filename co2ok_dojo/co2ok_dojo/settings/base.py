@@ -20,17 +20,10 @@ print(ROOT_DIR)
 
 env = environ.Env()
 
-<<<<<<< 6c795e300f2cdc62b38d8d7e6d19dd2efc6d9025
 # .env file wordt altijd gelezen nu
 # READ_DOT_ENV_FILE = env.bool('DJANGO_READ_DOT_ENV_FILE', default=False)
 # if READ_DOT_ENV_FILE:
     # OS environment variables take precedence over variables from .env
-=======
-READ_DOT_ENV_FILE = env.bool('DJANGO_READ_DOT_ENV_FILE', default=False)
-if READ_DOT_ENV_FILE:
-    # OS environment variables take precedence over variables from .env
-    print('read env')
->>>>>>> Adds initial social login implementation
 env.read_env(str(ROOT_DIR.path('.env')))
 # else:
 #     print('YU no read env')
@@ -53,13 +46,9 @@ INSTALLED_APPS = [
     'cuser',
 
     'social_django',
-<<<<<<< 6c795e300f2cdc62b38d8d7e6d19dd2efc6d9025
 
     # alleen DEV
     #"sslserver",
-=======
-    "sslserver",
->>>>>>> Adds initial social login implementation
 
     'wagtail.contrib.forms',
     'wagtail.contrib.redirects',
