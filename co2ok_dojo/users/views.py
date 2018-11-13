@@ -92,7 +92,7 @@ def profile(request):
 
       'current_path': user_id,
       'user_points': user_points,
-      'domainname': request.get_host() if request.get_host() else 'test.co2ok.ninja'
+      'domainname': request.get_host() if request.get_host().strip() else 'test.co2ok.ninja'
 
     }
     return render(request,'users/profile.html', profile_data)
