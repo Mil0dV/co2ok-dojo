@@ -1,0 +1,27 @@
+.panel-title a
+{
+
+   font-weight: 700;
+
+}
+
+.panel-title a:hover{
+
+   color: #11d073;
+
+}
+
+.panel-body p, .panel-body ol li
+{
+
+   font-weight: 500;
+
+}
+
+.panel-body p a
+{
+
+   text-decoration: underline;
+   color: #11d073;
+
+}
