@@ -46,7 +46,7 @@ def register(request):
         form = RegisterForm()
 
     #return render(request,'users/login.html',{'form': register_form})
-    return render(request, 'registration/register.html', {'form': form})
+    return render(request, 'registration/register.html', {'form': form, 'full_path': request.get_full_path()})
 
 
 
@@ -84,8 +84,8 @@ def profile(request):
     # password = request.user.password
     user_id = request.user.id
     # if int(id) == int(user_id):
-    try: 
-        user_points = Rewards.objects.get(user_id = user_id).points 
+    try:
+        user_points = Rewards.objects.get(user_id = user_id).points
     except:
         user_points = 9042
     profile_data = {

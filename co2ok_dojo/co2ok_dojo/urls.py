@@ -24,12 +24,12 @@ urlpatterns = [
     url(r'^search/$', search_views.search, name='search'),
     url(r'^register/$', users_views.register, name='register'),
     # url(r'^signup/$', SignupView.as_view(authentication_form=UserCreationForm), name='signup'),
- 
+
     # deze werkt gek genoeg niet:
     # url(r'^login/$', auth_views.LoginView, name='login'),
     url(r'^login/$', LoginView.as_view(authentication_form=AuthenticationForm), name='login'),
     # url( r'^login/$',auth_views.LoginView.as_view(template_name="registration/login.html"), name="login"),
-    
+
     url(r'^logout/$', LogoutView, name='logout'),
     url(r'^oauth/', include('social_django.urls', namespace='social')),
 
