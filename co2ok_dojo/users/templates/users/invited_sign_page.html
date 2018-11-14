@@ -1,20 +1,75 @@
 {% extends 'base.html' %}
 {% load static %}
 
+<link rel="stylesheet" type="text/css" href="{% static 'css/ninja-register.css' %}">
 {% block content %}
 
-   <div class="invitedUser">
+  {% include 'menu.html' %}
+    <!-- Header -->
+    <header class="header-register">
+      <div class="container register-container-padder">
+        <div class="slider-container" >
+          <div class="intro-text">
+            <!-- <div class="intro-lead-in">Welcome To Our Studio!</div> -->
+            <div class="intro-heading " style="margin-top: -50px; padding-bottom:20px; color:#fff; font-size: 36px;">Sign Up
 
-     <h1>id van gebruiker die de link heeft gedeeld: {{user_id}}</h1>
-     <h3>email: {{email}}</h3>
-     <img src="" alt="">
+              </div>
+            </div>
 
-     <form method="post">
-       {% csrf_token %}
-       {{ form.as_p }}
-       <button type="submit">Register</button>
-     </form>
+          </div>
+        </div>
 
-   </div>
+        <h1>Je bent uitgenodigd door een anonieme Ninja! </h1>
+        <h3>(we gaan dit wel _iets_ minder onpersoonlijk maken, maar komt nog (ook iets met privacy enzo))</h3>
+        <img src="" alt="">
+
+      <section style="padding-top: 20px;" class="white-bg-bar form_session">
+          <!-- <div class="container">
+            <div class="row"> -->
+              <!-- <div class="col-md-6 text-center"> -->
+                <div class="skills-text social_container">
+                  <h2>Sign up via:</h2>
+                    <div data-type="group" data-dynamic-mod="true" class="footer-social-icons">
+
+                      <a class="social-icon" href="{% url 'social:begin' 'facebook' %}">
+                        <i class="fa fa-facebook-square" style="color:#2a5297; font-size: 60px;"></i>
+                      </a>
+
+                      <!-- <a target="_blank" class="social-icon" href="https://twitter.com/CO2ok_eco">
+                        <i class="fa fa-twitter-square" style="color:#1da1f3; font-size: 60px;"></i>
+                      </a>
+
+                      <a target="_blank" class="social-icon" href="https://www.instagram.com/co2ok.eco/">
+                        <i class="fa fa-google-plus-square" style="color:#c60000; font-size: 60px;" ></i>
+                      </a> -->
+
+                    </div>
+                </div>
+              <!-- </div> -->
+              <!-- <div class="col-md-6 text-center" style="border-left: 3px solid gray;"> -->
+                <!-- skill bar item -->
+                <div class="skills-text">
+                    <h2>{% include "messages.html" %}</h2>
+
+                        <form method="post" class="register_form">
+                            {% csrf_token %}
+                            {{ form.as_p }}
+                          <button type="submit" class=" color2 install-ninja-button btn btn-xl install-button" style="padding: 15px; position: relative, left: 50px;">Sign up</button>
+                        </form>
+
+                </div>
+              <!-- </div> -->
+            <!-- </div>
+          </div> -->
+        </section>
+    </header>
+
+    <p id="back-top">
+      <a href="#top"><i class="fa fa-angle-up"></i></a>
+    </p>
+    <footer>
+      {% include 'contact.html' %}
+    </footer>   
+
 
 {% endblock %}
