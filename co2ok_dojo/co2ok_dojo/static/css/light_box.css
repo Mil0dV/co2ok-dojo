@@ -78,13 +78,13 @@
 
 .light_box_body img{
 
-   width: 100px;
+   /* width: 100px;
    height: 100px;
    border: 1px solid red;
-   border-radius: 100%;
+   border-radius: 100%; */
    margin-left: 10px;
    margin-right: 10px;
-
+   max-width: 100%
 }
 
 .light_box_footer
