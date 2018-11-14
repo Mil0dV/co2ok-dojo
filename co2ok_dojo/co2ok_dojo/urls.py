@@ -22,7 +22,7 @@ urlpatterns = [
     url(r'^documents/', include(wagtaildocs_urls)),
 
     url(r'^search/$', search_views.search, name='search'),
-    url(r'^register/$', users_views.register, name='register'),
+    url(r'^signup/$', users_views.signup, name='signup'),
     # url(r'^signup/$', SignupView.as_view(authentication_form=UserCreationForm), name='signup'),
 
     # deze werkt gek genoeg niet:
