@@ -7,5 +7,5 @@ class LoginForm(forms.Form):
 
 class RegisterForm(forms.Form):
     #username = forms.CharField(label="Gebruikersnaam", max_length=100)
-    email = forms.EmailField(label="E-mail adres")
-    password = forms.CharField(label="Wachtwoord", widget=forms.PasswordInput)
+    email = forms.EmailField(widget= forms.TextInput(attrs={'placeholder':'Email'}))
+    password = forms.CharField(widget= forms.PasswordInput(attrs={'placeholder':'Wachtwoord'}))

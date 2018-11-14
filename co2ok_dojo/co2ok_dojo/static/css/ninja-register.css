@@ -5,34 +5,59 @@
     padding-top: 100px;
     padding-bottom: 340px;
 }
+
+.form_session
+{
+
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+   width: 100%;
+
+}
+
+.social_container
+{
+
+   height: 200px;
+   border-right: 2px solid gray;
+
+}
+
+.skills-text
+{
+
+   width: 50%;
+
+}
+
+
 .register_form
 {
 
    width: auto;
    height: auto;
    display: flex;
-   flex-direction: row;
+   flex-direction: column;
    justify-content: center;
    align-items: center;
 
 }
 
-.form_input
+.register_form p
 {
 
-  width: auto;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+   width: 90%;
+   height: auto;
 
 }
 
 
-.form_input p input{
+.register_form p input{
 
-  width: 400px;
+  width: 90%;
   height: 45px;
   border: 1px solid #e3e3e3;
   border-radius: 5px;
@@ -41,9 +66,15 @@
 
 }
 
-.form_input
+.register_form p label{
+
+   display: none;
+
+}
+
+.register_form button
 {
 
-
+  width: 50%;
 
 }

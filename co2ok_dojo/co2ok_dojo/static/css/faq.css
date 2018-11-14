@@ -1,7 +1,8 @@
-.panel-title a
+.panel-title span
 {
 
    font-weight: 700;
+   cursor: pointer;
 
 }
 
@@ -14,6 +15,7 @@
 .panel-body p, .panel-body ol li
 {
 
+   font-size: 15px;
    font-weight: 500;
 
 }
