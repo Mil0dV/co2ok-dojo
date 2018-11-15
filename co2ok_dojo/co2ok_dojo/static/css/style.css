@@ -165,7 +165,6 @@ section {
 
      background-position: center center;
      background-size: 90%;
-     border: 1px solid red;
 
   }
 }
@@ -809,7 +808,7 @@ and (max-width : 480px) {
 
 }
 
-.get_involved_button
+/* .get_involved_button
 {
 
    display: flex;
@@ -817,7 +816,7 @@ and (max-width : 480px) {
    justify-content: center;
    align-items: center;
 
-}
+} */
 
 .get_involved_button p{
 
@@ -825,7 +824,6 @@ and (max-width : 480px) {
    text-align: center;
    width: 100%;
    height: auto;
-   border: 1px solid red;
 
 }
 
@@ -970,7 +968,6 @@ and (max-width : 480px) {
   padding-bottom: 13px;
   font-size: 10px;
   position: absolute;
-  border: 1px solid yellow;
 
 }
 
@@ -983,7 +980,6 @@ and (max-width : 480px) {
    flex-direction: column;
    justify-content: center;
    align-items: center;
-   border: 1px solid yellow;
 
 }
 
