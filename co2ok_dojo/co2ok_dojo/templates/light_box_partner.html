@@ -1,0 +1,18 @@
+{% load static %}
+<link href="{% static 'css/light_box.css' %}" rel="stylesheet">
+<script type="text/javascript" src="{% static 'js/light_box.js' %}"></script>
+{% block light_box %}
+
+  <div class="light_box_container">
+
+     <div class="close_light_box">
+        <img src="{% static 'images/close.svg' %}" alt="">
+     </div>
+
+     <div class="light_box_header" style="margin-bottom: 20px; padding-left:20px;">
+       <h3>We gaan deze feature binnenkort bouwen.</h3>
+     </div>
+
+  </div>
+
+{% endblock %}
