@@ -23,15 +23,16 @@
 					</div>
 				</div>
 
-			<section style="padding-top: 20px;" class="white-bg-bar">
+				<div class="col-md-12">
+			<section style="padding-top: 20px;" class="white-bg-bar ">
 					<div class="container">
 						<div class="row">
-							<div class="col-md-6 text-center">
+							<div class="col-md-6 col-sm-12 text-center">
 								<div class="skills-text">
 									<h2>Sign in via:</h2>
 										<div data-type="group" data-dynamic-mod="true" class="footer-social-icons">
 
-											<a class="social-icon" href="{% url 'social:begin' 'facebook' %}"">
+											<a class="social-icon" href="{% url 'social:begin' 'facebook' %}">
 												<i class="fa fa-facebook-square" style="color:#2a5297; font-size: 60px;"></i>
 											</a>
 
@@ -46,7 +47,7 @@
 										</div>
 								</div>
 							</div>
-							<div class="col-md-6 text-center" style="border-left: 3px solid gray;">
+							<div class="col-md-6 col-sm-12 text-center" style="border-left: 3px solid gray;">
 								<!-- skill bar item -->
 								<div class="skills-text">
 										<h2>{% include "messages.html" %}</h2>
@@ -95,7 +96,8 @@
 						</div>
 					</div>
 				</section>
-		</header>
+			</div>
+		
 
 		<p id="back-top">
 			<a href="#top"><i class="fa fa-angle-up"></i></a>
@@ -105,6 +107,8 @@
 			{% include 'contact.html' %}
 		</footer>
 
+	</header>
+	
 		<!-- Modal for portfolio item 1 -->
 		<div class="modal fade" id="Modal-1" tabindex="-1" role="dialog" aria-labelledby="Modal-label-1">
 			<div class="modal-dialog" role="document">

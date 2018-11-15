@@ -6,6 +6,12 @@
     padding-bottom: 340px;
 }
 
+@media only screen and (max-width: 400px) {
+  .register-container-padder {
+    padding-bottom: 140px;
+  }
+}
+
 .form_session
 {
 
@@ -25,14 +31,6 @@
    border-right: 2px solid gray;
 
 }
-
-.skills-text
-{
-
-   width: 50%;
-
-}
-
 
 .register_form
 {
@@ -69,12 +67,5 @@
 .register_form p label{
 
    display: none;
-
-}
-
-.register_form button
-{
-
-  width: 50%;
 
 }
