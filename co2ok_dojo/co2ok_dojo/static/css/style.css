@@ -815,11 +815,11 @@ and (max-width : 480px) {
 .ninja_sword
 {
 
-   width: auto;
-   height: auto;
+   width: 48%;
+   height: 60%;
    display: flex;
    justify-content: flex-start;
-   align-items: flex-start;
+   align-items: flex-end;
    z-index: 3;
    position: absolute;
 
@@ -851,16 +851,16 @@ and (max-width : 480px) {
 .ninja_world_bol img
 {
 
-   position: absolute;
+   /* position: absolute;
    transform: scale(0.7,0.7);
-   z-index: -1;
+   z-index: -1; */
 
 }
 
 .ninja_world_bol a
 {
 
-  margin-top: 45px;
+  margin-top: 23px;
   width: auto;
   padding-top: 13px;
   padding-bottom: 13px;
