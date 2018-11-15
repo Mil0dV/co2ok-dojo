@@ -787,7 +787,7 @@ and (max-width : 480px) {
 
 }
 
-.landing_container
+/* .landing_container
 {
 
   position: absolute;
@@ -798,53 +798,73 @@ and (max-width : 480px) {
   justify-content: center;
   align-items: center;
 
+} */
+
+.home_container
+{
+
+   width: 100%;
+   height: 100vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: center;
+
+}
+
+.intro_head
+{
+
+   width: 100%;
+   height: 20%;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-end;
+   align-items: center;
+   margin-top: 70px;
+   border: 1px solid blue;
+
 }
 
 .world_bol_container
 {
 
   width: 100%;
-  height: 100vh;
-  position: absolute;
+  height: 70%;
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
 
 }
 
-.ninja_sword
+.whitespace
 {
 
-   width: 48%;
-   height: 60%;
+   width: 35%;
+   height: 100%;
    display: flex;
-   justify-content: flex-start;
-   align-items: flex-end;
+   justify-content: flex-end;
+   align-items: center;
    z-index: 3;
-   position: absolute;
-
-}
-
-.ninja_sword img{
-
 
 }
 
 .ninja_world_bol
 {
 
-  width: 90%;
-  height: 70%;
+  width: 85%;
+  height: 100%;
   /* width: 10%;
   height: auto; */
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   background-image: url(../images/banner_co2ok_wereldbol.png);
-  background-position: center center;
+  background-position: left center;
   background-repeat: no-repeat;
-  background-size: contain;
-  margin-top: 200px;
+  background-size: 65%;
+  border: 1px solid green;
 
 }
 
@@ -857,6 +877,51 @@ and (max-width : 480px) {
 
 }
 
+.get_app_container
+{
+
+  width: 55%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid red;
+
+}
+
+.ninja_sword
+{
+
+   width: 51%;
+   height: 100%;
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+   position: relative;
+   left: 10px;
+   top: 30px;
+
+}
+
+.getapp_butt
+{
+
+   width: 59%;
+   height: 100%;
+   display: flex;
+   justify-content: flex-start;
+   align-items: center;
+
+}
+
+.get_app_container img
+{
+
+  /* position: relative;
+  right: 150px; */
+
+}
+
 .ninja_world_bol a
 {
 
@@ -866,5 +931,26 @@ and (max-width : 480px) {
   padding-bottom: 13px;
   font-size: 10px;
   position: absolute;
+  border: 1px solid yellow;
+
+}
+
+.slider_partners
+{
+
+   width: 100%;
+   height: 10%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   border: 1px solid yellow;
+
+}
+
+.slider_partners h3
+{
+
+   margin-bottom: -15px;
 
 }

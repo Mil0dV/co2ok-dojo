@@ -10,24 +10,84 @@
 <!-- Header -->
 <header>
 
-  <div class="world_bol_container">
+  <div class="home_container">
 
-    <div class="col-lg-12 text-center ninja_sword">
-      <img src="{% static 'images/ninjaDesign_callToAction.svg' %}" style="height:130px; display:inline-block; margin-top:25px;">
+    <div class="intro_head">
+
+       <h2 style="color:#fff; font-size: 26px;font-weight:600;">Fight climate change while shopping online</h2>
+       <p style="color: #fff; font-size:16px; color: white; width: 70%;font-size: 17px;">
+
+          Become a CO₂ Ninja with our Ninja App. You shop online and the store pays a CO₂ compensation at no extra cost for you. Fighting climate change was never this easy. <a href="#about" style="color: rgb(6, 253, 138);">How it works</a>
+
+       </p>
+
     </div>
 
-    <div class="ninja_world_bol">
-      <!-- <img src="{% static 'images/banner_co2ok_wereldbol.png' %}" alt=""> -->
-      <a href="{% url 'signup' %}" class="page-scroll btn install-button" style="background-color:#05b139;" >GET THE APP!</a>
+    <div class="world_bol_container">
+
+      <div class="col-lg-12 text-center whitespace">
+
+      </div>
+
+      <div class="ninja_world_bol">
+        <!-- <img src="{% static 'images/banner_co2ok_wereldbol.png' %}" alt=""> -->
+        <div class="get_app_container">
+          <div class="ninja_sword"><img src="{% static 'images/ninjaDesign_callToAction.svg' %}" style="height:130px; display:inline-block; margin-top:25px;"></div>
+          <div class="getapp_butt"><a href="{% url 'signup' %}" class="page-scroll btn install-button" style="background-color:#05b139;" >GET THE APP!</a></div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="slider_partners">
+
+      <!-- <h3 style="color:rgb(255, 255, 200); font-size:20px;"> CHOOSE FROM <a href="https://co2ok.eco/ninja-partner-stores/" style="color: #11d073;">2000+ SHOPS</a></h3> -->
+
+      <div class="col-lg-6 text-center white-bg-bar">
+        <div class="owl-carousel ">
+          <div class="item">
+            <a href="https://ds1.nl/c/?si=7630&li=1354896&wi=303581&ws=&dl=" class="button" target="_blank" rel="noopener"></a>
+              <div class="partner-logo">
+              <img src="{% static 'images/demo/aliexpress_button.png' %}" alt="partners"></div>
+            </a>
+          </div>
+          <div class="item">
+            <a href="https://partner.bol.com/click/click?p=2&t=url&s=51851&f=TXL&url=http%3A%2F%2Fbol.com%2F" class="button" target="_blank" rel="noopener">
+              <div class="partner-logo"><img src="{% static 'images/demo/bol_button.png' %}" alt="partners"></div>
+            </a>
+          </div>
+          <div class="item">
+            <a href="http://booking.com/?aid=1627502&label=chex" class="button" target="_blank" rel="noopener">
+              <div class="partner-logo"><img src="{% static 'images/demo/booking_button.png' %}" alt="partners"></div>
+            </a>
+          </div>
+          <div class="item">
+            <a href="https://prf.hn/click/camref:1011l3qZq/destination:http%3A%2F%2Fcoolblue.nl%2F" class="button" target="_blank" rel="noopener">
+              <div class="partner-logo"><img src="{% static 'images/demo/coolblue_button.png' %}" alt="partners"></div>
+            </a>
+          </div>
+          <div class="item">
+            <a href="http://dx.com/?TC=USD&&Utm_rid=78139600&Utm_source=affiliate" class="button" target="_blank" rel="noopener">
+              <div class="partner-logo"><img src="{% static 'images/demo/dx_button.png' %}" alt="partners"></div>
+            </a>
+          </div>
+          <div class="item">
+              <a href="http://rover.ebay.com/rover/1/711-53200-19255-0/1?ff3=4&pub=5575349754&toolid=11800&campid=5338219191&customid=chex&mpre=http%3A%2F%2Febay.com%2F" class="button" target="_blank" rel="noopener">
+            <div class="partner-logo"><img src="{% static 'images/demo/ebay_button.png' %}" alt="partners"></div>
+          </a>
+          </div>
+
+        </div>
+
     </div>
 
   </div>
 
-  <div class="container landing-container-padder landing_container">
+  <!-- <div class="container landing-container-padder landing_container">
     <div class="slider-container" style="width: 100%; height: 100vh; display: flex; flex-direction: column; justify-content:space-between; align-items:center;" >
       <div class="intro-text" style="width: 100%;height: 10%;">
         <!-- <div class="intro-lead-in">Welcome To Our Studio!</div> -->
-        <div class="intro-heading " style="margin-top: -10px; padding-bottom:20px; color:#fff; font-size: 26px;">Fight climate change while shopping online
+        <!-- <div class="intro-heading " style="margin-top: -10px; padding-bottom:20px; color:#fff; font-size: 26px;">Fight climate change while shopping online
           <div class="top-text-landing"><h3 style="color: #fff; font-size:16px;">Become a CO₂ Ninja with our Ninja App. You shop online and the store pays a CO₂ compensation at no extra cost for you. Fighting climate change was never this easy. <a href="#about" style="color: rgb(6, 253, 138);">How it works</a></h3>
           </div>
         </div>
@@ -76,16 +136,14 @@
                   <div class="partner-logo"><img src="{% static 'images/demo/ebay_button.png' %}" alt="partners"></div>
                 </a>
                 </div>
-                <!-- <div class="item">
-                  <div class="partner-logo"><img src="images/demo/partners-7.png" alt="partners"></div>
-                </div> -->
+
               </div>
             </div>
             </div>
           </div>
       </div>
     </div>
-  </div>
+  </div>  -->
 </header>
 
   <section id="about" class="light-bg">
