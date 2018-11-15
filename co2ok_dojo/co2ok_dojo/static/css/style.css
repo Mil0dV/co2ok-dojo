@@ -787,6 +787,19 @@ and (max-width : 480px) {
 
 }
 
+.landing_container
+{
+
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
 .world_bol_container
 {
 
@@ -794,7 +807,6 @@ and (max-width : 480px) {
   height: 100vh;
   position: absolute;
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
 
@@ -806,9 +818,10 @@ and (max-width : 480px) {
    width: auto;
    height: auto;
    display: flex;
-   justify-content: flex-end;
-   align-items: center;
+   justify-content: flex-start;
+   align-items: flex-start;
    z-index: 3;
+   position: absolute;
 
 }
 
@@ -820,15 +833,18 @@ and (max-width : 480px) {
 .ninja_world_bol
 {
 
-  /* width: 90%;
-  height: 90%; */
-  width: 10%;
-  height: auto;
+  width: 90%;
+  height: 70%;
+  /* width: 10%;
+  height: auto; */
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid red;
-  /* background-image: url(../images/banner_co2ok_wereldbol.png); */
+  background-image: url(../images/banner_co2ok_wereldbol.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-top: 200px;
 
 }
 
@@ -843,7 +859,11 @@ and (max-width : 480px) {
 .ninja_world_bol a
 {
 
-  position: absolute;
-  bottom: 290px;
+  /* position: absolute; */
+  margin-top: 45px;
+  width: auto;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  font-size: 10px;
 
 }

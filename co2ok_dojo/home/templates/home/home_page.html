@@ -13,19 +13,19 @@
   <div class="world_bol_container">
 
     <div class="col-lg-12 text-center ninja_sword">
-      <img src="{% static 'images/ninjaDesign_callToAction.svg' %}" style="height:130px; display:inline-block; margin-left:-250px; margin-top:25px;">
+      <img src="{% static 'images/ninjaDesign_callToAction.svg' %}" style="height:130px; display:inline-block; margin-top:25px;">
     </div>
 
     <div class="ninja_world_bol">
-      <img src="{% static 'images/banner_co2ok_wereldbol.png' %}" alt="">
-      <a href="{% url 'signup' %}" class="page-scroll btn install-button" style="background-color:#05b139;width: 150px; font-size: 15px; padding: 20px;" >GET THE APP!</a>
+      <!-- <img src="{% static 'images/banner_co2ok_wereldbol.png' %}" alt=""> -->
+      <a href="{% url 'signup' %}" class="page-scroll btn install-button" style="background-color:#05b139;" >GET THE APP!</a>
     </div>
 
   </div>
 
-  <div class="container landing-container-padder">
-    <div class="slider-container" >
-      <div class="intro-text">
+  <div class="container landing-container-padder landing_container">
+    <div class="slider-container" style="width: 100%; height: 100vh; display: flex; flex-direction: column; justify-content:space-between; align-items:center;" >
+      <div class="intro-text" style="width: 100%;height: 10%;">
         <!-- <div class="intro-lead-in">Welcome To Our Studio!</div> -->
         <div class="intro-heading " style="margin-top: -10px; padding-bottom:20px; color:#fff; font-size: 26px;">Fight climate change while shopping online
           <div class="top-text-landing"><h3 style="color: #fff; font-size:16px;">Become a CO₂ Ninja with our Ninja App. You shop online and the store pays a CO₂ compensation at no extra cost for you. Fighting climate change was never this easy. <a href="#about" style="color: rgb(6, 253, 138);">How it works</a></h3>
@@ -36,8 +36,8 @@
 
         </div>
 
-        <div class="row" style="padding-top:38px;">
-            <div class="col-lg-12 text-center">
+        <div class="row" style="padding-top:38px; height: 10%;">
+            <div class="col-lg-12 text-center" style="height: 10%;">
 
               <div class="section-title" style="padding-top:0px;">
                 <h3 style="color:rgb(255, 255, 255); font-size:20px;"> CHOOSE FROM <a href="https://co2ok.eco/ninja-partner-stores/" style="color: #11d073;">2000+ SHOPS</a></h3>
@@ -83,10 +83,6 @@
             </div>
             </div>
           </div>
-
-
-
-
       </div>
     </div>
   </div>
