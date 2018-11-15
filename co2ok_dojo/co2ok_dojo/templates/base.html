@@ -30,9 +30,6 @@
         <link href="{% static 'css/owl.carousel.css' %}" rel="stylesheet">
     		<link href="{% static 'css/owl.theme.default.min.css' %}"  rel="stylesheet">
     		<link href="{% static 'css/style.cs' %}s" rel="stylesheet">
-        <link href="{% static 'css/ninja-landing.css' %}" rel="stylesheet">
-        <link href="{% static 'css/ninja-register.css' %}" rel="stylesheet">
-    		<link href="{% static 'css/profile.css' %}" rel="stylesheet">
 
         {% block extra_css %}
             {# Override this in templates to add extra stylesheets #}
@@ -40,7 +37,6 @@
     </head>
 
     <body class="{% block body_class %}{% endblock %}" id="page-top">
-        {% wagtailuserbar %}
 
         {% block content %}{% endblock %}
 

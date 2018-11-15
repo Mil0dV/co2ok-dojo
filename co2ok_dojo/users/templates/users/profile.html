@@ -2,8 +2,11 @@
 {% load static %}
 
 {% block content %}
+<head>
 <link rel="stylesheet" type="text/css" href="{% static 'css/ninja-main.css' %}">
 <link rel="stylesheet" type="text/css" href="{% static 'css/ninja-acount.css' %}">
+<link href="{% static 'css/profile.css' %}" rel="stylesheet">
+</head>
 
   {% if user.is_authenticated %}
       {% include 'light_box.html' %}
@@ -35,9 +38,9 @@
               <li>
                 <a class="page-scroll" href="#FAQ">FAQ</a>
               </li>
-              <li>
+              <!-- <li>
                 <a class="page-scroll btn btn-sm install-button" style="max-width: 150px;  font-size: 15px; padding:10px; margin-top:4px;"href="#about">Sign up</a>
-              </li>
+              </li> -->
             </ul>
           </div>
           <!-- /.navbar-collapse -->

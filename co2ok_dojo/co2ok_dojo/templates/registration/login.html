@@ -1,8 +1,12 @@
 {% extends 'base.html' %}
 {% load static %}
 
-<link rel="stylesheet" type="text/css" href="{% static 'css/ninja-register.css' %}">
 {% block content %}
+
+<head>
+	<link href="{% static 'css/ninja-register.css' %}" rel="stylesheet">
+	<link href="{% static 'css/ninja-landing.css' %}" rel="stylesheet">
+</head>
 
     {% include 'menu.html' %}
 		<!-- Header -->
@@ -27,17 +31,17 @@
 									<h2>Sign in via:</h2>
 										<div data-type="group" data-dynamic-mod="true" class="footer-social-icons">
 
-											<a target="_blank" class="social-icon" href="https://www.facebook.com/CO2ok/">
+											<a class="social-icon" href="{% url 'social:begin' 'facebook' %}"">
 												<i class="fa fa-facebook-square" style="color:#2a5297; font-size: 60px;"></i>
 											</a>
 
-											<a target="_blank" class="social-icon" href="https://twitter.com/CO2ok_eco">
+											<!-- <a target="_blank" class="social-icon" href="https://twitter.com/CO2ok_eco">
 												<i class="fa fa-twitter-square" style="color:#1da1f3; font-size: 60px;"></i>
 											</a>
 
 											<a target="_blank" class="social-icon" href="https://www.instagram.com/co2ok.eco/">
 												<i class="fa fa-google-plus-square" style="color:#c60000; font-size: 60px;" ></i>
-											</a>
+											</a> -->
 
 										</div>
 								</div>

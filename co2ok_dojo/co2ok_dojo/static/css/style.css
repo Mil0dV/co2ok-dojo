@@ -853,17 +853,18 @@ and (max-width : 480px) {
 
    position: absolute;
    transform: scale(0.7,0.7);
+   z-index: -1;
 
 }
 
 .ninja_world_bol a
 {
 
-  /* position: absolute; */
   margin-top: 45px;
   width: auto;
   padding-top: 13px;
   padding-bottom: 13px;
   font-size: 10px;
+  position: absolute;
 
 }
