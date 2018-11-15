@@ -2,8 +2,11 @@
 {% load static %}
 
 {% block content %}
+<head>
 <link rel="stylesheet" type="text/css" href="{% static 'css/ninja-main.css' %}">
 <link rel="stylesheet" type="text/css" href="{% static 'css/ninja-acount.css' %}">
+<link href="{% static 'css/profile.css' %}" rel="stylesheet">
+</head>
 
   {% if user.is_authenticated %}
       {% include 'light_box.html' %}

@@ -1,8 +1,12 @@
 {% extends 'base.html' %}
 {% load static %}
 
-<link rel="stylesheet" type="text/css" href="{% static 'css/ninja-register.css' %}">
 {% block content %}
+
+<head>
+	<link href="{% static 'css/ninja-register.css' %}" rel="stylesheet">
+	<link href="{% static 'css/ninja-landing.css' %}" rel="stylesheet">
+</head>
 
     {% include 'menu.html' %}
 		<!-- Header -->
