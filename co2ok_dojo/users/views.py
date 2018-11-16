@@ -8,6 +8,7 @@ from cuser.forms import UserCreationForm
 from django.shortcuts import render, redirect, get_object_or_404
 from django.http import HttpResponse, Http404
 from django.contrib import messages
+from django.utils.translation import ugettext as _
 
 
 from wagtail.core.models import Page
@@ -83,6 +84,7 @@ def profile(request):
     # username = request.user
     # password = request.user.password
     user_id = request.user.id
+    trans = _("mot a traduire")
     # if int(id) == int(user_id):
     try:
         user_points = Rewards.objects.get(user_id = user_id).points
@@ -92,6 +94,7 @@ def profile(request):
 
       'current_path': user_id,
       'user_points': user_points,
+      'trans': trans,
       # Milo: ik denk dat de strip niet nodig is. YOLO 'm weg als je je dapper voelt, maar test wel op productie :P
       'domainname': request.get_host() if request.get_host().strip() else 'test.co2ok.ninja'
 
