@@ -31,5 +31,5 @@ msgid "Bestrijd klimaatverandering terwijl je online shopt"
 msgstr ""
 
 #: users/views.py:87
-msgid "mot a traduire"
-msgstr ""
+msgid "Bestrijd klimaatverandering terwijl je online shopt"
+msgstr "Fight climate change while you shop online"

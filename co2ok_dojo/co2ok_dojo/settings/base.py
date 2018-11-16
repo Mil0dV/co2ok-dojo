@@ -186,15 +186,16 @@ USE_TZ = True
 
 gettext = lambda x: x
 
-# LANGUAGES = (
-#    ('en', gettext('English')),
-#    ('nl', gettext('Dutch')),
-#    ('de', gettext('German')),
-# )
 LANGUAGES = (
-    ('en', _('English')),
-    ('fr', _('French')),
+   ('en', gettext('English')),
+   ('nl', gettext('Dutch')),
+   ('de', gettext('German')),
 )
+# LANGUAGES = (
+#     ('en', _('English')),
+#     ('fr', _('French')),
+#     ('de', _('German')),
+# )
 
 LOCALE_PATHS = [
     os.path.join(BASE_DIR, 'locale'),

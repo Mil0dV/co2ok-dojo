@@ -24,6 +24,7 @@ urlpatterns = [
     url(r'^search/$', search_views.search, name='search'),
     url(r'^signup/$', users_views.signup, name='signup'),
     # url(r'^signup/$', SignupView.as_view(authentication_form=UserCreationForm), name='signup'),
+    url(r'^i18n/', include('django.conf.urls.i18n')),
 
     # deze werkt gek genoeg niet:
     # url(r'^login/$', auth_views.LoginView, name='login'),
