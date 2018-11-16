@@ -31,7 +31,7 @@
 									<h2>Sign up via:</h2>
 										<div data-type="group" data-dynamic-mod="true" class="footer-social-icons">
 
-											<a class="social-icon" href="{% url 'social:begin' 'facebook' %}">
+											<a class="social-icon" href="{% url 'social:begin' 'facebook' %}?next={{ request.path }}">
 												<i class="fa fa-facebook-square" style="color:#2a5297; font-size: 60px;"></i>
 											</a>
 
