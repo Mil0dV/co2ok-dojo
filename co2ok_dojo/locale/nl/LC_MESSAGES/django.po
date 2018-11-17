@@ -30,6 +30,6 @@ msgstr ""
 msgid "Bestrijd klimaatverandering terwijl je online shopt"
 msgstr ""
 
-#: users/views.py:87
-msgid ""
-msgstr ""
+#  #: users/views.py:87
+#  msgid ""
+#  msgstr ""

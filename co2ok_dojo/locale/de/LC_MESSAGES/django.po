@@ -28,8 +28,8 @@ msgstr ""
 
 #: home/templates/home/home_page.html:18
 msgid "Bestrijd klimaatverandering terwijl je online shopt"
-msgstr ""
+msgstr "Bekämpfe Klimawandel"
 
-#: users/views.py:87
-msgid ""
-msgstr ""
+#  #: users/views.py:87
+#  msgid ""
+#  msgstr ""
