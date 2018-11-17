@@ -60,6 +60,7 @@ p {
 	line-height: 23px;
     letter-spacing: 0.2px;
     color: #797979;
+    z-index: 1;
 }
 
 a:hover, a:focus, a:active, a.active {
