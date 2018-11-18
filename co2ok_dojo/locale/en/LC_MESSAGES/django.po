@@ -164,9 +164,9 @@ msgstr "Look further into our"
 msgid "Privacy Policy"
 msgstr "Privacy Policy"
 
-#: home/templates/home/home_page.html:291
-msgid "FAQ"
-msgstr "FAQ"
+#  #: home/templates/home/home_page.html:291
+#  msgid "FAQ"
+#  msgstr "FAQ"
 
 #FAQ
 
@@ -290,9 +290,9 @@ msgstr "Sign Up"
 msgid "Sign up via: "
 msgstr "Sign up via: "
 
-#: co2ok_dojo/templates/registration/register.html:57
-msgid "Sign Up"
-msgstr "Sign Up"
+#  #: co2ok_dojo/templates/registration/register.html:57
+#  msgid "Sign Up"
+#  msgstr "Sign Up"
 
 #  #: users/views.py:87
 #  msgid "Bestrijd klimaatverandering terwijl je online shopt"
