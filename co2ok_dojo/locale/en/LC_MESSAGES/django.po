@@ -172,7 +172,7 @@ msgstr "Privacy Policy"
 
 #: co2ok_dojo/templates/faq.html:11
 msgid "Credits to Altruisto"
-msgstr "Fight climate change while you shop online"
+msgstr "Credits to Altruisto"
 
 #: co2ok_dojo/templates/faq.html:17
 msgid " We willen Altruisto graag bedanken voor het open source maken van hun code, zodat we ons project konden “forken”, gebaseerd op hun voorgaande werk. <a href=\"https://altruisto.com/\">Altruisto</a> doet geweldig werk met het doneren aan goede doelen door middel van online winkelen. Hun GitHub repo kun je hier vinden: <a href=\"https://github.com/Altruisto/altruisto\">Altruisto GitHub repository"
@@ -220,7 +220,7 @@ msgstr "Thanks to CO₂ok the brands of the shops are associated with a great ca
 
 #: co2ok_dojo/templates/faq.html:82
 msgid "Welk percentage van mijn aankoop word gebruikt om CO₂-uitstoot te compenseren?"
-msgstr "We are preparing multiple new features such as highlighting partners’ websites in search results. These features directly drive new consumers to partners’ stores."
+msgstr "How big is your piece of the cake?"
 
 #: co2ok_dojo/templates/faq.html:88
 msgid "CO₂ok ontvangt tussen 1-6% van de uiteindelijke aankoop, via de CO₂ok Ninja. Het percentage is afhankelijk van de webwinkel en het product. Hiervan gaat 75% naar de non-profitorganisatie Atmosfair gaat, die zich inzetten voor ons klimaat. De overige 25% gebruikt wordt voor het bedrijf zelf – we willen iedereen in staat stellen klimaatverandering te bestrijden, dus tijd om de wereld te veroveren! We doen dit niet om er rijk van te worden. Ook maken we onze inkomsten en uitgaven ieder jaar openbaar."
