@@ -18,8 +18,8 @@
        <h2 style="color:#fff; font-size: 26px;font-weight:600;">{% trans "Bestrijd klimaatverandering terwijl je online shopt" %}</h2>
        <p style="color: #fff; font-size:16px; color: white; width: 70%;font-size: 17px;">
 
-        Wordt een CO₂ok Ninja met onze gratis App. Shop online en de webshop compenseert de carbon footprint van je aankoop zonder één cent meer te betalen. Klimaat bestrijden kan niet sneller en simpeler.
-        <a href="#about" style="color: rgb(6, 253, 138);">Hoe werkt het</a>
+        {% trans "Wordt een CO₂ok Ninja met onze gratis App. Shop online en de webshop compenseert de carbon footprint van je aankoop zonder één cent meer te betalen. Klimaat bestrijden kan niet sneller en simpeler." %}
+        <a href="#about" style="color: rgb(6, 253, 138);">{% trans "Hoe werkt het" %}</a>
 
        </p>
 
@@ -35,7 +35,7 @@
         <!-- <img src="{% static 'images/banner_co2ok_wereldbol.png' %}" alt=""> -->
         <div class="get_app_container">
           <div class="ninja_sword"><img src="{% static 'images/ninjaDesign_callToAction.svg' %}" style="height:130px; display:inline-block; margin-top:25px;"></div>
-          <div class="getapp_butt"><a href="{% url 'signup' %}" class="page-scroll btn install-button" style="background-color:#05b139;" >GET THE APP!</a></div>
+          <div class="getapp_butt"><a href="{% url 'signup' %}" class="page-scroll btn install-button" style="background-color:#05b139;" >{% trans "GET THE APP!" %}</a></div>
         </div>
       </div>
 
@@ -43,7 +43,7 @@
 
     <div class="slider_partners">
 
-      <h3 style="color:rgb(255, 255, 255); font-size:20px; margin-top:-1px; margin-bottom:1px;"> KIES UIT <a href="https://co2ok.eco/ninja-partner-stores/" style="color: #4effa9;">2000+ SHOPS</a></h3>
+      <h3 style="color:rgb(255, 255, 255); font-size:20px; margin-top:-1px; margin-bottom:1px;"> {% trans "KIES UIT " %}<a href="https://co2ok.eco/ninja-partner-stores/" style="color: #4effa9;">{% trans "2000+ SHOPS" %}</a></h3>
 
       <!-- <div class="col-lg-6 text-center white-bg-bar"> -->
         <div class="owl-carousel ">
@@ -153,7 +153,7 @@
       <div class="row">
         <div class="col-lg-12 text-center">
           <div class="section-title">
-            <h2 id="ninja-how-it-works">HOE WERKT HET</h2>
+            <h2 id="ninja-how-it-works">{% trans "HOE WERKT HET" %}</h2>
 
           </div>
         </div>
@@ -163,9 +163,9 @@
         <div class="col-md-4 text-center">
           <div class="mz-module-about">
             <img src="{% static 'images/ninjaDesign_install.svg' %}" style="width: 300px; height: 225px; margin:auto; vertical-align: middle;">
-            <h3>Wordt een CO₂ Ninja</h3>
-            <p>Registreer en installeer de App. De App is veilig,  open source en respecteert jouw privacy.
-                <a href="#CO2ok-Ninja-Privacy-Policy">Wij verzamelen/ gebruiken geen persoonlijke data - bekijk ons privacy beleid</a></p>
+            <h3>{% trans "Wordt een CO₂ Ninja" %}</h3>
+            <p>{% trans "Registreer en installeer de App. De App is veilig,  open source en respecteert jouw privacy." %}
+                <a href="#CO2ok-Ninja-Privacy-Policy">{% trans "Wij verzamelen/ gebruiken geen persoonlijke data - bekijk ons privacy beleid" %}</a></p>
           </div>
         </div>
         <!-- end about module -->
@@ -173,8 +173,8 @@
         <div class="col-md-4 text-center">
           <div class="mz-module-about">
               <img src="{% static 'images/ninjaDesign_Trolly.svg' %}" style="width: 300px; height: 225px;">
-            <h3>Shop</h3>
-            <p>Winkel als CO₂ok Ninja. Na afrekenen ontvangen wij een commissie van de webshop.</p>
+            <h3>{% trans "Shop" %}</h3>
+            <p>{% trans "Winkel als CO₂ok Ninja. Na afrekenen ontvangen wij een commissie van de webshop." %}</p>
           </div>
         </div>
         <!-- end about module -->
@@ -182,8 +182,8 @@
         <div class="col-md-4 text-center">
           <div class="mz-module-about">
               <img src="{% static 'images/ninjaDesign_Hadouken.svg' %}" style="width: 300px; height: 225px;">
-            <h3>Bestrijd klimaatverandering</h3>
-            <p>Met deze commissie financieren we projecten die direct broeikasgassen reduceren. CO₂ok maakt zo jouw aankoop klimaatneutraal. Thank you 💚</p>
+            <h3>{% trans "Bestrijd klimaatverandering" %}</h3>
+            <p>{% trans "Met deze commissie financieren we projecten die direct broeikasgassen reduceren. CO₂ok maakt zo jouw aankoop klimaatneutraal. Thank you 💚" %}</p>
           </div>
         </div>
 
@@ -193,12 +193,12 @@
             <div class="row text-center">
             <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2" data-type="column">
             <div class="" style="margin-top: 40px; min-height: 20px; padding: 19px; margin-bottom: 20px; background-color: #f5f5f5; border: 1px solid #e3e3e3; border-radius: 4px; -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.05); box-shadow: inset 0 1px 1px rgba(0,0,0,.05);">
-            <p style="color: #000 !important; margin: 0px;"><strong>Geen extra kosten voor jou.</strong> De CO₂ compensatie wordt volledig gedekt door de webwinkel.</p>
+            <p style="color: #000 !important; margin: 0px;"><strong>{% trans "Geen extra kosten voor jou." %}</strong> {% trans "De CO₂ compensatie wordt volledig gedekt door de webwinkel." %}</p>
 
             </div>
             <!-- <a class="install-button color2 install-ninja-button btn btn-xl install-button" style="width: 50%;" data-cp-link="1" data-icon="fa-chrome" unknown="" rel="noopener" href="/signup"><span class="button-icon fa fa-chrome"></span> Get involved & fight climate change</a> -->
             <a href="/signup" data-cp-link="1" data-icon="fa-chrome" rel="noopener" class="install-button color2 install-ninja-button btn btn-xl install-button get_involved_button">
-              <span class="button-icon fa fa-chrome"> Get involved & fight climate change</span>
+              <span class="button-icon fa fa-chrome"> {% trans "Get involved & fight climate change" %}</span>
            </a>
             <!-- <a class="install-button color2 install-ninja-button btn btn-xl install-button" data-cp-link="1" data-icon="fa-chrome" unknown="" rel="noopener" href="/signup"><span class="button-icon fa fa-chrome"></span> MAAK IMPACT & SHOP KLIMAATNEUTRAAL</a> -->
 
@@ -226,23 +226,23 @@
       <div class="row">
         <div class="col-md-12">
           <div class="skills-text">
-            <h2 style="font-weight: 600;">Bekijk wat jij voor verschil kan maken.</h2>
-            <p style="font-size: 18px; line-height: 3rem;font-weight: 300;">Als jij onze extensie gebruikt doneren wij een bedrag aan de financiering van duurzame energie en projecten voor vermindering van CO₂-uitstoot (via onze gecertificeerde partner, Atmosfair). Deze projecten zullen actief de CO₂-uitstoot verminderen, wat je online aankoop weer klimaat neutraal maakt. Op deze manier verbeter je het klimaat!</p>
-            <p style="margin-top: 10px;">Hoe <a href="https://www.co2ok.eco/co2-compensatie/" target="_blank" style="color:#11d073;">CO2 compensatie</a> werkt. Lees meer in de <a href="ninja/#faq" style="color:#11d073;">FAQ</a></p>
+            <h2 style="font-weight: 600;">{% trans "Bekijk wat jij voor verschil kan maken." %}</h2>
+            <p style="font-size: 18px; line-height: 3rem;font-weight: 300;">{% trans "Als jij onze extensie gebruikt doneren wij een bedrag aan de financiering van duurzame energie en projecten voor vermindering van CO₂-uitstoot (via onze gecertificeerde partner, Atmosfair). Deze projecten zullen actief de CO₂-uitstoot verminderen, wat je online aankoop weer klimaat neutraal maakt. Op deze manier verbeter je het klimaat!" %}</p>
+            <p style="margin-top: 10px;">{% trans "Hoe " %}<a href="https://www.co2ok.eco/co2-compensatie/" target="_blank" style="color:#11d073;">{% trans "CO₂ compensatie" %}</a> {% trans "werkt. Lees meer in de " %}<a href="ninja/#faq" style="color:#11d073;">{% trans "FAQ" %}</a></p>
           </div>
         </div>
 
         <div class="col-md-6 text-center">
           <div class="mz-module-about">
               <img src="{% static 'images/weegschaal_scheef-1.png' %}" style="width: 300px; height: 225px;">
-            <h4 style="    line-height: 2.5rem;letter-spacing: .0625rem;">Tijdens productie en vervoer van producten komen broeikasgassen vrij</h4>
+            <h4 style="    line-height: 2.5rem;letter-spacing: .0625rem;">{% trans "Tijdens productie en vervoer van producten komen broeikasgassen vrij" %}</h4>
           </div>
         </div>
 
         <div class="col-md-6 text-center">
           <div class="mz-module-about">
               <img src="{% static 'images/weegschaal_even-1.png' %}" style="width: 300px; height: 225px;">
-            <h4 style="    line-height: 1.75rem;letter-spacing: .0625rem;">Wij voorkomen minstens evenveel uitstoot</h4>
+            <h4 style="    line-height: 1.75rem;letter-spacing: .0625rem;">{% trans "Wij voorkomen minstens evenveel uitstoot" %}</h4>
           </div>
         </div>
 
@@ -255,7 +255,7 @@
 
         <div class="col-md-12">
           <div class="skills-text">
-            <h4 style="font-weight: 600;margin-bottom: 30px;">Zo is je aankoop klimaatneutraal!</h4>
+            <h4 style="font-weight: 600;margin-bottom: 30px;">{% trans "Zo is je aankoop klimaatneutraal!" %}</h4>
           </div>
         </div>
 
@@ -269,7 +269,7 @@
     <div class="row">
       <div class="col-lg-12 text-center">
           <a href="/signup" data-cp-link="1" data-icon="fa-chrome" rel="noopener" class="install-button color2 install-ninja-button btn btn-xl install-button get_involved_button">
-          <span class="button-icon fa fa-chrome"> INSTALLEER OM TE HELPEN</span>
+          <span class="button-icon fa fa-chrome"> {% trans "INSTALLEER OM TE HELPEN" %}</span>
        </a>
 
       </div>
@@ -284,11 +284,11 @@
          border-radius: 4px;
          webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
          box-shadow: inset 0 1px 1px rgba(0,0,0,.05);background-color: #f5f5f5;">
-        <h1 >CO2ok Ninja Privacy Beleid</h1>
-        <p>We verzamelen en saven geen gebruikersdata gezien we dat niet nodig hebben om commissies te ontvangen. Je privacy is heel belangrijk voor ons, wij houden ook niet van arbitraire data-tracking, daarom doen we dat niet.</p>
-        <p>Onze code is open source, dus kun je bekijken hoe het technisch gemaakt is, de volledige code is in te zien, zo kunnen we geen geheimen houden. Hier kun je de code inzien:<a href="https://github.com/Mil0dV/co2ok-ninja" style="color:#11d073;"> Broncode browserextensie</a></p>
-        <p>Om de CO2ok Ninja te laten werken heeft de extensie alleen bepaalde rechten nodig om lokaal te zien welke webshop je momenteel gebruikt om de commissie te activeren bij de webshop.</p>
-        <p>Zie verder onze <a target="_blank" href="https://www.co2ok.eco/privacy">Privacy Policy</a></p>
+        <h1 >{% trans "CO2ok Ninja Privacy Beleid" %}</h1>
+        <p>{% trans "We verzamelen en saven geen gebruikersdata gezien we dat niet nodig hebben om commissies te ontvangen. Je privacy is heel belangrijk voor ons, wij houden ook niet van arbitraire data-tracking, daarom doen we dat niet." %}</p>
+        <p>{% trans "Onze code is open source, dus kun je bekijken hoe het technisch gemaakt is, de volledige code is in te zien, zo kunnen we geen geheimen houden. Hier kun je de code inzien:<a href="https://github.com/Mil0dV/co2ok-ninja" style="color:#11d073;">{% trans " Broncode browserextensie" %}</a></p>
+        <p>{% trans "Om de CO2ok Ninja te laten werken heeft de extensie alleen bepaalde rechten nodig om lokaal te zien welke webshop je momenteel gebruikt om de commissie te activeren bij de webshop." %}</p>
+        <p>{% trans "Zie verder onze " %}<a target="_blank" href="https://www.co2ok.eco/privacy">{% trans "Privacy Policy" %}</a></p>
 
        </div>
       <div class="col-md-2"></div>
@@ -306,7 +306,7 @@
       <div class="row">
         <div class="col-lg-12 text-center">
           <div class="section-title">
-            <h1>FAQ</h1>
+            <h1>{% trans "FAQ" %}</h1>
           </div>
         </div>
       </div>
