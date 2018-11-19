@@ -294,6 +294,16 @@ msgstr "Melde dich über an: "
 #  msgid "Sign Up"
 #  msgstr "Sign Up"
 
+# Ninja Partner Stores
+
+#: ninja_partner_stores/templates/ninja_partner_stores/ninja-partner-stores.html:55
+msgid "Partner winkels lijst"
+msgstr "Partnershops"
+
+#: ninja_partner_stores/templates/ninja_partner_stores/ninja-partner-stores.html:55
+msgid "Je haalt geld op voor de strijd tegen klimaatverandering wanneer je op één van deze webwinkels komt."
+msgstr "Du sammelst Geld für den Kampf gegen den Klimawandel, wenn Du bei einem der gelisteten Onlineshops einkaufst."
+
 #  #: users/views.py:87
 #  msgid "Bestrijd klimaatverandering terwijl je online shopt"
 #  msgstr "Fight climate change while you shop online"

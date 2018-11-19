@@ -1,4 +1,5 @@
 {% load static %}
+{% load i18n %}
 <!doctype html>
 <html lang="en">
   <head>
@@ -51,9 +52,9 @@
                         <div class="container-fluid">
                             <div class="row text-center co2ok-ninja-partner-list-title">
                                 <div class="col-12" style="text-align:left;">
-                                    <div style="padding-left:20px; padding-top:20px; margin-top:70px;"><h4 class="">Partner winkels lijst</h4></div>
+                                    <div style="padding-left:20px; padding-top:20px; margin-top:70px;"><h4 class="">{% trans "Partner winkels lijst" %}</h4></div>
                                         <div style="padding-left:20px;;"><span class="font-300">
-                                            Je haalt geld op voor de strijd tegen klimaatverandering wanneer je op één van deze webwinkels komt.</span>
+                                                {% trans "Je haalt geld op voor de strijd tegen klimaatverandering wanneer je op één van deze webwinkels komt." %}</span>
                                         </div>
                                     </div>
                                 </div>
