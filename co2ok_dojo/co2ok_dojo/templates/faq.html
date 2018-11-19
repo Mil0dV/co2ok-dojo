@@ -5,22 +5,8 @@
 
 {% block faq %}
 
-  <div class="container" id="faq">
+  <div class="container">
       <div class="panel-group" id="faqAccordion">
-          <div class="panel panel-default ">
-              <div class="panel-heading accordion-toggle question-toggle collapsed" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question0">
-                   <h4 class="panel-title">
-                    <span>{% trans "Credits aan Altruisto" %}</span>
-                </h4>
-
-              </div>
-              <div id="question0" class="panel-collapse collapse" style="height: 0px;">
-                  <div class="panel-body">
-                      <p>{% trans " We willen Altruisto graag bedanken voor het open source maken van hun code, zodat we ons project konden “forken”, gebaseerd op hun voorgaande werk. <a href="https://altruisto.com/">Altruisto</a> doet geweldig werk met het doneren aan goede doelen door middel van online winkelen. Hun GitHub repo kun je hier vinden: <a href="https://github.com/Altruisto/altruisto">Altruisto GitHub repository" %}</a>
-                     </p>
-                  </div>
-              </div>
-          </div>
           <div class="panel panel-default ">
               <div class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question1">
                    <h4 class="panel-title">
@@ -30,7 +16,7 @@
               </div>
               <div id="question1" class="panel-collapse collapse" style="height: 0px;">
                   <div class="panel-body">
-                      <p>{% trans "Om het systeem te laten werken moet de extensie informatie kunnen zien over websites die je bezoekt, zo kan de CO₂ok Ninja zien of je op de website van één van onze partners zit. Deze informatie blijft op je computer en zo wordt je privacy bewaakt. De CO₂ok Ninja heeft zijn open source code op <a href="https://github.com/Mil0dV/co2ok-ninja">Github</a>  gezet zodat iedereen kan verifiëren dat hij veilig is om te gebruiken." %}</p>
+                      <p>{% trans 'Om het systeem te laten werken moet de extensie informatie kunnen zien over websites die je bezoekt, zo kan de CO₂ok Ninja zien of je op de website van één van onze partners zit. Deze informatie blijft op je computer en zo wordt je privacy bewaakt. De CO₂ok Ninja heeft zijn open source code op <a href="https://github.com/Mil0dV/co2ok-ninja">Github</a>  gezet zodat iedereen kan verifiëren dat hij veilig is om te gebruiken.' %}</p>
                   </div>
               </div>
           </div>
@@ -161,7 +147,21 @@
                   </div>
               </div>
           </div>
-
+          <div class="panel panel-default ">
+                <div class="panel-heading accordion-toggle question-toggle collapsed" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question0">
+                     <h4 class="panel-title">
+                      <span>{% trans "Credits aan Altruisto" %}</span>
+                  </h4>
+  
+                </div>
+                <div id="question0" class="panel-collapse collapse" style="height: 0px;">
+                    <div class="panel-body">
+                        <p>{% trans 'We willen Altruisto graag bedanken voor het open source maken van hun code, zodat we ons project konden “forken”, gebaseerd op hun voorgaande werk. <a href="https://altruisto.com/">Altruisto</a> doet geweldig werk met het doneren aan goede doelen door middel van online winkelen. Hun GitHub repo kun je hier vinden: <a href="https://github.com/Altruisto/altruisto">Altruisto GitHub repository' %}</a>
+                       </p>
+                    </div>
+                </div>
+            </div>
+  
       </div>
       <!--/panel-group-->
   </div>
