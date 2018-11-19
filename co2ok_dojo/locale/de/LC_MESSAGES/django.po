@@ -304,6 +304,16 @@ msgstr "Partnershops"
 msgid "Je haalt geld op voor de strijd tegen klimaatverandering wanneer je op één van deze webwinkels komt."
 msgstr "Du sammelst Geld für den Kampf gegen den Klimawandel, wenn Du bei einem der gelisteten Onlineshops einkaufst."
 
+# light_box
+
+#: co2ok_dojo/templates/light_box.html:22
+msgid "LET OP: Jouw privacy is belangrijk. We hoeven alleen te weten op welke website je je bevindt. Daarom slaan we geen gegevens op. De Googlemelding die je zo ziet als je verder klikt, is dus anders dan wat de Ninja app doet."
+msgstr "HINWEIS: Ihre Privatsphäre ist wichtig. Wir müssen nur wissen, auf welcher Website Sie sich befinden. Deshalb speichern wir keine Daten. Das Googlemelding, das Sie sehen, wenn Sie weiter klicken, unterscheidet sich von der Ninja-App."
+
+#: co2ok_dojo/templates/light_box.html:37
+msgid "GET THE APP"
+msgstr "HOL DIR DIE APP"
+
 #  #: users/views.py:87
 #  msgid "Bestrijd klimaatverandering terwijl je online shopt"
 #  msgstr "Fight climate change while you shop online"
