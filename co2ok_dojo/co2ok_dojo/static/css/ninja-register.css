@@ -1,6 +1,9 @@
 .header-register {
     background-image: url(../images/ninjaDesign_install_BG.svg);
 }
+.header-login {
+  background-image: url(../images/ninjaDesign_mindful_BG.svg);
+}
 .register-container-padder{
     padding-top: 100px;
     padding-bottom: 340px;
