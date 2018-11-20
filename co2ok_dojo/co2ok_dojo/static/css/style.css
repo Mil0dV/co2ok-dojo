@@ -873,7 +873,7 @@ and (max-width : 480px) {
     }
 }
 
-@media only screen and (max-width: 600px) and (min-width: 400px) {
+@media only screen and (max-width: 670px) and (min-width: 400px) {
     .intro_head {
         margin-top: 150px;
         margin-bottom: -180px;
