@@ -31,13 +31,13 @@
               </li>
 
               <li>
-                <a class="page-scroll" href="/#mission">MISSION</a>
+                <a class="page-scroll" href="/#mission">{% trans "MISSIE" %}</a>
               </li>
               <li>
-                <a class="page-scroll" href="/#about">How it works</a>
+                <a class="page-scroll" href="/#about">{% trans "Hoe het werkt" %}</a>
               </li>
               <li>
-                <a class="page-scroll" href="/#faq">FAQ</a>
+                <a class="page-scroll" href="/#faq">{% trans "FAQ" %}</a>
               </li>
               <!-- <li>
                 <a class="page-scroll btn btn-sm install-button" style="max-width: 150px;  font-size: 15px; padding:10px; margin-top:4px;"href="#about">Sign up</a>
@@ -53,7 +53,7 @@
           <div class="slider-container" >
             <div class="intro-text">
               <!-- <div class="intro-lead-in">Welcome To Our Studio!</div> -->
-              <div class="col-12 co2ok-ninja-account-title" style="text-align: center; margin-top: 30px; margin-bottom: 30px;"><h1>Profile</h1></div>
+              <div class="col-12 co2ok-ninja-account-title" style="text-align: center; margin-top: 110px; margin-bottom: 30px;"><h1>{% trans "Profiel" %}</h1></div>
 
               </div>
 
@@ -85,19 +85,19 @@
                           </div>
                       </div>
                     <p>
-                      Tell your friends about CO2ok Ninja by sharing the above link, so you get shurikens
+                      {% trans "Vertel je vrienden over CO2ok Ninja door de bovenstaande link te delen, zodat je shurikens verdient" %}
                     </p>
                     <div class="container">
                         <div class="row">
                         <div class="col-lg-3 col-sm-12 co2ok-ninja-compensated-shuriken-box text-center">
-                            <p>CO2 compensated</p>
+                            <p>{% trans "CO2 gecompenseerd" %}</p>
                             <img src="{% static 'images/CO2-smoke.png' %}" class="co2ok-ninja-currency-img"><div class="co2ok-ninja-currency-text">45 kgs</div>
                             <p>Shurikens</p>
                             <img src="{% static 'images/shuriken.png' %}" class="co2ok-ninja-currency-img"><div class="co2ok-ninja-currency-text">{{user_points}}</div>
                         </div>
                         <div class="col-lg-3 text-center" style="margin-top:50px;">
                           <img src="{% static 'images/ninjaDesign_offer.png' %}" class="co2ok-ninja-offer-img" style="width: 300px; height: 200px;"></br>
-                          Pick a cause
+                          {% trans "Kies een doel" %}
                         </div>
                   </div>
                     </div>

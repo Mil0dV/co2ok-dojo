@@ -46,7 +46,7 @@ msgstr "GET THE APP!"
 
 #: home/templates/home/home_page.html:46
 msgid "KIES UIT "
-msgstr "CHOOSE FROM"
+msgstr "CHOOSE FROM "
 
 #: home/templates/home/home_page.html:46
 msgid "2000+ SHOPS"
@@ -117,8 +117,8 @@ msgid "werkt. Lees meer in de "
 msgstr "works. Read more in the"
 
 #: home/templates/home/home_page.html:231
-msgid "FAQ"
-msgstr "FAQ"
+msgid " FAQ"
+msgstr " FAQ"
 
 #: home/templates/home/home_page.html:238
 msgid "Tijdens productie en vervoer van producten komen broeikasgassen vrij"
@@ -158,11 +158,11 @@ msgstr "Our Ninja App system only needs the right to locally see which online sh
 
 #: home/templates/home/home_page.html:291
 msgid "Zie verder onze "
-msgstr "Look further into our"
+msgstr "Look further into our "
 
 #: home/templates/home/home_page.html:291
-msgid "Privacy Policy"
-msgstr "Privacy Policy"
+msgid " Privacy Policy"
+msgstr " Privacy Policy"
 
 #  #: home/templates/home/home_page.html:291
 #  msgid "FAQ"
@@ -313,6 +313,50 @@ msgstr "NOTE: Your privacy is important. We only need to know on which website y
 #: co2ok_dojo/templates/light_box.html:37
 msgid "GET THE APP"
 msgstr "GET THE APP"
+
+# Menu
+
+#: co2ok_dojo/templates/menu.html:25
+msgid "MISSIE"
+msgstr "MISSION"
+
+#: co2ok_dojo/templates/menu.html:28
+msgid "Hoe het werkt"
+msgstr "How it works"
+
+#: co2ok_dojo/templates/menu.html:31
+msgid "FAQ"
+msgstr "FAQ"
+
+# Profile
+
+#: co2ok_dojo/templates/menu.html:34
+msgid "MISSIE"
+msgstr "MISSION"
+
+#: co2ok_dojo/templates/menu.html:37
+msgid "Hoe het werkt"
+msgstr "How it works"
+
+#: co2ok_dojo/templates/menu.html:40
+msgid "FAQ"
+msgstr "FAQ"
+
+#: co2ok_dojo/templates/menu.html:56
+msgid "Profiel"
+msgstr "Profile"
+
+#: co2ok_dojo/templates/menu.html:88
+msgid "Vertel je vrienden over CO2ok Ninja door de bovenstaande link te delen, zodat je shurikens verdient"
+msgstr "Tell your friends about CO2ok Ninja by sharing the above link, so you get shurikens"
+
+#: co2ok_dojo/templates/menu.html:93
+msgid "CO2 gecompenseerd"
+msgstr "CO2 compensated"
+
+#: co2ok_dojo/templates/menu.html:100
+msgid "Kies een doel"
+msgstr "Pick a cause"
 
 #  #: users/views.py:87
 #  msgid "Bestrijd klimaatverandering terwijl je online shopt"
