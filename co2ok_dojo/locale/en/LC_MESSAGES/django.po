@@ -290,10 +290,6 @@ msgstr "Sign Up"
 msgid "Sign up via: "
 msgstr "Sign up via: "
 
-#  #: co2ok_dojo/templates/registration/register.html:57
-#  msgid "Sign Up"
-#  msgstr "Sign Up"
-
 # Ninja Partner Stores
 
 #: ninja_partner_stores/templates/ninja_partner_stores/ninja-partner-stores.html:55
@@ -330,17 +326,17 @@ msgstr "FAQ"
 
 # Profile
 
-#: co2ok_dojo/templates/menu.html:34
-msgid "MISSIE"
-msgstr "MISSION"
+#  #: co2ok_dojo/templates/menu.html:34
+#  msgid "MISSIE"
+#  msgstr "MISSION"
 
-#: co2ok_dojo/templates/menu.html:37
-msgid "Hoe het werkt"
-msgstr "How it works"
+#  #: co2ok_dojo/templates/menu.html:37
+#  msgid "Hoe het werkt"
+#  msgstr "How it works"
 
-#: co2ok_dojo/templates/menu.html:40
-msgid "FAQ"
-msgstr "FAQ"
+#  #: co2ok_dojo/templates/menu.html:40
+#  msgid "FAQ"
+#  msgstr "FAQ"
 
 #: co2ok_dojo/templates/menu.html:56
 msgid "Profiel"
