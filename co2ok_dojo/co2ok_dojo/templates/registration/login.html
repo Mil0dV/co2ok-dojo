@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+{% load i18n %}
 {% load static %}
 
 {% block content %}
@@ -10,24 +11,17 @@
 
     {% include 'menu.html' %}
 		<!-- Header -->
-		<header class="header-login">
-			<div class="container register-container-padder">
-				<div class="slider-container" >
-					<div class="intro-text">
-						<!-- <div class="intro-lead-in">Welcome To Our Studio!</div> -->
-						<div class="intro-heading " style="margin-top: -50px; padding-bottom:20px; color:#fff; font-size: 36px;">Sign In
+		<header class="header-register">
+			<div class="header_background">
 
-							</div>
-						</div>
+			 <div class="header_text">
+				 <h2>Sign in</h2>
+			 </div>
 
-					</div>
-				</div>
-
+			 </div>
 				<!-- <div class="col-md-12"> -->
-			<section style="padding-bottom: 150px; padding-top: 30px;" class="white-bg-bar form-session">
-					<!-- <div class="container"> -->
-						<!-- <div class="row"> -->
-							<!-- <div class="col-md-6 col-sm-12 text-center"> -->
+			<section style="height: 350px;" class="white-bg-bar form-session">
+
 								<div class="skills-text social_container">
 									<h2>Sign in via:</h2>
 										<div data-type="group" data-dynamic-mod="true" class="footer-social-icons">
@@ -46,167 +40,30 @@
 
 										</div>
 								</div>
-							</div>
 							<!-- <div class="col-md-6 col-sm-12 text-center" style="border-left: 3px solid gray;"> -->
 								<!-- skill bar item -->
-								<div class="skills-text">
+								<div class="skills-text form_container">
 										<h2>{% include "messages.html" %}</h2>
 
-										<!-- <div class="col-md-12"> -->
-												<!-- <form name="sentMessage" id="contactForm" novalidate="">
-													<div class="row">
-
-														<div class="col-md-8">
-															<div class="col-md-12">
-																<div class="form-group">
-																	<input type="email" class="form-control" placeholder="Your Email *" id="email" required="" data-validation-required-message="Please enter your email address.">
-																	<p class="help-block text-danger"></p>
-																</div>
-															</div>
-															<div class="col-md-12">
-																<div class="form-group">
-																	<input type="password" class="form-control" placeholder="Password *" id="name" required="" data-validation-required-message="Please enter your password.">
-																	<p class="help-block text-danger"></p>
-																</div>
-															</div>
-														</div>
-														<div class="col-md-4">
-															<div class="row">
-																<div class="col-lg-12 text-center">
-																	<div id="success"></div>
-																	<button type="submit" class="btn btn-success">Sign Up</button>
-																</div>
-														</div>
-													</div>
-
-												</div>
-												</form> -->
-
-                        <form method="post" class="register_form">
-                          <div class="form_input">
-                            {% csrf_token %}
-                            {{ form.as_p }}
-                          </div>
-                          <button type="submit" class=" color2 install-ninja-button btn btn-xl install-button" style="padding: 15px; position: relative, left: 20px; bottom: 10px;">Sign in</button>
-                        </form>
-										</div>
+												<form method="post" class="register_form">
+														{% csrf_token %}
+														{{ form.as_p }}
+													<button type="submit" class=" color2 install-ninja-button btn btn-xl install-button" style="padding: 15px; position: relative, left: 50px;">{% trans "Sign in" %}</button>
+												</form>
 
 								</div>
-							<!-- </div>
-						</div>
-					</div> -->
+
 				</section>
-			<!-- </div> -->
-		
+
 
 		<p id="back-top">
 			<a href="#top"><i class="fa fa-angle-up"></i></a>
 		</p>
 
-		<footer>
-			{% include 'contact.html' %}
-		</footer>
-
 	</header>
-	
-		<!-- Modal for portfolio item 1 -->
-		<div class="modal fade" id="Modal-1" tabindex="-1" role="dialog" aria-labelledby="Modal-label-1">
-			<div class="modal-dialog" role="document">
-				<div class="modal-content">
-					<div class="modal-header">
-						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-						<h4 class="modal-title" id="Modal-label-1">Dean & Letter</h4>
-					</div>
-					<div class="modal-body">
-					<img src="{% static 'images/demo/portfolio-1.jpg' %}" alt="img01" class="img-responsive" />
-						<div class="modal-works"><span>Branding</span><span>Web Design</span></div>
-						<p>Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe</p>
-					</div>
-					<div class="modal-footer">
-						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-					</div>
-				</div>
-			</div>
-		</div>
 
-		<!-- Modal for portfolio item 2 -->
-		<div class="modal fade" id="Modal-2" tabindex="-1" role="dialog" aria-labelledby="Modal-label-2">
-			<div class="modal-dialog" role="document">
-				<div class="modal-content">
-					<div class="modal-header">
-						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-						<h4 class="modal-title" id="Modal-label-2">Startup Framework</h4>
-					</div>
-					<div class="modal-body">
-						<img src="{% static 'images/demo/portfolio-2.jpg' %}" alt="img01" class="img-responsive" />
-						<div class="modal-works"><span>Branding</span><span>Web Design</span></div>
-						<p>Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe</p>
-					</div>
-					<div class="modal-footer">
-						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<!-- Modal for portfolio item 3 -->
-		<div class="modal fade" id="Modal-3" tabindex="-1" role="dialog" aria-labelledby="Modal-label-3">
-			<div class="modal-dialog" role="document">
-				<div class="modal-content">
-					<div class="modal-header">
-						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-						<h4 class="modal-title" id="Modal-label-3">Lamp & Velvet</h4>
-					</div>
-					<div class="modal-body">
-						<img src="{% static 'images/demo/portfolio-3.jpg' %}" alt="img01" class="img-responsive" />
-						<div class="modal-works"><span>Branding</span><span>Web Design</span></div>
-						<p>Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe</p>
-					</div>
-					<div class="modal-footer">
-						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<!-- Modal for portfolio item 4 -->
-		<div class="modal fade" id="Modal-4" tabindex="-1" role="dialog" aria-labelledby="Modal-label-4">
-			<div class="modal-dialog" role="document">
-				<div class="modal-content">
-					<div class="modal-header">
-						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-						<h4 class="modal-title" id="Modal-label-4">Smart Name</h4>
-					</div>
-					<div class="modal-body">
-						<img src="{% static 'images/demo/portfolio-4.jpg' %}" alt="img01" class="img-responsive" />
-						<div class="modal-works"><span>Branding</span><span>Web Design</span></div>
-						<p>Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe</p>
-					</div>
-					<div class="modal-footer">
-						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<!-- Modal for portfolio item 5 -->
-		<div class="modal fade" id="Modal-5" tabindex="-1" role="dialog" aria-labelledby="Modal-label-5">
-			<div class="modal-dialog" role="document">
-				<div class="modal-content">
-					<div class="modal-header">
-						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-						<h4 class="modal-title" id="Modal-label-5">Fast People</h4>
-					</div>
-					<div class="modal-body">
-						<img src="{% static 'images/demo/portfolio-5.jpg' %}" alt="img01" class="img-responsive" />
-						<div class="modal-works"><span>Branding</span><span>Web Design</span></div>
-						<p>Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe</p>
-					</div>
-					<div class="modal-footer">
-						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-					</div>
-				</div>
-			</div>
-		</div>
+	<footer>
+		{% include 'contact.html' %}
+	</footer>
 
 {% endblock %}

@@ -9,6 +9,7 @@ from wagtail.core import urls as wagtail_urls
 from wagtail.documents import urls as wagtaildocs_urls
 from cuser.forms import AuthenticationForm, UserCreationForm
 from django.contrib.auth.views import LoginView, LogoutView
+from django.conf.urls.i18n import i18n_patterns
 # from django.contrib.auth.views import RegisterView
 
 from search import views as search_views
