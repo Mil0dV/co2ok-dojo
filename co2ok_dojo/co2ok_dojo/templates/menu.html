@@ -1,5 +1,5 @@
 {% load static %}
-
+{% load i18n %}
 {% block menu %}
 
   <nav class="navbar navbar-default navbar-fixed-top">
@@ -22,13 +22,13 @@
           </li>
 
           <li>
-            <a class="page-scroll" href="https://co2ok.eco/missie/" target="_blank">MISSION</a>
+            <a class="page-scroll" href="https://co2ok.eco/missie/" target="_blank">{% trans "MISSIE" %}</a>
           </li>
           <li>
-            <a class="page-scroll" href="/#about">How it works</a>
+            <a class="page-scroll" href="/#about">{% trans "Hoe het werkt" %}</a>
           </li>
           <li>
-            <a class="page-scroll" href="/#faq">FAQ</a>
+            <a class="page-scroll" href="/#faq">{% trans "FAQ" %}</a>
           </li>
           <li>
             {% if full_path == '/signup/' %}

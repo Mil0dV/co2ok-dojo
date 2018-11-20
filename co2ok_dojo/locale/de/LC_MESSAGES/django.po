@@ -46,11 +46,11 @@ msgstr "HOL DIR DIE APP!"
 
 #: home/templates/home/home_page.html:46
 msgid "KIES UIT "
-msgstr "CHOOSE FROM"
+msgstr "WÄHLEN SIE AUS "
 
 #: home/templates/home/home_page.html:46
 msgid "2000+ SHOPS"
-msgstr "2000+ SHOPS"
+msgstr "2000+ GESCHÄFTEN"
 
 #: home/templates/home/home_page.html:156
 msgid "HOE WERKT HET"
@@ -313,6 +313,64 @@ msgstr "HINWEIS: Ihre Privatsphäre ist wichtig. Wir müssen nur wissen, auf wel
 #: co2ok_dojo/templates/light_box.html:37
 msgid "GET THE APP"
 msgstr "HOL DIR DIE APP"
+
+# Menu
+
+#: co2ok_dojo/templates/menu.html:25
+msgid "MISSIE"
+msgstr "MISSION"
+
+#: co2ok_dojo/templates/menu.html:28
+msgid "Hoe het werkt"
+msgstr "Wie es funktioniert"
+
+#: co2ok_dojo/templates/menu.html:31
+msgid "FAQ"
+msgstr "FAQ"
+
+# Menu
+
+#: co2ok_dojo/templates/menu.html:25
+msgid "MISSIE"
+msgstr "MISSION"
+
+#: co2ok_dojo/templates/menu.html:28
+msgid "Hoe het werkt"
+msgstr "Wie es funktioniert"
+
+#: co2ok_dojo/templates/menu.html:31
+msgid "FAQ"
+msgstr "FAQ"
+
+# Profile
+
+#: co2ok_dojo/templates/menu.html:34
+msgid "MISSIE"
+msgstr "MISSION"
+
+#: co2ok_dojo/templates/menu.html:37
+msgid "Hoe het werkt"
+msgstr "Wie es funktioniert"
+
+#: co2ok_dojo/templates/menu.html:40
+msgid "FAQ"
+msgstr "FAQ"
+
+#: co2ok_dojo/templates/menu.html:56
+msgid "Profiel"
+msgstr "Profil"
+
+#: co2ok_dojo/templates/menu.html:88
+msgid "Vertel je vrienden over CO2ok Ninja door de bovenstaande link te delen, zodat je shurikens verdient"
+msgstr "Erzähle deinen Freunden von CO2ok Ninja, indem du den obigen Link teilst, damit du Shuriken erhältst"
+
+#: co2ok_dojo/templates/menu.html:93
+msgid "CO2 gecompenseerd"
+msgstr "CO2 kompensiert"
+
+#: co2ok_dojo/templates/menu.html:100
+msgid "Kies een doel"
+msgstr "Wähle eine Ursache"
 
 #  #: users/views.py:87
 #  msgid "Bestrijd klimaatverandering terwijl je online shopt"
