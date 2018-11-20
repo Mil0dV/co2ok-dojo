@@ -6,6 +6,9 @@
     width: 100%;
     height: auto;
 }
+.header-login {
+  background-image: url(../images/ninjaDesign_mindful_BG.svg);
+}
 .register-container-padder{
     padding-top: 100px;
     padding-bottom: 340px;
