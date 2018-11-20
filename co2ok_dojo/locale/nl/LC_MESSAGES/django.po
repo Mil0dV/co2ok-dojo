@@ -28,7 +28,7 @@ msgstr ""
 
 #: home/templates/home/home_page.html:18
 msgid "Bestrijd klimaatverandering terwijl je online shopt"
-msgstr ""
+msgstr "Bestrijd klimaatverandering terwijl je online shopt"
 
 #  #: users/views.py:87
 #  msgid ""
