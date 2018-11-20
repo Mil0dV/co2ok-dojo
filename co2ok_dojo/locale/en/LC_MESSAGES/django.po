@@ -158,7 +158,7 @@ msgstr "Our Ninja App system only needs the right to locally see which online sh
 
 #: home/templates/home/home_page.html:291
 msgid "Zie verder onze "
-msgstr "Look further into our"
+msgstr "Look further into our "
 
 #: home/templates/home/home_page.html:291
 msgid "Privacy Policy"
