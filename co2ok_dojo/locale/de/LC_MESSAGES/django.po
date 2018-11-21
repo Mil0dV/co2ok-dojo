@@ -49,8 +49,8 @@ msgid "KIES UIT "
 msgstr "WÄHLEN SIE AUS "
 
 #: home/templates/home/home_page.html:46
-msgid "2000+ SHOPS"
-msgstr "2000+ GESCHÄFTEN"
+msgid "2000+ INTERNATIONALE SHOPS"
+msgstr "2000+ INTERNATIONALE GESCHÄFTEN"
 
 #: home/templates/home/home_page.html:156
 msgid "HOE WERKT HET"

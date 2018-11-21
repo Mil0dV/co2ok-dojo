@@ -29,15 +29,15 @@ msgstr ""
 # Homepage
 
 #: home/templates/home/home_page.html:18
-msgid "Bestrijd klimaatverandering terwijl je online shopt"
+msgid "Word een Ninja en shop klimaatneutraal"
 msgstr "Fight climate change while you shop online"
 
 #: home/templates/home/home_page.html:21
-msgid "Wordt een CO₂ok Ninja met onze gratis App. Shop online en de webshop compenseert de carbon footprint van je aankoop zonder één cent meer te betalen. Klimaat bestrijden kan niet sneller en simpeler."
+msgid "Samen kunnen wij klimaatverandering tegengaan! Het enige wat jij hoeft te doen, is de gratis CO2ok Ninja app downloaden. Via deze app compenseer jij de CO2-uitstoot van jouw online aankoop. De webshop betaalt. Mooi toch?!"
 msgstr "Become a CO₂ok Ninja with our Ninja App. You shop and the store pays a CO₂ compensation at no extra cost for you. Fighting climate change was never this easy."
 
 #: home/templates/home/home_page.html:22
-msgid "Hoe werkt het"
+msgid "Lees hier hoe het werkt."
 msgstr "How it works"
 
 #: home/templates/home/home_page.html:38
@@ -49,8 +49,8 @@ msgid "KIES UIT "
 msgstr "CHOOSE FROM "
 
 #: home/templates/home/home_page.html:46
-msgid " 2000+ SHOPS"
-msgstr " 2000+ SHOPS"
+msgid " 2000+ INTERNATIONALE SHOPS"
+msgstr " 2000+ INTERNATIONAL SHOPS"
 
 #: home/templates/home/home_page.html:156
 msgid "HOE WERKT HET"
