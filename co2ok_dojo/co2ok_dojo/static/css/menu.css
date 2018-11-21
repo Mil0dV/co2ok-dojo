@@ -1,3 +1,15 @@
+.languages_container
+{
+
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+}
+
 .languages
 {
 
@@ -14,7 +26,7 @@
 
 .lang_choice{
 
-   background-image: url(../images/nl.png);
+   /* background-image: url(../images/nl.png); */
    width: 20px;
    height: 20px;
    background-size: cover;
