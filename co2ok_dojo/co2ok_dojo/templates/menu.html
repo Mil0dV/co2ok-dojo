@@ -33,11 +33,12 @@
           <li>
 
 
-              <div class="dropdown btn-success" style="margin-top:12px; margin-right:12px;">
+              <div class="dropdown" style="margin-top:12px; margin-right:20px; margin-left:15px; margin-bottom: 20px;">
+                <!-- <img src="{% static 'images/flags/en.png' %}"> -->
                   {% get_current_language as LANGUAGE_CODE %}
                   {% get_available_languages as LANGUAGES %}
                   {% get_language_info_list for LANGUAGES as languages %}
-                <button class="btn btn-success dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background-image: url({% static 'images/flags/en.png' %}); background-size: 40px 30px; height: 30px; width: 40px; background-color: none; background-repeat: no-repeat;">
                     {{ language.name_local }}
                 </button>
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">

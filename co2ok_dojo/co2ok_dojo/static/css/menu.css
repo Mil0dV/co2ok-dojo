@@ -27,11 +27,12 @@
 .lang_choice{
 
    /* background-image: url(../images/nl.png); */
-   width: 20px;
+   width: 30px;
    height: 20px;
    background-size: cover;
    background-position: center;
    background-repeat: no-repeat;
    border: 1px solid white;
+   display: inline-block;
 
 }
