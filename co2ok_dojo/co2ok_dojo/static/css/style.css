@@ -46,6 +46,12 @@ html,body {
     overflow-x: hidden; 
 }
 
+@media (min-width: 600px) {
+	html,body {
+	    overflow-x: visible; 
+	}
+}
+
 h1,
 h2,
 h3,

@@ -290,6 +290,10 @@ msgstr "Sign Up"
 msgid "Sign up via: "
 msgstr "Melde dich über an: "
 
+#: co2ok_dojo/templates/registration/register.html:67
+msgid "We zullen je email en andere gebruikersdata niet delen, lees hier over onze"
+msgstr "Wir geben Ihre E-Mail und andere Benutzerdaten nicht weiter. Lesen Sie hier unsere"
+
 # Ninja Partner Stores
 
 #: ninja_partner_stores/templates/ninja_partner_stores/ninja-partner-stores.html:55

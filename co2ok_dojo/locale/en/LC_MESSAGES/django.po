@@ -93,7 +93,7 @@ msgid "De CO₂ compensatie wordt volledig gedekt door de webwinkel."
 msgstr "The CO₂ compensation is fully covered by the shop."
 
 #: home/templates/home/home_page.html:201
-msgid "Get involved & fight climate change"
+msgid "Doe mee & bestrijd klimaatverandering"
 msgstr "Get involved & fight climate change"
 
 #: home/templates/home/home_page.html:229
@@ -290,6 +290,10 @@ msgstr "Sign Up"
 msgid "Sign up via: "
 msgstr "Sign up via: "
 
+#: co2ok_dojo/templates/registration/register.html:67
+msgid "We zullen je email en andere gebruikersdata niet delen, lees hier over onze"
+msgstr "We won't share your email adress or other user data, read here about our"
+
 # Ninja Partner Stores
 
 #: ninja_partner_stores/templates/ninja_partner_stores/ninja-partner-stores.html:55
@@ -304,7 +308,7 @@ msgstr "You raise money for the fight against climate change when you shop in on
 
 #: co2ok_dojo/templates/light_box.html:22
 msgid "LET OP: Jouw privacy is belangrijk. We hoeven alleen te weten op welke website je je bevindt. Daarom slaan we geen gegevens op. De Googlemelding die je zo ziet als je verder klikt, is dus anders dan wat de Ninja app doet."
-msgstr "NOTE: Your privacy is important. We only need to know on which website you are. That is why we do not store data. The Googlenotice that you see as you click further is different from what the Ninja app does."
+msgstr "NOTE: CO2ok Ninja only needs to know which website you are visiting. We do not record your website visits or any other data. We do not make changes on your computer. The Google notice that you see as you click further is different from what the Ninja app does."
 
 #: co2ok_dojo/templates/light_box.html:37
 msgid "GET THE APP"
