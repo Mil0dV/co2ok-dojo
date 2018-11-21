@@ -199,9 +199,11 @@ USE_TZ = True
 gettext = lambda x: x
 
 LANGUAGES = (
-   ('nl', gettext('Dutch')),
-   ('en', gettext('English')),
-   ('de', gettext('German')),
+   ('en', _('English')),
+   ('nl', _('Dutch')),
+   ('de', _('German')),
+   ('fr', _('French')),
+   ('es', _('spain')),
 )
 # LANGUAGES = (
 #     ('en', _('English')),

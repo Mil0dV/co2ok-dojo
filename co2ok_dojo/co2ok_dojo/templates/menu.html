@@ -2,7 +2,7 @@
 {% load i18n %}
 {% block menu %}
   	<link href="{% static 'css/menu.css' %}" rel="stylesheet">
-  <nav class="navbar navbar-default navbar-fixed-top">
+  <nav class="navbar navbar-default navbar-fixed-top" style="background-color: #222 !important;">
     <div class="container">
       <!-- Brand and toggle get grouped for better mobile display -->
       <div class="navbar-header page-scroll">
@@ -16,7 +16,7 @@
       </div>
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav navbar-right">
+        <ul class="nav navbar-nav navbar-right" style="font-size: 17px;">
           <li class="hidden">
             <a href="/#page-top"></a>
           </li>
@@ -32,23 +32,46 @@
           </li>
           <li>
 
-            <form action="{% url 'set_language' %}" method="post" class="languages">{% csrf_token %}
-                <input name="next" type="hidden" value="{{ redirect_to }}">
-                <select name="language" style="display: none;">
-                    <!-- {% get_current_language as LANGUAGE_CODE %}
-                    {% get_available_languages as LANGUAGES %}
-                    {% get_language_info_list for LANGUAGES as languages %}
+
+              <div class="dropdown" style="margin-top:12px; margin-right:20px; margin-left:15px; margin-bottom: 20px;">
+                <!-- <img src="{% static 'images/flags/en.png' %}"> -->
+                  {% get_current_language as LANGUAGE_CODE %}
+                  {% get_available_languages as LANGUAGES %}
+                  {% get_language_info_list for LANGUAGES as languages %}
+                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background-image: url({% static 'images/flags/en.png' %}); background-size: 40px 30px; height: 30px; width: 40px; background-color: none; background-repeat: no-repeat;">
+                    {{ language.name_local }}
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+
                     {% for language in languages %}
-                        <option value="{{ language.code }}"{% if language.code == LANGUAGE_CODE %} selected{% endif %}>
-                            {{ language.name_local }} ({{ language.code }})
-                        </option>
-                    {% endfor %} -->
-                    <option value="nl" selected="">
-                        Nederlands (nl)
-                    </option>
-                </select>
-                <button type="submit" class="lang_choice"></button>
-            </form>
+                      <form action="{% url 'set_language' %}" method="post" class="languages">{% csrf_token %}
+                          <!-- <input name="next" type="hidden" value="{{ redirect_to }}"> -->
+                         <select name="language" style="display: none;">
+                            <option value="{{ language.code }}"{% if language.code == LANGUAGE_CODE %} selected{% endif %}>
+                              {{ language.name_local }} ({{ language.code }})
+                            </option>
+      
+                         </select>
+      
+                          {% with 'images/flags/'|add:language.code|add:'.png' as image_static %}
+                            <button type="submit" class="lang_choice" style="background-image:url({% static image_static %})">
+                            </button>
+                          {% endwith %}
+      
+                      </form>
+                    {% endfor %}
+                </div>
+              </div>
+
+
+            <!-- {% get_current_language as LANGUAGE_CODE %}
+            {% get_available_languages as LANGUAGES %}
+            {% get_language_info_list for LANGUAGES as languages %}
+            {% for language in languages %}
+
+              <a href="{% url 'set_language' %}" {% if language.code == LANGUAGE_CODE %} selected{% endif %}>{{ language.name_local }} ({{ language.code }})</a>
+
+            {% endfor %} -->
 
           </li>
           <!-- <li>
