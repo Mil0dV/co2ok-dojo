@@ -935,7 +935,7 @@ and (max-width : 480px) {
 
 @media only screen and (max-width: 600px) and (min-width: 400px) {
     .ninja_world_bol {
-        background-size: 85%;
+        background-size: 95%;
         width: 100%;
     }
 }
