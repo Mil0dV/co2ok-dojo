@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-21 11:13+0000\n"
+"POT-Creation-Date: 2018-11-21 11:37+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -249,24 +249,31 @@ msgstr ""
 msgid "Sign up via:"
 msgstr ""
 
-#: co2ok_dojo/templates/registration/register.html:66
+#: co2ok_dojo/templates/registration/register.html:67
+msgid ""
+"We zullen je email en andere gebruikersdata niet delen, lees hier over onze"
+msgstr ""
+
+#: co2ok_dojo/templates/registration/register.html:67
+#: home/templates/home/home_page.html:291
+msgid " Privacy Policy"
+msgstr ""
+
+#: co2ok_dojo/templates/registration/register.html:68
 msgid "Sign up"
 msgstr ""
 
 #: home/templates/home/home_page.html:18
-msgid "Fight climate change while you shop online"
-msgstr "Bestrijd klimaatverandering terwijl je online shopt"
+msgid "Word een Ninja en shop klimaatneutraal"
+msgstr ""
 
 #: home/templates/home/home_page.html:21
-msgid ""
-"Wordt een CO₂ok Ninja met onze gratis App. Shop online en de webshop "
-"compenseert de carbon footprint van je aankoop zonder één cent meer te "
-"betalen. Klimaat bestrijden kan niet sneller en simpeler."
-msgstr ""
+msgid "Become a CO₂ok Ninja with our Ninja App. You shop and the store pays a CO₂ compensation at no extra cost for you. Fighting climate change was never this easy."
+msgstr "Samen kunnen wij klimaatverandering tegengaan! Het enige wat jij hoeft te doen, is de gratis CO2ok Ninja app downloaden. Via deze app compenseer jij de CO2-uitstoot van jouw online aankoop. De webshop betaalt. Mooi toch?!"
 
 #: home/templates/home/home_page.html:22
-msgid "Hoe werkt het"
-msgstr ""
+msgid "How it works"
+msgstr "Lees hier hoe het werkt."
 
 #: home/templates/home/home_page.html:38
 msgid "GET THE APP!"
@@ -277,7 +284,7 @@ msgid "KIES UIT "
 msgstr ""
 
 #: home/templates/home/home_page.html:46
-msgid " 2000+ SHOPS"
+msgid " 2000+ INTERNATIONALE SHOPS"
 msgstr ""
 
 #: home/templates/home/home_page.html:156
@@ -330,7 +337,7 @@ msgid "De CO₂ compensatie wordt volledig gedekt door de webwinkel."
 msgstr ""
 
 #: home/templates/home/home_page.html:201
-msgid "Get involved & fight climate change"
+msgid "Doe mee & bestrijd klimaatverandering"
 msgstr ""
 
 #: home/templates/home/home_page.html:229
@@ -409,10 +416,6 @@ msgstr ""
 
 #: home/templates/home/home_page.html:291
 msgid "Zie verder onze "
-msgstr ""
-
-#: home/templates/home/home_page.html:291
-msgid " Privacy Policy"
 msgstr ""
 
 #: ninja_partner_stores/templates/ninja_partner_stores/ninja-partner-stores.html:57

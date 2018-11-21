@@ -37,7 +37,7 @@ msgid "Become a CO₂ok Ninja with our Ninja App. You shop and the store pays a 
 msgstr "Become a CO₂ok Ninja with our Ninja App. You shop and the store pays a CO₂ compensation at no extra cost for you. Fighting climate change was never this easy."
 
 #: home/templates/home/home_page.html:22
-msgid "Lees hier hoe het werkt."
+msgid "How it works"
 msgstr "How it works"
 
 #: home/templates/home/home_page.html:38
