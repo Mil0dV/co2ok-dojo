@@ -29,11 +29,11 @@ msgstr ""
 # Homepage
 
 #: home/templates/home/home_page.html:18
-msgid "Word een Ninja en shop klimaatneutraal"
+msgid "Fight climate change while you shop online"
 msgstr "Fight climate change while you shop online"
 
 #: home/templates/home/home_page.html:21
-msgid "Samen kunnen wij klimaatverandering tegengaan! Het enige wat jij hoeft te doen, is de gratis CO2ok Ninja app downloaden. Via deze app compenseer jij de CO2-uitstoot van jouw online aankoop. De webshop betaalt. Mooi toch?!"
+msgid "Become a CO₂ok Ninja with our Ninja App. You shop and the store pays a CO₂ compensation at no extra cost for you. Fighting climate change was never this easy."
 msgstr "Become a CO₂ok Ninja with our Ninja App. You shop and the store pays a CO₂ compensation at no extra cost for you. Fighting climate change was never this easy."
 
 #: home/templates/home/home_page.html:22
