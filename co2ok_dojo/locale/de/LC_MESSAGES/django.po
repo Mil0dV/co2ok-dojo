@@ -175,7 +175,7 @@ msgid "Credits to Altruisto"
 msgstr "Danke an Altruisto"
 
 #: co2ok_dojo/templates/faq.html:17
-msgid " We willen Altruisto graag bedanken voor het open source maken van hun code, zodat we ons project konden “forken”, gebaseerd op hun voorgaande werk. <a href=\"https://altruisto.com/\">Altruisto</a> doet geweldig werk met het doneren aan goede doelen door middel van online winkelen. Hun GitHub repo kun je hier vinden: <a href=\"https://github.com/Altruisto/altruisto\">Altruisto GitHub repository"
+msgid "We would like to thank Altruisto for putting their code open source so we could fork our own project based on their previous work. <a href=\"https://altruisto.com/\">Altruisto</a> does a great job at donating to charities through online shoppings. Their GitHub repo can be found here: <a href \"https://github.com/Altruisto/altruisto\">Altruisto GitHub repository"
 msgstr " An dieser Stelle sagen wir Danke an Altruisto, dass sie ihren Code öffentlich gemacht haben. Dieses haben wir als Grundlage für unsere Projekte genutzt. <a href=\"https://altruisto.com/\">Altruisto</a> leistet tolle Arbeit mit Spenden für Hilfsorganisationen durch das Gleiche Prinzip. Ihre GitHub repo kann hier eingesehen werden: <a href=\"https://github.com/Altruisto/altruisto\">Altruisto GitHub repository"
 
 #: co2ok_dojo/templates/faq.html:25
@@ -227,43 +227,43 @@ msgid "We invest 75% of the commission in the CO₂ compensation. The remaining 
 msgstr "CO₂ok erhält zwischen 1-6% des Einkaufswertes. Der prozentuale Anteil hängt von dem jeweiligen Shop und des Produktes ab.  Anfänglich gehen davon 75% direkt in den CO₂ Ausgleich. Die restlichen 25% benötigen wir um CO₂ok am Leben zu halten. Wir haben gerade erst begonnen und unser Einnahmen decken unsere Kosten noch längst nicht. Unser Ziel ist es einen Unterschied zu machen und jedem die Chance zu geben den Klimawandel mit einfachen Mitteln zu bekämpfen. Letztlich wollen wir unseren Anteil reduzieren - wir mache dies hier nicht um reich zu werden. Wir arbeiten offen und transparent und wir werden zu jedem Jahresende unsere Einnahmen und Ausgaben offen legen."
 
 #: co2ok_dojo/templates/faq.html:96
-msgid "Ik shop alleen op Amazon en gebruik ook al Amazon Smile programma, is er een andere reden om CO2ok Ninja te installeren?"
+msgid "I only shop at Amazon and already use Amazon Smile program, is there any reason for me to install the Ninja App?"
 msgstr "Ich kauf allein bei Amazon ein und verwende Amazon Smile. Gibt es einen Grund für mich die Ninja App zu installieren?  "
 
 #: co2ok_dojo/templates/faq.html:102
-msgid "Onze partners doneren 2 tot 12 keer meer via het programma Ninja en ontvangt 1-6% van het aankoop bedrag terwijl dit bij Amazon Smile maar 0,5% is. Ook heeft CO2ok Ninja meer variatie in producten, zoals transport services, financiële producten en officiële kleding van verschillende clubs. Amazon Smile kan dit niet aanbieden."
+msgid "First of all, our partners usually donate 2-12 times more through the Ninja App (1-6%) than Amazon does through Amazon Smile (only 0.5% of the final price). So, if you care about having as big a positive impact on the world as you can, using the Ninja App either instead of or in addition to Amazon Smile is a way to achieve that. Moreover, there are a lot of products or services available in our partner stores that are not available on Amazon. For example, travel services (hotels, flights, train tickets, car rentals), financial products, or sport clubs’ official apparel."
 msgstr "Zuerst ist zu sagen, dass unsere Partner durch die Ninja App im Normalfall zwischen 2-12 (1-6%) mal mehr spenden als Amazon mit Amazon Smile (0,5% vom Endpreis). Wenn Du also eine größere Auswirkung auf die Welt machen willst, solltest Du überlegen, ob Du die Ninja App entweder anstatt oder zusätzlich zu Amazon Smile verwenden willst um dies zu erreichen. Zudem gibt es auch Produkte in unseren Partnershops, die Du nicht auf Amazon findest. Wie zum Beispiel Reisen (Hotels, Flüge, Zugtickets, Autoverleihe), Finanzprodukte, Sportclubs oder spezielle Marken."
 
 #: co2ok_dojo/templates/faq.html:110
-msgid "Hoe kan ik er zeker van zijn dat het geld word gebruikt om CO2 uitstoot te verminderen?"
+msgid "How can I be sure that the money will be used to compensate greenhouse gasses?"
 msgstr "Wie kann ich sicherstellen, dass das Geld für die Verringerung der Treibhausgase eingesetzt wird?"
 
 #: co2ok_dojo/templates/faq.html:116
-msgid "De organisatie waar het geld naar toe zal gaan, zoals Atmosfair – en andere organisaties – zijn in bezit van verschillende hoogstaande certificaten. Ook worden onze inkomsten en uitgaven ieder jaar openbaar gemaakt."
+msgid "Atmosfair and Fair Climate Fund provide us with certificates to prove we compensated. Additionally, we will report our income and spending each year."
 msgstr "Atmosfair und Fair Climate Fund stellen uns Zertifikate aus. Ein Beweis dafür, dass wir CO₂ Ausgleich leisten. Zudem legen wir zu jedem Jahresende unsere Einnahmen und Ausgaben offen."
 
 #: co2ok_dojo/templates/faq.html:124
-msgid "Kost het mij iets om co2ok Ninja te gebruiken?"
+msgid "Does it cost me anything to use the Ninja App?"
 msgstr "Ist die Ninja App wirklich kostenfrei?"
 
 #: co2ok_dojo/templates/faq.html:130
-msgid "Nee, het programma Ninja is gratis. De prijzen bij de webwinkels zullen precies hetzelfde zijn wanneer je CO2ok Ninja gebruikt."
+msgid "No, the Ninja App is absolutely free to use. The prices in the online stores are exactly the same whether you use the app or not."
 msgstr "Ja, zu 100%. Auch die Preise in den Onlineshops sind mit der Benutzung der App exakt die Selben."
 
 #: co2ok_dojo/templates/faq.html:138
-msgid "Ik koop bij geen enkel bedrijf waar jullie programma op kan, is er een andere reden om het toch te installeren?"
+msgid "I am not buying in any of these stores, is there any reason for me to install the Ninja App?"
 msgstr "Ich kaufe in keinem dieser Onlineshops ein. Macht es dennoch Sinn die Ninja App zu installieren?"
 
 #: co2ok_dojo/templates/faq.html:144
-msgid "Ja, wij zijn constant bezig om nieuwe partners binnen te halen. Hierdoor zal het snel mogelijk kunnen zijn dat het bedrijf waar u wel shopt er in komt te staan. Hoe meer gebruikers hoe beter, bij iedere installatie zijn we een heel stuk dichterbij dan eerst en groeit ons naam en ons doel."
+msgid "Yes, there are three reasons: 1) We are constantly working on new partnerships, so we may partner with stores that you do use in the near future. It’s easier to have it already installed rather than regularly check if stores that you use have been added. 2) If you even once decide to buy from our partners stores, having the Ninja App already installed can be a difference with the output of CO₂ in the world. It’s better to have it installed just in case, rather than miss an easy opportunity to do a lot of good for free. 3) It is easier to establish new partnerships with a bigger user base: the more users the Ninja App  has, the easier it is to convince new stores to join our initiative. Therefore, by installing the  Ninja App, you make it more probable that we will partner with shops you use in the future."
 msgstr "Absolut und hier drei Gründe: Wir arbeiten stetig an neuen Partnerschaften und somit macht vielleicht auch Dein Lieblings-Shop bald mit. Unsere App informiert Dich dann automatisch, sobald Du einkaufst. Dies ist wesentlich einfacher als immer zu checken, ob Dein Lieblings-Shop nun mitmacht. 2) Wenn Du doch einmal in einem anderen Onlineshop einkaufst, der bereits mit uns zusammenarbeitet, kannst Du direkt einen CO₂ Unterschied machen. Es ist besser die App installiert zu haben als eine einfache Möglichkeit zu versäumen etwas Gutes für unsere Umwelt zu tun. 3) Es ist einfacher neue Partner zu gewinnen, wenn wir mehr Benutzer haben. Onlineshops sind dann einfacher zu überzeugen, mitzumachen. Mit der Installation machst Du es somit wahrscheinlicher, dass Dein Lieblings-Shop auch bald dabei ist."
 
 #: co2ok_dojo/templates/faq.html:152
-msgid "Hoe werkt CO2ok Ninja?"
+msgid "How does it work?"
 msgstr "Wie funktioniert es?"
 
 #: co2ok_dojo/templates/faq.html:158
-msgid "Na het installeren van het programma kunt u toestemming gegeven om CO2-uitstoot neutraal te shoppen. Tijdens het afrekenen zal er bij de webwinkel het CO2-uitstoot neutraal winkelen in kaart worden gebracht. Eenmaal afgerekend krijgt CO2ok een deel van een bedrag via uw aankoop. Door de inkomsten via CO2ok Ninja worden er donaties gedaan naar organisaties zoals Atmosfair."
+msgid "After installing the Ninja app you will see a our “Shop CO₂ok” box whilst shopping in one of our partner stores. Simply click this box and you will be redirected back to the partner store (exactly where you were before). From then on, whenever you buy something, CO₂ok receives a portion of the price you pay (usually between 1% and 6%). We donate our profits to carefully selected organisations such as Atmosfair. Some stores will require you to repeat the process after some time. You are a mobile Ninja - see here."
 msgstr "Nachdem Du die Ninja App installiert hast, wirst Du beim shoppen unsere “Shop CO₂ok Box” sehen, sobald Du Dich auf einem Partner-Shop befindest. Klicke diese einfach an und die Seite lädt sich schnell neu. Von nun an erhalten wir eine Kommission (normalerweise zwischen 1% - 6%), wenn Du einen Kauf abschließt. Wir spenden dann 75% dieser Summe an sorgfältig ausgesuchte Umweltschutzorganisationen wie etwa Atmosfair. Bei manchen Onlineshops wirst Du diesen Vorgang nach einer gewissen Zeit wiederholen müssen."
 
 # Caroussel
