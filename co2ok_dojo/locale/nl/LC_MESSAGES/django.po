@@ -209,8 +209,8 @@ msgid "Sign up"
 msgstr ""
 
 #: home/templates/home/home_page.html:18
-msgid "Word een Ninja en shop klimaatneutraal"
-msgstr ""
+msgid "Fight climate change while you shop online"
+msgstr "Word een Ninja en shop klimaatneutraal"
 
 #: home/templates/home/home_page.html:21
 msgid "Become a CO₂ok Ninja with our Ninja App. You shop and the store pays a CO₂ compensation at no extra cost for you. Fighting climate change was never this easy."
@@ -229,7 +229,7 @@ msgid "CHOOSE FROM "
 msgstr "KIES UIT"
 
 #: home/templates/home/home_page.html:46
-msgid " 2000+ INTERNATIONALE SHOPS"
+msgid " 2000+ INTERNATIONAL SHOPS"
 msgstr ""
 
 #: home/templates/home/home_page.html:156
@@ -341,7 +341,7 @@ msgstr "Om de CO2ok Ninja te laten werken heeft de extensie alleen bepaalde rech
 
 #: home/templates/home/home_page.html:291
 msgid "Look further into our "
-msgstr Zie verder onze "
+msgstr "Zie verder onze "
 
 #: ninja_partner_stores/templates/ninja_partner_stores/ninja-partner-stores.html:57
 msgid "Partner stores list"
