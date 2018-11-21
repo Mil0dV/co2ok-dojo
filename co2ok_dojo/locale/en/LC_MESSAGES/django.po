@@ -29,15 +29,15 @@ msgstr ""
 # Homepage
 
 #: home/templates/home/home_page.html:18
-msgid "Bestrijd klimaatverandering terwijl je online shopt"
+msgid "Word een Ninja en shop klimaatneutraal"
 msgstr "Fight climate change while you shop online"
 
 #: home/templates/home/home_page.html:21
-msgid "Wordt een CO₂ok Ninja met onze gratis App. Shop online en de webshop compenseert de carbon footprint van je aankoop zonder één cent meer te betalen. Klimaat bestrijden kan niet sneller en simpeler."
+msgid "Samen kunnen wij klimaatverandering tegengaan! Het enige wat jij hoeft te doen, is de gratis CO2ok Ninja app downloaden. Via deze app compenseer jij de CO2-uitstoot van jouw online aankoop. De webshop betaalt. Mooi toch?!"
 msgstr "Become a CO₂ok Ninja with our Ninja App. You shop and the store pays a CO₂ compensation at no extra cost for you. Fighting climate change was never this easy."
 
 #: home/templates/home/home_page.html:22
-msgid "Hoe werkt het"
+msgid "Lees hier hoe het werkt."
 msgstr "How it works"
 
 #: home/templates/home/home_page.html:38
@@ -49,8 +49,8 @@ msgid "KIES UIT "
 msgstr "CHOOSE FROM "
 
 #: home/templates/home/home_page.html:46
-msgid " 2000+ SHOPS"
-msgstr " 2000+ SHOPS"
+msgid " 2000+ INTERNATIONALE SHOPS"
+msgstr " 2000+ INTERNATIONAL SHOPS"
 
 #: home/templates/home/home_page.html:156
 msgid "HOE WERKT HET"
@@ -93,7 +93,7 @@ msgid "De CO₂ compensatie wordt volledig gedekt door de webwinkel."
 msgstr "The CO₂ compensation is fully covered by the shop."
 
 #: home/templates/home/home_page.html:201
-msgid "Get involved & fight climate change"
+msgid "Doe mee & bestrijd klimaatverandering"
 msgstr "Get involved & fight climate change"
 
 #: home/templates/home/home_page.html:229
@@ -290,9 +290,9 @@ msgstr "Sign Up"
 msgid "Sign up via: "
 msgstr "Sign up via: "
 
-#  #: co2ok_dojo/templates/registration/register.html:57
-#  msgid "Sign Up"
-#  msgstr "Sign Up"
+#: co2ok_dojo/templates/registration/register.html:67
+msgid "We zullen je email en andere gebruikersdata niet delen, lees hier over onze"
+msgstr "We won't share your email adress or other user data, read here about our"
 
 # Ninja Partner Stores
 
@@ -308,7 +308,7 @@ msgstr "You raise money for the fight against climate change when you shop in on
 
 #: co2ok_dojo/templates/light_box.html:22
 msgid "LET OP: Jouw privacy is belangrijk. We hoeven alleen te weten op welke website je je bevindt. Daarom slaan we geen gegevens op. De Googlemelding die je zo ziet als je verder klikt, is dus anders dan wat de Ninja app doet."
-msgstr "NOTE: Your privacy is important. We only need to know on which website you are. That is why we do not store data. The Googlenotice that you see as you click further is different from what the Ninja app does."
+msgstr "NOTE: CO2ok Ninja only needs to know which website you are visiting. We do not record your website visits or any other data. We do not make changes on your computer. The Google notice that you see as you click further is different from what the Ninja app does."
 
 #: co2ok_dojo/templates/light_box.html:37
 msgid "GET THE APP"
@@ -330,17 +330,17 @@ msgstr "FAQ"
 
 # Profile
 
-#: co2ok_dojo/templates/menu.html:34
-msgid "MISSIE"
-msgstr "MISSION"
+#  #: co2ok_dojo/templates/menu.html:34
+#  msgid "MISSIE"
+#  msgstr "MISSION"
 
-#: co2ok_dojo/templates/menu.html:37
-msgid "Hoe het werkt"
-msgstr "How it works"
+#  #: co2ok_dojo/templates/menu.html:37
+#  msgid "Hoe het werkt"
+#  msgstr "How it works"
 
-#: co2ok_dojo/templates/menu.html:40
-msgid "FAQ"
-msgstr "FAQ"
+#  #: co2ok_dojo/templates/menu.html:40
+#  msgid "FAQ"
+#  msgstr "FAQ"
 
 #: co2ok_dojo/templates/menu.html:56
 msgid "Profiel"
