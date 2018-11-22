@@ -46,7 +46,7 @@ msgstr "HOL DIR DIE APP!"
 
 #: home/templates/home/home_page.html:46
 msgid "CHOOSE FROM "
-msgstr "WÄHLE AUS "
+msgstr "WÄHLE ZWISCHEN "
 
 #: home/templates/home/home_page.html:46
 msgid "2000+ INTERNATIONAL SHOPS"
@@ -183,7 +183,7 @@ msgid "Why installing the Ninja App requires permission to “Read and change al
 msgstr "Warum benötigt die Installation der Ninja App die Berechtigung “Lesen und Ändern der Daten von den Webseiten die du besuchst”? "
 
 #: co2ok_dojo/templates/faq.html:31
-msgid 'For the Ninja App to work properly it needs to have access to the information about the website you are visiting to know if you’re on one of our partners’ sites. In short, the Ninja App downloads the list of partner shops, then works in the background, comparing the website you’re viewing against the downloaded list, and if there is a match, it shows our  CO₂ok button. The information about visited websites does not leave your computer, so your privacy is protected. The Ninja App has an open code available at <a href="https://github.com/Mil0dV/co2ok-ninja\">Github</a> so anyone can view and audit it to make sure it is safe to use.'
+msgid "For the Ninja App to work properly it needs to have access to the information about the website you are visiting to know if you’re on one of our partners’ sites. In short, the Ninja App downloads the list of partner shops, then works in the background, comparing the website you’re viewing against the downloaded list, and if there is a match, it shows our  CO₂ok button. The information about visited websites does not leave your computer, so your privacy is protected. The Ninja App has an open code available at <a href=\"https://github.com/Mil0dV/co2ok-ninja\">Github</a> so anyone can view and audit it to make sure it is safe to use."
 msgstr "Damit die App richtig funktioniert benötigt die App Zugang zu den Informationen über die besuchte Webseite, um zu festzustellen, ob du dich auf einer unserer Partnerseiten befindest. Wenn das der Fall ist wird dir unser CO₂ok Button angezeigt. Die Information über deine besuchten Webseiten verlässt dein Computer nicht und somit ist deine Privatsphäre geschützt. Die Ninja App hat einen offenen Code auf <a href=\"https://github.com/Mil0dV/co2ok-ninja\">Github</a> den jeder einsehen und sich somit versichern kann, dass die Benutzung sicher ist."
 
 #: co2ok_dojo/templates/faq.html:38
@@ -199,7 +199,7 @@ msgid "What stores does the Ninja App work with?"
 msgstr "Bei welchen Onlineshops kann ich die Ninja App benutzen?"
 
 #: co2ok_dojo/templates/faq.html:57
-msgid 'We have partnered with several big e-commerce businesses such as Ebay, Bol.com, Booking.com, CoolBlue, Aliexpress, Etsy, and over 1000 others. <a href \"https://co2ok.eco/en/ninja-partner-stores/\">Here you can find a list of all participating stores.</a>'
+msgid "We have partnered with several big e-commerce businesses such as Ebay, Bol.com, Booking.com, CoolBlue, Aliexpress, Etsy, and over 1000 others. <a href \"https://co2ok.eco/en/ninja-partner-stores/\">Here you can find a list of all participating stores.</a>"
 msgstr "Wir sind Partner von verschiedenen großen und kleinen Onlineshops, wie Ebay, Booking.com, Aliexpress und über 2000 mehr. <a href \"https://co2ok.eco/en/ninja-partner-stores/\">Hier findest du eine Liste der teilnehmenden Onlineshops.</a>"
 
 #: co2ok_dojo/templates/faq.html:64
@@ -286,6 +286,10 @@ msgstr "Eine Biogas-Anlage wird gebaut"
 msgid "Sign Up"
 msgstr "Registrieren"
 
+#: co2ok_dojo/templates/registration/register.html:18
+msgid "Sign in"
+msgstr "Anmelden"
+
 #: co2ok_dojo/templates/registration/register.html:31
 msgid "Sign up via: "
 msgstr "Registrieren mit: "
@@ -308,8 +312,7 @@ msgstr "Du sammelst Geld für den Kampf gegen den Klimawandel, wenn du bei einem
 
 #: co2ok_dojo/templates/light_box.html:22
 msgid "NOTE: CO2ok Ninja only needs to know which website you are visiting. We do not record your website visits or any other data. We do not make changes on your computer. The Google notice that you see as you click further is different from what the Ninja app does."
-msgstr "HINWEIS: Deine Privatsphäre ist uns wichtig! Wir sind keine Datensammler und speichern deine Einkaufsdaten nicht. Wir müssen nur wissen, ob du dich in einem Partnershop befindest um die Kommission auszulösen. Auch diese Daten werden nicht gespeichert.
-Die Meldung von Google, die du sehen wirst wenn du die App installierst variiert, jedoch können wir das leider nicht beeinflussen."
+msgstr "HINWEIS: Deine Privatsphäre ist uns wichtig! Wir sind keine Datensammler und speichern deine Einkaufsdaten nicht. Wir müssen nur wissen, ob du dich in einem Partnershop befindest um die Kommission auszulösen. Auch diese Daten werden nicht gespeichert. Die Meldung von Google, die du sehen wirst wenn du die App installierst variiert, jedoch können wir das leider nicht beeinflussen."
 
 #: co2ok_dojo/templates/light_box.html:37
 msgid "GET THE APP"
@@ -321,9 +324,9 @@ msgstr "HOL DIR DIE APP"
 msgid "MISSION"
 msgstr "MISSION"
 
-#: co2ok_dojo/templates/menu.html:28
-msgid "How it works"
-msgstr "Wie es funktioniert"
+#  #: co2ok_dojo/templates/menu.html:28
+#  msgid "How it works"
+#  msgstr "Wie es funktioniert"
 
 # Menu
 
