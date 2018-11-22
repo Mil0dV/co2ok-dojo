@@ -1,67 +1,118 @@
 {% extends 'base.html' %}
+{% load i18n %}
 {% load static %}
 
-<link rel="stylesheet" type="text/css" href="{% static 'css/ninja-register.css' %}">
-{% block content %}
 
+{% block content %}
+<head>
+<link rel="stylesheet" type="text/css" href="{% static 'css/ninja-register.css' %}">
+<link href="{% static 'css/ninja-landing.css' %}" rel="stylesheet">
+</head>
   {% include 'menu.html' %}
     <!-- Header -->
     <header class="header-register">
-      <div class="container register-container-padder">
+      <div class="container register-personal-container-padder" style="padding-bottom: 0px;">
         <div class="slider-container" >
           <div class="intro-text">
             <!-- <div class="intro-lead-in">Welcome To Our Studio!</div> -->
-            <div class="intro-heading " style="margin-top: -50px; padding-bottom:20px; color:#fff; font-size: 36px;">Sign Up
-
+            <div class="intro-heading " style="margin-top: 0px; padding-bottom:0px; color:#fff; font-size: 36px;"><div style="margin-bottom: 20px;">{% trans "Join Us!" %}</div>
+              <p style="font-size: 28px; margin-bottom: 15px; color:rgb(205, 255, 220); ">{% trans "You've been invited by an anonymous Ninja!" %} </p>
+              <p style="font-size: 20px; margin-bottom:10px; color:#fff; font-style: italic; padding: 2px 50px;" class="black-bg-bar">{% trans "Become a CO₂ok Ninja with our Ninja App. You shop and the store pays a CO₂ compensation at no extra cost for you. Fighting climate change was never this easy." %}</p>
+              <p style="color:#fff; font-size: 15px;">{% trans "(We're going to make this a little less impersonal in the future)" %}</p>
               </div>
+              
             </div>
 
           </div>
         </div>
 
-        <h1>Je bent uitgenodigd door een anonieme Ninja! </h1>
-        <h3>(we gaan dit wel _iets_ minder onpersoonlijk maken, maar komt nog (ook iets met privacy enzo))</h3>
-        <img src="" alt="">
-
-      <section style="padding-top: 20px;" class="white-bg-bar form_session">
+        </header>
+        
+        <section id="about" class="light-bg" style="padding: 0px;">
           <!-- <div class="container">
-            <div class="row"> -->
-              <!-- <div class="col-md-6 text-center"> -->
-                <div class="skills-text social_container">
-                  <h2>Sign up via:</h2>
-                    <div data-type="group" data-dynamic-mod="true" class="footer-social-icons">
-
-                      <a class="social-icon" href="{% url 'social:begin' 'facebook' %}">
-                        <i class="fa fa-facebook-square" style="color:#2a5297; font-size: 60px;"></i>
-                      </a>
-
-                      <!-- <a target="_blank" class="social-icon" href="https://twitter.com/CO2ok_eco">
-                        <i class="fa fa-twitter-square" style="color:#1da1f3; font-size: 60px;"></i>
-                      </a>
-
-                      <a target="_blank" class="social-icon" href="https://www.instagram.com/co2ok.eco/">
-                        <i class="fa fa-google-plus-square" style="color:#c60000; font-size: 60px;" ></i>
-                      </a> -->
-
-                    </div>
+            <div class="row">
+              <div class="col-lg-12 text-center">
+                <div class="section-title">
+                  <h2 id="ninja-how-it-works">{% trans "HOW IT WORKS" %}</h2>
+      
                 </div>
-              <!-- </div> -->
-              <!-- <div class="col-md-6 text-center" style="border-left: 3px solid gray;"> -->
-                <!-- skill bar item -->
-                <div class="skills-text">
-                    <h2>{% include "messages.html" %}</h2>
+              </div>
+            </div> -->
+            <div class="row">
+              <!-- about module -->
+              <div class="col-md-4 text-center">
+                <div class="mz-module-about">
+                  <img src="{% static 'images/ninjaDesign_Register_2.svg' %}" style="width: 200px; height: 150px; margin:auto; vertical-align: middle;">
+                  <h3>{% trans "Become a CO₂ok Ninja" %}</h3>
+                </div>
+              </div>
+              <!-- end about module -->
+              <!-- about module -->
+              <div class="col-md-4 text-center">
+                <div class="mz-module-about">
+                    <img src="{% static 'images/ninjaDesign_Trolly.svg' %}" style="width: 200px; height: 150px;">
+                  <h3>{% trans "Shop" %}</h3>
+                </div>
+              </div>
+              <!-- end about module -->
+              <!-- about module -->
+              <div class="col-md-4 text-center">
+                <div class="mz-module-about">
+                    <img src="{% static 'images/ninjaDesign_Hadouken.svg' %}" style="width: 200px; height: 150px;">
+                  <h3>{% trans "Fight climate change" %}</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /.container -->
+        </section>
+
+        <header class="header-register">
+        <section class="white-bg-bar form_session invited-signup-signup-padder" style="height: 250px !important;">
+					<!-- <div class="container">
+						<div class="row"> -->
+							<!-- <div class="col-md-6 text-center"> -->
+								<div class="skills-text social_container">
+									<h2>{% trans "Sign up via:" %}</h2>
+										<div data-type="group" data-dynamic-mod="true" class="footer-social-icons">
+
+											<!-- <a class="social-icon" href="{% url 'social:begin' 'facebook' %}?next={{ request.path }}">
+												<i class="fa fa-facebook-square" style="color:#2a5297; font-size: 60px;"></i>
+											</a> -->
+
+											<!-- <a target="_blank" class="social-icon" href="https://twitter.com/CO2ok_eco">
+												<i class="fa fa-twitter-square" style="color:#1da1f3; font-size: 60px;"></i>
+											</a>
+
+											<a target="_blank" class="social-icon" href="https://www.instagram.com/co2ok.eco/">
+												<i class="fa fa-google-plus-square" style="color:#c60000; font-size: 60px;" ></i>
+											</a> -->
+
+										</div>
+							  </div>
+							<!-- </div> -->
+							<!-- <div class="col-md-6 text-center" style="border-left: 3px solid gray;"> -->
+								<!-- skill bar item -->
+								<div class="skills-text form_container">
+										<h2 class="invited-signup-signup-email">{% include "messages.html" %}</h2>
 
                         <form method="post" class="register_form">
                             {% csrf_token %}
-                            {{ form.as_p }}
-                          <button type="submit" class=" color2 install-ninja-button btn btn-xl install-button" style="padding: 15px; position: relative, left: 50px;">Sign up</button>
+							{{ form.as_p }}
+							<div class="row">
+							<div style="display: inline-block; color: black; margin-bottom:20px;" class="col-md-6 col-sm-12">{% trans "We won't share your email adress or other user data, read here about our" %} <a href="/#CO2ok-Ninja-Privacy-Policy" target="_blank">{% trans " Privacy Policy" %}</a></div>
+						  <div class="col-md-6 col-sm-12"><button type="submit" class=" color2 install-ninja-button btn btn-xl install-button" style="padding: 15px; position: relative; display: inline-block;">{% trans "Sign up" %}</button></div>
+						</div>
                         </form>
 
-                </div>
-              <!-- </div> -->
-            <!-- </div>
-          </div> -->
-        </section>
+								</div>
+							<!-- </div> -->
+						<!-- </div>
+					</div> -->
+				</section>
+</header>
+        
+     
     </header>
 
     <p id="back-top">
