@@ -88,7 +88,7 @@ msgstr "Quelle est la taille de votre part du gâteau?"
 
 #: co2ok_dojo/templates/faq.html:76
 #, python-format
-msgid "We invest 75%% of the commission in the CO₂ compensation. The remaining 25%% are much needed to keep CO₂ok going. We just started and our margin doesn’t even cover the costs. Our goal is to make an impact and give everybody the chance to easily fight climate change. Eventually, we will reduce our margin – we are not in this to become rich. We will always be open and transparent and therefore we will report our income and spending each year."
+msgid "We invest 75% of the commission in the CO₂ compensation. The remaining 25%% are much needed to keep CO₂ok going. We just started and our margin doesn’t even cover the costs. Our goal is to make an impact and give everybody the chance to easily fight climate change. Eventually, we will reduce our margin – we are not in this to become rich. We will always be open and transparent and therefore we will report our income and spending each year."
 msgstr "Nous investissons 75% de la commission dans la CO₂ compensation. Les 25% restant tout aussi nécessaire pour maintenir l’avancement de CO₂ok. Nous venons juste de commencer et notre marge ne couvre pas encors tous les frais. Notre objectif est d’avoir un impact et de donner à chacun la possibilité de lutter facilement contre le changement climatique. Nous finirons par réduire notre marge - nous ne sommes pas en train de devenir riches. Nous serons toujours ouverts et transparents et, par conséquent, nous rendrons compte de nos revenus et de nos dépenses chaque année."
 
 #: co2ok_dojo/templates/faq.html:84
