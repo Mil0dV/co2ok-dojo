@@ -46,7 +46,7 @@ msgstr "HOL DIR DIE APP!"
 
 #: home/templates/home/home_page.html:46
 msgid "CHOOSE FROM "
-msgstr "WÄHLE AUS "
+msgstr "WÄHLE ZWISCHEN "
 
 #: home/templates/home/home_page.html:46
 msgid "2000+ INTERNATIONAL SHOPS"
@@ -285,6 +285,10 @@ msgstr "Eine Biogas-Anlage wird gebaut"
 #: co2ok_dojo/templates/registration/register.html:18
 msgid "Sign Up"
 msgstr "Registrieren"
+
+#: co2ok_dojo/templates/registration/register.html:18
+msgid "Sign in"
+msgstr "Anmelden"
 
 #: co2ok_dojo/templates/registration/register.html:31
 msgid "Sign up via: "

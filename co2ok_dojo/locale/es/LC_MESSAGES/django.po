@@ -48,8 +48,7 @@ msgstr ""
 
 #: co2ok_dojo/templates/faq.html:13
 msgid ""
-"Why installing the Ninja App requires permission to “Read and change all "
-"data on websites you visit”?"
+"Why installing the Ninja App requires permission to “Read and change all data on websites you visit”?"
 msgstr "¿Por qué instalar la aplicación Ninja requiere un permiso para "Leer y cambiar todos los datos en los sitios web que visito"?"
 
 #: co2ok_dojo/templates/faq.html:19
@@ -133,7 +132,7 @@ msgid ""
 "I only shop at Amazon and already use Amazon Smile program, is there any "
 "reason for me to install the Ninja App?"
 msgstr "Sólo compro en Amazon y ya uso el programa Amazon Smile, ¿hay alguna razón para que instale la aplicación Ninja?"
-ccccccccccccccccc
+
 #: co2ok_dojo/templates/faq.html:90
 #, python-format
 msgid ""
@@ -226,14 +225,11 @@ msgstr ""
 
 #: co2ok_dojo/templates/light_box.html:23
 msgid ""
-"NOTE: CO2ok Ninja only needs to know which website you are visiting. We do "
-"not record your website visits or any other data. We do not make changes on "
-"your computer. The Google notice that you see as you click further is "
-"different from what the Ninja app does."
+"NOTE: CO2ok Ninja only needs to know which website you are visiting. We do not record your website visits or any other data. We do not make changes on your computer. The Google notice that you see as you click further is different from what the Ninja app does."
 msgstr ""
 
 #: co2ok_dojo/templates/light_box.html:38
-msgid "GET THE APP"
+msgid "<a href "\https://co2ok.ninja/signup/\">GET THE APP</a>"
 msgstr "CONSIGA LA APLICACIÓN"
 
 #: co2ok_dojo/templates/menu.html:25 users/templates/users/profile.html:34
@@ -296,12 +292,12 @@ msgid "CHOOSE FROM "
 msgstr ""
 
 #: home/templates/home/home_page.html:46
-msgid " 2000+ INTERNATIONAL SHOPS"
+msgid " 2000+ INTERNATIONALE SHOPS"
 msgstr ""
 
 #: home/templates/home/home_page.html:156
 msgid "HOW IT WORKS"
-msgstr "Cómo funciona"
+msgstr "<a href "\https://co2ok.ninja/#about/\">Cómo funciona"</a>
 
 #: home/templates/home/home_page.html:166
 msgid "Become a CO₂ok Ninja"
@@ -432,8 +428,7 @@ msgstr "Lista de tiendas asociadas"
 
 #: ninja_partner_stores/templates/ninja_partner_stores/ninja-partner-stores.html:59
 msgid ""
-"You raise money for the fight against climate change when you shop in one of "
-"these online stores."
+"You raise money for the fight against climate change when you shop in one of these online stores."
 msgstr ""
 
 #: users/templates/users/profile.html:56
@@ -442,8 +437,7 @@ msgstr ""
 
 #: users/templates/users/profile.html:88
 msgid ""
-"Tell your friends about CO2ok Ninja by sharing the above link, so you get "
-"shurikens"
+"Tell your friends about CO2ok Ninja by sharing the above link, so you get shurikens"
 msgstr ""
 
 #: users/templates/users/profile.html:93
