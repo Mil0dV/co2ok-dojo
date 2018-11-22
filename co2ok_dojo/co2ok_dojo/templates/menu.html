@@ -23,10 +23,10 @@
           </li>
 
           <li>
-            <a class="page-scroll" href="https://co2ok.eco/missie/" target="_blank">{% trans "MISSIE" %}</a>
+            <a class="page-scroll" href="https://co2ok.eco/missie/" target="_blank">{% trans "MISSION" %}</a>
           </li>
           <li>
-            <a class="page-scroll" href="/#about">{% trans "Hoe het werkt" %}</a>
+            <a class="page-scroll" href="/#about">{% trans "How it works" %}</a>
           </li>
           <li>
             <a class="page-scroll" href="/#faq">{% trans "FAQ" %}</a>
@@ -34,7 +34,8 @@
           <li>
 
 
-              <div class="dropdown btn-success" style="margin-top:12px; margin-right:12px;">
+              <div class="dropdown" style="margin-top:12px; margin-right:20px; margin-left:15px; margin-bottom: 20px;">
+                <!-- <img src="{% static 'images/flags/en.png' %}"> -->
                   {% get_current_language as LANGUAGE_CODE %}
                   {% get_available_languages as LANGUAGES %}
                   {% get_language_info_list for LANGUAGES as languages %}
