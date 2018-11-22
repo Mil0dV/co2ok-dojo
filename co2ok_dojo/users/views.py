@@ -3,6 +3,8 @@ from django.core.paginator import EmptyPage, PageNotAnInteger, Paginator
 from django.contrib.auth import login, authenticate, get_user_model
 # from django.contrib.auth.forms import UserCreationForm
 from cuser.forms import UserCreationForm
+from django.contrib.gis.geoip2 import GeoIP2
+from django.utils import translation
 
 # from django.contrib.auth.models import User
 from django.shortcuts import render, redirect, get_object_or_404
@@ -20,6 +22,13 @@ from .models import Rewards
 
 def signup(request):
     cuser = get_user_model()
+    g = GeoIP2()
+    googleIp = g.country('google.com')
+    amsterdamIp = g.city('82.161.48.8')
+
+    user_lang = 'de';
+    translation.activate(user_lang)
+    request.session[translation.LANGUAGE_SESSION_KEY] = user_lang
 
     if request.method == "POST":
 
@@ -47,7 +56,7 @@ def signup(request):
         form = RegisterForm()
 
     #return render(request,'users/login.html',{'form': register_form})
-    return render(request, 'registration/register.html', {'form': form, 'full_path': request.get_full_path()})
+    return render(request, 'registration/register.html', {'form': form, 'full_path': request.get_full_path(), 'googleIp': googleIp, 'amsterdamIp': amsterdamIp})
 
 
 
