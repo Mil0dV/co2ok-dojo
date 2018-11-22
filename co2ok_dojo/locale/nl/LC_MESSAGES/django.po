@@ -96,9 +96,9 @@ msgstr "Welk percentage van mijn aankoop word gebruikt om CO₂-uitstoot te comp
 
 
 #: co2ok_dojo/templates/faq.html:76
-#, python-format
+
 msgid "We invest 75% of the commission in the CO₂ compensation. The remaining 25% are much needed to keep CO₂ok going. We just started and our margin doesn’t even cover the costs. Our goal is to make an impact and give everybody the chance to easily fight climate change. Eventually, we will reduce our margin – we are not in this to become rich. We will always be open and transparent and therefore we will report our income and spending each year."
-msgstr "CO₂ok ontvangt tussen 1-6%% van de uiteindelijke aankoop, via de CO₂ok Ninja. Het percentage is afhankelijk van de webwinkel en het product. Hiervan gaat 75%% naar de non-profitorganisatie Atmosfair gaat, die zich inzetten voor ons klimaat. De overige 25%% gebruikt wordt voor het bedrijf zelf – we willen iedereen in staat stellen klimaatverandering te bestrijden, dus tijd om de wereld te veroveren! We doen dit niet om er rijk van te worden. Ook maken we onze inkomsten en uitgaven ieder jaar openbaar."
+msgstr "CO₂ok ontvangt tussen 1-6%% van de uiteindelijke aankoop, via de CO₂ok Ninja. Het percentage is afhankelijk van de webwinkel en het product. Hiervan gaat 75% naar de non-profitorganisatie Atmosfair gaat, die zich inzetten voor ons klimaat. De overige 25%% gebruikt wordt voor het bedrijf zelf – we willen iedereen in staat stellen klimaatverandering te bestrijden, dus tijd om de wereld te veroveren! We doen dit niet om er rijk van te worden. Ook maken we onze inkomsten en uitgaven ieder jaar openbaar."
 
 
 #: co2ok_dojo/templates/faq.html:84
@@ -107,7 +107,7 @@ msgstr "Ik shop alleen op Amazon en gebruik ook al Amazon Smile programma, is er
 
 
 #: co2ok_dojo/templates/faq.html:90
-#, python-format
+
 msgid "First of all, our partners usually donate 2-12 times more through the Ninja App (1-6%) than Amazon does through Amazon Smile (only 0.5% of the final price). So, if you care about having as big a positive impact on the world as you can, using the Ninja App either instead of or in addition to Amazon Smile is a way to achieve that. Moreover, there are a lot of products or services available in our partner stores that are not available on Amazon. For example, travel services (hotels, flights, train tickets, car rentals), financial products, or sport clubs’ official apparel."
 msgstr "Onze partners doneren 2 tot 12 keer meer via het programma Ninja en ontvangt 1-6%% van het aankoop bedrag terwijl dit bij Amazon Smile maar 0,5%% is. Ook heeft CO2ok Ninja meer variatie in producten, zoals transport services, financiële producten en officiële kleding van verschillende clubs. Amazon Smile kan dit niet aanbieden."
 
