@@ -199,8 +199,8 @@ msgid "What stores does the Ninja App work with?"
 msgstr "What stores does the Ninja App work with?"
 
 #: co2ok_dojo/templates/faq.html:57
-msgid 'We have partnered with several big e-commerce businesses such as Ebay, Bol.com, Booking.com, CoolBlue, Aliexpress, Etsy, and over 1000 others. <a href="https://co2ok.eco/en/ninja-partner-stores/\">Here you can find a list of all participating stores.</a>'
-msgstr 'We have partnered with several big e-commerce businesses such as Ebay, Bol.com, Booking.com, CoolBlue, Aliexpress, Etsy, and over 1000 others. <a href="https://co2ok.eco/en/ninja-partner-stores/\">Here you can find a list of all participating stores.</a>'
+msgid "We have partnered with several big e-commerce businesses such as Ebay, Bol.com, Booking.com, CoolBlue, Aliexpress, Etsy, and over 1000 others. <a href=\"https://co2ok.eco/en/ninja-partner-stores/\">Here you can find a list of all participating stores.</a>"
+msgstr "We have partnered with several big e-commerce businesses such as Ebay, Bol.com, Booking.com, CoolBlue, Aliexpress, Etsy, and over 1000 others. <a href=\"https://co2ok.eco/en/ninja-partner-stores/\">Here you can find a list of all participating stores.</a>"
 
 #: co2ok_dojo/templates/faq.html:64
 msgid "How do shops benefit from being in CO₂ok Ninja program?"
@@ -320,9 +320,9 @@ msgstr "GET THE APP"
 msgid "MISSION"
 msgstr "MISSION"
 
-#: co2ok_dojo/templates/menu.html:28
-msgid "How it works"
-msgstr "How it works"
+#  #: co2ok_dojo/templates/menu.html:28
+#  msgid "How it works"
+#  msgstr "How it works"
 
 #: co2ok_dojo/templates/menu.html:31
 msgid "FAQ"
