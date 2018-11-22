@@ -89,11 +89,11 @@ msgid "There are no extra costs for you."
 msgstr "There are no extra costs for you."
 
 #: home/templates/home/home_page.html:196
-msgid "De CO₂ compensatie wordt volledig gedekt door de webwinkel."
+msgid "The CO₂ compensation is fully covered by the shop."
 msgstr "The CO₂ compensation is fully covered by the shop."
 
 #: home/templates/home/home_page.html:201
-msgid "Doe mee & bestrijd klimaatverandering"
+msgid "Get involved & fight climate change"
 msgstr "Get involved & fight climate change"
 
 #: home/templates/home/home_page.html:229
@@ -121,7 +121,7 @@ msgid " FAQ"
 msgstr " FAQ"
 
 #: home/templates/home/home_page.html:238
-msgid "Tijdens productie en vervoer van producten komen broeikasgassen vrij"
+msgid "During manufacturing and shipping of products, greenhouse gases are emitted"
 msgstr "During manufacturing and shipping of products, greenhouse gases are emitted"
 
 #: home/templates/home/home_page.html:245
