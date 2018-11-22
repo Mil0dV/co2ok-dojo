@@ -159,7 +159,7 @@ msgstr ""
 #: co2ok_dojo/templates/menu.html:28 home/templates/home/home_page.html:22
 #: users/templates/users/profile.html:37
 msgid "How it works"
-msgstr ""
+msgstr "Comment ça marche"
 
 #: co2ok_dojo/templates/menu.html:31 home/templates/home/home_page.html:306
 #: users/templates/users/profile.html:40
