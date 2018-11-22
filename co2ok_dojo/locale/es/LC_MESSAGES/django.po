@@ -47,7 +47,7 @@ msgid "Why installing the Ninja App requires permission to “Read and change al
 msgstr "¿Por qué instalar la aplicación Ninja requiere un permiso para \"Leer y cambiar todos los datos en los sitios web que visito\"?"
 
 #: co2ok_dojo/templates/faq.html:19
-msgid "For the Ninja App to work properly it needs to have access to the \"information about the website you are visiting to know if you’re on one of \"our partners’ sites. In short, the Ninja App downloads the list of partner \"shops, then works in the background, comparing the website you’re viewing against the downloaded list, and if there is a match, it shows our  CO₂ok button. The information about visited websites does not leave your computer, so your privacy is protected. The Ninja App has an open code available at <a href=\"https://github.com/Mil0dV/co2ok-ninja\\\">Github</a> so anyone can view and audit it to make sure it is safe to use."
+msgid "For the Ninja App to work properly it needs to have access to the \"information about the website you are visiting to know if you’re on one of \"our partners’ sites. In short, the Ninja App downloads the list of partner \"shops, then works in the background, comparing the website you’re viewing against the downloaded list, and if there is a match, it shows our  CO₂ok button. The information about visited websites does not leave your computer, so your privacy is protected. The Ninja App has an open code available at <a href=\"https://github.com/Mil0dV/co2ok-ninja\">Github</a> so anyone can view and audit it to make sure it is safe to use."
 msgstr "Para que la aplicación Ninja funcione correctamente, debe tener acceso a la información sobre aquellos sitios web que estás visitando para identificar si ese sitio web pertenece a uno de nuestros socios. La aplicación Ninja descarga la lista de tiendas asociadas, para después trabajar en un segundo plano comparando el sitio web que estás viendo con la lista descargada. En el caso de haber una coincidencia, se mostrará nuestra opción CO₂ok. La información sobre los sitios web visitados no sale de su ordenador, por lo que tu privacidad está protegida. La aplicación Ninja tiene un código abierto disponible en Github para que cualquiera pueda verlo y auditarlo para asegurarse de que sea seguro de usar."
 
 #: co2ok_dojo/templates/faq.html:26
@@ -96,7 +96,6 @@ msgid "I only shop at Amazon and already use Amazon Smile program, is there any 
 msgstr "Sólo compro en Amazon y ya uso el programa Amazon Smile, ¿hay alguna razón para que instale la aplicación Ninja?"
 
 #: co2ok_dojo/templates/faq.html:90
-#, python-format
 msgid "First of all, our partners usually donate 2-12 times more through the Ninja App (1-6%%) than Amazon does through Amazon Smile (only 0.5%% of the final price). So, if you care about having as big a positive impact on the world as you can, using the Ninja App either instead of or in addition to Amazon Smile is a way to achieve that. Moreover, there are a lot of products or services available in our partner stores that are not available on Amazon. For example, travel services (hotels, flights, train tickets, car rentals), financial products, or sport clubs’ official apparel."
 msgstr "En primer lugar, nuestros socios generalmente donan de 2 a 12 veces más a través de la aplicación Ninja (1%-6%) que Amazon a través de Amazon Smile (solo el 0,5% del precio final). Por lo tanto, si tener un mayor impacto positivo en el medio ambiente es algo que te incentiva, usar la aplicación Ninja en lugar de Amazon Smile o bien utilizar ambas, es una forma de lograrlo. Además, hay muchos productos o servicios disponibles en nuestras tiendas asociadas que no están disponibles en Amazon. Por ejemplo, servicios de viajes (hoteles, vuelos, billetes de tren, alquiler de automóviles), productos financieros o indumentaria oficial de clubes deportivos."
 
@@ -129,7 +128,7 @@ msgid "How does it work?"
 msgstr "¿Cómo funciona?"
 
 #: co2ok_dojo/templates/faq.html:146
-#, python-format
+
 msgid "After installing the Ninja app you will see a our “Shop CO₂ok” box whilst shopping in one of our partner stores. Simply click this box and you will be redirected back to the partner store (exactly where you were before). From then on, whenever you buy something, CO₂ok receives a portion of the price you pay (usually between 1%% and 6%%). We donate our profits to carefully selected organisations such as Atmosfair. Some stores will require you to repeat the process after some time. You are a mobile Ninja - see here."
 msgstr "Después de instalar la aplicación Ninja, verás una casilla llamada \"Comprar CO₂ok\" siempre que compres en una de nuestras tiendas asociadas. Simplemente haciendo click en esta opción serás redirigido de nuevo a la tienda (exactamente donde estabas al inicio). A partir de aquí, cada vez que compres algo, CO₂ok recibirá una porción del precio que pagas (generalmente entre 1% y 6%). Donamos nuestras ganancias a organizaciones cuidadosamente seleccionadas como Atmosfair. Algunas tiendas requerirán que repitas el proceso después de algún tiempo. Si eres un Ninja móvil - haz click aquí."
 
@@ -138,7 +137,7 @@ msgid "Credits to Altruisto"
 msgstr "Créditos para Altruisto"
 
 #: co2ok_dojo/templates/faq.html:159
-msgid "We would like to thank Altruisto for putting their code open source so we could fork our own project based on their previous work. <a href=\\\"https://altruisto.com/\\\">Altruisto</a> does a great job at donating to charities through online shoppings. Their GitHub repo can be found here: <a href=\\\"https://github.com/Altruisto/altruisto\\\">Altruisto GitHub repository"
+msgid "We would like to thank Altruisto for putting their code open source so we could fork our own project based on their previous work. <a href=\"https://altruisto.com/\">Altruisto</a> does a great job at donating to charities through online shoppings. Their GitHub repo can be found here: <a href=\"https://github.com/Altruisto/altruisto\">Altruisto GitHub repository"
 msgstr "Quisiéramos agradecer a Altruisto por permitirnos utilizar su código de fuente gracias al cual podemos tener nuestro propio proyecto basado en su trabajo anterior. Altruisto hace un gran trabajo donando a organizaciones benéficas a través de compras online. Su repo de GitHub se puede encontrar aquí: repositorio de Altruisto GitHub"
 
 #: co2ok_dojo/templates/language.html:6
