@@ -87,7 +87,7 @@ msgid "How big is your piece of the cake?"
 msgstr "¿Cómo de grande es tu porción de la tarta?"
 
 #: co2ok_dojo/templates/faq.html:76
-#, python-format
+
 msgid "We invest 75% of the commission in the CO₂ compensation. The remaining 25%% are much needed to keep CO₂ok going. We just started and our margin doesn’t even cover the costs. Our goal is to make an impact and give everybody the chance to easily fight climate change. Eventually, we will reduce our margin – we are not in this to become rich. We will always be open and transparent and therefore we will report our income and spending each year."
 msgstr "Invertimos el 75% de la comisión en la reparación de la emisión de CO₂ .El 25% restante es muy necesario para que CO₂ok siga funcionando. Acabamos de empezar y nuestro margen todavía no cubre los costes. Nuestro objetivo es generar un impacto positivo y dar a todo el que quiera la oportunidad de combatir fácilmente el cambio climático. Eventualmente, reduciremos nuestro margen. No estamos en esto para hacernos ricos. Siempre seremos abiertos y transparentes y, por lo tanto, informaremos sobre nuestros ingresos y gastos cada año."
 
