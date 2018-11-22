@@ -3,6 +3,8 @@
 {% block menu %}
   	<link href="{% static 'css/menu.css' %}" rel="stylesheet">
   <nav class="navbar navbar-default navbar-fixed-top" style="background-color: #222 !important; padding-bottom: 0px;">
+    <script type="text/javascript" src="{% static 'js/menu.js' %}"></script>
+
     <div class="container">
       <!-- Brand and toggle get grouped for better mobile display -->
       <div class="navbar-header page-scroll">
@@ -38,8 +40,8 @@
                   {% get_current_language as LANGUAGE_CODE %}
                   {% get_available_languages as LANGUAGES %}
                   {% get_language_info_list for LANGUAGES as languages %}
-                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background-image: url({% static 'images/flags/en.png' %}); background-size: 40px 30px; height: 30px; width: 40px; background-color: none; background-repeat: no-repeat;">
-                    {{ language.name_local }}
+                <button class="btn btn-success dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Nederlands
                 </button>
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
 
@@ -50,14 +52,14 @@
                             <option value="{{ language.code }}"{% if language.code == LANGUAGE_CODE %} selected{% endif %}>
                               {{ language.name_local }} ({{ language.code }})
                             </option>
-      
+
                          </select>
-      
+
                           {% with 'images/flags/'|add:language.code|add:'.png' as image_static %}
-                            <button type="submit" class="lang_choice" style="background-image:url({% static image_static %})">
+                            <button type="submit" class="lang_choice {{language.code}}" style="background-image:url({% static image_static %})">
                             </button>
                           {% endwith %}
-      
+
                       </form>
                     {% endfor %}
                 </div>
