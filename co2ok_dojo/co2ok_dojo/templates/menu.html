@@ -39,7 +39,7 @@
                   {% get_available_languages as LANGUAGES %}
                   {% get_language_info_list for LANGUAGES as languages %}
                 <button class="btn btn-success dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    {{ language.name_local }}
+                    Nederlands
                 </button>
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
 
@@ -50,14 +50,14 @@
                             <option value="{{ language.code }}"{% if language.code == LANGUAGE_CODE %} selected{% endif %}>
                               {{ language.name_local }} ({{ language.code }})
                             </option>
-      
+
                          </select>
-      
+
                           {% with 'images/flags/'|add:language.code|add:'.png' as image_static %}
-                            <button type="submit" class="lang_choice" style="background-image:url({% static image_static %})">
+                            <button type="submit" class="lang_choice {{language.code}}" style="background-image:url({% static image_static %})">
                             </button>
                           {% endwith %}
-      
+
                       </form>
                     {% endfor %}
                 </div>
