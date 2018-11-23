@@ -154,12 +154,12 @@ msgstr "<a hrefCONSIGA LA APLICACIÓN"
 
 #: co2ok_dojo/templates/menu.html:25 users/templates/users/profile.html:34
 msgid "MISSION"
-msgstr ""
+msgstr "Misión"
 
 #: co2ok_dojo/templates/menu.html:28 home/templates/home/home_page.html:22
 #: users/templates/users/profile.html:37
-msgid "How it works"
-msgstr ""
+msgid "How it works"c
+msgstr "Cómo funciona"
 
 #: co2ok_dojo/templates/menu.html:31 home/templates/home/home_page.html:306
 #: users/templates/users/profile.html:40
@@ -176,11 +176,11 @@ msgstr ""
 
 #: co2ok_dojo/templates/registration/register.html:40
 msgid "Sign up via:"
-msgstr ""
+msgstr "Regístrate a través de"
 
 #: co2ok_dojo/templates/registration/register.html:67
 msgid "We won't share your email adress or other user data, read here about our"
-msgstr ""
+msgstr "No compartiremos su correo electrónico u otros datos personales que se faciliten. Lea aquí sobre nuestra política de privacidad"
 
 #: co2ok_dojo/templates/registration/register.html:67
 #: home/templates/home/home_page.html:291
@@ -346,3 +346,7 @@ msgstr ""
 #: users/views.py:87
 msgid "mot a traduire"
 msgstr ""
+
+#: login
+msgid "password"
+msgstr "Contraseña"

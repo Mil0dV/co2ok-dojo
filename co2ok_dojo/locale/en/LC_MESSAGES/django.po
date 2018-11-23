@@ -40,6 +40,10 @@ msgstr "Become a CO₂ok Ninja with our Ninja App. You shop and the store pays a
 msgid "How it works"
 msgstr "How it works"
 
+#:login
+msgid "password"
+msgstr "password"
+
 #: home/templates/home/home_page.html:38
 msgid "GET THE APP!"
 msgstr "GET THE APP!"

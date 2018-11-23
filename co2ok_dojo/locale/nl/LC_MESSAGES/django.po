@@ -68,8 +68,7 @@ msgstr "Met welke winkels werkt CO₂ok Ninja samen?"
 
 #: co2ok_dojo/templates/faq.html:45
 msgid "We have partnered with several big e-commerce businesses such as Ebay, Bol.com, Booking.com, CoolBlue, Aliexpress, Etsy, and over 1000 others. <a href=\"https://co2ok.eco/en/ninja-partner-stores/\">Here you can find a list of all participating stores.</a>"
-msgstr "CO₂ok Ninja is aangesloten bij meer dan 1000 webwinkels, zoals Ebay, Bol.com, Etsy en Barnes&Noble. <a href=\"https://co2ok.eco/en/ninja-partner-stores/\">Check hier de lijst."
-
+msgstr "CO₂ok Ninja is aangesloten bij meer dan 1000 webwinkels, zoals Ebay, Bol.com, Etsy en Barnes&Noble. <a href=\"https://co2ok.eco/en/ninja-partner-stores/\">Check hier de lijst.</a>"
 
 #: co2ok_dojo/templates/faq.html:52
 msgid "How do shops benefit from being in CO₂ok Ninja program?"
@@ -155,8 +154,8 @@ msgid "Credits to Altruisto"
 msgstr "Credits aan Altruisto"
 
 #: co2ok_dojo/templates/faq.html:159
-msgid "We would like to thank Altruisto for putting their code open source so we could fork our own project based on their previous work. <a href \"https://altruisto.com/\">Altruisto</a> does a great job at donating to charities through online shoppings. Their GitHub repo can be found here: <a href \"https://github.com/Altruisto/altruisto\">Altruisto GitHub repository"
-msgstr "We willen Altruisto graag bedanken voor het open source maken van hun code, zodat we ons project konden “forken”, gebaseerd op hun voorgaande werk. <a href \"https://altruisto.com/\">Altruisto</a> doet geweldig werk met het doneren aan goede doelen door middel van online winkelen. Hun GitHub repo kun je hier vinden: <a href \"https://github.com/Altruisto/altruisto\">Altruisto GitHub repository"
+msgid "We would like to thank Altruisto for putting their code open source so we could fork our own project based on their previous work. <a href=\"https://altruisto.com/\">Altruisto</a> does a great job at donating to charities through online shoppings. Their GitHub repo can be found here: <a href=\"https://github.com/Altruisto/altruisto\">Altruisto GitHub repository"
+msgstr "We willen Altruisto graag bedanken voor het open source maken van hun code, zodat we ons project konden “forken”, gebaseerd op hun voorgaande werk. <a href=\"https://altruisto.com/\">Altruisto</a> doet geweldig werk met het doneren aan goede doelen door middel van online winkelen. Hun GitHub repo kun je hier vinden: <a href=\"https://github.com/Altruisto/altruisto\">Altruisto GitHub repository"
 
 #: co2ok_dojo/templates/language.html:6
 msgid "Bonjour les nouveaux !"
@@ -370,3 +369,7 @@ msgstr "Kies een doel"
 #: users/views.py:87
 msgid "mot a traduire"
 msgstr ""
+
+#: login
+msgid "password"
+msgstr "wachtwoord"
