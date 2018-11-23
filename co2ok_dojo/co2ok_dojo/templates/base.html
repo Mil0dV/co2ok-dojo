@@ -1,4 +1,5 @@
 {% load static wagtailuserbar %}
+{% load i18n %}
 
 <!DOCTYPE html>
 {% include 'tracking_code.html' %}
@@ -17,6 +18,13 @@
         </title>
         <meta name="description" content="" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <!-- Facebook post Open Graph markup -->
+        <!-- <meta property="og:url"         content="possibly insert websitelink" /> -->
+        <!-- <meta property="og:type"        content="article" /> -->
+        <meta property="og:title"       content=" {% trans 'Fight climate change while you shop online' %}" />
+        <meta property="og:description" content=" {% trans 'Become a CO₂ok Ninja with our Ninja App. You shop and the store pays a CO₂ compensation at no extra cost for you. Fighting climate change was never this easy.' %}" />
+        <meta property="og:image"       content="http://co2ok.eco/wp-content/uploads/2018/11/ninjaDesign_Trolly_world.png" />
 
         <link rel="icon" type="image/png" href="{% static 'images/co2ok-logo-favicon.png' %}"/>
 
