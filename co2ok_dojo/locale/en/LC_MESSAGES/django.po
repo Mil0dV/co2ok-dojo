@@ -362,6 +362,20 @@ msgstr "CO2 compensated"
 msgid "Pick a cause"
 msgstr "Pick a cause"
 
+# Invited Sign Page
+
+#: users/templates/users/menu.html:18
+msgid "Join Us!"
+msgstr "Join Us!"
+
+#: users/templates/users/menu.html:19
+msgid "You've been invited by an anonymous Ninja!"
+msgstr "You've been invited by an anonymous Ninja!"
+
+#: users/templates/users/menu.html:21
+msgid "(We're going to make this a little less impersonal in the future)"
+msgstr "(We're going to make this a little less impersonal in the future)"
+
 #  #: users/views.py:87
 #  msgid "Bestrijd klimaatverandering terwijl je online shopt"
 #  msgstr "Fight climate change while you shop online"

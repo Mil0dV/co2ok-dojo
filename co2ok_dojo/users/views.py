@@ -3,6 +3,8 @@ from django.core.paginator import EmptyPage, PageNotAnInteger, Paginator
 from django.contrib.auth import login, authenticate, get_user_model
 # from django.contrib.auth.forms import UserCreationForm
 from cuser.forms import UserCreationForm
+# from django.contrib.gis.geoip2 import GeoIP2
+# from django.utils import translation
 
 # from django.contrib.auth.models import User
 from django.shortcuts import render, redirect, get_object_or_404
@@ -43,7 +45,7 @@ def signup(request):
             else:
                 messages.error(request, "This email already exist")
     else:
-        messages.error(request, 'Sign up with email:')
+        messages.error(request, '')
         form = RegisterForm()
 
     #return render(request,'users/login.html',{'form': register_form})
@@ -134,7 +136,7 @@ def invited_sign(request, user_id):
                 login(request, invited_user)
                 return redirect('/accounts/profile')
     else:
-        #messages.error(request, 'Form not valid')
+        messages.error(request, 'Sign up with email:')
         form = RegisterForm()
 
     user_obj = {

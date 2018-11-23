@@ -370,6 +370,20 @@ msgstr "Kies een doel"
 msgid "mot a traduire"
 msgstr ""
 
+#: users/templates/users/menu.html:18
+msgid "Join Us!"
+msgstr "Join Us!"
+
+#: users/templates/users/menu.html:19
+msgid "You've been invited by an anonymous Ninja!"
+msgstr "Je bent uitgenodigd door een anonieme Ninja!"
+
+#: users/templates/users/menu.html:21
+msgid "(We're going to make this a little less impersonal in the future)"
+msgstr "(We gaan dit een beetje minder onpersoonlijk maken in de toekomst)"
+
+
+
 #: login
 msgid "password"
 msgstr "wachtwoord"

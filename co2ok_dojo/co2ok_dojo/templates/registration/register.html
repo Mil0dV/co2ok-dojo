@@ -20,6 +20,7 @@
 				</div>
 
 			</div>
+
 			<!-- <div class="container register-container-padder">
 				<div class="slider-container" >
 					<div class="intro-text">
@@ -58,16 +59,18 @@
 							<!-- <div class="col-md-6 text-center" style="border-left: 3px solid gray;"> -->
 								<!-- skill bar item -->
 								<div class="skills-text form_container">
-										<h2>{% include "messages.html" %}</h2>
 
-                        <form method="post" class="register_form">
-                            {% csrf_token %}
-							{{ form.as_p }}
-							<div class="row">
-							<div style="display: inline-block; color: black; margin-bottom:20px;" class="col-md-6 col-sm-12">{% trans "We won't share your email adress or other user data, read here about our" %} <a href="/#CO2ok-Ninja-Privacy-Policy" target="_blank">{% trans " Privacy Policy" %}</a></div>
-						  <div class="col-md-6 col-sm-12"><button type="submit" class=" color2 install-ninja-button btn btn-xl install-button" style="padding: 15px; position: relative; display: inline-block;">{% trans "Sign up" %}</button></div>
-						</div>
-                        </form>
+									 <h2>Sign up via email:</h2>
+									{% include "messages.html" %}
+
+                  <form method="post" class="register_form">
+                      {% csrf_token %}
+						        	{{ form.as_p }}
+											<div class="form_footer">
+											  <button type="submit" class=" color2 install-ninja-button btn btn-xl install-button" style="padding: 15px; position: relative; display: inline-block;">{% trans "Sign up" %}</button>
+												<p>{% trans "We won't share your email adress or other user data, read here about our" %} <a href="/#CO2ok-Ninja-Privacy-Policy" target="_blank">{% trans " Privacy Policy" %}</a></p>
+										</div>
+                  </form>
 
 								</div>
 							<!-- </div> -->

@@ -20,8 +20,8 @@
 
 			 </div>
 				<!-- <div class="col-md-12"> -->
-			<section style="height: 300px !important; padding: 50px 0px;" class="white-bg-bar form-session">
-
+			 <section style="height: 300px !important; padding: 50px 0px;" class="white-bg-bar form_session">
+           <!-- <div class="form-session"> -->
 								<div class="skills-text social_container">
 									<h2>Sign in via:</h2>
 										<div data-type="group" data-dynamic-mod="true" class="footer-social-icons">
@@ -43,13 +43,14 @@
 							<!-- <div class="col-md-6 col-sm-12 text-center" style="border-left: 3px solid gray;"> -->
 								<!-- skill bar item -->
 								<div class="skills-text form_container">
-										<h2>{% include "messages.html" %}</h2>
+									<h2>Sign in via email:</h2>
+										{% include "messages.html" %}
 
-												<form method="post" class="register_form">
-														{% csrf_token %}
-														{{ form.as_p }}
-													<button type="submit" class=" color2 install-ninja-button btn btn-xl install-button" style="padding: 15px; position: relative, left: 50px;">{% trans "Sign in" %}</button>
-												</form>
+										<form method="post" class="register_form">
+												{% csrf_token %}
+												{{ form.as_p }}
+											<button type="submit" class=" color2 install-ninja-button btn btn-xl install-button" style="padding: 15px; position: relative, left: 50px;">{% trans "Sign in" %}</button>
+										</form>
 
 								</div>
 
