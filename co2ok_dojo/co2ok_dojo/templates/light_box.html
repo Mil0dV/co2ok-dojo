@@ -11,17 +11,21 @@
         <img src="{% static 'images/close.svg' %}" alt="">
      </div>
 
+     {% block light_box_footer %}{% endblock %}
+
+
      <div class="light_box_header">
-       <h3>CO2ok Ninja app</h3>
+       {% block light_box_header %}{% endblock %}
      </div>
 
      <div class="light_box_body">
 
+        {% block light_box_body %}{% endblock %}
        <!-- <p>Joining the fight against climate change takes just 2  clicks.</p> -->
        <p style="font-weight: 500; color: #ff3100;">
          <!-- Nog 2 keer klikken en je strijd mee tegen klimaatverandering! -->
          {% trans "NOTE: CO2ok Ninja only needs to know which website you are visiting. We do not record your website visits or any other data. We do not make changes on your computer. The Google notice that you see as you click further is different from what the Ninja app does." %}
-        
+
        </p>
 
        <img src="{% static 'images/ninja_app_install.png' %}" alt="">

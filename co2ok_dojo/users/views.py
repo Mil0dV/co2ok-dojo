@@ -22,9 +22,6 @@ from .models import Rewards
 
 def signup(request):
     cuser = get_user_model()
-    g = GeoIP2()
-    googleIp = g.country('google.com')
-    amsterdamIp = g.city('82.161.48.8')
 
     if request.method == "POST":
 
@@ -48,11 +45,11 @@ def signup(request):
             else:
                 messages.error(request, "This email already exist")
     else:
-        messages.error(request, 'Sign up with email:')
+        messages.error(request, '')
         form = RegisterForm()
 
     #return render(request,'users/login.html',{'form': register_form})
-    return render(request, 'registration/register.html', {'form': form, 'full_path': request.get_full_path(), 'googleIp': googleIp, 'amsterdamIp': amsterdamIp})
+    return render(request, 'registration/register.html', {'form': form, 'full_path': request.get_full_path()})
 
 
 
