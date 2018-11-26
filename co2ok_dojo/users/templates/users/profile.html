@@ -5,6 +5,7 @@
 <!-- begin linghtbox -->
 {% block lightboxContent %}
 
+<link href="{% static 'css/menu.css' %}" rel="stylesheet">
     <div class="light_box_header lightboxActive">
 
     </div>
@@ -16,7 +17,8 @@
 
       </p>
 
-      <img src="{% static 'images/ninja_app_install.png' %}" alt="">
+      
+      <img src="{% static trans 'images/ninja_app_install_EN.png' %}" alt="" class="ninja_app_install">
 
       <div class="images"></div>
 
@@ -52,7 +54,44 @@
             <span class="icon-bar"></span>
             </button>
           <a class="navbar-brand page-scroll" href="/"><img src="{% static 'images/logo_licht.png' %}" alt="Lattes theme logo" style="height:40px; width:auto;"></a>
-          </div>
+          <div class="navbar-brand page-scroll" href="/#page-top" style="margin-top:5px; margin-right:20px; margin-left:15px; margin-bottom: 0px;">
+
+            <div class="dropdown" style="">
+                <!-- <img src="{% static 'images/flags/en.png' %}"> -->
+                  {% get_current_language as LANGUAGE_CODE %}
+                  {% get_available_languages as LANGUAGES %}
+                  {% get_language_info_list for LANGUAGES as languages %}
+                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="    background-image: url(/static/images/flags/en.png);
+                background-size: 40px 30px;
+                height: 30px;
+                width: 40px;
+                background-color: none;
+                background-repeat: no-repeat;">
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+  
+                    {% for language in languages %}
+                      <form action="{% url 'set_language' %}" method="post" class="languages">{% csrf_token %}
+                          <!-- <input name="next" type="hidden" value="{{ redirect_to }}"> -->
+                         <select name="language" style="display: none;">
+                            <option value="{{ language.code }}"{% if language.code == LANGUAGE_CODE %} selected{% endif %}>
+                              {{ language.name_local }} ({{ language.code }})
+                            </option>
+  
+                         </select>
+  
+                          {% with 'images/flags/'|add:language.code|add:'.png' as image_static %}
+                            <button type="submit" class="lang_choice {{language.code}}" style="background-image:url({% static image_static %})">
+                            </button>
+                          {% endwith %}
+  
+                      </form>
+                    {% endfor %}
+                </div>
+              </div>
+  
+          </div>  
+        </div>
           <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right" style="font-size: 17px;">
