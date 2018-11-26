@@ -136,7 +136,7 @@ def invited_sign(request, user_id):
                 login(request, invited_user)
                 return redirect('/accounts/profile')
     else:
-        messages.error(request, 'Sign up with email:')
+        messages.error(request, '')
         form = RegisterForm()
 
     user_obj = {
