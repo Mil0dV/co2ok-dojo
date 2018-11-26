@@ -16,9 +16,10 @@
         {% trans "NOTE: CO2ok Ninja only needs to know which website you are visiting. We do not record your website visits or any other data. We do not make changes on your computer. The Google notice that you see as you click further is different from what the Ninja app does." %}
 
       </p>
-
-      
-      <img src="{% static trans 'images/ninja_app_install_EN.png' %}" alt="" class="ninja_app_install">
+      {% get_current_language as LANGUAGE_CODE %}
+      {% with 'images/ninja_app_install_'|add:LANGUAGE_CODE|add:'.png' as image_static %}
+        <img src="{% static image_static %}" alt="" class="ninja_app_install">
+      {% endwith %}
 
       <div class="images"></div>
 
@@ -69,7 +70,7 @@
                 background-repeat: no-repeat;">
                 </button>
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-  
+
                     {% for language in languages %}
                       <form action="{% url 'set_language' %}" method="post" class="languages">{% csrf_token %}
                           <!-- <input name="next" type="hidden" value="{{ redirect_to }}"> -->
@@ -77,20 +78,20 @@
                             <option value="{{ language.code }}"{% if language.code == LANGUAGE_CODE %} selected{% endif %}>
                               {{ language.name_local }} ({{ language.code }})
                             </option>
-  
+
                          </select>
-  
+
                           {% with 'images/flags/'|add:language.code|add:'.png' as image_static %}
                             <button type="submit" class="lang_choice {{language.code}}" style="background-image:url({% static image_static %})">
                             </button>
                           {% endwith %}
-  
+
                       </form>
                     {% endfor %}
                 </div>
               </div>
-  
-          </div>  
+
+          </div>
         </div>
           <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
