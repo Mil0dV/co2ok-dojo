@@ -69,3 +69,8 @@
 .social-icon {
     font-size: 30px;
 }
+
+.install-get-the-app-button {
+    background: linear-gradient(rgb(255, 255, 255) 10.09%, #AAA 51.05%, #AAA 56.81%, #999 100%);
+    border-color: linear-gradient(#FFF 10.09%, #AAA 51.05%, #999 56.81%, #AAA 100%);
+}
