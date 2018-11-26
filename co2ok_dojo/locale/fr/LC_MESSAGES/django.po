@@ -152,6 +152,10 @@ msgstr ""
 msgid "GET THE APP"
 msgstr ""
 
+#: co2ok_dojo/templates/light_box.html:31
+msgid "images/ninja_app_install_EN.png"
+msgstr "images/ninja_app_install_FR.png"
+
 #: co2ok_dojo/templates/menu.html:25 users/templates/users/profile.html:34
 msgid "MISSION"
 msgstr ""

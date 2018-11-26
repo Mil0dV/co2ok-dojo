@@ -318,6 +318,10 @@ msgstr "HINWEIS: Deine Privatsphäre ist uns wichtig! Wir sind keine Datensammle
 msgid "GET THE APP"
 msgstr "HOL DIR DIE APP"
 
+#: co2ok_dojo/templates/light_box.html:31
+msgid "images/ninja_app_install_EN.png"
+msgstr "images/ninja_app_install_DE.png"
+
 # Menu
 
 #: co2ok_dojo/templates/menu.html:25
