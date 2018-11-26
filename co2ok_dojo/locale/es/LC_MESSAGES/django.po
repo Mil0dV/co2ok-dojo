@@ -152,6 +152,10 @@ msgstr ""
 msgid "<a href \"https://co2ok.ninja/signup/\">GET THE APP</a>"
 msgstr "<a hrefCONSIGA LA APLICACIÓN"
 
+#: co2ok_dojo/templates/light_box.html:31
+msgid "images/ninja_app_install_EN.png"
+msgstr "images/ninja_app_install_ES.png"
+
 #: co2ok_dojo/templates/menu.html:25 users/templates/users/profile.html:34
 msgid "MISSION"
 msgstr "Misión"

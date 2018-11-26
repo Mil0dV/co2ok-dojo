@@ -318,6 +318,10 @@ msgstr "NOTE: CO2ok Ninja only needs to know which website you are visiting. We 
 msgid "GET THE APP"
 msgstr "GET THE APP"
 
+#: co2ok_dojo/templates/light_box.html:31
+msgid "images/ninja_app_install_EN.png"
+msgstr "images/ninja_app_install_EN.png"
+
 # Menu
 
 #: co2ok_dojo/templates/menu.html:25
