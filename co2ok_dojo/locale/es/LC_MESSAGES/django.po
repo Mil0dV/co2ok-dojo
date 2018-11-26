@@ -162,7 +162,7 @@ msgstr "Misión"
 
 #: co2ok_dojo/templates/menu.html:28 home/templates/home/home_page.html:22
 #: users/templates/users/profile.html:37
-msgid "How it works"c
+msgid "How it works"
 msgstr "Cómo funciona"
 
 #: co2ok_dojo/templates/menu.html:31 home/templates/home/home_page.html:306
