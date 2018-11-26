@@ -14,12 +14,22 @@
 		<header class="header-register">
 
 			<div class="header_background header-signup">
-
-				<div class="header_text">
-					<h2>Sign up</h2>
+<div class="container">
+	<div class="row">
+				<div class="header_text text-center" style="width: 100%;">
+					<h2 style="color: #fff;">Join us!</h2>
 				</div>
-
 			</div>
+			<div class="row">
+				<div class = "sign-up-info" style="font-style: oblique;">
+					<h2 style="color: #fff;">{% trans "Join us to:" %}</h2>
+					- Choose your project</br>
+					- See the impact you make</br>
+					- Secret rewards in the ninja referral program</br>
+				</div>
+			</div>
+			</div>
+		</div>
 
 			<!-- <div class="container register-container-padder">
 				<div class="slider-container" >
@@ -33,12 +43,19 @@
 					</div>
 				</div> -->
 
-			<section class="white-bg-bar form_session" style="height: 300px !important; padding: 50px 0px;">
+			<section class="white-bg-bar form_session register-page-whitebar" style="height: 300px; padding: 50px 0px;">
 					<!-- <div class="container">
 						<div class="row"> -->
-							<!-- <div class="col-md-6 text-center"> -->
+
+								<div class="col-12 col-md-3 text-center">
+										<div class="skills-text social_container" >
+									<h3>{% trans "Just get the app" %}</h3>
+										<button type="submit" class=" color1 install-ninja-button btn btn-xl install-button install-get-the-app-button" style="padding: 15px; position: relative; display: inline-block;">{% trans "Get the app" %}</button>
+									</div>
+								</div>
+							<div class="col-12 col-md-3 text-center">
 								<div class="skills-text social_container">
-									<h2>{% trans "Sign up via:" %}</h2>
+									<!-- <h2>{% trans "Sign up via:" %}</h2> -->
 										<div data-type="group" data-dynamic-mod="true" class="footer-social-icons">
 
 											<!-- <a class="social-icon" href="{% url 'social:begin' 'facebook' %}?next={{ request.path }}">
@@ -55,25 +72,26 @@
 
 										</div>
 							  </div>
-							<!-- </div> -->
+							</div>
 							<!-- <div class="col-md-6 text-center" style="border-left: 3px solid gray;"> -->
 								<!-- skill bar item -->
-								<div class="skills-text form_container">
+								<div class="col-md-6 text-center">
+								<div class="skills-text">
 
-									 <h2>Sign up via email:</h2>
+									 <!-- <h2>Sign up via email:</h2> -->
 									{% include "messages.html" %}
 
                   <form method="post" class="register_form">
                       {% csrf_token %}
 						        	{{ form.as_p }}
 											<div class="form_footer">
-											  <button type="submit" class=" color2 install-ninja-button btn btn-xl install-button" style="padding: 15px; position: relative; display: inline-block;">{% trans "Sign up" %}</button>
-												<p>{% trans "We won't share your email adress or other user data, read here about our" %} <a href="/#CO2ok-Ninja-Privacy-Policy" target="_blank">{% trans " Privacy Policy" %}</a></p>
+											  <button type="submit" class=" color2 install-ninja-button btn btn-xl install-button" style="padding: 15px; position: relative; display: inline-block; margin-left: 70px;">{% trans "Join us!" %}</button>
+												<p style=>{% trans "We won't share your email adress or other user data, read here about our" %} <a href="/#CO2ok-Ninja-Privacy-Policy" target="_blank">{% trans " Privacy Policy" %}</a></p>
 										</div>
                   </form>
 
 								</div>
-							<!-- </div> -->
+							</div>
 						<!-- </div>
 					</div> -->
 				</section>
