@@ -2,6 +2,34 @@
 {% load static %}
 {% load i18n %}
 
+<!-- begin linghtbox -->
+{% block lightboxContent %}
+
+    <div class="light_box_header lightboxActive">
+
+    </div>
+
+    <div class="light_box_body">
+      <p style="font-weight: 500; color: #ff3100;">
+        <!-- Nog 2 keer klikken en je strijd mee tegen klimaatverandering! -->
+        {% trans "NOTE: CO2ok Ninja only needs to know which website you are visiting. We do not record your website visits or any other data. We do not make changes on your computer. The Google notice that you see as you click further is different from what the Ninja app does." %}
+
+      </p>
+
+      <img src="{% static 'images/ninja_app_install.png' %}" alt="">
+
+      <div class="images"></div>
+
+      <a href="https://chrome.google.com/webstore/detail/co2okninja/omlkdocjhkgbllabpihhdggplladfipe?hl=nl" class="install-ninja-button">
+        <div class="light_box_footer">
+          <button class="btn install-button" style="background-color:#05b139;">{% trans "GET THE APP" %}</button>
+        </div>
+      </a>
+    </div>
+
+{% endblock %}
+<!-- end lightbox -->
+
 {% block content %}
 <head>
 <link rel="stylesheet" type="text/css" href="{% static 'css/ninja-main.css' %}">
@@ -11,7 +39,7 @@
 
   {% if user.is_authenticated %}
       <!-- begin lightbox -->
-     {% include 'light_box.html' %}
+
       <!-- end lightbox -->
       <nav class="navbar navbar-default navbar-fixed-top" style="background-color:#333;">
         <div class="container">
@@ -23,7 +51,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             </button>
-          <a class="navbar-brand page-scroll" href="#page-top"><img src="{% static 'images/logo_licht.png' %}" alt="Lattes theme logo" style="height:40px; width:auto;"></a>
+          <a class="navbar-brand page-scroll" href="/"><img src="{% static 'images/logo_licht.png' %}" alt="Lattes theme logo" style="height:40px; width:auto;"></a>
           </div>
           <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -33,7 +61,7 @@
               </li>
 
               <li>
-                <a class="page-scroll" href="/#mission">{% trans "MISSION" %}</a>
+                <a class="page-scroll" href="https://co2ok.eco/missie/">{% trans "MISSION" %}</a>
               </li>
               <li>
                 <a class="page-scroll" href="/#about">{% trans "How it works" %}</a>
