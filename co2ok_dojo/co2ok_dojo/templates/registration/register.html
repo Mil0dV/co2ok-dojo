@@ -1,4 +1,4 @@
-{% extends 'base.html' %}
+{% extends "base.html" %}
 {% load static %}
 {% load i18n %}
 
@@ -16,16 +16,16 @@
 			<div class="header_background header-signup">
 <div class="container">
 	<div class="row">
-				<div class="header_text text-center" style="width: 100%;">
-					<h2 style="color: #fff;">Join us!</h2>
+				<div class="header_text text-center sign-up-header" style="width: 100%; margin-top: 100px;">
+					<h2 style="color: #fff;">{% trans "Join us!" %}</h2>
 				</div>
 			</div>
 			<div class="row">
-				<div class = "sign-up-info" style="font-style: oblique;">
+				<div class = "sign-up-info" style="">
 					<h2 style="color: #fff;">{% trans "Join us to:" %}</h2>
-					- Choose your project</br>
-					- See the impact you make</br>
-					- Secret rewards in the ninja referral program</br>
+					{% trans "💚 See the kg of CO₂ you prevented" %}</br>
+					{% trans "💚 Choose your CO₂ compensation project" %}</br>
+					{% trans "💚 Earn secret rewards in the Ninja referral program" %}</br>
 				</div>
 			</div>
 			</div>
@@ -48,9 +48,11 @@
 						<div class="row"> -->
 
 								<div class="col-12 col-md-3 text-center">
-										<div class="skills-text social_container" >
-									<h3>{% trans "Just get the app" %}</h3>
-										<button type="submit" class=" color1 install-ninja-button btn btn-xl install-button install-get-the-app-button" style="padding: 15px; position: relative; display: inline-block;">{% trans "Get the app" %}</button>
+									<div class="skills-text social_container" >
+										<h3 style="margin-top: -30px;">{% trans "Continue without registering" %}</h3>
+										<a href="/signup" data-cp-link="1" data-icon="fa-chrome" rel="noopener" class=" color1 install-ninja-button btn btn-xl install-button install-get-the-app-button" style="padding: 15px 20px;">
+											<span class=""> {% trans "Get the app" %}</span>
+										</a>
 									</div>
 								</div>
 							<div class="col-12 col-md-3 text-center">
