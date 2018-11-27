@@ -227,8 +227,8 @@ msgid "How big is your piece of the cake?"
 msgstr "How big is your piece of the cake?"
 
 #: co2ok_dojo/templates/faq.html:88
-msgid "We invest 75% of the commission in the CO₂ compensation. The remaining 25% are much needed to keep CO₂ok going. We just started and our margin doesn’t even cover the costs. Our goal is to make an impact and give everybody the chance to easily fight climate change. Eventually, we will reduce our margin – we are not in this to become rich. We will always be open and transparent and therefore we will report our income and spending each year."
-msgstr "We invest 75% of the commission in the CO₂ compensation. The remaining 25% are much needed to keep CO₂ok going. We just started and our margin doesn’t even cover the costs. Our goal is to make an impact and give everybody the chance to easily fight climate change. Eventually, we will reduce our margin – we are not in this to become rich. We will always be open and transparent and therefore we will report our income and spending each year."
+msgid "We invest 75&#37; of the commission in the CO₂ compensation. The remaining 25&#37; are much needed to keep CO₂ok going. We just started and our margin doesn’t even cover the costs. Our goal is to make an impact and give everybody the chance to easily fight climate change. Eventually, we will reduce our margin – we are not in this to become rich. We will always be open and transparent and therefore we will report our income and spending each year."
+msgstr "We invest 75&#37; of the commission in the CO₂ compensation. The remaining 25&#37; are much needed to keep CO₂ok going. We just started and our margin doesn’t even cover the costs. Our goal is to make an impact and give everybody the chance to easily fight climate change. Eventually, we will reduce our margin – we are not in this to become rich. We will always be open and transparent and therefore we will report our income and spending each year."
 
 #: co2ok_dojo/templates/faq.html:96
 msgid "I only shop at Amazon and already use Amazon Smile program, is there any reason for me to install the Ninja App?"
@@ -286,13 +286,33 @@ msgstr "A biogas installation under construction"
 
 # Register
 
-#: co2ok_dojo/templates/registration/register.html:18
-msgid "Sign Up"
-msgstr "Sign Up"
+#  #: co2ok_dojo/templates/registration/register.html:18
+#  msgid "Sign Up"
+#  msgstr "Sign Up"
 
-#: co2ok_dojo/templates/registration/register.html:31
-msgid "Sign up via: "
-msgstr "Sign up via: "
+#  #: co2ok_dojo/templates/registration/register.html:31
+#  msgid "Sign up via: "
+#  msgstr "Sign up via: "
+
+#: co2ok_dojo/templates/registration/register.html:25
+msgid "Join us!"
+msgstr "Join us!"
+
+msgid "Join us to:"
+msgstr "Join us to:"
+
+msgid "- See the kg of CO₂ you prevented"
+msgstr ""
+msgid "- Choose your CO₂ compensation project"
+msgstr ""
+msgid "- Earn secret rewards in the Ninja referral program"
+msgstr ""
+
+msgid "Continue without registering"
+msgstr ""
+
+msgid "Get the app"
+msgstr ""
 
 #: co2ok_dojo/templates/registration/register.html:67
 msgid "We won't share your email adress or other user data, read here about our"

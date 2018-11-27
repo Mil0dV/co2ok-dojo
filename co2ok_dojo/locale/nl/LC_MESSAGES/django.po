@@ -96,8 +96,8 @@ msgstr "Welk percentage van mijn aankoop word gebruikt om CO₂-uitstoot te comp
 
 #: co2ok_dojo/templates/faq.html:76
 
-msgid "We invest 75% of the commission in the CO₂ compensation. The remaining 25% are much needed to keep CO₂ok going. We just started and our margin doesn’t even cover the costs. Our goal is to make an impact and give everybody the chance to easily fight climate change. Eventually, we will reduce our margin – we are not in this to become rich. We will always be open and transparent and therefore we will report our income and spending each year."
-msgstr "CO₂ok ontvangt tussen 1-6%% van de uiteindelijke aankoop, via de CO₂ok Ninja. Het percentage is afhankelijk van de webwinkel en het product. Hiervan gaat 75% naar de non-profitorganisatie Atmosfair gaat, die zich inzetten voor ons klimaat. De overige 25%% gebruikt wordt voor het bedrijf zelf – we willen iedereen in staat stellen klimaatverandering te bestrijden, dus tijd om de wereld te veroveren! We doen dit niet om er rijk van te worden. Ook maken we onze inkomsten en uitgaven ieder jaar openbaar."
+msgid "We invest 75&#37; of the commission in the CO₂ compensation. The remaining 25&#37; are much needed to keep CO₂ok going. We just started and our margin doesn’t even cover the costs. Our goal is to make an impact and give everybody the chance to easily fight climate change. Eventually, we will reduce our margin – we are not in this to become rich. We will always be open and transparent and therefore we will report our income and spending each year."
+msgstr "CO₂ok ontvangt tussen 1-6%% van de uiteindelijke aankoop, via de CO₂ok Ninja. Het percentage is afhankelijk van de webwinkel en het product. Hiervan gaat 75&#37; naar de non-profitorganisatie Atmosfair gaat, die zich inzetten voor ons klimaat. De overige 25%% gebruikt wordt voor het bedrijf zelf – we willen iedereen in staat stellen klimaatverandering te bestrijden, dus tijd om de wereld te veroveren! We doen dit niet om er rijk van te worden. Ook maken we onze inkomsten en uitgaven ieder jaar openbaar."
 
 
 #: co2ok_dojo/templates/faq.html:84
