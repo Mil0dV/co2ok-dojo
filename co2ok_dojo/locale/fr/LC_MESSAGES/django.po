@@ -145,7 +145,7 @@ msgid "Bonjour les nouveaux !"
 msgstr ""
 
 #: co2ok_dojo/templates/light_box.html:23
-msgid "NOTE: CO2ok Ninja only needs to know which website you are visiting. We do not record your website visits or any other data. We do not make changes on your computer. The Google notice that you see as you click further is different from what the Ninja app does."
+msgid "NOTE: CO₂ok Ninja only needs to know which website you are visiting. We do not record your website visits or any other data. We do not make changes on your computer. The Google notice that you see as you click further is different from what the Ninja app does."
 msgstr ""
 
 #: co2ok_dojo/templates/light_box.html:38
@@ -288,8 +288,8 @@ msgid "During manufacturing and shipping of products, greenhouse gases are emitt
 msgstr ""
 
 #: home/templates/home/home_page.html:245
-msgid "With CO2ok Ninja you prevent at least the same amount of emissions."
-msgstr "Avec CO2ok Ninja, vous évitez la même quantité d'émissions. De cette façon, votre achat est climatiquement neutre!"
+msgid "With CO₂ok Ninja you prevent at least the same amount of emissions."
+msgstr "Avec CO₂ok Ninja, vous évitez la même quantité d'émissions. De cette façon, votre achat est climatiquement neutre!"
 
 #: home/templates/home/home_page.html:258
 msgid "This way, your purchase is climate neutral!"
@@ -300,7 +300,7 @@ msgid "REGISTER & FIGHT CLIMATE CHANGE"
 msgstr "S’INSCRIRE & COMBATTEZ LE CHANGEMENT CLIMATIQUE "
 
 #: home/templates/home/home_page.html:287
-msgid "CO2ok Ninja Privacy Policy"
+msgid "CO₂ok Ninja Privacy Policy"
 msgstr "CO₂ok Ninja Politique de confidentialité"
 
 #: home/templates/home/home_page.html:288
@@ -336,11 +336,11 @@ msgid "Profile"
 msgstr ""
 
 #: users/templates/users/profile.html:88
-msgid "Tell your friends about CO2ok Ninja by sharing the above link, so you get shurikens"
+msgid "Tell your friends about CO₂ok Ninja by sharing the above link, so you get shurikens"
 msgstr ""
 
 #: users/templates/users/profile.html:93
-msgid "CO2 compensated"
+msgid "CO₂ compensated"
 msgstr ""
 
 #: users/templates/users/profile.html:100

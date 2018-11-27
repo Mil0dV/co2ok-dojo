@@ -129,8 +129,8 @@ msgid "During manufacturing and shipping of products, greenhouse gases are emitt
 msgstr "During manufacturing and shipping of products, greenhouse gases are emitted"
 
 #: home/templates/home/home_page.html:245
-msgid "With CO2ok Ninja you prevent at least the same amount of emissions."
-msgstr "With CO2ok Ninja you prevent at least the same amount of emissions."
+msgid "With CO₂ok Ninja you prevent at least the same amount of emissions."
+msgstr "With CO₂ok Ninja you prevent at least the same amount of emissions."
 
 #: home/templates/home/home_page.html:258
 msgid "This way, your purchase is climate neutral!"
@@ -141,8 +141,8 @@ msgid "REGISTER & FIGHT CLIMATE CHANGE"
 msgstr "REGISTER & FIGHT CLIMATE CHANGE"
 
 #: home/templates/home/home_page.html:287
-msgid "CO2ok Ninja Privacy Policy"
-msgstr "CO2ok Ninja Privacy Policy"
+msgid "CO₂ok Ninja Privacy Policy"
+msgstr "CO₂ok Ninja Privacy Policy"
 
 #: home/templates/home/home_page.html:288
 msgid "We fight climate change, we don’t mine data! That is why we don’t collect or save any of your personal shopping data. With us your data is yours only."
@@ -331,8 +331,8 @@ msgstr "You raise money for the fight against climate change when you shop in on
 # light_box
 
 #: co2ok_dojo/templates/light_box.html:22
-msgid "NOTE: CO2ok Ninja only needs to know which website you are visiting. We do not record your website visits or any other data. We do not make changes on your computer. The Google notice that you see as you click further is different from what the Ninja app does."
-msgstr "NOTE: CO2ok Ninja only needs to know which website you are visiting. We do not record your website visits or any other data. We do not make changes on your computer. The Google notice that you see as you click further is different from what the Ninja app does."
+msgid "NOTE: CO₂ok Ninja only needs to know which website you are visiting. We do not record your website visits or any other data. We do not make changes on your computer. The Google notice that you see as you click further is different from what the Ninja app does."
+msgstr "NOTE: CO₂ok Ninja only needs to know which website you are visiting. We do not record your website visits or any other data. We do not make changes on your computer. The Google notice that you see as you click further is different from what the Ninja app does."
 
 #: co2ok_dojo/templates/light_box.html:37
 msgid "GET THE APP"
@@ -375,12 +375,12 @@ msgid "Profile"
 msgstr "Profile"
 
 #: co2ok_dojo/templates/menu.html:88
-msgid "Tell your friends about CO2ok Ninja by sharing the above link, so you get shurikens"
-msgstr "Tell your friends about CO2ok Ninja by sharing the above link, so you get shurikens"
+msgid "Tell your friends about CO₂ok Ninja by sharing the above link, so you get shurikens"
+msgstr "Tell your friends about CO₂ok Ninja by sharing the above link, so you get shurikens"
 
 #: co2ok_dojo/templates/menu.html:93
-msgid "CO2 compensated"
-msgstr "CO2 compensated"
+msgid "CO₂ compensated"
+msgstr "CO₂ compensated"
 
 #: co2ok_dojo/templates/menu.html:100
 msgid "Pick a cause"

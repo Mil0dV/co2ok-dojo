@@ -102,18 +102,18 @@ msgstr "CO₂ok ontvangt tussen 1-6%% van de uiteindelijke aankoop, via de CO₂
 
 #: co2ok_dojo/templates/faq.html:84
 msgid "I only shop at Amazon and already use Amazon Smile program, is there any reason for me to install the Ninja App?"
-msgstr "Ik shop alleen op Amazon en gebruik ook al Amazon Smile programma, is er een andere reden om CO2ok Ninja te installeren?"
+msgstr "Ik shop alleen op Amazon en gebruik ook al Amazon Smile programma, is er een andere reden om CO₂ok Ninja te installeren?"
 
 
 #: co2ok_dojo/templates/faq.html:90
 
 msgid "First of all, our partners usually donate 2-12 times more through the Ninja App (1-6%) than Amazon does through Amazon Smile (only 0.5% of the final price). So, if you care about having as big a positive impact on the world as you can, using the Ninja App either instead of or in addition to Amazon Smile is a way to achieve that. Moreover, there are a lot of products or services available in our partner stores that are not available on Amazon. For example, travel services (hotels, flights, train tickets, car rentals), financial products, or sport clubs’ official apparel."
-msgstr "Onze partners doneren 2 tot 12 keer meer via het programma Ninja en ontvangt 1-6%% van het aankoop bedrag terwijl dit bij Amazon Smile maar 0,5%% is. Ook heeft CO2ok Ninja meer variatie in producten, zoals transport services, financiële producten en officiële kleding van verschillende clubs. Amazon Smile kan dit niet aanbieden."
+msgstr "Onze partners doneren 2 tot 12 keer meer via het programma Ninja en ontvangt 1-6%% van het aankoop bedrag terwijl dit bij Amazon Smile maar 0,5%% is. Ook heeft CO₂ok Ninja meer variatie in producten, zoals transport services, financiële producten en officiële kleding van verschillende clubs. Amazon Smile kan dit niet aanbieden."
 
 
 #: co2ok_dojo/templates/faq.html:98
 msgid "How can I be sure that the money will be used to compensate greenhouse gasses?"
-msgstr "Hoe kan ik er zeker van zijn dat het geld word gebruikt om CO2 uitstoot te verminderen?"
+msgstr "Hoe kan ik er zeker van zijn dat het geld word gebruikt om CO₂ uitstoot te verminderen?"
 
 
 #: co2ok_dojo/templates/faq.html:104
@@ -127,7 +127,7 @@ msgstr "Kost het mij iets om co2ok Ninja te gebruiken?"
 
 #: co2ok_dojo/templates/faq.html:118
 msgid "No, the Ninja App is absolutely free to use. The prices in the online stores are exactly the same whether you use the app or not."
-msgstr "Nee, het programma Ninja is gratis. De prijzen bij de webwinkels zullen precies hetzelfde zijn wanneer je CO2ok Ninja gebruikt."
+msgstr "Nee, het programma Ninja is gratis. De prijzen bij de webwinkels zullen precies hetzelfde zijn wanneer je CO₂ok Ninja gebruikt."
 
 
 #: co2ok_dojo/templates/faq.html:126
@@ -142,11 +142,11 @@ msgstr "Ja, wij zijn constant bezig om nieuwe partners binnen te halen. Hierdoor
 
 #: co2ok_dojo/templates/faq.html:140
 msgid "How does it work?"
-msgstr "Hoe werkt CO2ok Ninja?"
+msgstr "Hoe werkt CO₂ok Ninja?"
 
 #: co2ok_dojo/templates/faq.html:146
 msgid "After installing the Ninja app you will see a our “Shop CO₂ok” box whilst shopping in one of our partner stores. Simply click this box and you will be redirected back to the partner store (exactly where you were before). From then on, whenever you buy something, CO₂ok receives a portion of the price you pay (usually between 1% and 6%). We donate our profits to carefully selected organisations such as Atmosfair. Some stores will require you to repeat the process after some time. You are a mobile Ninja - see here."
-msgstr "Na het installeren van het programma kunt u toestemming gegeven om CO2-uitstoot neutraal te shoppen. Tijdens het afrekenen zal er bij de webwinkel het CO2-uitstoot neutraal winkelen in kaart worden gebracht. Eenmaal afgerekend krijgt CO2ok een deel van een bedrag via uw aankoop. Door de inkomsten via CO2ok Ninja worden er donaties gedaan naar organisaties zoals Atmosfair."
+msgstr "Na het installeren van het programma kunt u toestemming gegeven om CO2-uitstoot neutraal te shoppen. Tijdens het afrekenen zal er bij de webwinkel het CO2-uitstoot neutraal winkelen in kaart worden gebracht. Eenmaal afgerekend krijgt CO₂ok een deel van een bedrag via uw aankoop. Door de inkomsten via CO₂ok Ninja worden er donaties gedaan naar organisaties zoals Atmosfair."
 
 
 #: co2ok_dojo/templates/faq.html:153
@@ -162,7 +162,7 @@ msgid "Bonjour les nouveaux !"
 msgstr ""
 
 #: co2ok_dojo/templates/light_box.html:23
-msgid "NOTE: CO2ok Ninja only needs to know which website you are visiting. We do not record your website visits or any other data. We do not make changes on your computer. The Google notice that you see as you click further is different from what the Ninja app does."
+msgid "NOTE: CO₂ok Ninja only needs to know which website you are visiting. We do not record your website visits or any other data. We do not make changes on your computer. The Google notice that you see as you click further is different from what the Ninja app does."
 msgstr "LET OP: Jouw privacy is belangrijk. We hoeven alleen te weten op welke website je je bevindt. Daarom slaan we geen gegevens op. De Googlemelding die je zo ziet als je verder klikt, is dus anders dan wat de Ninja app doet."
 
 #: co2ok_dojo/templates/light_box.html:38
@@ -217,7 +217,7 @@ msgstr "Word een Ninja en shop klimaatneutraal"
 
 #: home/templates/home/home_page.html:21
 msgid "Become a CO₂ok Ninja with our Ninja App. You shop and the store pays a CO₂ compensation at no extra cost for you. Fighting climate change was never this easy."
-msgstr "Samen kunnen wij klimaatverandering tegengaan! Het enige wat jij hoeft te doen, is de gratis CO2ok Ninja app downloaden. Via deze app compenseer jij de CO2-uitstoot van jouw online aankoop. De webshop betaalt. Mooi toch?!"
+msgstr "Samen kunnen wij klimaatverandering tegengaan! Het enige wat jij hoeft te doen, is de gratis CO₂ok Ninja app downloaden. Via deze app compenseer jij de CO2-uitstoot van jouw online aankoop. De webshop betaalt. Mooi toch?!"
 
 #  #: home/templates/home/home_page.html:22
 #  msgid "How it works"
@@ -310,7 +310,7 @@ msgid "During manufacturing and shipping of products, greenhouse gases are emitt
 msgstr "Tijdens productie en vervoer van producten komen broeikasgassen vrij"
 
 #: home/templates/home/home_page.html:245
-msgid "With CO2ok Ninja you prevent at least the same amount of emissions."
+msgid "With CO₂ok Ninja you prevent at least the same amount of emissions."
 msgstr "Wij voorkomen minstens evenveel uitstoot"
 
 #: home/templates/home/home_page.html:258
@@ -322,8 +322,8 @@ msgid "REGISTER & FIGHT CLIMATE CHANGE"
 msgstr "INSTALLEER OM TE HELPEN"
 
 #: home/templates/home/home_page.html:287
-msgid "CO2ok Ninja Privacy Policy"
-msgstr "CO2ok Ninja Privacy Beleid"
+msgid "CO₂ok Ninja Privacy Policy"
+msgstr "CO₂ok Ninja Privacy Beleid"
 
 #: home/templates/home/home_page.html:288
 msgid "We fight climate change, we don’t mine data! That is why we don’t collect or save any of your personal shopping data. With us your data is yours only."
@@ -339,7 +339,7 @@ msgstr " Broncode browserextensie"
 
 #: home/templates/home/home_page.html:290
 msgid "Our Ninja App system only needs the right to locally see which online shop you are visiting to activate the commission. The information about visited websites does not leave your computer, so your privacy is protected."
-msgstr "Om de CO2ok Ninja te laten werken heeft de extensie alleen bepaalde rechten nodig om lokaal te zien welke webshop je momenteel gebruikt om de commissie te activeren bij de webshop."
+msgstr "Om de CO₂ok Ninja te laten werken heeft de extensie alleen bepaalde rechten nodig om lokaal te zien welke webshop je momenteel gebruikt om de commissie te activeren bij de webshop."
 
 
 #: home/templates/home/home_page.html:291
@@ -359,12 +359,12 @@ msgid "Profile"
 msgstr "Profiel"
 
 #: users/templates/users/profile.html:88
-msgid "Tell your friends about CO2ok Ninja by sharing the above link, so you get shurikens"
-msgstr "Vertel je vrienden over CO2ok Ninja door de bovenstaande link te delen, zodat je shurikens verdient"
+msgid "Tell your friends about CO₂ok Ninja by sharing the above link, so you get shurikens"
+msgstr "Vertel je vrienden over CO₂ok Ninja door de bovenstaande link te delen, zodat je shurikens verdient"
 
 #: users/templates/users/profile.html:93
-msgid "CO2 compensated"
-msgstr "CO2 gecompenseerd"
+msgid "CO₂ compensated"
+msgstr "CO₂ gecompenseerd"
 
 #: users/templates/users/profile.html:100
 msgid "Pick a cause"
