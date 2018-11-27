@@ -1,4 +1,5 @@
 // var hasExtension = false;
+//
 // chrome.runtime.sendMessage(extensionId, { message: "version" },
 //   function (reply) {
 //     if (reply) {
@@ -13,3 +14,10 @@
 //     }
 // });
 // alert(hasExtension);
+
+if (chrome.app.isInstalled)
+{
+
+
+
+}
