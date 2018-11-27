@@ -300,16 +300,16 @@ msgid "Join us!"
 msgstr "Mach mit!"
 
 msgid "Join us to:"
-msgstr "Mach mit um:"
+msgstr "Mach mit und:"
 
 msgid "- See the kg of CO₂ you prevented"
 msgstr "- Siehe wie viel kg CO₂ du vermieden hast"
 
 msgid "- Choose your CO₂ compensation project"
-msgstr "- Wähle Dein CO₂ Kompensationsprojekt"
+msgstr "- Wähle dein CO₂ Kompensationsprojekt"
 
 msgid "- Earn secret rewards in the Ninja referral program"
-msgstr "- Überraschende Belohnungen für Weiterempfehlungen"
+msgstr "- Erhalte geheime Belohnungen in unserem Empfehlungsprogramm"
 
 msgid "Continue without registering"
 msgstr "Weiter ohne Registrierung"
