@@ -43,18 +43,28 @@
 					</div>
 				</div> -->
 
-			<section class="white-bg-bar form_session register-page-whitebar" style="height: 300px; padding: 50px 0px;">
+			<section class="white-bg-bar form_session register-page-whitebar" style="height: 300px; padding: 0px 0px;">
 					<!-- <div class="container">
 						<div class="row"> -->
 
-								<div class="col-12 col-md-3 text-center">
-									<div class="skills-text social_container" >
-										<h3 style="margin-top: -30px;">{% trans "Continue without registering" %}</h3>
-										<a href="/signup" data-cp-link="1" data-icon="fa-chrome" rel="noopener" class=" color1 install-ninja-button btn btn-xl install-button install-get-the-app-button" style="padding: 15px 20px;">
-											<span class=""> {% trans "Get the app" %}</span>
-										</a>
-									</div>
+							<div class="col-md-6 text-center">
+								<div class="skills-text">
+
+									 <!-- <h2>Sign up via email:</h2> -->
+									{% include "messages.html" %}
+
+                  					<form method="post" class="register_form">
+                      				{% csrf_token %}
+						        	{{ form.as_p }}
+										<div class="form_footer">
+											<button type="submit" class=" color2 install-ninja-button btn btn-xl install-button" style="padding: 15px; position: relative; display: inline-block; margin-left: 70px;">{% trans "Join us!" %}</button>
+											<p style=>{% trans "We won't share your email adress or other user data, read here about our" %} <a href="/#CO2ok-Ninja-Privacy-Policy" target="_blank">{% trans " Privacy Policy" %}</a></p>
+										</div>
+                 					</form>
+
 								</div>
+							</div>
+
 							<div class="col-12 col-md-3 text-center">
 								<div class="skills-text social_container">
 									<!-- <h2>{% trans "Sign up via:" %}</h2> -->
@@ -77,23 +87,17 @@
 							</div>
 							<!-- <div class="col-md-6 text-center" style="border-left: 3px solid gray;"> -->
 								<!-- skill bar item -->
-								<div class="col-md-6 text-center">
-								<div class="skills-text">
 
-									 <!-- <h2>Sign up via email:</h2> -->
-									{% include "messages.html" %}
-
-                  <form method="post" class="register_form">
-                      {% csrf_token %}
-						        	{{ form.as_p }}
-											<div class="form_footer">
-											  <button type="submit" class=" color2 install-ninja-button btn btn-xl install-button" style="padding: 15px; position: relative; display: inline-block; margin-left: 70px;">{% trans "Join us!" %}</button>
-												<p style=>{% trans "We won't share your email adress or other user data, read here about our" %} <a href="/#CO2ok-Ninja-Privacy-Policy" target="_blank">{% trans " Privacy Policy" %}</a></p>
-										</div>
-                  </form>
-
+								<div class="col-12 col-md-3 text-center">
+									<div class="skills-text social_container" >
+										<h3 style="margin-top: -30px;">{% trans "Continue without registering" %}</h3>
+										<a href="/signup" data-cp-link="1" data-icon="fa-chrome" rel="noopener" class=" color1 install-ninja-button btn btn-xl install-button install-get-the-app-button" style="padding: 15px 20px;">
+											<span class=""> {% trans "Get the app" %}</span>
+										</a>
+									</div>
 								</div>
-							</div>
+
+								
 						<!-- </div>
 					</div> -->
 				</section>
