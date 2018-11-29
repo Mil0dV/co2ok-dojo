@@ -51,7 +51,7 @@ INSTALLED_APPS = [
     'pwa',
 
     # alleen DEV
-    "sslserver",
+    # "sslserver",
 
     'wagtail.contrib.forms',
     'wagtail.contrib.redirects',
@@ -110,13 +110,22 @@ SOCIAL_AUTH_FACEBOOK_SCOPE = ['email']
 PWA_APP_DESCRIPTION = "Do kickass things all day long without that pesky browser chrome"
 PWA_APP_THEME_COLOR = '#0A0302'
 PWA_APP_BACKGROUND_COLOR = '#ffffff'
-PWA_APP_DISPLAY = 'standalone'
+PWA_APP_DISPLAY = ['standalone','fullscreen ','minimal-ui']
 PWA_APP_START_URL = '/'
 PWA_APP_ICONS = [
     {
         'src': '/static/images/co2ok-logo-favicon.png',
         'sizes': '160x160'
+    },
+    {
+        'src': '/static/images/co2ok-logo-favicon.png',
+        'sizes': '192x192'
+    },
+    {
+        'src': '/static/images/co2ok-logo-favicon.png',
+        'sizes': '512x512'
     }
+
 ]
 
 # muh - werkt dus niet
