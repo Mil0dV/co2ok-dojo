@@ -41,7 +41,7 @@ urlpatterns = [
     url(r'^(?P<user_id>\d+)/$', users_views.invited_sign, name='invitation_page'),
 
     url(r'^ninja-partner-stores/$', ninja_partner_stores_views.ninja_partner_stores, name='ninja-partner-stores'),
-    url(r'^partner-stores/$', ninja_partner_stores_views.ninja_partner_stores, name='ninja-partner-stores'),
+    # url(r'^partner-stores/$', ninja_partner_stores_views.ninja_partner_stores, name='ninja-partner-stores'),
 
     # For anything not caught by a more specific rule above, hand over to
     # Wagtail's page serving mechanism. This should be the last pattern in
