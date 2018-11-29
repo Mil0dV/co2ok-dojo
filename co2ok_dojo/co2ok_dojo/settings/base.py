@@ -106,6 +106,19 @@ SOCIAL_AUTH_FACEBOOK_KEY = env.str('SOCIAL_AUTH_FACEBOOK_KEY')
 SOCIAL_AUTH_FACEBOOK_SECRET = env.str('SOCIAL_AUTH_FACEBOOK_SECRET')
 SOCIAL_AUTH_FACEBOOK_SCOPE = ['email']
 
+# django PWA_SERVICE_WORKER_PATHPWA_APP_NAME = 'My Kickass App'
+PWA_APP_DESCRIPTION = "Do kickass things all day long without that pesky browser chrome"
+PWA_APP_THEME_COLOR = '#0A0302'
+PWA_APP_BACKGROUND_COLOR = '#ffffff'
+PWA_APP_DISPLAY = 'standalone'
+PWA_APP_START_URL = '/'
+PWA_APP_ICONS = [
+    {
+        'src': '/static/images/co2ok-logo-favicon.png',
+        'sizes': '160x160'
+    }
+]
+
 # muh - werkt dus niet
 # SOCIAL_AUTH_PIPELINE = (
 #     'social_core.pipeline.social_auth.social_details',
