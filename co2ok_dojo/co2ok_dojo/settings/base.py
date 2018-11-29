@@ -107,6 +107,7 @@ SOCIAL_AUTH_FACEBOOK_SECRET = env.str('SOCIAL_AUTH_FACEBOOK_SECRET')
 SOCIAL_AUTH_FACEBOOK_SCOPE = ['email']
 
 # django PWA_SERVICE_WORKER_PATHPWA_APP_NAME = 'My Kickass App'
+PWA_APP_NAME = 'Co2ok'
 PWA_APP_DESCRIPTION = "Do kickass things all day long without that pesky browser chrome"
 PWA_APP_THEME_COLOR = '#0A0302'
 PWA_APP_BACKGROUND_COLOR = '#ffffff'
