@@ -111,13 +111,8 @@ PWA_APP_NAME = 'Co2ok'
 PWA_APP_DESCRIPTION = "Do kickass things all day long without that pesky browser chrome"
 PWA_APP_THEME_COLOR = '#0A0302'
 PWA_APP_BACKGROUND_COLOR = '#ffffff'
-<<<<<<< 0cfa29c2f86eae587e3f0e093bdbbedbfa2241b5
 PWA_APP_DISPLAY = 'standalone'
 PWA_APP_START_URL = '/partner-stores/?utm_source=mobileninja'
-=======
-PWA_APP_DISPLAY = ['standalone','fullscreen ','minimal-ui']
-PWA_APP_START_URL = '/partner-stores'
->>>>>>> Fixes some small PWAAAA bugs
 PWA_APP_ICONS = [
     {
         'src': '/static/images/co2ok-logo-favicon.png',
