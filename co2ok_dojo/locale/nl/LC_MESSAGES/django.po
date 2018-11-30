@@ -190,13 +190,28 @@ msgstr ""
 msgid "Sign in"
 msgstr ""
 
-#: co2ok_dojo/templates/registration/register.html:27
-msgid "Sign Up"
-msgstr ""
+#: co2ok_dojo/templates/registration/register.html:23
 
-#: co2ok_dojo/templates/registration/register.html:40
-msgid "Sign up via:"
-msgstr ""
+msgid "Join us!"
+msgstr "Strijd mee!"
+
+msgid "Join us to:"
+msgstr "Strijd mee en:"
+
+msgid "💚 See the kg of CO₂ you prevented"
+msgstr "💚 Zie hoeveel kg CO₂ je voorkomen hebt"
+
+msgid "💚 Choose your CO₂ compensation project"
+msgstr "💚 Kies je CO₂ compensatieprojekt"
+
+msgid "💚 Earn secret rewards in the Ninja referral program"
+msgstr "💚 Verdien geheime beloningen in het Ninja referral program"
+
+msgid "Continue without registering"
+msgstr "Verder zonder registreren"
+
+msgid "Get the app"
+msgstr "Installeer de App"
 
 #: co2ok_dojo/templates/registration/register.html:67
 msgid "We won't share your email adress or other user data, read here about our"
