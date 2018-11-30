@@ -12,6 +12,7 @@ gunicorn = "*"
 django-username-email = "*"
 
 [dev-packages]
+django-sslserver = "*"
 
 [requires]
 python_version = "3.7"

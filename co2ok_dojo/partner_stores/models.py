@@ -5,10 +5,10 @@ from django.utils import timezone
 
 class Store(models.Model):
     website = models.CharField(max_length=200)
-    categories = models.CharField(max_length=800)
-    countries = models.CharField(max_length=200)
+    categories = models.CharField(max_length=800, blank=True)
+    countries = models.CharField(max_length=200, blank=True)
     network = models.CharField(max_length=200)
-    tussenstukje = models.CharField(max_length=200)
+    tussenstukje = models.CharField(max_length=200, blank=True)
 
     def __str__(self):
         return self.Website

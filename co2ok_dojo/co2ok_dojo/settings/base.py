@@ -44,12 +44,15 @@ INSTALLED_APPS = [
     'search',
     'users',
     'ninja_partner_stores',
+    'partner_stores',
     'cuser',
 
     'social_django',
 
+    'pwa',
+
     # alleen DEV
-    #"sslserver",
+    # "sslserver",
 
     'wagtail.contrib.forms',
     'wagtail.contrib.redirects',
@@ -103,6 +106,29 @@ LOGIN_REDIRECT_URL = 'profile'
 SOCIAL_AUTH_FACEBOOK_KEY = env.str('SOCIAL_AUTH_FACEBOOK_KEY')
 SOCIAL_AUTH_FACEBOOK_SECRET = env.str('SOCIAL_AUTH_FACEBOOK_SECRET')
 SOCIAL_AUTH_FACEBOOK_SCOPE = ['email']
+
+# django PWA_SERVICE_WORKER_PATHPWA_APP_NAME = 'My Kickass App'
+PWA_APP_NAME = 'Co2ok'
+PWA_APP_DESCRIPTION = "Do kickass things all day long without that pesky browser chrome"
+PWA_APP_THEME_COLOR = '#0A0302'
+PWA_APP_BACKGROUND_COLOR = '#ffffff'
+PWA_APP_DISPLAY = 'standalone'
+PWA_APP_START_URL = '/ninja-partner-stores/?utm_source=mobileninja'
+PWA_APP_ICONS = [
+    {
+        'src': '/static/images/co2ok-logo-favicon.png',
+        'sizes': '192x192'
+    },
+    {
+        'src': '/static/images/co2ok-logo-favicon.png',
+        'sizes': '512x512'
+    },
+    {
+        'src': '/static/images/co2ok-logo-favicon.png',
+        'sizes': '160x160'
+    }
+
+]
 
 # muh - werkt dus niet
 # SOCIAL_AUTH_PIPELINE = (
@@ -240,6 +266,7 @@ STATIC_URL = '/static/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
 # GEOIP_PATH = os.path.join(BASE_DIR, 'geoip')
+PWA_SERVICE_WORKER_PATH = os.path.join(BASE_DIR, 'home/static/js', 'serviceworker.js')
 
 
 # Wagtail settings
