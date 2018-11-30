@@ -11,15 +11,15 @@ class Store(models.Model):
     tussenstukje = models.CharField(max_length=200, blank=True)
 
     def __str__(self):
-        return self.Website
+        return self.website
 
-    # heb dit erin laten staan als voorbeeldje:   
+    # heb dit erin laten staan als voorbeeldje:
     # def was_published_recently(self):
     #     return self.pub_date >= timezone.now() - datetime.timedelta(days=1)
 
 #class opnieuw maken om dan te migraten alles in een keer.
-    
-    
+
+
 
 
 #(mini)Array lezen
