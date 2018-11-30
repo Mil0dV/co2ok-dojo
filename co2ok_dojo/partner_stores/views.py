@@ -16,5 +16,7 @@ def index(request):
         'latest_store_list' : websites
     }
     print(context)
+
+    print(readArraySite("gearbest.com"))
    
     return render(request, 'stores/index.html', context)
