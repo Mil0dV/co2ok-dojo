@@ -12,6 +12,7 @@ def partner_stores(request):
         # search_value = form.cleaned_data['search_field']
         search_value = request.GET.get('query', None)
         search_result = Store.objects.filter(website=search_value)
+        print(search_result)
         # search_result_count = search_result.count()
         #
         # if search_result_count > 0:
