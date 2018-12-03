@@ -99,15 +99,16 @@
 .co2ok-featured-shop-image {
     box-sizing: border-box;
     background-color: rgba(0, 0, 0, 0);
-    display: inline-block; 
+    display: inline-block;
     border: none !important;
-    margin: 3px; 
+    margin: 3px;
     background-position: center center;
     background-size: 100% auto;
     width: 160px;
     height: 81px;
     min-height: 100%;
 }
+
 
 @media only screen and (max-width: 360px) {
     .co2ok-logo-main-ninja {

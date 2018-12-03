@@ -100,9 +100,9 @@
     box-sizing: border-box;
     border-radius: 0px;
     background-color: rgba(0, 0, 0, 0);
-    display: inline-block; 
+    display: inline-block;
     border: none !important;
-    margin: 3px 1px;; 
+    margin: 3px 1px;;
     padding: 1rem;
     background-position: center center;
     background-size: 100% auto;
@@ -111,6 +111,36 @@
     min-height: 100%;
 }
 
+.categoryContainer
+{
+
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width:100%;
+   height: auto;
+
+}
+
+.categories
+{
+
+   display: flex;
+   flex-direction: row;
+   justify-content: flex-start;
+   align-items: flex-start;
+   width: auto;
+   height: auto;
+   overflow-x: scroll;
+   overflow-y: hidden;
+
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+
 @media only screen and (max-width: 360px) {
     .co2ok-logo-main-ninja {
         /* height: 45px; */
@@ -118,7 +148,7 @@
     .co2ok-featured-shop-image {
         width: 80px;
         height: 41px;
-        margin: 2px; 
+        margin: 2px;
     }
 }
 
@@ -160,4 +190,5 @@
 
 .btn-mobile-ninja-caroussel {
     padding: 6px 20px;
+    white-space: nowrap;
 }
