@@ -53,8 +53,8 @@ msgid "CHOOSE FROM "
 msgstr "CHOOSE FROM "
 
 #: home/templates/home/home_page.html:46
-msgid " 2000+ INTERNATIONALE SHOPS"
-msgstr " 2000+ INTERNATIONAL SHOPS"
+msgid " 22.000+ INTERNATIONALE SHOPS"
+msgstr " 22.000+ INTERNATIONAL SHOPS"
 
 #: home/templates/home/home_page.html:156
 msgid "HOW IT WORKS"
