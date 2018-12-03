@@ -4,7 +4,7 @@
 
 
 <!doctype html>
-<html lang="en">
+<html lang="en" style="overflow-x:hidden;">
   <head>
 
     <meta charset="utf-8">
@@ -34,7 +34,7 @@
       <link rel="stylesheet" type="text/css" href="{% static 'css/ninja-main.css' %}">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   {% endblock %} -->
-<body>
+<body style="overflow-x:hidden;">
 <!-- {% block content %} -->
     <!-- Header Wrapper -->
     <div class="header-wrapper" style="margin-top: 0px;">
@@ -184,58 +184,94 @@
 </div>
 </div>
 
-    <div class="gridContainer" style="padding-top: 10px; padding-bottom: 3px;">
+    <div class="" style="padding-top: 10px; padding-bottom: 3px;">
         <div class="text-center">
             <div datata-type="column">
                 <!-- <div class="container"> -->
                     <p>
                     <!-- Featured shops -->
-                    <a href="http://rover.ebay.com/rover/1/711-53200-19255-0/1?ff3=4&pub=5575349754&toolid=11800&campid=5338219191&customid=chex&mpre=http%3A%2F%2Febay.com%2F" class="button img-fluid co2ok-featured-shop-image col-md-4" target="_blank" rel="noopener"
+                    <a href="http://rover.ebay.com/rover/1/711-53200-19255-0/1?ff3=4&pub=5575349754&toolid=11800&campid=5338219191&customid=chex&mpre=http%3A%2F%2Febay.com%2F" class="img-fluid co2ok-featured-shop-image col-md-4" target="_blank" rel="noopener"
                     style="background-image: url({% static 'images/ebay_button.png'%});">
+                        <span class="co2ok-featured-shop-text">
+                            Ebay
+                        </span>
                     </a>
 
-                    <a href="https://ds1.nl/c/?si=7630&li=1354896&wi=303581&ws=&dl=" class="button co2ok-featured-shop-image col-md-4" target="_blank" rel="noopener"
+                    <a href="https://ds1.nl/c/?si=7630&li=1354896&wi=303581&ws=&dl=" class="co2ok-featured-shop-image col-md-4" target="_blank" rel="noopener"
                     style="background-image: url({% static 'images/aliexpress_button.png'%});">
+                        <span class="co2ok-featured-shop-text">
+                            Aliexpress
+                        </span>
                     </a>
 
-                    <a href="https://partner.bol.com/click/click?p=2&t=url&s=51851&f=TXL&url=http%3A%2F%2Fbol.com%2F" class="button co2ok-featured-shop-image col-md-4" target="_blank" rel="noopener"
+                    <a href="https://partner.bol.com/click/click?p=2&t=url&s=51851&f=TXL&url=http%3A%2F%2Fbol.com%2F" class="co2ok-featured-shop-image col-md-4" target="_blank" rel="noopener"
                     style="background-image: url({% static 'images/bol_button.png'%});">
+                        <span class="co2ok-featured-shop-text">
+                            Bol
+                        </span>
                     </a>
 
-                    <a href="http://booking.com/?aid=1627502&label=chex" class="button co2ok-featured-shop-image col-md-4" target="_blank" rel="noopener"
+                    <a href="http://booking.com/?aid=1627502&label=chex" class="co2ok-featured-shop-image col-md-4" target="_blank" rel="noopener"
                     style="background-image: url({% static 'images/booking_button.png'%});">
+                        <span class="co2ok-featured-shop-text">
+                            Booking
+                        </span>
                     </a>
 
-                    <a href="https://prf.hn/click/camref:1011l3qZq/destination:http%3A%2F%2Fcoolblue.nl%2F" class="button co2ok-featured-shop-image col-md-4" target="_blank" rel="noopener"
+                    <a href="https://prf.hn/click/camref:1011l3qZq/destination:http%3A%2F%2Fcoolblue.nl%2F" class="co2ok-featured-shop-image col-md-4" target="_blank" rel="noopener"
                     style="background-image: url({% static 'images/coolblue_button.png)'%};">
+                        <span class="co2ok-featured-shop-text">
+                            Coolblue
+                        </span>
                     </a>
 
-                    <a href="http://dx.com/?TC=USD&&Utm_rid=78139600&Utm_source=affiliate" class="button co2ok-featured-shop-image col-md-4" target="_blank" rel="noopener"
+                    <a href="http://dx.com/?TC=USD&&Utm_rid=78139600&Utm_source=affiliate" class="co2ok-featured-shop-image col-md-4" target="_blank" rel="noopener"
                     style="background-image: url({% static 'images/dx_button.png'%});">
+                        <span class="co2ok-featured-shop-text">
+                            DealExtreme
+                        </span>
                     </a>
 
-                    <a href="http://rover.ebay.com/rover/1/711-53200-19255-0/1?ff3=4&pub=5575349754&toolid=11800&campid=5338219191&customid=chex&mpre=http%3A%2F%2Febay.com%2F" class="button img-fluid co2ok-featured-shop-image col-md-4" target="_blank" rel="noopener"
+                    <a href="http://rover.ebay.com/rover/1/711-53200-19255-0/1?ff3=4&pub=5575349754&toolid=11800&campid=5338219191&customid=chex&mpre=http%3A%2F%2Febay.com%2F" class="img-fluid co2ok-featured-shop-image col-md-4" target="_blank" rel="noopener"
                     style="background-image: url({% static 'images/ebay_button.png'%});">
+                        <span class="co2ok-featured-shop-text">
+                            Ebay
+                        </span>
                     </a>
 
-                    <a href="https://ds1.nl/c/?si=7630&li=1354896&wi=303581&ws=&dl=" class="button co2ok-featured-shop-image col-md-4" target="_blank" rel="noopener"
+                    <a href="https://ds1.nl/c/?si=7630&li=1354896&wi=303581&ws=&dl=" class="co2ok-featured-shop-image col-md-4" target="_blank" rel="noopener"
                     style="background-image: url({% static 'images/aliexpress_button.png'%});">
+                        <span class="co2ok-featured-shop-text">
+                            Aliexpress
+                        </span>
                     </a>
 
-                    <a href="https://partner.bol.com/click/click?p=2&t=url&s=51851&f=TXL&url=http%3A%2F%2Fbol.com%2F" class="button co2ok-featured-shop-image col-md-4" target="_blank" rel="noopener"
+                    <a href="https://partner.bol.com/click/click?p=2&t=url&s=51851&f=TXL&url=http%3A%2F%2Fbol.com%2F" class="co2ok-featured-shop-image col-md-4" target="_blank" rel="noopener"
                     style="background-image: url({% static 'images/bol_button.png'%});">
+                        <span class="co2ok-featured-shop-text">
+                            Bol
+                        </span>
                     </a>
 
-                    <a href="http://booking.com/?aid=1627502&label=chex" class="button co2ok-featured-shop-image col-md-4" target="_blank" rel="noopener"
+                    <a href="http://booking.com/?aid=1627502&label=chex" class="co2ok-featured-shop-image col-md-4" target="_blank" rel="noopener"
                     style="background-image: url({% static 'images/booking_button.png'%});">
+                        <span class="co2ok-featured-shop-text">
+                            Booking
+                        </span>
                     </a>
 
-                    <a href="https://prf.hn/click/camref:1011l3qZq/destination:http%3A%2F%2Fcoolblue.nl%2F" class="button co2ok-featured-shop-image col-md-4" target="_blank" rel="noopener"
+                    <a href="https://prf.hn/click/camref:1011l3qZq/destination:http%3A%2F%2Fcoolblue.nl%2F" class="co2ok-featured-shop-image col-md-4" target="_blank" rel="noopener"
                     style="background-image: url({% static 'images/coolblue_button.png'%});">
+                        <span class="co2ok-featured-shop-text">
+                            Coolblue
+                        </span>
                     </a>
 
-                    <a href="http://dx.com/?TC=USD&&Utm_rid=78139600&Utm_source=affiliate" class="button co2ok-featured-shop-image col-md-4" target="_blank" rel="noopener"
+                    <a href="http://dx.com/?TC=USD&&Utm_rid=78139600&Utm_source=affiliate" class="co2ok-featured-shop-image col-md-4" target="_blank" rel="noopener"
                     style="background-image: url({% static 'images/dx_button.png'%});">
+                        <span class="co2ok-featured-shop-text">
+                            DealExtreme
+                        </span>
                     </a>
                     </p>
                 <!-- </div> -->
