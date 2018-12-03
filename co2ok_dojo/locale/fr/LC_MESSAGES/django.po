@@ -212,7 +212,7 @@ msgid "CHOOSE FROM "
 msgstr "OBTENEZ L’APPLI!"
 
 #: home/templates/home/home_page.html:46
-msgid " 2000+ INTERNATIONAL SHOPS"
+msgid " 22.000+ INTERNATIONAL SHOPS"
 msgstr ""
 
 #: home/templates/home/home_page.html:156
