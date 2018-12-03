@@ -12,12 +12,12 @@ def partner_stores(request):
         # search_value = form.cleaned_data['search_field']
         search_value = request.GET.get('query', None)
         search_result = Store.objects.filter(website=search_value)
-        # search_result_count = search_result.count()
-        #
-        # if search_result_count > 0:
-        #     return search_result
-        # else:
-        #     search_result = _("nieks gevonden")
+        search_result_count = search_result.count()
+
+        if search_result_count > 0:
+            search_result_found = search_result
+        else:
+            search_result = _("nieks gevonden")
 
         return render(request, "ninja_partner_stores/ninja-partner-stores.html", {'search_results': search_result, 'search_value':search_value})
 
