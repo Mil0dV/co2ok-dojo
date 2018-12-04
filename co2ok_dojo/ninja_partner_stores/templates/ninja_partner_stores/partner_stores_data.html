@@ -1,0 +1,27 @@
+{% block partner_stores_data %}
+
+<div class="search_result" style=" border: 1px solid red; width: 500px; height: 200px;">
+{{search_value}}
+
+{% if search_results %}
+
+  {% if search_result_count > 0 %}
+
+     {% for search_result in search_results %}
+
+       <h3 style="color: blue;">{{search_result.website}}</h3>
+
+     {% endfor %}
+   {% else %}
+     <h3>niets gevonden...</h3>
+    {% endif %}
+
+{% else %}
+
+<h1>{{category_val}}</h1>
+
+{% endif %}
+
+</div>
+
+{% endblock %}

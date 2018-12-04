@@ -7,14 +7,14 @@ $(function(){
       $.ajax({
 
         type: "GET",
-        url: '/partner-stores',
+        url: '/partner-stores-data/',
         data: {
           search_val: searchInputVal,
           csrfmiddlewaretoken: $('input[csrfmiddlewaretoken]').val()
         },
         success: function(data){
 
-           console.log(data);
+           $('.search_result').html(data);
 
         },
         dataType: 'html'
@@ -22,6 +22,53 @@ $(function(){
       })
 
    })
+
+
+   function categorySpliter(category)
+   {
+
+     var categoryArr = category;
+     if(category.indexOf('&') > -1)
+     {
+
+       categoryArr = category.split('&');
+
+     }
+     return categoryArr;
+
+   }
+   // console.log(categorySpliter('mange&ananas&orange'));
+
+   $('.btn-mobile-ninja-caroussel').click(function(e){
+
+     var categoryVal = e.currentTarget.textContent;
+     var splitCategoryVal = categorySpliter(categoryVal);
+     filterByCategory(splitCategoryVal);
+      console.log(typeof splitCategoryVal);
+
+   })
+
+   function filterByCategory(categoryVal)
+   {
+
+       $.ajax({
+
+         type: "GET",
+         url: '/partner-stores-category/',
+         data: {
+           category_val: categoryVal,
+           csrfmiddlewaretoken: $('input[csrfmiddlewaretoken]').val()
+         },
+         success: function(data){
+
+            $('.search_result').html(data);
+
+         },
+         dataType: 'html'
+
+       })
+
+   }
 
    // function ajaxRequest(searchData)
    // {
