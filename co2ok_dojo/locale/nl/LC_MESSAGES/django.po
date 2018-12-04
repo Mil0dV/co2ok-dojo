@@ -329,8 +329,8 @@ msgid "With CO₂ok Ninja you prevent at least the same amount of emissions."
 msgstr "Wij voorkomen minstens evenveel uitstoot"
 
 #: home/templates/home/home_page.html:258
-msgid "This way, your purchase is climate neutral!"
-msgstr "Zo is je aankoop klimaatneutraal!"
+msgid "With the help of your clicks we support these sustainable projects!"
+msgstr "Dankzij je kliks realiseren we samen deze duurzame projecten!"
 
 #: home/templates/home/home_page.html:272
 msgid "REGISTER & FIGHT CLIMATE CHANGE"
