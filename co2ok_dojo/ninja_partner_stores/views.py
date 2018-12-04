@@ -3,6 +3,7 @@ from django.utils.translation import ugettext as _
 
 from .forms import SearchForm
 from .models import Store
+import json
 
 # def partner_stores(request):
 #
@@ -32,10 +33,12 @@ def partner_stores_data(request):
     if request.method == 'GET':
         search_value = request.GET.get('search_val')
         search_result = Store.objects.filter(website__startswith=search_value)
-        search_result_count = search_result.count();
+        search_result_count = search_result.count()
         return render(request, "ninja_partner_stores/partner_stores_data.html",{'search_results': search_result, 'search_value':search_value, 'search_result_count':search_result_count})
 
 
 def partner_stores_category(request):
     category_val = request.GET.get('category_val')
-    return render(request, "ninja_partner_stores/partner_stores_data.html",{'category_val': category_val})
+    category_result = Store.objects.filter(categories=category_val)
+    category_resultcount_count = category_result.count()
+    return render(request, "ninja_partner_stores/partner_stores_data.html",{'category_results': category_result, 'category_resultcount_count':category_resultcount_count})

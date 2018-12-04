@@ -24,27 +24,26 @@ $(function(){
    })
 
 
-   function categorySpliter(category)
-   {
+   // function categorySpliter(category)
+   // {
+   //
+   //   var categoryArr = category;
+   //   if(category.indexOf('&') > -1)
+   //   {
+   //
+   //     categoryArr = category.split('&');
+   //
+   //   }
+   //   return categoryArr;
+   //
+   // }
 
-     var categoryArr = category;
-     if(category.indexOf('&') > -1)
-     {
-
-       categoryArr = category.split('&');
-
-     }
-     return categoryArr;
-
-   }
-   // console.log(categorySpliter('mange&ananas&orange'));
 
    $('.btn-mobile-ninja-caroussel').click(function(e){
 
      var categoryVal = e.currentTarget.textContent;
-     var splitCategoryVal = categorySpliter(categoryVal);
-     filterByCategory(splitCategoryVal);
-      console.log(typeof splitCategoryVal);
+     // var splitCategoryVal = categorySpliter(categoryVal);
+      filterByCategory(categoryVal);
 
    })
 
