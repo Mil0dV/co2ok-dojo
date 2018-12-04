@@ -225,5 +225,9 @@
 
 .btn-mobile-ninja-caroussel {
     padding: 6px 20px;
+    cursor: pointer;
     white-space: nowrap;
+    border-width: 1px;
+    border-radius: 10px;
+    border-color: green;
 }
