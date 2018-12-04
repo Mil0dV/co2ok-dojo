@@ -175,7 +175,7 @@
 @media only screen and (max-width: 400px) and (min-width: 361px) {
     .co2ok-featured-shop-image {
         font-size: 0.85rem;
-        border-radius: 25px;
+        border-radius: 20px;
         width: 120px;
         height: 120px;
         margin: 3px 15px 40px 15px;
@@ -191,7 +191,7 @@
 /* Medium devices (from 601px to 1199px) */
 @media only screen and (max-width: 600px) and (min-width: 400px) {
     .co2ok-featured-shop-image {
-        border-radius: 35px;
+        border-radius: 25px;
         font-size: 0.85rem;
         width: 90px;
         height: 90px;
