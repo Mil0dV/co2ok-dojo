@@ -1,5 +1,4 @@
 import csv
-from django.core.management.base import BaseCommand
 
 from ninja_partner_stores.models import Store
 
@@ -35,13 +34,6 @@ def importer():
             # # for de countries
             # country = Country.objects.get(name=country_code))
             # store.country.add(country)
-
-
-
-# ###### Categories maken:
-# ###### NB moet nu Duits
-# for cat_name in categories:
-#     Category.objects.create(name=cat_name)
 
 
 
