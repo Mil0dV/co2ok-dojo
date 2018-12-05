@@ -1,15 +1,45 @@
 $(function(){
 
+  function allStore()
+  {
+
+    $.ajax({
+
+      type: "GET",
+      url: '/partner-stores-all/',
+      data: {
+        csrfmiddlewaretoken: $('input[csrfmiddlewaretoken]').val()
+      },
+      success: function(data){
+
+         $('.search_result').html(data);
+
+      },
+      dataType: 'html'
+
+    })
+
+  }
+  allStore();
+
+
    $('#serachInput').keyup(function(e){
 
       var searchInputVal = $('#serachInput').val();
+      if(searchInputVal == "")
+      {
+
+        allStore();
+
+      }
       // ajaxRequest(searchInputVal);
       $.ajax({
 
         type: "GET",
-        url: '/partner-stores-data/',
+        url: '/partner-stores-search/',
         data: {
           search_val: searchInputVal,
+          // user_lang: window.localStorage.get('curLang'),
           csrfmiddlewaretoken: $('input[csrfmiddlewaretoken]').val()
         },
         success: function(data){

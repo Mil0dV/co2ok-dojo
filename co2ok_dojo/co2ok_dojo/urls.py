@@ -41,7 +41,8 @@ urlpatterns = [
     url(r'^(?P<user_id>\d+)/$', users_views.invited_sign, name='invitation_page'),
 
     url(r'^partner-stores/$', ninja_partner_stores_views.partner_stores, name='partner-stores'),
-    url(r'^partner-stores-data/$', ninja_partner_stores_views.partner_stores_data, name='partner-stores-data'),
+    url(r'^partner-stores-all/$', ninja_partner_stores_views.partner_stores_all, name='partner_stores_all'),
+    url(r'^partner-stores-search/$', ninja_partner_stores_views.partner_stores_search, name='partner_stores_search'),
     url(r'^partner-stores-category/$', ninja_partner_stores_views.partner_stores_category, name='partner-stores-category'),
 
     # For anything not caught by a more specific rule above, hand over to

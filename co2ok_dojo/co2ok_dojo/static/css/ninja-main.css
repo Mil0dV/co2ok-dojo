@@ -96,11 +96,26 @@
     background-image: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,0.9) , rgba(255,255,255,0.9) , rgba(255,255,255,0.9), rgba(255,255,255,0)); /* Standard syntax (must be last) */
 }
 
-.co2ok-featured-shop-image {
+.search_result
+{
+
+   width: 100%;
+   height: auto;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+
+}
+
+.search_result .co2ok-featured-shop-image {
     box-sizing: border-box;
     border-radius: 50px;
     background-color: rgba(0, 0, 0, 0);
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
     border: none !important;
     margin: 3px 15px 45px 15px;
     padding: 1rem;
@@ -110,20 +125,22 @@
     height: 160px;
     min-height: 100%;
     box-shadow: 0px 2px 6px rgba(0,0,0,0.6);
+    background-color: black;
 }
 
-.co2ok-featured-shop-text {
+.search_result .co2ok-featured-shop-image .co2ok-featured-shop-text {
     font-size: 1.2rem;
     color: #fff;
     font-family: "Open Sans";
     letter-spacing: 1px;
-    top: 110%;
-    position: absolute;
+    position: relative;
+    top: 50px;
+    /* position: absolute;
     transform: translateX(-50%);
     margin-left: auto;
     margin-right: auto;
-    text-align: center;
-    font-weight: 400;
+    text-align: center; */
+    /* font-weight: 400; */
 }
 
 .categoryContainer

@@ -14,7 +14,7 @@ class Country(models.Model):
     code = models.CharField(max_length=2)
 
     def __str__(self):
-        return self.name
+        return self.code
 
 class Store(models.Model):
     website = models.CharField(max_length=200)
