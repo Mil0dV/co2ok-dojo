@@ -8,13 +8,14 @@
      {% for search_result in search_results %}
 
        <!-- <h3 style="color: blue;">{{search_result.website}}</h3> -->
-       <a href="http://rover.ebay.com/rover/1/711-53200-19255-0/1?ff3=4&pub=5575349754&toolid=11800&campid=5338219191&customid=chex&mpre=http%3A%2F%2Febay.com%2F" class="img-fluid co2ok-featured-shop-image col-md-4" target="_blank" rel="noopener"
-       style="">
-           <span class="co2ok-featured-shop-text">
-               {{search_result.website}}
-           </span>
-       </a>
-
+       {% with 'images/logos/'|add:search_result.website|add:'.png' as stores_image %}
+         <a href="http://rover.ebay.com/rover/1/711-53200-19255-0/1?ff3=4&pub=5575349754&toolid=11800&campid=5338219191&customid=chex&mpre=http%3A%2F%2Febay.com%2F" class="img-fluid co2ok-featured-shop-image col-md-4" target="_blank" rel="noopener"
+         style="background-image: url('{% static stores_image %}');">
+             <span class="co2ok-featured-shop-text">
+                 {{search_result.website | title }}
+             </span>
+         </a>
+        {% endwith %}
      {% endfor %}
    {% else %}
      <h3>niets gevonden...</h3>
@@ -27,12 +28,14 @@
      {% for category_result in category_results %}
 
        <!-- <h3 style="color: blue;">{{category_result.website}}</h3> -->
-       <a href="http://rover.ebay.com/rover/1/711-53200-19255-0/1?ff3=4&pub=5575349754&toolid=11800&campid=5338219191&customid=chex&mpre=http%3A%2F%2Febay.com%2F" class="img-fluid co2ok-featured-shop-image col-md-4" target="_blank" rel="noopener"
-       style="">
-           <span class="co2ok-featured-shop-text">
-               {{category_result.website}}
-           </span>
-       </a>
+       {% with 'images/logos/'|add:category_result.website|add:'.png' as stores_image %}
+         <a href="http://rover.ebay.com/rover/1/711-53200-19255-0/1?ff3=4&pub=5575349754&toolid=11800&campid=5338219191&customid=chex&mpre=http%3A%2F%2Febay.com%2F" class="img-fluid co2ok-featured-shop-image col-md-4" target="_blank" rel="noopener"
+         style="background-image: url('{% static stores_image %}');">
+             <span class="co2ok-featured-shop-text">
+                 {{category_result.website | title}}
+             </span>
+         </a>
+       {% endwith %}
 
      {% endfor %}
    {% else %}
@@ -44,12 +47,14 @@
   {% for store in stores %}
 
     <!-- <h3 style="color: blue;">{{category_result.website}}</h3> -->
-    <a href="http://rover.ebay.com/rover/1/711-53200-19255-0/1?ff3=4&pub=5575349754&toolid=11800&campid=5338219191&customid=chex&mpre=http%3A%2F%2Febay.com%2F" class="img-fluid co2ok-featured-shop-image col-md-4" target="_blank" rel="noopener"
-    style="">
-        <span class="co2ok-featured-shop-text">
-            {{store.website | title}}
-        </span>
-    </a>
+    {% with 'images/logos/'|add:store.website|add:'.png' as stores_image %}
+      <a href="http://rover.ebay.com/rover/1/711-53200-19255-0/1?ff3=4&pub=5575349754&toolid=11800&campid=5338219191&customid=chex&mpre=http%3A%2F%2Febay.com%2F" class="img-fluid co2ok-featured-shop-image col-md-4" target="_blank" rel="noopener"
+      style="background-image: url('{% static stores_image %}');">
+          <span class="co2ok-featured-shop-text">
+              {{store.website | title}}
+          </span>
+      </a>
+    {% endwith %}
 
   {% endfor %}
 
