@@ -111,7 +111,7 @@
 
 .search_result .co2ok-featured-shop-image {
     box-sizing: border-box;
-    border-radius: 50px;
+    border-radius: 30px;
     background-color: rgba(0, 0, 0, 0);
     display: flex;
     justify-content: center;
@@ -121,15 +121,15 @@
     padding: 1rem;
     background-position: center center;
     background-size: 100% auto;
-    width: 160px;
-    height: 160px;
+    width: 100px;
+    height: 100px;
     min-height: 100%;
     box-shadow: 0px 2px 6px rgba(0,0,0,0.6);
-    background-color: black;
 }
 
 .search_result .co2ok-featured-shop-image .co2ok-featured-shop-text {
-    font-size: 1.2rem;
+  /* font-size: 1.2rem; */
+    font-size: 15px;
     color: #fff;
     font-family: "Open Sans";
     letter-spacing: 1px;
