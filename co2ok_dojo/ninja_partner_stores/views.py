@@ -26,7 +26,9 @@ import json
 
 
 def partner_stores(request):
-    return render(request, "ninja_partner_stores/ninja-partner-stores.html",{})
+    print('hoi')
+    search_result = Store.objects.all()
+    return render(request, "ninja_partner_stores/ninja-partner-stores.html",{'search_results': search_result})
 
 
 def partner_stores_data(request):
@@ -39,6 +41,6 @@ def partner_stores_data(request):
 
 def partner_stores_category(request):
     category_val = request.GET.get('category_val')
-    category_result = Store.objects.filter(categories=category_val)
+    category_result = Store.objects.filter(category__name=category_val)
     category_resultcount_count = category_result.count()
     return render(request, "ninja_partner_stores/partner_stores_data.html",{'category_results': category_result, 'category_resultcount_count':category_resultcount_count})
