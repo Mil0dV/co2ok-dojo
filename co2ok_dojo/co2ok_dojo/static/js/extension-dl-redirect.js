@@ -31,18 +31,25 @@ function installNinjaButton()
     //}
      if(navigator.userAgent.indexOf("Chrome")>-1)
      {
-       button.attr('href', 'https://chrome.google.com/webstore/detail/co2okninja/omlkdocjhkgbllabpihhdggplladfipe');
+      button.attr('target', '_blank');
+      button.attr('href', 'https://chrome.google.com/webstore/detail/co2okninja/omlkdocjhkgbllabpihhdggplladfipe');
      }else if(navigator.userAgent.indexOf("Firefox")>-1)
      {
-       button.attr('href', 'https://addons.mozilla.org/en-US/firefox/addon/co2ok-ninja/');
-     }else if(navigator.userAgent.match(/iPad/i) != null)
+      button.attr('target', '_blank');
+      button.attr('href', 'https://addons.mozilla.org/en-US/firefox/addon/co2ok-ninja/');
+     }else if(navigator.userAgent.indexOf("Safari")>-1)
      {       
        button.attr('target', '_self');
-       button.attr('href','http://co2ok.eco/faq-co2ok-ninja-without-extension/#ninja-without-extension-desktop');   
+       button.attr('href','/partner-stores/');   
+      }
+     else if(navigator.userAgent.match(/iPad/i) != null)
+     {       
+       button.attr('target', '_self');
+       button.attr('href','/partner-stores/');   
       }else if(navigator.userAgent.match(/i(Phone|Pod)/i))
       {
         button.attr('target', '_self');
-        button.attr('href','http://co2ok.eco/faq-co2ok-ninja-without-extension/#ninja-without-extension-desktop');
+        button.attr('href','/partner-stores/');
       }else {
      // alert('This browser isn\'t supported \r\n(only Chrome and FireFox are currently supported)');
         button.attr('target', '_self');
