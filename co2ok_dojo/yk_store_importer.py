@@ -1,6 +1,6 @@
 import csv
 
-from ninja_partner_stores.models import Store
+from ninja_partner_stores.models import *
 
 # class Command(BaseCommand):
 def importer():
@@ -31,9 +31,9 @@ def importer():
             # # for de categorien
             # cat = Category.objects.get(name=cat_name))
             # store.category.add(cat)
-            # # for de countries
-            # country = Country.objects.get(name=country_code))
-            # store.country.add(country)
+            # for de countries
+            country = Country.objects.get(code=country_code)
+            store.country.add(country)
 
 
 
