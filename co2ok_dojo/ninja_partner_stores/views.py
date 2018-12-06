@@ -27,37 +27,7 @@ import json
 
 
 def partner_stores(request):
-    categories = [
-
-      'Clothing',
-      'Electronics',
-      'Books & Media',
-      'Presents & Gadgets',
-      'Food & Drinks',
-      'Health',
-      'Sports & Recreation',
-      'Holiday',
-      'Fashion & Jewelry',
-      'Toys',
-      'Dating',
-      'Erotica',
-      'House & Garden & Animals',
-      'IT & Office',
-      'Vehicles',
-      'Department stores',
-      'Other'
-
-    ]
-    for category in categories:
-        cat_exist = Category.objects.filter(name=category).count()
-        if cat_exist == 0:
-            Category.objects.create(name=category)
-            echo = 'cats toegevoegd'
-        else:
-            echo = 'deze categorieen {} bestaan al'.format(category)
-
-    cats = Category.objects.all()
-    return render(request, "ninja_partner_stores/ninja-partner-stores.html", {'echo': echo, 'cats':cats})
+    return render(request, "ninja_partner_stores/ninja-partner-stores.html")
 
 
 def partner_stores_all(request):
