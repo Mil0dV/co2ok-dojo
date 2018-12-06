@@ -113,7 +113,7 @@ PWA_APP_DESCRIPTION = "Do kickass things all day long without that pesky browser
 PWA_APP_THEME_COLOR = '#0A0302'
 PWA_APP_BACKGROUND_COLOR = '#ffffff'
 PWA_APP_DISPLAY = 'standalone'
-PWA_APP_START_URL = '/ninja-partner-stores/?utm_source=mobileninja'
+PWA_APP_START_URL = '/partner-stores/?utm_source=mobileninja'
 PWA_APP_ICONS = [
     {
         'src': '/static/images/ninjaDesign_headicon192.png',
