@@ -252,3 +252,19 @@
     border-radius: 5px;
     border-color: rgb(88, 177, 169);
 }
+
+.ninja-partner-store-bg {
+    margin-top: 45%;
+}
+
+@media only screen and (max-width: 600px) and (min-width: 361px) {
+    .ninja-partner-store-bg {
+        margin-top: 72%;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .ninja-partner-store-bg {
+        margin-top: 60%;
+    }
+}
