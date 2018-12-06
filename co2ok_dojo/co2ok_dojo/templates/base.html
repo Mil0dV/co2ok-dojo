@@ -1,4 +1,3 @@
-{% load pwa %}
 {% load static wagtailuserbar %}
 {% load i18n %}
 
@@ -7,7 +6,7 @@
 <html class="no-js">
     <head>
         <meta charset="utf-8" />
-        {% progressive_web_app_meta %}
+        
         <title>
             {% block title %}
                 {% if self.seo_title %}{{ self.seo_title }}{% else %}{{ self.title }}{% endif %}

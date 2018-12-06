@@ -99,6 +99,29 @@ $(function(){
 
    }
 
+
+   function share()
+   {
+
+     var ninja_share = document.querySelector('.ninja_share');
+      var shareContent = document.querySelector('.shareContent');
+      var tl = new TimelineMax();
+      ninja_share.addEventListener('click', function(){
+alert();
+          tl.to('.share_box_container', 0.5, {scale: 1, ease: Quad.easeInOut});
+
+          // close lightbox
+          $('.close_share_box').click(function(){
+
+            tl.to('.share_box_container', 0.5, {scale: 0, ease: Quad.easeOut});
+
+          })
+
+      })
+
+   }
+   share();
+
    // function ajaxRequest(searchData)
    // {
    //
