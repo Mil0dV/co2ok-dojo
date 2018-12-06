@@ -98,7 +98,7 @@
 
 .co2ok-featured-shop-image {
     box-sizing: border-box;
-    background-color: rgba(0, 0, 0, 0);
+    background-color: rgba(255, 255, 255, 1);
     display: inline-block;
     border: none !important;
     margin: 3px;

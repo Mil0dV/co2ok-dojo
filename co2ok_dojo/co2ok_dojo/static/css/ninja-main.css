@@ -112,7 +112,7 @@
 .search_result .co2ok-featured-shop-image {
     box-sizing: border-box;
     border-radius: 30px;
-    background-color: rgba(0, 0, 0, 0);
+    background-color: rgba(255, 255, 255, 1);
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -135,6 +135,8 @@
     letter-spacing: 1px;
     position: relative;
     top: 50px;
+    text-transform: lowercase;
+    white-space: nowrap;
     /* position: absolute;
     transform: translateX(-50%);
     margin-left: auto;

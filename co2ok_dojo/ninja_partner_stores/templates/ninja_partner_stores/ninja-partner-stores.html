@@ -16,7 +16,9 @@
 
 
     <link rel="stylesheet" type="text/css" href="{% static 'css/ninja-main.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/mobile-ninja-lightbox.css' %}">
 
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"> </script>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -35,6 +37,31 @@
   {% endblock %} -->
 <body style="overflow-x:hidden;">
 <!-- {% block content %} -->
+
+<!-- lightbox -->
+<div class="light_box_container">
+
+    <div class="close_light_box">
+      <img src="{% static 'images/close.svg' %}" alt="">
+    </div>
+
+    <div class="lightboxActive"> 
+        
+        <p class="iphone-lightbox-section-step">
+            1) Tap the Action button on the toolbar.
+            <img src="{% static 'images/step1_iPhone_safari.jpg' %}" alt="" class="mobile-ninja-iphone-lightbox-img">
+        </p>
+        <p class="iphone-lightbox-section-step">
+            2) Tap the Add to Home Screen button from the Share Sheet.
+            <img src="{% static 'images/step2_iPhone_safari.jpg' %}" alt="" class="mobile-ninja-iphone-lightbox-img">
+        </p>
+
+    </div>
+    
+
+  </div>
+<!-- end lightbox -->
+
     <!-- Header Wrapper -->
     <div class="header-wrapper" style="margin-top: 0px;">
         <div class="header custom-mobile-co2ok">
@@ -1444,6 +1471,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <script type="text/javascript" src="{% static 'js/partner_stores.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/mobile-ninja-lightbox.js' %}"></script>
 
     <script>
             $('.owl-carousel').owlCarousel({
