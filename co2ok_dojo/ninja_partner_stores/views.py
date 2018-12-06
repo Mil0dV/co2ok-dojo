@@ -27,30 +27,6 @@ import json
 
 
 def partner_stores(request):
-    categories = [
-
-      'Clothing',
-      'Electronics',
-      'Books & Media',
-      'Presents & Gadgets',
-      'Food & Drinks',
-      'Health',
-      'Sports & Recreation',
-      'Holiday',
-      'Fashion & Jewelry',
-      'Toys',
-      'Dating',
-      'Erotica',
-      'House & Garden & Animals',
-      'IT & Office',
-      'Vehicles',
-      'Department stores',
-      'Other'
-
-    ]
-    for category in categories:
-        Category.objects.create(name=category)
-
     return render(request, "ninja_partner_stores/ninja-partner-stores.html")
 
 
