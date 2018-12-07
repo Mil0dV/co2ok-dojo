@@ -9,11 +9,12 @@ def importer():
     categories = [
 
     'Books & Media',
-    'Department stores',
+    'Department Stores',
     'Electronics',
     'Erotica',
     'Fashion',
     'Dating',
+    'Gifts & Gadgets',
     'Food',
     'Health',
     'Hobby',
@@ -21,7 +22,7 @@ def importer():
     'Holiday',
     'IT & Office',
     'Presents & Gadgets',
-    'Sports & Recreation',
+    'Sport & Recreation',
     'Toys',
     'Party',
     'Vehicles',
