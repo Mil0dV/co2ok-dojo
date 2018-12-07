@@ -44,4 +44,4 @@ def importer():
 
     # ###### Countries maken:
     for country_code in countries:
-        Category.objects.create(name=country_code)
+        Country.objects.create(code=country_code)
