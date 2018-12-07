@@ -30,6 +30,11 @@ $(function(){
       {
 
         allStore();
+        enableMenu();
+
+      }else{
+
+        disableMenu();
 
       }
       // ajaxRequest(searchInputVal);
@@ -52,6 +57,28 @@ $(function(){
       })
 
    })
+
+
+   function disableMenu()
+   {
+
+     var tl = new TimelineMax();
+     tl.to('.mobile_ninja_menu', 0.5, {height: 'auto', paddingBottom: 10, ease: Quad.easeInOut}, 0.2);
+     tl.to('.neutral-ninja', 0.3, {scale: 0, display: 'none', ease: Quad.easeInOut}, 0.1);
+      tl.to('.ninja-partner-store-bg', 0.4, {marginTop: 60, ease: Quad.easeInOut}, 0.2);
+
+   }
+
+
+   function enableMenu()
+   {
+
+     var tl = new TimelineMax();
+     tl.to('.mobile_ninja_menu', 0.5, {height: 'auto', paddingBottom: 0, ease: Quad.easeInOut}, 0.1);
+     tl.to('.neutral-ninja', 0.3, {scale: 1, display: 'flex', ease: Quad.easeInOut}, 0.1);
+      tl.to('.ninja-partner-store-bg', 0.4, {marginTop: 200, ease: Quad.easeInOut}, 0.2);
+
+   }
 
 
    // function categorySpliter(category)

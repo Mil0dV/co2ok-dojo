@@ -13,9 +13,9 @@ chrome.runtime.sendMessage('ebkngbljjoeelkacamjffdedkbbjlnii', { message: "versi
     else {
       hasExtension = 'jhskjgjg';
     }
-    alert(hasExtension);
+    // alert(hasExtension);
 });
-alert(hasExtension);
+// alert(hasExtension);
 window.addEventListener('load', function(){
 
    chrome.webstore.install()
