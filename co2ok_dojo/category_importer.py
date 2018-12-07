@@ -17,7 +17,7 @@ def importer():
     'Food',
     'Health',
     'Hobby',
-    'Home, Garden & Animals',
+    'Home, Garden & Pets',
     'Holiday',
     'IT & Office',
     'Presents & Gadgets',
