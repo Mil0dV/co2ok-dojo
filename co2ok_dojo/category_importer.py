@@ -9,19 +9,20 @@ def importer():
     categories = [
 
     'Books & Media',
-    'Department stores',
+    'Department Stores',
     'Electronics',
     'Erotica',
     'Fashion',
     'Dating',
+    'Gifts & Gadgets',
     'Food',
     'Health',
     'Hobby',
-    'Home, Garden & Animals',
+    'Home, Garden & Pets',
     'Holiday',
     'IT & Office',
     'Presents & Gadgets',
-    'Sports & Recreation',
+    'Sport & Recreation',
     'Toys',
     'Party',
     'Vehicles',
@@ -44,4 +45,4 @@ def importer():
 
     # ###### Countries maken:
     for country_code in countries:
-        Category.objects.create(name=country_code)
+        Country.objects.create(code=country_code)
