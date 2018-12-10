@@ -36,7 +36,7 @@ def importer():
     'fr',
     'de',
     'es',
-    'en'
+    'us'
 
     ]
     # ###### Categories maken:
