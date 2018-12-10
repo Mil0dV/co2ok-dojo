@@ -38,6 +38,27 @@
        {% endwith %}
 
      {% endfor %}
+     <!-- aanvullende categorieen als er niet genoeg stores bij de categorie -->
+     {% if category_result_extras %}
+
+       {% for category_result_extra in category_result_extras %}
+
+         {% with 'images/logos/'|add:category_result_extra.website|add:'.png' as stores_image %}
+
+           <a href="http://rover.ebay.com/rover/1/711-53200-19255-0/1?ff3=4&pub=5575349754&toolid=11800&campid=5338219191&customid=chex&mpre=http%3A%2F%2Febay.com%2F" class="img-fluid co2ok-featured-shop-image col-md-4" target="_blank" rel="noopener"
+           style="background-image: url('{% static stores_image %}');">
+               <span class="co2ok-featured-shop-text">
+                   {{category_result_extra.website | title}}
+               </span>
+           </a>
+
+         {% endwith %}
+
+       {% endfor %}
+
+     {% endif %}
+     <!-- end -->
+
    {% else %}
      <h3>niets gevonden...</h3>
    {% endif %}
@@ -57,6 +78,23 @@
     {% endwith %}
 
   {% endfor %}
+
+  {% if stores_extras %}
+
+    {% for stores_extra in stores_extras %}
+
+      {% with 'images/logos/'|add:stores_extra.website|add:'.png' as stores_image %}
+        <a href="http://rover.ebay.com/rover/1/711-53200-19255-0/1?ff3=4&pub=5575349754&toolid=11800&campid=5338219191&customid=chex&mpre=http%3A%2F%2Febay.com%2F" class="img-fluid co2ok-featured-shop-image col-md-4" target="_blank" rel="noopener"
+        style="background-image: url('{% static stores_image %}');">
+            <span class="co2ok-featured-shop-text">
+                {{stores_extra.website | title}}
+            </span>
+        </a>
+      {% endwith %}
+
+    {% endfor %}
+
+  {% endif %}
 
 {% endif %}
 
