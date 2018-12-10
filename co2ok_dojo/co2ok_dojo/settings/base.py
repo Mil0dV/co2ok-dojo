@@ -17,8 +17,6 @@ from django.utils.translation import ugettext_lazy as _
 
 ROOT_DIR = environ.Path(__file__) - 3  # ({{ cookiecutter.project_slug }}/config/settings/base.py - 3 = {{ cookiecutter.project_slug }}/)
 
-print(ROOT_DIR)
-
 env = environ.Env()
 
 # .env file wordt altijd gelezen nu
