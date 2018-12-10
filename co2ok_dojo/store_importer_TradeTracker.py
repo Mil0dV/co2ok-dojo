@@ -10,13 +10,13 @@ def importer():
     with open('TradetrackerTest.csv') as csvfile:
         # readCS = csv.DictReader(csvfile, fieldnames='website', restkey='categories', delimiter='|')
         readCS = csv.reader(csvfile)
-        
+
         for row in readCS:
             tradetrackerrow = row[0].split(';')
             tradetracker = tradetrackerrow[1].split('/')
             print(tradetrackerrow[2])
             if(tradetracker[2] == "tc.tradetracker.net"):
-                
+
                 splitedCSV = row[0].split(';')
                 splited_url = splitedCSV[1].split('=')
                 middle_name = splited_url[1].split('&')
@@ -24,7 +24,7 @@ def importer():
                 site_name = splitedCSV[0]
                 # print(row[1:])
                 # print(site_name, middle_name[0])
-                try: 
+                try:
                     store = Store.objects.get(website=site_name)
                     # print(site_name, middle_name[0])
                 except:
@@ -33,7 +33,7 @@ def importer():
                     store = Store.objects.create(website=site_name, network="tc.tradetracker", tussenstukje=middle_name[0])
                 print("gelukt! " + store.website)
             else:
-                splitedCSV = row[0].split(';') 
+                splitedCSV = row[0].split(';')
                 splited_url = splitedCSV[1].split('/')
                 moresplited = splited_url[-1].split('?')
                 evenMoreSplitedURL = moresplited[-1].split('=')
@@ -42,7 +42,7 @@ def importer():
                 # print(row[0])
                 site_name = splitedCSV[0]
                 # print(row[1:])
-                try: 
+                try:
                     store = Store.objects.get(website=site_name)
                 except:
                     # pass

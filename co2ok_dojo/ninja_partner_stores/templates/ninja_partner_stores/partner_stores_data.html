@@ -69,11 +69,13 @@
 
     <!-- <h3 style="color: blue;">{{category_result.website}}</h3> -->
     {% with 'images/logos/'|add:store.website|add:'.png' as stores_image %}
-      <a href="http://rover.ebay.com/rover/1/711-53200-19255-0/1?ff3=4&pub=5575349754&toolid=11800&campid=5338219191&customid=chex&mpre=http%3A%2F%2Febay.com%2F" class="img-fluid co2ok-featured-shop-image col-md-4" target="_blank" rel="noopener"
+      <a href="{{ store.makeURLlink }}" class="img-fluid co2ok-featured-shop-image col-md-4" target="_blank" rel="noopener"
       style="background-image: url('{% static stores_image %}');">
           <span class="co2ok-featured-shop-text">
               {{store.website | title}}
+
           </span>
+
       </a>
     {% endwith %}
 

@@ -4,6 +4,7 @@ from django.utils import  translation
 
 from .forms import SearchForm
 from .models import Store, Category, Country
+from .functions import Url_filter
 import json
 
 # def partner_stores(request):
@@ -38,7 +39,8 @@ def partner_stores(request):
 def partner_stores_all(request):
     user_lang = translation.get_language()
     stores = Store.objects.filter(country__code=user_lang)[:100]
-    stores_count = stores.count();
+    stores_count = stores.count()
+    # makeURLlink = Url_filter.makeURLlink(stores)
 
     if stores_count < 50:
         if user_lang == 'en':
@@ -51,7 +53,8 @@ def partner_stores_all(request):
     return render(request,'ninja_partner_stores/partner_stores_data.html',
      {
       'stores':stores,
-      'stores_extras':stores_extra
+      'stores_extras':stores_extra,
+      # 'makeURLlink':makeURLlink
      }
     )
 
