@@ -205,6 +205,15 @@
   font-size: 18px;
 }
 
+.join-us-button {
+  margin-left: 9%;
+  margin-right: 2%;
+}
+
+.signup-privacy-disclaimer {
+  margin-right: 8%;
+}
+
 @media only screen and (max-width: 660px) {
   .sign-up-info {
     padding-left: 10%;
@@ -212,12 +221,18 @@
     padding-right: 10%;
     margin-left: 0%;
   }
-}
-@media only screen and (max-width: 660px) {
+  .join-us-button {
+    margin-left: 9%;
+    margin-right: 1%;
+  }
   .sign-up-header {
     margin-top: 10px !important;
   }
+  .signup-privacy-disclaimer {
+    margin-right: 7%;
+  }
 }
+
 
 .register-page-whitebar {
   height: 300px;
