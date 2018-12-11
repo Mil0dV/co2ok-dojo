@@ -71,7 +71,7 @@
     {% with 'images/logos/'|add:store.website|add:'.png' as stores_image %}
       <a href="{{ store.makeURLlink }}" class="img-fluid co2ok-featured-shop-image col-md-4" target="_blank" rel="noopener"
       style="background-image: url('{% static stores_image %}');">
-          <span class="co2ok-featured-shop-text">
+          <span class="co2ok-featured-shop-text store_name">
               {{store.website | title}}
           </span>
 
