@@ -331,6 +331,20 @@ msgstr "Lista de tiendas asociadas"
 msgid "You raise money for the fight against climate change when you shop in one of these online stores."
 msgstr "Nos ayudas a recaudar dinero para la lucha contra el cambio climático con sólo un click cuando compras en una de estas tiendas en línea."
 
+# Ninja Partner Stores (light_box)
+
+#: ninja_partner_stores/templates/ninja_partner_stores/ninja-partner-stores.html:44
+msgid "You can install the Mobile Ninja app on your device so you can easily access your favorite online shops and automatically compensate CO2 emissions."
+msgstr "Puede instalar la aplicación Ninja en su dispositivo para acceder fácilmente desde su móvil a sus tiendas favoritas en línea y compensar automáticamente las emisiones de CO2."
+
+#: ninja_partner_stores/templates/ninja_partner_stores/ninja-partner-stores.html:48
+msgid "1) Tap the Action button on the toolbar."
+msgstr "1) Clique el botón 'Acción' en la barra de herramientas."
+
+#: ninja_partner_stores/templates/ninja_partner_stores/ninja-partner-stores.html:52
+msgid "2) Tap the Add to Home Screen button from the Share Sheet."
+msgstr "2) Clique el botón 'Agregar a la pantalla de inicio' de la hoja 'Compartir'"
+
 #: users/templates/users/profile.html:56
 msgid "Profile"
 msgstr "Perfil"
