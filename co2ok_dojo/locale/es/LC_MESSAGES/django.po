@@ -32,15 +32,15 @@ msgstr ""
 
 #: co2ok_dojo/templates/caroussel.html:29
 msgid "Sustainable energy sources like the sun, wind and hydro power don't have negative effects on the climate. Very little greenhouse gases are emitted and there is no air polution."
-msgstr ""
+msgstr "Las fuentes de energía sostenibles como el sol, el viento y la energía hidroeléctrica no tienen efectos negativos sobre el clima. Se emiten muy pocos gases de efecto invernadero y no hay contaminación del aire."
 
 #: co2ok_dojo/templates/caroussel.html:43
 msgid "The Save80 cookers which use 5x less wood, which means 5x less emission."
-msgstr ""
+msgstr "Los “cookers” Save80 usan 5 veces menos madera, lo que supone una emisión 5 veces menor de CO2."
 
 #: co2ok_dojo/templates/caroussel.html:57
 msgid "A biogas installation under construction"
-msgstr ""
+msgstr "Una instalación de biogas en construcción."
 
 #: co2ok_dojo/templates/faq.html:13
 msgid "Why installing the Ninja App requires permission to “Read and change all data on websites you visit”?"
@@ -172,24 +172,24 @@ msgstr ""
 
 #: co2ok_dojo/templates/registration/login.html:51
 msgid "Sign in"
-msgstr ""
+msgstr "Iniciar sesión"
 
 #: co2ok_dojo/templates/registration/register.html:27
 msgid "Sign Up"
-msgstr ""
+msgstr "Registrarse"
 
 #: co2ok_dojo/templates/registration/register.html:40
 msgid "Sign up via:"
-msgstr "Regístrate a través de"
+msgstr "Regístrate a través de:"
 
 #: co2ok_dojo/templates/registration/register.html:67
 msgid "We won't share your email adress or other user data, read here about our"
-msgstr "No compartiremos su correo electrónico u otros datos personales que se faciliten. Lea aquí sobre nuestra política de privacidad"
+msgstr "No compartiremos su correo electrónico u otros datos personales que se faciliten. Lea aquí sobre nuestra"
 
 #: co2ok_dojo/templates/registration/register.html:67
 #: home/templates/home/home_page.html:291
 msgid " Privacy Policy"
-msgstr ""
+msgstr " política de privacidad"
 
 #: co2ok_dojo/templates/registration/register.html:68
 msgid "Sign up"
@@ -209,11 +209,11 @@ msgstr "CONSIGA LA APLICACIÓN"
 
 #: home/templates/home/home_page.html:46
 msgid "CHOOSE FROM "
-msgstr ""
+msgstr "ELIGE ENTRE "
 
 #: home/templates/home/home_page.html:46
 msgid " 22.000+ INTERNATIONAL SHOPS"
-msgstr ""
+msgstr "Más de 22.000 tiendas internacionales"
 
 #: home/templates/home/home_page.html:156
 msgid "HOW IT WORKS"
@@ -249,7 +249,7 @@ msgstr "Con esta comisión financiamos proyectos que reducen directamente las em
 
 #: home/templates/home/home_page.html:196
 msgid "There are no extra costs for you."
-msgstr ""
+msgstr "No hay costos adicionales para usted"
 
 #: home/templates/home/home_page.html:196
 msgid "The CO₂ compensation is fully covered by the shop."
@@ -269,15 +269,15 @@ msgstr "Con la comisión recibida financiamos proyectos de reducción de emisió
 
 #: home/templates/home/home_page.html:231
 msgid "How "
-msgstr ""
+msgstr "Cómo"
 
 #: home/templates/home/home_page.html:231
 msgid "CO₂ compensation"
-msgstr ""
+msgstr "Compensación de CO₂"
 
 #: home/templates/home/home_page.html:231
 msgid "works. Read more in the "
-msgstr ""
+msgstr "trabajos. Siga leyendo…"
 
 #: home/templates/home/home_page.html:231
 msgid " FAQ"
@@ -297,7 +297,7 @@ msgstr "De esta manera, como mínimo tu compra tiene un impacto neutro en el med
 
 #: home/templates/home/home_page.html:272
 msgid "REGISTER & FIGHT CLIMATE CHANGE"
-msgstr ""
+msgstr "REGÍSTRARTE Y LUCHA CONTRA EL CAMBIO CLIMÁTICO"
 
 #: home/templates/home/home_page.html:287
 msgid "CO₂ok Ninja Privacy Policy"
@@ -321,7 +321,7 @@ msgstr "Nuestro sistema Ninja App sólo necesita poder acceder de manera online 
 
 #: home/templates/home/home_page.html:291
 msgid "Look further into our "
-msgstr ""
+msgstr "Mirar más lejos en nuestro"
 
 #: ninja_partner_stores/templates/ninja_partner_stores/ninja-partner-stores.html:57
 msgid "Partner stores list"
@@ -329,23 +329,23 @@ msgstr "Lista de tiendas asociadas"
 
 #: ninja_partner_stores/templates/ninja_partner_stores/ninja-partner-stores.html:59
 msgid "You raise money for the fight against climate change when you shop in one of these online stores."
-msgstr ""
+msgstr "Nos ayudas a recaudar dinero para la lucha contra el cambio climático con sólo un click cuando compras en una de estas tiendas en línea."
 
 #: users/templates/users/profile.html:56
 msgid "Profile"
-msgstr ""
+msgstr "Perfil"
 
 #: users/templates/users/profile.html:88
 msgid "Tell your friends about CO₂ok Ninja by sharing the above link, so you get shurikens"
-msgstr ""
+msgstr "Involucra a tus contactos en la lucha contra el cambio climático compartiendo el enlace de arriba CO2ok Ninja. De esta manera obtendrás shurikens que mejorarán tu posición Ninja"
 
 #: users/templates/users/profile.html:93
 msgid "CO₂ compensated"
-msgstr ""
+msgstr "CO2 compensado"
 
 #: users/templates/users/profile.html:100
 msgid "Pick a cause"
-msgstr ""
+msgstr "Escoge una causa"
 
 #: users/views.py:87
 msgid "mot a traduire"
