@@ -57,8 +57,8 @@
                       				{% csrf_token %}
 						        	{{ form.as_p }}
 										<div class="form_footer">
-											<button type="submit" class=" color2 install-ninja-button btn btn-xl install-button" style="padding: 15px; position: relative; display: inline-block; margin-left: 70px;">{% trans "Join us!" %}</button>
-											<p style=>{% trans "We won't share your email adress or other user data, read here about our" %} <a href="/#CO2ok-Ninja-Privacy-Policy" target="_blank">{% trans " Privacy Policy" %}</a></p>
+											<button type="submit" class=" color2 install-ninja-button btn btn-xl install-button join-us-button" style="padding: 15px; position: relative; display: inline-block; ">{% trans "Join us!" %}</button>
+											<p class="signup-privacy-disclaimer">{% trans "We won't share your email adress or other user data, read here about our" %} <a href="/#CO2ok-Ninja-Privacy-Policy" target="_blank">{% trans " Privacy Policy" %}</a></p>
 										</div>
                  					</form>
 

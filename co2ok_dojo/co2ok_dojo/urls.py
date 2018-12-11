@@ -40,12 +40,16 @@ urlpatterns = [
 
     url(r'^(?P<user_id>\d+)/$', users_views.invited_sign, name='invitation_page'),
 
-    url(r'^ninja-partner-stores/$', ninja_partner_stores_views.ninja_partner_stores, name='ninja-partner-stores'),
+    url(r'^partner-stores/$', ninja_partner_stores_views.partner_stores, name='partner-stores'),
+    url(r'^partner-stores-all/$', ninja_partner_stores_views.partner_stores_all, name='partner_stores_all'),
+    url(r'^partner-stores-search/$', ninja_partner_stores_views.partner_stores_search, name='partner_stores_search'),
+    url(r'^partner-stores-category/$', ninja_partner_stores_views.partner_stores_category, name='partner-stores-category'),
 
     # For anything not caught by a more specific rule above, hand over to
     # Wagtail's page serving mechanism. This should be the last pattern in
     # the list:
     url(r'', include(wagtail_urls)),
+    url('', include('pwa.urls')),
 
     # Alternatively, if you want Wagtail pages to be served from a subpath
     # of your site, rather than the site root:

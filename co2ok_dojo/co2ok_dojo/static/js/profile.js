@@ -1,23 +1,23 @@
-// var hasExtension = false;
-//
-// chrome.runtime.sendMessage(extensionId, { message: "version" },
-//   function (reply) {
-//     if (reply) {
-//         if (reply.version) {
-//             if (reply.version >= requiredVersion) {
-//                 hasExtension = true;
-//             }
-//         }
-//     }
-//     else {
-//       hasExtension = false;
-//     }
-// });
+var hasExtension = false;
+
+chrome.runtime.sendMessage('ebkngbljjoeelkacamjffdedkbbjlnii', { message: "version" },
+  function (reply) {
+    // alert(reply);
+    if (reply) {
+          if (reply.version) {
+            // if (reply.version >= '1.0') {
+                hasExtension = true;
+            // }
+        }
+    }
+    else {
+      hasExtension = 'jhskjgjg';
+    }
+    // alert(hasExtension);
+});
 // alert(hasExtension);
+window.addEventListener('load', function(){
 
-if (chrome.app.isInstalled)
-{
+   chrome.webstore.install()
 
-
-
-}
+})

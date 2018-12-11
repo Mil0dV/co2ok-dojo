@@ -96,37 +96,251 @@
     background-image: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,0.9) , rgba(255,255,255,0.9) , rgba(255,255,255,0.9), rgba(255,255,255,0)); /* Standard syntax (must be last) */
 }
 
-.co2ok-featured-shop-image {
+.mobile-ninja-container
+{
+
+   width: 100%;
+   height: auto;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+
+}
+
+.mobile_ninja_menu
+{
+
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   height: auto;
+   z-index: 100;
+   position: fixed;
+   top: 0px;
+   /* padding:10px;
+   position: fixed;
+   z-index: 100;
+   width: 100%;
+   height: 35% */
+
+}
+
+.logo-share-container
+{
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: auto;
+
+}
+
+.co2ok-logo-main-ninja
+{
+
+
+}
+
+.profile-link
+{
+
+   width: auto;
+   height: auto;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+}
+
+.ninja-partner-store-bg {
+    margin-top: 200px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.search_result
+{
+
+   width: 100%;
+   height: auto;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+   position: relative;
+   top: 120px;
+
+}
+
+.search-submit
+{
+
+   border-radius: 0px 0.25rem 0.25rem 0px;
+
+}
+
+#serachInput
+{
+
+  border-radius: 0.25rem 0px 0px 0.25rem;
+
+}
+
+.search-submit i
+{
+
+  font-size: 28px;
+
+}
+
+.search_result .co2ok-featured-shop-image {
     box-sizing: border-box;
-    border-radius: 0px;
-    background-color: rgba(0, 0, 0, 0);
-    display: inline-block; 
+    border-radius: 30px;
+    background-color: rgba(255, 255, 255, 1);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
     border: none !important;
-    margin: 3px 1px;; 
+    margin: 3px 15px 45px 15px;
     padding: 1rem;
     background-position: center center;
     background-size: 100% auto;
-    width: 160px;
-    height: 81px;
-    min-height: 100%;
+    width: 100px;
+    height: auto;
+    min-height: 100px;
+    max-width: 100px;
+    box-shadow: 0px 2px 6px rgba(0,0,0,0.6);
 }
+
+.search_result .co2ok-featured-shop-image .co2ok-featured-shop-text {
+  /* font-size: 1.2rem; */
+    font-size: 15px;
+    color: #fff;
+    font-family: "Open Sans";
+    letter-spacing: 1px;
+    position: relative;
+    top: 50px;
+    text-transform: lowercase;
+    white-space: nowrap;
+    /* position: absolute;
+    transform: translateX(-50%);
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center; */
+    /* font-weight: 400; */
+}
+
+.userlink
+{
+
+   width: auto;
+   height: auto;
+   border: 1px solid gray;
+   border-radius: 3px;
+   text-align: center;
+   font-size: 15px;
+   font-weight: 600;
+   margin: 10px;
+
+}
+
+
+.categoryContainer
+{
+
+   display: flex;
+   justify-content: center;
+   flex-direction: row;
+   align-items: center;
+   width:100%;
+   height: auto;
+   position: fixed;
+   top: 220px;
+
+}
+
+.categories
+{
+
+   display: flex;
+   flex-direction: row;
+   justify-content: flex-start;
+   align-items: flex-start;
+   width: auto;
+   height: auto;
+   overflow-x: scroll;
+   overflow-y: hidden;
+
+}
+
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+.categoryDropDown
+{
+
+  width: 90%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 250px;
+  z-index: 3;
+
+}
+
+.categoryDropDown select{
+
+   width: 100%;
+   height: 40px;
+   bottom: 1px solid #ced4da;
+   border-radius: 5px;
+   text-align: center;
+
+}
+
 
 @media only screen and (max-width: 360px) {
     .co2ok-logo-main-ninja {
         /* height: 45px; */
     }
     .co2ok-featured-shop-image {
+        border-radius: 15px;
         width: 80px;
-        height: 41px;
-        margin: 2px; 
+        min-height: 80px;
+        max-width: 80px;
+        margin: 3px 15px 40px 15px;
+    }
+    .co2ok-featured-shop-text {
+        font-size: 0.85rem;
     }
 }
 
 /* Small devices (up to 400px) */
 @media only screen and (max-width: 400px) and (min-width: 361px) {
     .co2ok-featured-shop-image {
+        font-size: 0.85rem;
+        border-radius: 20px;
         width: 120px;
-        height: 61px;
+        min-height: 120px;
+        max-width: 120px;
+        margin: 3px 15px 40px 15px;
+    }
+    .co2ok-featured-shop-text {
+        font-size: 0.85rem;
     }
     .co2ok-logo-main-ninja {
         /* height: 45px; */
@@ -136,8 +350,15 @@
 /* Medium devices (from 601px to 1199px) */
 @media only screen and (max-width: 600px) and (min-width: 400px) {
     .co2ok-featured-shop-image {
+        border-radius: 25px;
+        font-size: 0.85rem;
         width: 90px;
-        height: 46px;
+        min-height: 90px;
+        max-width: 90px;
+        margin: 3px 15px 45px 15px;
+    }
+    .co2ok-featured-shop-text {
+        font-size: 0.9rem;
     }
 }
 
@@ -145,7 +366,12 @@
 @media only screen and (min-width: 1200px) {
     .co2ok-featured-shop-image {
         width: 170px;
-        height: 86px;
+        min-height: 170px;
+        max-width: 170px;
+        margin: 3px 15px 55px 15px;
+    }
+    .co2ok-featured-shop-text {
+        font-size: 1rem;
     }
 }
 
@@ -156,4 +382,27 @@
 
 .btn {
     padding: 3px 10px;
+}
+
+.btn-mobile-ninja-caroussel {
+    padding: 6px 20px;
+    margin-right: 3px;
+    cursor: pointer;
+    white-space: nowrap;
+    border-width: 1px;
+    border-radius: 5px;
+    border-color: rgb(88, 177, 169);
+}
+
+
+@media only screen and (max-width: 600px) and (min-width: 361px) {
+    .ninja-partner-store-bg {
+        /* margin-top: 72%; */
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .ninja-partner-store-bg {
+        /* margin-top: 60%; */
+    }
 }

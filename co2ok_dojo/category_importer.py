@@ -9,19 +9,19 @@ def importer():
     categories = [
 
     'Books & Media',
-    'Department stores',
+    'Department Stores',
     'Electronics',
     'Erotica',
     'Fashion',
     'Dating',
+    'Gifts & Gadgets',
     'Food',
     'Health',
     'Hobby',
-    'Home, Garden & Animals',
+    'Home, Garden & Pets',
     'Holiday',
     'IT & Office',
-    'Presents & Gadgets',
-    'Sports & Recreation',
+    'Sport & Recreation',
     'Toys',
     'Party',
     'Vehicles',
@@ -35,13 +35,27 @@ def importer():
     'fr',
     'de',
     'es',
-    'en'
+    'us',
+    'at',
+    'uk',
+    'be',
+    'ca',
+    'au',
+    'ch',
+    'ie',
+    'it',
 
     ]
     # ###### Categories maken:
     for cat_name in categories:
-        Category.objects.create(name=cat_name)
+        try:
+            Category.objects.get(name=cat_name)
+        except:
+            Category.objects.create(name=cat_name)
 
     # ###### Countries maken:
     for country_code in countries:
-        Category.objects.create(name=country_code)
+        try:
+            Country.objects.get(code=country_code)
+        except:
+            Country.objects.create(code=country_code)

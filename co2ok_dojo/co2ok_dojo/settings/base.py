@@ -17,8 +17,6 @@ from django.utils.translation import ugettext_lazy as _
 
 ROOT_DIR = environ.Path(__file__) - 3  # ({{ cookiecutter.project_slug }}/config/settings/base.py - 3 = {{ cookiecutter.project_slug }}/)
 
-print(ROOT_DIR)
-
 env = environ.Env()
 
 # .env file wordt altijd gelezen nu
@@ -44,12 +42,15 @@ INSTALLED_APPS = [
     'search',
     'users',
     'ninja_partner_stores',
+    # 'partner_stores',
     'cuser',
 
     'social_django',
 
+    'pwa',
+
     # alleen DEV
-    #"sslserver",
+    # "sslserver",
 
     'wagtail.contrib.forms',
     'wagtail.contrib.redirects',
@@ -103,6 +104,29 @@ LOGIN_REDIRECT_URL = 'profile'
 SOCIAL_AUTH_FACEBOOK_KEY = env.str('SOCIAL_AUTH_FACEBOOK_KEY')
 SOCIAL_AUTH_FACEBOOK_SECRET = env.str('SOCIAL_AUTH_FACEBOOK_SECRET')
 SOCIAL_AUTH_FACEBOOK_SCOPE = ['email']
+
+# django PWA_SERVICE_WORKER_PATHPWA_APP_NAME = 'My Kickass App'
+PWA_APP_NAME = 'CO₂ok Ninja'
+PWA_APP_DESCRIPTION = "Make your shoppping climate neutral! (no extra costs)"
+PWA_APP_THEME_COLOR = '#05B139'
+PWA_APP_BACKGROUND_COLOR = '#ffffff'
+PWA_APP_DISPLAY = 'standalone'
+PWA_APP_START_URL = '/partner-stores/?utm_source=mobileninja'
+PWA_APP_ICONS = [
+    {
+        'src': '/static/images/ninjaDesign_headicon192.png',
+        'sizes': '192x192'
+    },
+    {
+        'src': '/static/images/ninjaDesign_headicon512.png',
+        'sizes': '512x512'
+    },
+    {
+        'src': '/static/images/ninjaDesign_headicon160.png',
+        'sizes': '160x160'
+    }
+
+]
 
 # muh - werkt dus niet
 # SOCIAL_AUTH_PIPELINE = (
@@ -240,6 +264,7 @@ STATIC_URL = '/static/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
 # GEOIP_PATH = os.path.join(BASE_DIR, 'geoip')
+PWA_SERVICE_WORKER_PATH = os.path.join(BASE_DIR, 'home/static/js', 'serviceworker.js')
 
 
 # Wagtail settings

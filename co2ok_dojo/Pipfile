@@ -10,8 +10,10 @@ django-environ = "*"
 social-auth-app-django = "*"
 gunicorn = "*"
 django-username-email = "*"
+django-progressive-web-app = "*"
 
 [dev-packages]
+django-sslserver = "*"
 
 [requires]
 python_version = "3.7"

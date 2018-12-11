@@ -7,3 +7,8 @@ def home(request):
     # translation.activate(user_lang)
     # request.session[translation.LANGUAGE_SESSION_KEY] = user_lang
     return render(request, 'core/home.html')
+
+
+def base_layout(request):
+	template='home/base.html'
+	return render(request,template)
