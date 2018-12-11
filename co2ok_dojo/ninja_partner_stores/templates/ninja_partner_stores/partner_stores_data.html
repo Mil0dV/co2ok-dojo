@@ -9,7 +9,7 @@
 
        <!-- <h3 style="color: blue;">{{search_result.website}}</h3> -->
        {% with 'images/logos/'|add:search_result.website|add:'.png' as stores_image %}
-         <a href="http://rover.ebay.com/rover/1/711-53200-19255-0/1?ff3=4&pub=5575349754&toolid=11800&campid=5338219191&customid=chex&mpre=http%3A%2F%2Febay.com%2F" class="img-fluid co2ok-featured-shop-image col-md-4" target="_blank" rel="noopener"
+         <a href="{{ search_result.makeURLlink }}" class="img-fluid co2ok-featured-shop-image col-md-4" target="_blank" rel="noopener"
          style="background-image: url('{% static stores_image %}');">
              <span class="co2ok-featured-shop-text">
                  {{search_result.website | title }}
@@ -29,7 +29,7 @@
 
        <!-- <h3 style="color: blue;">{{category_result.website}}</h3> -->
        {% with 'images/logos/'|add:category_result.website|add:'.png' as stores_image %}
-         <a href="http://rover.ebay.com/rover/1/711-53200-19255-0/1?ff3=4&pub=5575349754&toolid=11800&campid=5338219191&customid=chex&mpre=http%3A%2F%2Febay.com%2F" class="img-fluid co2ok-featured-shop-image col-md-4" target="_blank" rel="noopener"
+         <a href="{{ category_result.makeURLlink }}" class="img-fluid co2ok-featured-shop-image col-md-4" target="_blank" rel="noopener"
          style="background-image: url('{% static stores_image %}');">
              <span class="co2ok-featured-shop-text">
                  {{category_result.website | title}}
@@ -45,7 +45,7 @@
 
          {% with 'images/logos/'|add:category_result_extra.website|add:'.png' as stores_image %}
 
-           <a href="http://rover.ebay.com/rover/1/711-53200-19255-0/1?ff3=4&pub=5575349754&toolid=11800&campid=5338219191&customid=chex&mpre=http%3A%2F%2Febay.com%2F" class="img-fluid co2ok-featured-shop-image col-md-4" target="_blank" rel="noopener"
+           <a href="{{ category_result_extra.makeURLlink }}" class="img-fluid co2ok-featured-shop-image col-md-4" target="_blank" rel="noopener"
            style="background-image: url('{% static stores_image %}');">
                <span class="co2ok-featured-shop-text">
                    {{category_result_extra.website | title}}
@@ -86,7 +86,7 @@
     {% for stores_extra in stores_extras %}
 
       {% with 'images/logos/'|add:stores_extra.website|add:'.png' as stores_image %}
-        <a href="http://rover.ebay.com/rover/1/711-53200-19255-0/1?ff3=4&pub=5575349754&toolid=11800&campid=5338219191&customid=chex&mpre=http%3A%2F%2Febay.com%2F" class="img-fluid co2ok-featured-shop-image col-md-4" target="_blank" rel="noopener"
+        <a href="{{ stores_extra.makeURLlink }}" class="img-fluid co2ok-featured-shop-image col-md-4" target="_blank" rel="noopener"
         style="background-image: url('{% static stores_image %}');">
             <span class="co2ok-featured-shop-text">
                 {{stores_extra.website | title}}
