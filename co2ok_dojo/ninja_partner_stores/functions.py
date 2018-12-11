@@ -26,4 +26,4 @@ class Url_filter():
         elif(store.network == "tradetracker"):
             return "https://www." + store.website + "/" + store.tussenstukje + "/?tt=" + store.tussenstukjetwee + "_0_315369_"
         elif(store.network == "yieldkit"):
-            return "http://r.srvtrck.com/v1/redirect?url=http%3A%2F%2F" + store.website + "%2Fapi_key=6192753faa5975d8d9450690274e77dd&site_id=249c53bccf944c4c8f010cf6c914f30c&type=url&source=https%3A%2F%2Fco2ok.ninja"
+            return "http://r.srvtrck.com/v1/redirect?url=http%3A%2F%2F" + store.website + "%2F&api_key=6192753faa5975d8d9450690274e77dd&site_id=249c53bccf944c4c8f010cf6c914f30c&type=url&source=https%3A%2F%2Fco2ok.ninja"
