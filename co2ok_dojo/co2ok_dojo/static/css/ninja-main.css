@@ -317,30 +317,30 @@
     .co2ok-logo-main-ninja {
         /* height: 45px; */
     }
-    .co2ok-featured-shop-image {
+    .search_result .co2ok-featured-shop-image {
         border-radius: 15px;
+        width: 60px;
+        min-height: 60px;
+        max-width: 60px;
+        margin: 3px 15px 40px 15px;
+    }
+    .co2ok-featured-shop-text {
+        font-size: 0.75rem !important;
+    }
+}
+
+/* Small devices (up to 400px) */
+@media only screen and (max-width: 400px) and (min-width: 361px) {
+    .search_result .co2ok-featured-shop-image {
+        font-size: 0.85rem;
+        border-radius: 20px;
         width: 80px;
         min-height: 80px;
         max-width: 80px;
         margin: 3px 15px 40px 15px;
     }
     .co2ok-featured-shop-text {
-        font-size: 0.85rem;
-    }
-}
-
-/* Small devices (up to 400px) */
-@media only screen and (max-width: 400px) and (min-width: 361px) {
-    .co2ok-featured-shop-image {
-        font-size: 0.85rem;
-        border-radius: 20px;
-        width: 120px;
-        min-height: 120px;
-        max-width: 120px;
-        margin: 3px 15px 40px 15px;
-    }
-    .co2ok-featured-shop-text {
-        font-size: 0.85rem;
+        font-size: 0.85rem !important;
     }
     .co2ok-logo-main-ninja {
         /* height: 45px; */
@@ -349,7 +349,7 @@
 
 /* Medium devices (from 601px to 1199px) */
 @media only screen and (max-width: 600px) and (min-width: 400px) {
-    .co2ok-featured-shop-image {
+    .search_result .co2ok-featured-shop-image {
         border-radius: 25px;
         font-size: 0.85rem;
         width: 90px;
@@ -364,7 +364,7 @@
 
 /* Large devices (large desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-    .co2ok-featured-shop-image {
+    .search_result .co2ok-featured-shop-image {
         width: 170px;
         min-height: 170px;
         max-width: 170px;
