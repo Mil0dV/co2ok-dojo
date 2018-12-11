@@ -189,21 +189,6 @@ $(function(){
    }
    share();
 
-   function storeNameSlice()
-   {
-
-     var storeName = document.querySelector('.store_name');
-console.log(storeName);
-     // for (var i = 0; i < storeName.length; i++) {
-       var storeNameTxt = storeName.className;
-       // var domainPos = storeNameTxt.indexOf('.');
-       // console.log(domainPos);
-       console.log(storeNameTxt);
-       console.log('haloo');
-     // }
-
-   }
-   //storeNameSlice();
 
    // function ajaxRequest(searchData)
    // {
