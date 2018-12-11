@@ -133,8 +133,8 @@ msgid "With CO₂ok Ninja you prevent at least the same amount of emissions."
 msgstr "With CO₂ok Ninja you prevent at least the same amount of emissions."
 
 #: home/templates/home/home_page.html:258
-msgid "This way, your purchase is climate neutral!"
-msgstr "This way, your purchase is climate neutral!"
+msgid "With the help of your clicks we support these sustainable projects!"
+msgstr "With the help of your clicks we support these sustainable projects!"
 
 #: home/templates/home/home_page.html:272
 msgid "REGISTER & FIGHT CLIMATE CHANGE"

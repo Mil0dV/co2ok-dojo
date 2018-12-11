@@ -35,7 +35,7 @@
         <!-- <img src="{% static 'images/banner_co2ok_wereldbol.png' %}" alt=""> -->
         <div class="get_app_container">
           <div class="ninja_sword"><img src="{% static 'images/ninjaDesign_callToAction.svg' %}" style="height:130px; display:inline-block; margin-top:25px; position: relative;"></div>
-          <div class="getapp_butt"><a href="{% url 'signup' %}" class="page-scroll btn install-button" style="background-color:#05b139; position: relative;" >{% trans "GET THE APP!" %}</a></div>
+          <div class="getapp_butt"><a href="{% url 'signup' %}" class="page-scroll btn install-button install-ninja-button" style="background-color:#05b139; position: relative;" >{% trans "GET THE APP!" %}</a></div>
         </div>
       </div>
 
@@ -198,7 +198,7 @@
             </div>
             <!-- <a class="install-button color2 install-ninja-button btn btn-xl install-button" style="width: 50%;" data-cp-link="1" data-icon="fa-chrome" unknown="" rel="noopener" href="/signup"><span class="button-icon fa fa-chrome"></span> Get involved & fight climate change</a> -->
             <a href="{% url 'signup' %}" data-cp-link="1" data-icon="fa-chrome" rel="noopener" class="install-button color2 btn btn-xl install-button get_involved_button">
-              <span class="button-icon fa fa-chrome"> {% trans "Get involved & fight climate change" %}</span>
+              <span class="button-icon "> {% trans "Get involved & fight climate change" %}</span>
            </a>
             <!-- <a class="install-button color2 install-ninja-button btn btn-xl install-button" data-cp-link="1" data-icon="fa-chrome" unknown="" rel="noopener" href="/signup"><span class="button-icon fa fa-chrome"></span> MAAK IMPACT & SHOP KLIMAATNEUTRAAL</a> -->
 
@@ -226,36 +226,36 @@
       <div class="row">
         <div class="col-md-12">
           <div class="skills-text">
-            <h2 style="font-weight: 600;">{% trans "See how much difference you can make" %}</h2>
-            <p style="font-size: 18px; line-height: 3rem;font-weight: 300;">{% trans "With the commission we finance sustainable energy and CO₂-emission reduction projects via our certified partners. These projects actively reduce the amount of CO₂ emitted, thereby making your purchase climate neutral. In doing so you are positively impacting the environment!" %}</p>
-            <p style="margin-top: 10px;">{% trans "How " %}<a href="https://www.co2ok.eco/co2-compensatie/" target="_blank" style="color:#11d073;">{% trans "CO₂ compensation" %}</a> {% trans "works. Read more in the " %}<a href="ninja/#faq" style="color:#11d073;">{% trans " FAQ" %}</a></p>
+            <h2 style="font-weight: 300; font-size: 34px; text-transform: uppercase;">{% trans "See how much difference you can make" %}</h2>
+            <p style="font-size: 14px; line-height: 22px;font-weight: 300;">{% trans "With the commission we finance sustainable energy and CO₂-emission reduction projects via our certified partners. These projects actively reduce the amount of CO₂ emitted, thereby making your purchase climate neutral. In doing so you are positively impacting the environment!" %}</p>
+            <p style="margin-top: 10px; font-size: 14px;">{% trans "How " %}<a href="https://www.co2ok.eco/co2-compensatie/" target="_blank" style="color:#11d073;">{% trans "CO₂ compensation" %}</a> {% trans "works. Read more in the " %}<a href="ninja/#faq" style="color:#11d073;">{% trans " FAQ" %}</a></p>
           </div>
         </div>
 
         <div class="col-md-6 text-center">
           <div class="mz-module-about">
               <img src="{% static 'images/weegschaal_scheef-1.png' %}" style="width: 300px; height: 225px;">
-            <h4 style="    line-height: 2.5rem;letter-spacing: .0625rem;">{% trans "During manufacturing and shipping of products, greenhouse gases are emitted" %}</h4>
+            <h4 style="font-size: 14px; line-height: 22px;letter-spacing: .0625rem; color: #797979;">{% trans "During manufacturing and shipping of products, greenhouse gases are emitted" %}</h4>
           </div>
         </div>
 
         <div class="col-md-6 text-center">
           <div class="mz-module-about">
               <img src="{% static 'images/weegschaal_even-1.png' %}" style="width: 300px; height: 225px;">
-            <h4 style="    line-height: 1.75rem;letter-spacing: .0625rem;">{% trans "With CO₂ok Ninja you prevent at least the same amount of emissions." %}</h4>
+            <h4 style="font-size: 14px; line-height: 22px;letter-spacing: .0625rem; color: #797979;">{% trans "With CO₂ok Ninja you prevent at least the same amount of emissions." %}</h4>
           </div>
         </div>
 
         </div>
       </div>
   </section>
-  <section style="background-color: white; padding: 40px 0px;">
+  <section style="background-color: #f8f8f8; padding: 40px 0px;">
     <div class="container text-center">
       <div class="row">
 
         <div class="col-md-12">
           <div class="skills-text">
-            <h4 style="font-weight: 600;margin-bottom: 30px;">{% trans "This way, your purchase is climate neutral!" %}</h4>
+            <h4 style="font-weight: 300; text-transform: uppercase; margin-bottom: 30px;">{% trans "With the help of your clicks we support these sustainable projects!" %}</h4>
           </div>
         </div>
 
@@ -270,7 +270,7 @@
       <div class="col-lg-12 text-center">
           <a href="{% url 'signup' %}" data-cp-link="1" data-icon="fa-chrome" rel="noopener" class="install-button color2 btn btn-xl install-button get_involved_button">
 
-          <span class="button-icon fa fa-chrome"> {% trans "REGISTER & FIGHT CLIMATE CHANGE" %}</span>
+          <span class="button-icon "> {% trans "REGISTER & FIGHT CLIMATE CHANGE" %}</span>
 
        </a>
 
