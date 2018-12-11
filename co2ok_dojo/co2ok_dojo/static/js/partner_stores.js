@@ -94,6 +94,7 @@ $(function(){
      tl.to('.mobile_ninja_menu', 0.5, {height: 'auto', paddingBottom: 10, ease: Quad.easeInOut}, 0.2);
      tl.to('.neutral-ninja', 0.3, {scale: 0, display: 'none', ease: Quad.easeInOut}, 0.1);
      tl.to('.categoryContainer', 0.4, {top: 100, ease: Quad.easeInOut}, 0.2);
+     tl.to('.categoryDropDown', 0.4, {top: 130, ease: Quad.easeInOut}, 0.2);
      tl.to('.search_result', 0.4, {position: 'relative',top: 0, ease: Quad.easeInOut}, 0.2);
 
    }
@@ -106,6 +107,7 @@ $(function(){
      tl.to('.mobile_ninja_menu', 0.5, {height: 'auto', paddingBottom: 0, ease: Quad.easeInOut}, 0.2);
      tl.to('.neutral-ninja', 0.4, {scale: 1, display: 'flex', ease: Quad.easeInOut}, 0.2);
      tl.to('.categoryContainer', 0.3, {top: 220, ease: Quad.easeInOut}, 0.1);
+     tl.to('.categoryDropDown', 0.3, {top: 240, ease: Quad.easeInOut}, 0.1);
      tl.to('.search_result', 0.3, {position: 'relative',top: 120, ease: Quad.easeInOut}, 0.1);
 
    }
