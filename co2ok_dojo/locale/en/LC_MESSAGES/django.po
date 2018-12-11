@@ -328,6 +328,20 @@ msgstr "Partner stores list"
 msgid "You raise money for the fight against climate change when you shop in one of these online stores."
 msgstr "You raise money for the fight against climate change when you shop in one of these online stores."
 
+# Ninja Partner Stores (light_box)
+
+#: ninja_partner_stores/templates/ninja_partner_stores/ninja-partner-stores.html:44
+msgid "You can install the Mobile Ninja app on your device so you can easily access your favorite online shops and automatically compensate CO2 emissions."
+msgstr "You can install the Mobile Ninja app on your device so you can easily access your favorite online shops and automatically compensate CO2 emissions."
+
+#: ninja_partner_stores/templates/ninja_partner_stores/ninja-partner-stores.html:48
+msgid "1) Tap the Action button on the toolbar."
+msgstr "1) Tap the Action button on the toolbar."
+
+#: ninja_partner_stores/templates/ninja_partner_stores/ninja-partner-stores.html:52
+msgid "2) Tap the Add to Home Screen button from the Share Sheet."
+msgstr "2) Tap the Add to Home Screen button from the Share Sheet."
+
 # light_box
 
 #: co2ok_dojo/templates/light_box.html:22
