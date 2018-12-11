@@ -239,6 +239,21 @@
     /* font-weight: 400; */
 }
 
+.userlink
+{
+
+   width: auto;
+   height: auto;
+   border: 1px solid gray;
+   border-radius: 3px;
+   text-align: center;
+   font-size: 15px;
+   font-weight: 600;
+   margin: 10px;
+
+}
+
+
 .categoryContainer
 {
 

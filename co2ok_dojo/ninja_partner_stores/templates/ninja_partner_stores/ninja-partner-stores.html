@@ -67,13 +67,13 @@
       <div class="shareContent">
 
         <div class="shareButtContainer">
-          <a href=""><i class="fa fa-facebook-official"></i></a>
-          <a href=""><i class="fa fa-twitter-square"></i></a>
+          <a href="https://www.facebook.com/sharer?u=https%3A%2F%2Fco2ok.ninja%2F1" target="_blank"><i class="fa fa-facebook-official"></i></a>
+          <a href="https://twitter.com/intent/tweet?text=Help%20me%20fight%20climate%20change%20while%20shopping%20-%20easy%20and%20for%20free!%20http%3A%2F%2Fco2ok.ninja%2F1" target="_blank"><i class="fa fa-twitter-square"></i></a>
         </div>
         {% if user.is_authenticated %}
-        <a href="" class="userLink">{{domainname}}/{{user.id}}</a>
+          <input type="text" name="" value="{{domainname}}/{{user.id}}" class="userlink" disabled>
         {% else %}
-        <p>niet ingeloogd</p>
+          <p>niet ingeloogd</p>
         {% endif %}
 
       </div>
