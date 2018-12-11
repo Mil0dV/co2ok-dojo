@@ -216,8 +216,9 @@
     background-position: center center;
     background-size: 100% auto;
     width: 100px;
-    height: 100px;
-    min-height: 100%;
+    height: auto;
+    min-height: 100px;
+    max-width: 100px;
     box-shadow: 0px 2px 6px rgba(0,0,0,0.6);
 }
 
@@ -319,7 +320,8 @@
     .co2ok-featured-shop-image {
         border-radius: 15px;
         width: 80px;
-        height: 80px;
+        min-height: 80px;
+        max-width: 80px;
         margin: 3px 15px 40px 15px;
     }
     .co2ok-featured-shop-text {
@@ -333,7 +335,8 @@
         font-size: 0.85rem;
         border-radius: 20px;
         width: 120px;
-        height: 120px;
+        min-height: 120px;
+        max-width: 120px;
         margin: 3px 15px 40px 15px;
     }
     .co2ok-featured-shop-text {
@@ -350,7 +353,8 @@
         border-radius: 25px;
         font-size: 0.85rem;
         width: 90px;
-        height: 90px;
+        min-height: 90px;
+        max-width: 90px;
         margin: 3px 15px 45px 15px;
     }
     .co2ok-featured-shop-text {
@@ -362,7 +366,8 @@
 @media only screen and (min-width: 1200px) {
     .co2ok-featured-shop-image {
         width: 170px;
-        height: 170px;
+        min-height: 170px;
+        max-width: 170px;
         margin: 3px 15px 55px 15px;
     }
     .co2ok-featured-shop-text {
