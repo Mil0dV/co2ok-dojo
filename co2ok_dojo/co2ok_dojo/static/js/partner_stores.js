@@ -175,7 +175,6 @@ $(function(){
       var shareContent = document.querySelector('.shareContent');
       var tl = new TimelineMax();
       ninja_share.addEventListener('click', function(){
-
           tl.to('.share_box_container', 0.5, {scale: 1, ease: Quad.easeInOut});
 
           // close lightbox
