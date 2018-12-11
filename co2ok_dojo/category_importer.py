@@ -21,7 +21,6 @@ def importer():
     'Home, Garden & Pets',
     'Holiday',
     'IT & Office',
-    'Presents & Gadgets',
     'Sport & Recreation',
     'Toys',
     'Party',
@@ -36,13 +35,27 @@ def importer():
     'fr',
     'de',
     'es',
-    'us'
+    'us',
+    'at',
+    'uk',
+    'be',
+    'ca',
+    'au',
+    'ch',
+    'ie',
+    'it',
 
     ]
     # ###### Categories maken:
     for cat_name in categories:
-        Category.objects.create(name=cat_name)
+        try:
+            Category.objects.get(name=cat_name)
+        except:
+            Category.objects.create(name=cat_name)
 
     # ###### Countries maken:
     for country_code in countries:
-        Country.objects.create(code=country_code)
+        try:
+            Country.objects.get(code=country_code)
+        except:
+            Country.objects.create(code=country_code)
