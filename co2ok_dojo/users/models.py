@@ -1,19 +1,20 @@
 from django.contrib.auth.models import User
+from django.contrib.auth import get_user_model
 from django.db import models
 
-# class Profil(models.Model):
-#     user = models.OneToOneField(User)
-#     points = models.IntegerField()
-#     uniq_link = models.CharField()
+class Profile(models.Model):
+    user = models.OneToOneField(get_user_model(), on_delete=models.CASCADE)
+    points = models.IntegerField()
+
+
+
+    def __str__(self):
+        return self.user.email
+
+
+# class Rewards(models.Model):
+#     user_id = models.IntegerField()
+#     points = models.IntegerField(default = 0)
 #
-#
-#     def __str__(self):
-#         return self.user.username
-
-
-class Rewards(models.Model):
-    user_id = models.IntegerField()
-    points = models.IntegerField(default = 0)
-
-    # def __str__(self):
-    #     return self.username
+#     # def __str__(self):
+#     #     return self.username
