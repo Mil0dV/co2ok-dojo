@@ -5,8 +5,7 @@ from django.db import models
 class Profile(models.Model):
     user = models.OneToOneField(get_user_model(), on_delete=models.CASCADE)
     points = models.IntegerField()
-
-
+    ninja_app = models.BooleanField(default=False)
 
     def __str__(self):
         return self.user.email
