@@ -399,6 +399,34 @@ msgstr "CO₂ gecompenseerd"
 msgid "Pick a cause"
 msgstr "Kies een doel"
 
+#: co2ok_dojo/templates/menu.html:100
+msgid "The power of Ninja is together!"
+msgstr "De kracht van Ninja is samen!"
+
+#: co2ok_dojo/templates/menu.html:100
+msgid "Tell your friends and family about the Ninja App and share the link to fight climate change."
+msgstr "Vertel je vrienden en familie over de Ninja App en deel de link om klimaatverandering tegen te gaan."
+
+#: co2ok_dojo/templates/menu.html:100
+msgid "The online shop makes your purchase climate neutral and that way we actively compensate CO2 through a sustainable project."
+msgstr "De webshop maakt jouw aankoop klimaatneutraal en zo compenseren we actief CO2 d.m.v. een duurzaam project."
+
+#: co2ok_dojo/templates/menu.html:100
+msgid "Make sure every penny is worth it so we can live on a green and clean planet."
+msgstr "Zorg dat elke cent het waard is om samen in een groene en schone wereld te leven."
+
+#: co2ok_dojo/templates/menu.html:100
+msgid "Share our vision, make others happy with the Ninja App. (Want to know more?)"
+msgstr "Deel je onze visie, maak anderen ook gelukkig met de Ninja app. (Meer weten?)"
+
+#: co2ok_dojo/templates/menu.html:100
+msgid "(Our developers are working hard to make the CO₂ counter work in the near future.)"
+msgstr "(Onze programmeurs zijn aan de slag om de CO₂ teller werkend te krijgen in de nabije toekomst.)"
+
+#: co2ok_dojo/templates/menu.html:100
+msgid "Ninja Stars"
+msgstr "Ninja Sterren"
+
 #: users/views.py:87
 msgid "mot a traduire"
 msgstr ""

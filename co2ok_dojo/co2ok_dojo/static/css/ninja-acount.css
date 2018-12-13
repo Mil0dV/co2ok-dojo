@@ -22,9 +22,8 @@
 .co2ok-ninja-level-01 {
     width: 200px;
     height: auto;
-    background-color: orange;
     box-sizing: border-box;
-    border: 1px solid black;
+    border: 3px solid #14746b;
     border-radius: 20px;
     margin: 20px;
 }

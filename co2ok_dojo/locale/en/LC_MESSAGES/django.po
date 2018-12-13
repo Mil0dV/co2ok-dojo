@@ -400,6 +400,34 @@ msgstr "CO₂ compensated"
 msgid "Pick a cause"
 msgstr "Pick a cause"
 
+#: co2ok_dojo/templates/menu.html:100
+msgid "The power of Ninja is together!"
+msgstr "The power of Ninja is together!"
+
+#: co2ok_dojo/templates/menu.html:100
+msgid "Tell your friends and family about the Ninja App and share the link to fight climate change."
+msgstr "Tell your friends and family about the Ninja App and share the link to fight climate change."
+
+#: co2ok_dojo/templates/menu.html:100
+msgid "The online shop makes your purchase climate neutral and that way we actively compensate CO2 through a sustainable project."
+msgstr "The online shop makes your purchase climate neutral and that way we actively compensate CO2 through a sustainable project."
+
+#: co2ok_dojo/templates/menu.html:100
+msgid "Make sure every penny is worth it so we can live on a green and clean planet."
+msgstr "Make sure every penny is worth it so we can live on a green and clean planet."
+
+#: co2ok_dojo/templates/menu.html:100
+msgid "Share our vision, make others happy with the Ninja App. (Want to know more?)"
+msgstr "Share our vision, make others happy with the Ninja App. (Want to know more?)"
+
+#: co2ok_dojo/templates/menu.html:100
+msgid "(Our developers are working hard to make the CO₂ counter work in the near future.)"
+msgstr "(Our developers are working hard to make the CO₂ counter work in the near future.)"
+
+#: co2ok_dojo/templates/menu.html:100
+msgid "Ninja Stars"
+msgstr "Ninja Stars"
+
 # Invited Sign Page
 
 #: users/templates/users/menu.html:18

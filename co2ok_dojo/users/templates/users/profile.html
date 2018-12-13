@@ -123,17 +123,18 @@
           <div class="slider-container" >
             <div class="intro-text">
               <!-- <div class="intro-lead-in">Welcome To Our Studio!</div> -->
-              <div class="col-12 co2ok-ninja-account-title" style="text-align: center; margin-top: 110px; margin-bottom: 30px;"><h1>{% trans "Profile" %}</h1></div>
-
+              <div class="col-12 co2ok-ninja-account-title" style="text-align: center; margin-top: 110px; margin-bottom: 0px;"><h1>{% trans "Profile" %}</h1></div>
+              <div class="col-12 " style="text-align: center; margin-top: 10px; margin-bottom: 30px;"><h4 style="color:#09b540; font-weight:700;">{% trans "The power of Ninja is together!" %} </h4>
               </div>
 
 
 
-              <div class="container">
+              <div class="container" >
                   <div class="row">
-                    <div class="col-lg-4 col-sm-4"><img src="{% static 'images/ninjaDesignSuperman_greenfeet_uitsnede.png' %}" class="co2ok-ninja-level-01"></div>
-
-                    <div class="col-lg-8 col-sm-8"><h5>Email: {{user.email}}</h5></br>
+                    <div class="col-lg-2 col-sm-2"><img src="{% static 'images/ninjaDesignSuperman_greenfeet_uitsnede.png' %}" class="co2ok-ninja-level-01" style="margin-left: 20%;"></div>
+                    <div class="col-lg-2 col-sm-2"><img src="{% static 'images/Icon-Ninja-more.png' %}" class="" style="width:130px; margin-left:32%;margin-top:40px;"></div>
+                    <div class="col-lg-8 col-sm-8"><p style="font-weight:500; color:#14746b;">{% trans "Tell your friends and family about the Ninja App and share the link to fight climate change." %} </br>
+                    </p>
                       <div class="ninja-auto-link col-12">
                           <input type="text" name="" value="https://{{domainname}}/{{current_path}}" readonly>
                         </div></br>
@@ -155,22 +156,24 @@
 
                           </div>
                       </div>
-                    <p>
-                      {% trans "Tell your friends about CO₂ok Ninja by sharing the above link, so you get shurikens" %}
+                    <p style="font-size:11px; color:#14746b;">
+                      {% trans "The online shop makes your purchase climate neutral and that way we actively compensate CO2 through a sustainable project." %} </br>
+                      {% trans "Make sure every penny is worth it so we can live on a green and clean planet." %} </br>
+                      {% trans "Share our vision, make others happy with the Ninja App. (Want to know more?)" %} </br>
                     </p>
                     <div class="container">
                         <div class="row">
                         <div class="col-lg-3 col-sm-12 co2ok-ninja-compensated-shuriken-box text-center">
                             <p>{% trans "CO₂ compensated" %}</p>
-                            <img src="{% static 'images/CO2-smoke.png' %}" class="co2ok-ninja-currency-img"><div class="co2ok-ninja-currency-text">69 kgs</div>
+                            <img src="{% static 'images/chimneys-co2-compensated.png' %}" class="co2ok-ninja-currency-img"><div class="co2ok-ninja-currency-text">69 kgs</div>
                             <br>
                             <br>
-                            <p>Shurikens</p>
-                            <img src="{% static 'images/shuriken.png' %}" class="co2ok-ninja-currency-img"><div class="co2ok-ninja-currency-text">{{user_points}}</div>
+                            <p>{% trans "Ninja Stars" %}</p>
+                            <img src="{% static 'images/shurikens-new-temp.png' %}" class="co2ok-ninja-currency-img"><div class="co2ok-ninja-currency-text">{{user_points}}</div>
                         </div>
                         <div class="col-lg-3 text-center" style="margin-top:50px;">
-                          <img src="{% static 'images/ninjaDesign_offer.png' %}" class="co2ok-ninja-offer-img" style="width: 300px; height: 200px;"></br>
-                          {% trans "Pick a cause" %}
+                          <img src="{% static 'images/ninjaDesign_headicon_mindful.png' %}" class="co2ok-ninja-offer-img" style="width: 280px; height: 200px;"></br>
+                          <div class="install-button" style="padding:10px 20px; margin-left:15%;">{% trans "Pick A Cause" %}</div>
                         </div>
                   </div>
                     </div>
