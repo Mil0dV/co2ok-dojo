@@ -248,7 +248,7 @@ msgstr "KIES UIT"
 
 #: home/templates/home/home_page.html:46
 msgid " 22.000+ INTERNATIONAL SHOPS"
-msgstr ""
+msgstr " 22.000+ INTERNATIONALE SHOPS"
 
 #: home/templates/home/home_page.html:156
 msgid "HOW IT WORKS"
