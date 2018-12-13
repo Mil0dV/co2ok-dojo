@@ -54,7 +54,7 @@
 
 {% if category_results %}
 
-   {% if category_resultcount_count > 0 %}
+   {% if category_result_count > 0 %}
 
       {% for category_result in category_results %}
 
@@ -74,7 +74,7 @@
       {% endfor %}
 
    {% else %}
-      <h1>{{category_resultcount_count}}</h1>
+      <h1>{{category_result_count}}</h1>
    {% endif %}
 
 {% endif %}

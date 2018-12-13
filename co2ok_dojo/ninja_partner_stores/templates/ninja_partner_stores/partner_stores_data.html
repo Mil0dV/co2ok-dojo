@@ -35,7 +35,7 @@
 
 {% if category_results %}
 
-   {% if category_resultcount_count > 0 %}
+   {% if category_result_count > 0 %}
 
       {% for category_result in category_results %}
 
@@ -76,23 +76,6 @@
       {% endwith %}
 
     {% endfor %}
-
-{% else %}
-
-  {% for no_category in no_categories %}
-
-    {% with 'images/logos/'|add:no_category.website|add:'.png' as stores_image %}
-
-        <a href="{{ no_category.makeURLlink }}" class="img-fluid co2ok-featured-shop-image col-md-4 category_stores" id="{{category_result.website}}" target="_blank" rel="noopener"
-        style="background-image: url('{% static stores_image %}');">
-            <span class="co2ok-featured-shop-text">
-                {{no_category.website | title}}
-            </span>
-        </a>
-
-    {% endwith %}
-
-  {% endfor %}
 
 {% endif %}
 <!-- ebd category search -->
