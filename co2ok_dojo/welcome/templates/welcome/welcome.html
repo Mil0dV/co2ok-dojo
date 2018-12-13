@@ -1,0 +1,316 @@
+{% extends "base.html" %}
+{% load static %}
+{% load i18n %}
+
+{% block content %}
+
+<head>
+	<link href="{% static 'css/ninja-register.css' %}" rel="stylesheet">
+	<link href="{% static 'css/ninja-landing.css' %}" rel="stylesheet">
+</head>
+
+  {% include 'menu.html' %}
+
+
+<div id="page-top" class="header-top">
+		<div class="navigation-bar " data-sticky='0' data-sticky-mobile='1' data-sticky-to='top'>
+    <div class="navigation-wrapper white-logo fixed-dark-logo">
+    	<div class="row basis-auto">
+	        <div class="logo_col col-xs col-sm-fit">
+	            <a href="https://co2ok.eco/" class="custom-logo-link" rel="home" itemprop="url"><script pagespeed_no_defer="">//<![CDATA[
+(function(){var g=this,h=function(b,d){var a=b.split("."),c=g;a[0]in c||!c.execScript||c.execScript("var "+a[0]);for(var e;a.length&&(e=a.shift());)a.length||void 0===d?c[e]?c=c[e]:c=c[e]={}:c[e]=d};var l=function(b){var d=b.length;if(0<d){for(var a=Array(d),c=0;c<d;c++)a[c]=b[c];return a}return[]};var m=function(b){var d=window;if(d.addEventListener)d.addEventListener("load",b,!1);else if(d.attachEvent)d.attachEvent("onload",b);else{var a=d.onload;d.onload=function(){b.call(this);a&&a.call(this)}}};var n,p=function(b,d,a,c,e){this.f=b;this.h=d;this.i=a;this.c=e;this.e={height:window.innerHeight||document.documentElement.clientHeight||document.body.clientHeight,width:window.innerWidth||document.documentElement.clientWidth||document.body.clientWidth};this.g=c;this.b={};this.a=[];this.d={}},q=function(b,d){var a,c,e=d.getAttribute("pagespeed_url_hash");if(a=e&&!(e in b.d))if(0>=d.offsetWidth&&0>=d.offsetHeight)a=!1;else{c=d.getBoundingClientRect();var f=document.body;a=c.top+("pageYOffset"in window?window.pageYOffset:(document.documentElement||f.parentNode||f).scrollTop);c=c.left+("pageXOffset"in window?window.pageXOffset:(document.documentElement||f.parentNode||f).scrollLeft);f=a.toString()+","+c;b.b.hasOwnProperty(f)?a=!1:(b.b[f]=!0,a=a<=b.e.height&&c<=b.e.width)}a&&(b.a.push(e),b.d[e]=!0)};p.prototype.checkImageForCriticality=function(b){b.getBoundingClientRect&&q(this,b)};h("pagespeed.CriticalImages.checkImageForCriticality",function(b){n.checkImageForCriticality(b)});h("pagespeed.CriticalImages.checkCriticalImages",function(){r(n)});var r=function(b){b.b={};for(var d=["IMG","INPUT"],a=[],c=0;c<d.length;++c)a=a.concat(l(document.getElementsByTagName(d[c])));if(0!=a.length&&a[0].getBoundingClientRect){for(c=0;d=a[c];++c)q(b,d);a="oh="+b.i;b.c&&(a+="&n="+b.c);if(d=0!=b.a.length)for(a+="&ci="+encodeURIComponent(b.a[0]),c=1;c<b.a.length;++c){var e=","+encodeURIComponent(b.a[c]);131072>=a.length+e.length&&(a+=e)}b.g&&(e="&rd="+encodeURIComponent(JSON.stringify(s())),131072>=a.length+e.length&&(a+=e),d=!0);t=a;if(d){c=b.f;b=b.h;var f;if(window.XMLHttpRequest)f=new XMLHttpRequest;else if(window.ActiveXObject)try{f=new ActiveXObject("Msxml2.XMLHTTP")}catch(k){try{f=new ActiveXObject("Microsoft.XMLHTTP")}catch(u){}}f&&(f.open("POST",c+(-1==c.indexOf("?")?"?":"&")+"url="+encodeURIComponent(b)),f.setRequestHeader("Content-Type","application/x-www-form-urlencoded"),f.send(a))}}},s=function(){var b={},d=document.getElementsByTagName("IMG");if(0==d.length)return{};var a=d[0];if(!("naturalWidth"in a&&"naturalHeight"in a))return{};for(var c=0;a=d[c];++c){var e=a.getAttribute("pagespeed_url_hash");e&&(!(e in b)&&0<a.width&&0<a.height&&0<a.naturalWidth&&0<a.naturalHeight||e in b&&a.width>=b[e].k&&a.height>=b[e].j)&&(b[e]={rw:a.width,rh:a.height,ow:a.naturalWidth,oh:a.naturalHeight})}return b},t="";h("pagespeed.CriticalImages.getBeaconData",function(){return t});h("pagespeed.CriticalImages.Run",function(b,d,a,c,e,f){var k=new p(b,d,a,e,f);n=k;c&&m(function(){window.setTimeout(function(){r(k)},0)})});})();pagespeed.CriticalImages.Run('/mod_pagespeed_beacon','https://co2ok.eco/welcome/','YddRYU7ik1',true,false,'vCbRMti8xes');
+//]]></script></div>
+	        <div class="main_menu_col col-xs">
+	            <div id="mainmenu_container" class="row"><ul id="main_menu" class="active-line-bottom main-menu dropdown-menu"><li id="menu-item-887" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-887"><a href="/retailers"><a class="button-co2okMenuWoorWebshops hideWhileNotActive alwaysShowOnNonHomepage" href="http://co2ok.eco/retailers" rel="noopener" target="_self" id="menu-voorwebshops">Voor Webshops</a></a></li>
+<li id="menu-item-901" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-901"><a href="https://co2ok.eco/missie/">Missie</a></li>
+<li id="menu-item-523" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-523"><a href="https://co2ok.eco/co2-compensatie/">CO₂</a></li>
+<li id="menu-item-996" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-996"><a href="https://co2ok.eco/#shops"><span class="hideWhileNotActive" style="opacity: 1;">💚shops</span></a></li>
+<li id="menu-item-15" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-15"><a href="https://co2ok.eco/retailers">Retailers</a>
+<ul class="sub-menu">
+	<li id="menu-item-895" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-895"><a href="https://co2ok.eco/retailers">Retailers</a></li>
+	<li id="menu-item-2216" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2216"><a href="https://co2ok.eco/partner-info/cause-marketing/">Cause Marketing</a></li>
+	<li id="menu-item-117" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-117"><a href="https://co2ok.eco/woocommerce-plugin-installatie/">Plugin installation</a></li>
+</ul>
+</li>
+<li id="menu-item-2811" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-2811"><a href="https://co2ok.eco/ninja/">Ninja</a>
+<ul class="sub-menu">
+	<li id="menu-item-2817" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2817"><a href="https://co2ok.eco/ninja/">Ninja</a></li>
+	<li id="menu-item-2812" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2812"><a href="https://co2ok.eco/ninja-partner-stores/">Ninja partner winkels</a></li>
+	<li id="menu-item-2813" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-2684 current_page_item menu-item-2813"><a href="https://co2ok.eco/welcome/">{% trans "welcome" %}</a></li>
+	<li id="menu-item-2883" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2883"><a href="/ninja/#faq">Ninja FAQ</a></li>
+</ul>
+</li>
+<li id="menu-item-14" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14"><a href="https://co2ok.eco/faq/">FAQ</a></li>
+<li id="menu-item-395" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-395"><a href="https://co2ok.eco/blog/">Blog</a></li>
+<li id="menu-item-896" class="qtranxs-lang-menu qtranxs-lang-menu-en menu-item menu-item-type-custom menu-item-object-custom menu-item-896"><a title="English" href="https://co2ok.eco/en/welcome/"><img src="https://co2ok.eco/wp-content/plugins/qtranslate-x/flags/gb.png" alt="English" pagespeed_url_hash="3748185305" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/></a></li>
+</ul></div>    <a href="#" data-component="offcanvas" data-target="#offcanvas-wrapper" data-direction="right" data-width="300px" data-push="false">
+        <div class="bubble"></div>
+        <i class="fa fa-bars"></i>
+    </a>
+    <div id="offcanvas-wrapper" class="hide force-hide  offcanvas-right">
+        <div class="offcanvas-top">
+            <div class="logo-holder">
+                <a href="https://co2ok.eco/" class="custom-logo-link" rel="home" itemprop="url"><img width="500" height="211" src="https://co2ok.eco/wp-content/uploads/2018/03/co2ok-logo.png" class="custom-logo" alt="CO₂ok" itemprop="logo" srcset="https://co2ok.eco/wp-content/uploads/2018/03/co2ok-logo.png 500w, https://co2ok.eco/wp-content/uploads/2018/03/co2ok-logo-300x127.png 300w" sizes="(max-width: 500px) 100vw, 500px" pagespeed_url_hash="2827653041" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/></a>            </div>
+        </div>
+        <div id="offcanvas-menu" class="menu-menu-container"><ul id="offcanvas_menu" class="offcanvas_menu"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-887"><a href="/retailers"><a class="button-co2okMenuWoorWebshops hideWhileNotActive alwaysShowOnNonHomepage" href="http://co2ok.eco/retailers" rel="noopener" target="_self" id="menu-voorwebshops">Voor Webshops</a></a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-901"><a href="https://co2ok.eco/missie/">Missie</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-523"><a href="https://co2ok.eco/co2-compensatie/">CO₂</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-996"><a href="https://co2ok.eco/#shops"><span class="hideWhileNotActive" style="opacity: 1;">💚shops</span></a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-15"><a href="https://co2ok.eco/retailers">Retailers</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-895"><a href="https://co2ok.eco/retailers">Retailers</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2216"><a href="https://co2ok.eco/partner-info/cause-marketing/">Cause Marketing</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-117"><a href="https://co2ok.eco/woocommerce-plugin-installatie/">Plugin installation</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-2811"><a href="https://co2ok.eco/ninja/">Ninja</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2817"><a href="https://co2ok.eco/ninja/">Ninja</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2812"><a href="https://co2ok.eco/ninja-partner-stores/">Ninja partner winkels</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-2684 current_page_item menu-item-2813"><a href="https://co2ok.eco/welcome/">{% trans "welcome" %}</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2883"><a href="/ninja/#faq">Ninja FAQ</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14"><a href="https://co2ok.eco/faq/">FAQ</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-395"><a href="https://co2ok.eco/blog/">Blog</a></li>
+<li class="qtranxs-lang-menu qtranxs-lang-menu-en menu-item menu-item-type-custom menu-item-object-custom menu-item-896"><a title="English" href="https://co2ok.eco/en/welcome/"><img src="https://co2ok.eco/wp-content/plugins/qtranslate-x/flags/gb.png" alt="English" pagespeed_url_hash="3748185305" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/></a></li>
+</ul></div>
+            <div data-type="group" data-dynamic-mod="true" class="social-icons">
+        
+            <a target="_blank" class="social-icon" href="">
+                <i class="fa fa-facebook-official"></i>
+            </a>
+
+            
+            <a target="_blank" class="social-icon" href="">
+                <i class="fa fa-twitter-square"></i>
+            </a>
+
+            
+            <a target="_blank" class="social-icon" href="">
+                <i class="fa fa-instagram"></i>
+            </a>
+
+            
+            <a target="_blank" class="social-icon" href="">
+                <i class="fa fa-google-plus-square"></i>
+            </a>
+
+            
+    </div>
+
+        </div>
+    	        </div>
+	    </div>
+    </div>
+</div>
+</div>
+
+<div id="page" class="site">
+    <div class="header-wrapper">
+        <div class='header  custom-mobile-image' style='background-image:url(https://co2ok.eco/wp-content/uploads/2018/05/banner3.1_co2ok_def8.mobiel-1.svg);background-color:#fff' data-parallax-depth='20'>
+            								    <div class="inner-header-description gridContainer">
+        <div class="row header-description-row">
+        </div>
+    </div>
+        <script>window.mesmerizeSetHeaderTopSpacing();</script>
+    <div class='split-header'></div>                    </div>
+    </div>
+    <div class="page-content no-padding">
+        <div class="content">
+            <div class="thisIsANinjaPage"></div>
+<div data-label="Cta" data-id="cta--1" data-export-id="cta-centered-bg-section" data-category="cta" data-section-ov="1" class="cta-centered-bg-section content-section content-section-spacing-medium white-text" data-parallax-depth="20" id="cta-1" style="background-color:#f5fafd;background-image:url(http://co2ok.eco/wp-content/uploads/2018/09/icon_CO2OK_worldheart.svg);background-size:cover;background-position:center top">
+<div class="gridContainer">
+<div class="row text-center">
+<div data-type="column" class="">
+<h2 class="">{% trans "You can help fight climate change!" %}
+<span class="font-300">{% trans "Help us reach anyone who shops online!" %}</span></h2>
+<a class="button color10" href="https://www.facebook.com/sharer?u=https%3A%2F%2Fco2ok.eco%2Fen%2Fninja%2F" target="_blank" data-cp-link="1" data-icon="" rel="noopener" style="background: #3b5998 !important;">{% trans "SHARE ON FACEBOOK" %}</a>
+
+<a class="button color11" href="https://twitter.com/intent/tweet?text=Install%20a%20browser%20extension%20and%20when%20you%20purchase%20stuff%20online%2C%20you%20help%20fight%20against%20climate%20change!%20Check%20out%3A%20https%3A%2F%2Fco2ok.eco%2Fen%2Fninja%2F" target="_blank" data-cp-link="1" data-icon="" rel="noopener" style="background: #1da1f2 !important;"> {% trans "SHARE ON TWITTER" %}</a>
+
+
+
+</div>
+</div>
+</div>
+</div>
+<div data-label="Overlappable" data-id="overlappable--1" data-export-id="overlappable-3" data-category="overlappable" class="overlappable-3 content-section content-section-spacing" data-overlap="true" id="overlappable-1" style="background-color: #ffffff;">
+<div class="gridContainer">
+<div data-section-title-area="true" class="row text-center">
+<div class="section-title-col" data-type="column">
+<h2 class="">{% trans "How it works:" %}</h2>
+</div>
+</div>
+<div class="row bg-color-white shadow-medium">
+<div class="col-xs-12 col-sm-6 content-col col-padding col-padding-xs">
+<div class="col-padding" data-type="column">
+<h4 class="">1. {% trans "YOU INSTALL THE EXTENSION" %}</h4>
+<p class="">{% trans "It doesn’t get easier! Just click the button below and then click “add to chrome”. Want to know more? Go to" %} <a href="/ninja/#faq">FAQ</a></p>
+<a class="button color2 install-ninja-button" target="_blank" data-cp-link="1" data-icon="fa-chrome" onclick="redirectToExtensionStores()" rel="noopener"><span class="button-icon fa fa-chrome"></span>{% trans "Click Here!" %}</a>
+
+</div>
+</div>
+</div>
+<div class="row bg-color-white shadow-medium">
+<div class="col-xs-12 col-sm-6 content-col col-padding col-padding-xs">
+<div class="col-padding" data-type="column">
+<h4 class="">2. {% trans "WHEN YOU VISIT ONE OF OUR PARTNER’S STORES, YOU CAN START RAISING MONEY" %}</h4>
+<p class="">{% trans "At the top of our partners’ online shops you will see a button giving you an opportunity to start raising money for the benefit of the environment from your purchases in that shop. Want to know more? Go to:" %} <a href="/ninja/#faq">FAQ</a></p>
+
+</div>
+</div>
+<div class="col-xs-12 col-sm-6 image-col2 first-xs last-sm" data-bg="image" style="background-image:url(/wp-content/uploads/2018/10/Screen_extension.png)"></div>
+</div>
+</div>
+</div>
+<div data-label="Overlappable" data-id="overlappable--2" data-export-id="overlappable-3" data-category="overlappable" class="overlappable-3 content-section content-section-spacing" data-overlap="true" id="overlappable-2" style="background-color: #ffffff;">
+<div class="gridContainer">
+<div class="row bg-color-white shadow-medium">
+<div class="col-xs-12 col-sm-6 image-col" data-bg="image" style="background-image:url(/wp-content/uploads/2018/10/confirm_and_pay.png)"></div>
+<div class="col-xs-12 col-sm-6 content-col col-padding col-padding-xs">
+<div class="col-padding" data-type="column">
+<h4 class="">3. {% trans "YOU BUY SOMETHING APPEALING, WE FINANCE THE CERTIFIED PARTNERS IN FIGHTING CLIMATE CHANGE" %}</h4>
+<p class="">{% trans "Using CO₂ok Ninja means you only have to press the button which says “Shop CO₂ok” and then you will be redirected back to the store. So when you buy something, CO₂ok receives a commission (usually between 2% and 5%), depending on the store and we finance our certified partners in fighting climate change. We keep a quarter of the commission – not to get rich – but we need it to grow and to make as much impact in the fight against climate change as possible. Want to know more? Go to" %} <a href="/ninja/#faq">FAQ</a></p>
+
+</div>
+</div>
+</div>
+<div class="row bg-color-white shadow-medium">
+<div class="col-xs-12 col-sm-6 content-col col-padding col-padding-xs">
+<div class="col-padding" data-type="column">
+<h4 class="">4. {% trans "CHARITIES FIGHT CLIMATE CHANGE!" %}</h4>
+<p class="">{% trans "The amount the online shop donates is used to finance sustainable energy and CO₂-emission reduction projects (via our certified partners). These projects actively reduce the amount of emitted CO₂, thereby making your purchase climate friendly. In fact, the compensation amount sometimes generates surplus, so in fact your purchase could help reducing CO₂ emissions, beyond the CO₂ emitted during the production and shipping of your products. This way you’re making a real difference benefiting the environment!" %}</p>
+<p>{% trans "Read more about our certified partners:" %}</p>
+
+<a class="button color1" href="https://www.atmosfair.de/en" target="_blank" data-cp-link="1" data-icon="" rel="noopener">Atmosfair</a><a class="button color1" href="http://www.fairclimatefund.nl/en" target="_blank" data-cp-link="1" data-icon="" rel="noopener">Fair Climate Fund</a>
+
+</div>
+</div>
+<div class="col-xs-12 col-sm-6 image-col2 first-xs last-sm" data-bg="image" style="background-image:url(/wp-content/uploads/2018/10/Save80cookingstove_whiteborder.png)"></div>
+</div>
+&nbsp;
+
+</div>
+</div>        </div>
+    </div>
+
+	<div class='footer footer-contact-boxes'>
+    <div class='footer-content' style=''>
+        <div class="gridContainer">
+            <div class="row text-center">
+                <div class="col-sm-3">
+                        <div data-type="group" data-dynamic-mod="true">
+        <i class="big-icon fa fa-map-marker"></i>
+        <p>
+            Lange Viestraat 2, Utrecht
+(De Planeet)        </p>
+    </div>
+                    </div>
+                <div class="col-sm-3">
+                        <div data-type="group" data-dynamic-mod="true">
+        <i class="big-icon fa fa-envelope-o"></i>
+        <p>
+            <a href="mailto:info@co2ok.eco">info@co2ok.eco</a>        </p>
+    </div>
+                    </div>
+                <div class="col-sm-3">
+                        <div data-type="group" data-dynamic-mod="true">
+        <i class="big-icon fa fa-phone"></i>
+        <p>
+            <a href="tel:+31639765259">+31639765259</a>        </p>
+    </div>
+                    </div>
+                <div class="col-sm-3 footer-bg-accent">
+                    <div>
+                            <div data-type="group" data-dynamic-mod="true" class="footer-social-icons">
+        
+            <a target="_blank" class="social-icon" href="https://www.facebook.com/CO2ok/">
+                <i class="fa fa-facebook-official"></i>
+            </a>
+
+            
+            <a target="_blank" class="social-icon" href="https://twitter.com/CO2ok_eco">
+                <i class="fa fa-twitter-square"></i>
+            </a>
+
+            
+            <a target="_blank" class="social-icon" href="https://www.instagram.com/co2ok.eco/">
+                <i class="fa fa-instagram"></i>
+            </a>
+
+            
+            <a target="_blank" class="social-icon" href="https://www.linkedin.com/company/11418867">
+                <i class="fa fa-linkedin"></i>
+            </a>
+
+            
+    </div>
+
+                        </div>
+                    <p class="copyright" data-type="group">&copy; 2018 CO₂ok.          
+KvK nummer: 69752753</p>                </div>
+            </div>
+        </div>
+    </div>
+</div>
+	</div>
+<script type='text/javascript'>jQuery(".button-co2okMenuWoorWebshops").css({"text-transform":"capitalize","border-color":"linear-gradient(#1defac 10.09%,#11d071 51.05%,#10cc6b 56.81%,#05b139 100%) !important"});jQuery(".button-co2okMenuWoorWebshops").css({"border-color":"linear-gradient(#1defac 10.09%,#11d071 51.05%,#10cc6b 56.81%,#05b139 100%) !important"});jQuery(".button.customize-unpreviewable.big.color-white.round.outline").css({"visibility":"hidden !important"});jQuery("header-homepage").css({"background-image":"/wp-content/uploads/2018/05/banner3.1_co2ok_def8.mobiel.svg !important"});if(!jQuery(".thisIsTheHomePage, .thisIsTheNinjaPage").length){jQuery(".hideWhileNotActive").css('opacity','1');jQuery(".mesmerize-inner-page ul.dropdown-menu>li").css({"color":"black"});jQuery("ul.dropdown-menu.active-line-bottom>.current-menu-item>a").css({"color":"black"});}else{jQuery(".hideWhileNotActive").css('opacity','0');jQuery("ul.dropdown-menu>li").css('opacity','0');jQuery(".current-menu-item>a").css('opacity','0');jQuery(document).scroll(function(){if(jQuery(window).scrollTop()===0){jQuery(".navigation-bar").removeAttr('id');jQuery(".hideWhileNotActive").css('opacity','0');jQuery("ul.dropdown-menu>li").css('opacity','0');jQuery(".current-menu-item>a").css('opacity','0');function IsMobile()
+{var isMobile=false;if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|ipad|iris|kindle|Android|Silk|lge |maemo|midp|mmp|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows (ce|phone)|xda|xiino/i.test(navigator.userAgent)||/1207|6310|6590|3gso|4thp|50[1-6]i|770s|802s|a wa|abac|ac(er|oo|s\-)|ai(ko|rn)|al(av|ca|co)|amoi|an(ex|ny|yw)|aptu|ar(ch|go)|as(te|us)|attw|au(di|\-m|r |s )|avan|be(ck|ll|nq)|bi(lb|rd)|bl(ac|az)|br(e|v)w|bumb|bw\-(n|u)|c55\/|capi|ccwa|cdm\-|cell|chtm|cldc|cmd\-|co(mp|nd)|craw|da(it|ll|ng)|dbte|dc\-s|devi|dica|dmob|do(c|p)o|ds(12|\-d)|el(49|ai)|em(l2|ul)|er(ic|k0)|esl8|ez([4-7]0|os|wa|ze)|fetc|fly(\-|_)|g1 u|g560|gene|gf\-5|g\-mo|go(\.w|od)|gr(ad|un)|haie|hcit|hd\-(m|p|t)|hei\-|hi(pt|ta)|hp( i|ip)|hs\-c|ht(c(\-| |_|a|g|p|s|t)|tp)|hu(aw|tc)|i\-(20|go|ma)|i230|iac( |\-|\/)|ibro|idea|ig01|ikom|im1k|inno|ipaq|iris|ja(t|v)a|jbro|jemu|jigs|kddi|keji|kgt( |\/)|klon|kpt |kwc\-|kyo(c|k)|le(no|xi)|lg( g|\/(k|l|u)|50|54|\-[a-w])|libw|lynx|m1\-w|m3ga|m50\/|ma(te|ui|xo)|mc(01|21|ca)|m\-cr|me(rc|ri)|mi(o8|oa|ts)|mmef|mo(01|02|bi|de|do|t(\-| |o|v)|zz)|mt(50|p1|v )|mwbp|mywa|n10[0-2]|n20[2-3]|n30(0|2)|n50(0|2|5)|n7(0(0|1)|10)|ne((c|m)\-|on|tf|wf|wg|wt)|nok(6|i)|nzph|o2im|op(ti|wv)|oran|owg1|p800|pan(a|d|t)|pdxg|pg(13|\-([1-8]|c))|phil|pire|pl(ay|uc)|pn\-2|po(ck|rt|se)|prox|psio|pt\-g|qa\-a|qc(07|12|21|32|60|\-[2-7]|i\-)|qtek|r380|r600|raks|rim9|ro(ve|zo)|s55\/|sa(ge|ma|mm|ms|ny|va)|sc(01|h\-|oo|p\-)|sdk\/|se(c(\-|0|1)|47|mc|nd|ri)|sgh\-|shar|sie(\-|m)|sk\-0|sl(45|id)|sm(al|ar|b3|it|t5)|so(ft|ny)|sp(01|h\-|v\-|v )|sy(01|mb)|t2(18|50)|t6(00|10|18)|ta(gt|lk)|tcl\-|tdg\-|tel(i|m)|tim\-|t\-mo|to(pl|sh)|ts(70|m\-|m3|m5)|tx\-9|up(\.b|g1|si)|utst|v400|v750|veri|vi(rg|te)|vk(40|5[0-3]|\-v)|vm40|voda|vulc|vx(52|53|60|61|70|80|81|83|85|98)|w3c(\-| )|webc|whit|wi(g |nc|nw)|wmlb|wonu|x700|yas\-|your|zeto|zte\-/i.test(navigator.userAgent.substr(0,4)))
+isMobile=true;return isMobile;}
+if(IsMobile())
+{$(".custom-logo").css('margin-top','0px');}}
+if(jQuery(window).scrollTop()>0){jQuery(".hideWhileNotActive").css('opacity','1');jQuery("ul.dropdown-menu>li").css('opacity','1');jQuery(".current-menu-item>a").css('opacity','1');jQuery("#main_menu>li>a").css('opacity','1');function IsMobile()
+{var isMobile=false;if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|ipad|iris|kindle|Android|Silk|lge |maemo|midp|mmp|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows (ce|phone)|xda|xiino/i.test(navigator.userAgent)||/1207|6310|6590|3gso|4thp|50[1-6]i|770s|802s|a wa|abac|ac(er|oo|s\-)|ai(ko|rn)|al(av|ca|co)|amoi|an(ex|ny|yw)|aptu|ar(ch|go)|as(te|us)|attw|au(di|\-m|r |s )|avan|be(ck|ll|nq)|bi(lb|rd)|bl(ac|az)|br(e|v)w|bumb|bw\-(n|u)|c55\/|capi|ccwa|cdm\-|cell|chtm|cldc|cmd\-|co(mp|nd)|craw|da(it|ll|ng)|dbte|dc\-s|devi|dica|dmob|do(c|p)o|ds(12|\-d)|el(49|ai)|em(l2|ul)|er(ic|k0)|esl8|ez([4-7]0|os|wa|ze)|fetc|fly(\-|_)|g1 u|g560|gene|gf\-5|g\-mo|go(\.w|od)|gr(ad|un)|haie|hcit|hd\-(m|p|t)|hei\-|hi(pt|ta)|hp( i|ip)|hs\-c|ht(c(\-| |_|a|g|p|s|t)|tp)|hu(aw|tc)|i\-(20|go|ma)|i230|iac( |\-|\/)|ibro|idea|ig01|ikom|im1k|inno|ipaq|iris|ja(t|v)a|jbro|jemu|jigs|kddi|keji|kgt( |\/)|klon|kpt |kwc\-|kyo(c|k)|le(no|xi)|lg( g|\/(k|l|u)|50|54|\-[a-w])|libw|lynx|m1\-w|m3ga|m50\/|ma(te|ui|xo)|mc(01|21|ca)|m\-cr|me(rc|ri)|mi(o8|oa|ts)|mmef|mo(01|02|bi|de|do|t(\-| |o|v)|zz)|mt(50|p1|v )|mwbp|mywa|n10[0-2]|n20[2-3]|n30(0|2)|n50(0|2|5)|n7(0(0|1)|10)|ne((c|m)\-|on|tf|wf|wg|wt)|nok(6|i)|nzph|o2im|op(ti|wv)|oran|owg1|p800|pan(a|d|t)|pdxg|pg(13|\-([1-8]|c))|phil|pire|pl(ay|uc)|pn\-2|po(ck|rt|se)|prox|psio|pt\-g|qa\-a|qc(07|12|21|32|60|\-[2-7]|i\-)|qtek|r380|r600|raks|rim9|ro(ve|zo)|s55\/|sa(ge|ma|mm|ms|ny|va)|sc(01|h\-|oo|p\-)|sdk\/|se(c(\-|0|1)|47|mc|nd|ri)|sgh\-|shar|sie(\-|m)|sk\-0|sl(45|id)|sm(al|ar|b3|it|t5)|so(ft|ny)|sp(01|h\-|v\-|v )|sy(01|mb)|t2(18|50)|t6(00|10|18)|ta(gt|lk)|tcl\-|tdg\-|tel(i|m)|tim\-|t\-mo|to(pl|sh)|ts(70|m\-|m3|m5)|tx\-9|up(\.b|g1|si)|utst|v400|v750|veri|vi(rg|te)|vk(40|5[0-3]|\-v)|vm40|voda|vulc|vx(52|53|60|61|70|80|81|83|85|98)|w3c(\-| )|webc|whit|wi(g |nc|nw)|wmlb|wonu|x700|yas\-|your|zeto|zte\-/i.test(navigator.userAgent.substr(0,4)))
+isMobile=true;return isMobile;}
+if(this.IsMobile())
+{jQuery(".custom-logo").css('margin-top','20px');}}});}
+function IsMobile()
+{var isMobile=false;if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|ipad|iris|kindle|Android|Silk|lge |maemo|midp|mmp|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows (ce|phone)|xda|xiino/i.test(navigator.userAgent)||/1207|6310|6590|3gso|4thp|50[1-6]i|770s|802s|a wa|abac|ac(er|oo|s\-)|ai(ko|rn)|al(av|ca|co)|amoi|an(ex|ny|yw)|aptu|ar(ch|go)|as(te|us)|attw|au(di|\-m|r |s )|avan|be(ck|ll|nq)|bi(lb|rd)|bl(ac|az)|br(e|v)w|bumb|bw\-(n|u)|c55\/|capi|ccwa|cdm\-|cell|chtm|cldc|cmd\-|co(mp|nd)|craw|da(it|ll|ng)|dbte|dc\-s|devi|dica|dmob|do(c|p)o|ds(12|\-d)|el(49|ai)|em(l2|ul)|er(ic|k0)|esl8|ez([4-7]0|os|wa|ze)|fetc|fly(\-|_)|g1 u|g560|gene|gf\-5|g\-mo|go(\.w|od)|gr(ad|un)|haie|hcit|hd\-(m|p|t)|hei\-|hi(pt|ta)|hp( i|ip)|hs\-c|ht(c(\-| |_|a|g|p|s|t)|tp)|hu(aw|tc)|i\-(20|go|ma)|i230|iac( |\-|\/)|ibro|idea|ig01|ikom|im1k|inno|ipaq|iris|ja(t|v)a|jbro|jemu|jigs|kddi|keji|kgt( |\/)|klon|kpt |kwc\-|kyo(c|k)|le(no|xi)|lg( g|\/(k|l|u)|50|54|\-[a-w])|libw|lynx|m1\-w|m3ga|m50\/|ma(te|ui|xo)|mc(01|21|ca)|m\-cr|me(rc|ri)|mi(o8|oa|ts)|mmef|mo(01|02|bi|de|do|t(\-| |o|v)|zz)|mt(50|p1|v )|mwbp|mywa|n10[0-2]|n20[2-3]|n30(0|2)|n50(0|2|5)|n7(0(0|1)|10)|ne((c|m)\-|on|tf|wf|wg|wt)|nok(6|i)|nzph|o2im|op(ti|wv)|oran|owg1|p800|pan(a|d|t)|pdxg|pg(13|\-([1-8]|c))|phil|pire|pl(ay|uc)|pn\-2|po(ck|rt|se)|prox|psio|pt\-g|qa\-a|qc(07|12|21|32|60|\-[2-7]|i\-)|qtek|r380|r600|raks|rim9|ro(ve|zo)|s55\/|sa(ge|ma|mm|ms|ny|va)|sc(01|h\-|oo|p\-)|sdk\/|se(c(\-|0|1)|47|mc|nd|ri)|sgh\-|shar|sie(\-|m)|sk\-0|sl(45|id)|sm(al|ar|b3|it|t5)|so(ft|ny)|sp(01|h\-|v\-|v )|sy(01|mb)|t2(18|50)|t6(00|10|18)|ta(gt|lk)|tcl\-|tdg\-|tel(i|m)|tim\-|t\-mo|to(pl|sh)|ts(70|m\-|m3|m5)|tx\-9|up(\.b|g1|si)|utst|v400|v750|veri|vi(rg|te)|vk(40|5[0-3]|\-v)|vm40|voda|vulc|vx(52|53|60|61|70|80|81|83|85|98)|w3c(\-| )|webc|whit|wi(g |nc|nw)|wmlb|wonu|x700|yas\-|your|zeto|zte\-/i.test(navigator.userAgent.substr(0,4)))
+isMobile=true;return isMobile;}
+var position=jQuery(window).scrollTop();if(this.IsMobile())
+{jQuery("header-homepage").css({"background-image":"/wp-content/uploads/2018/05/banner3.1_co2ok_def8.mobiel_v3-02-2.svg !important"});jQuery(document.getElementById('co2ok-ninja-partnerstores-storeslist')).append(document.getElementById('co2ok-ninja-partnerstores-explanation'));jQuery(window).scroll(function(){var scroll=jQuery(window).scrollTop();if(scroll>position){jQuery(".navigation-bar").attr('id','co2ok-main-menu-bar');}else{jQuery(".navigation-bar").removeAttr('id');}
+position=scroll;});}
+function chgBrowserLogo()
+{var buttonIcon=document.querySelectorAll('.button-icon');for(var i=0;i<buttonIcon.length;i++){if(navigator.userAgent.indexOf("Chrome")!=-1)
+{buttonIcon[i].className='button-icon fa fa-chrome'}else if(navigator.userAgent.indexOf("Firefox")!=-1){buttonIcon[i].className='button-icon fa fa-firefox';}else{console.log('unkwon');}}}
+chgBrowserLogo();function installNinjaButton()
+{var button=jQuery('.install-ninja-button');if(navigator.userAgent.indexOf("Chrome")>-1)
+{button.attr('href','https://chrome.google.com/webstore/detail/co2okninja/omlkdocjhkgbllabpihhdggplladfipe');}else if(navigator.userAgent.indexOf("Firefox")>-1)
+{button.attr('href','https://addons.mozilla.org/en-US/firefox/addon/co2ok-ninja/');}else if(navigator.userAgent.match(/iPad/i)!=null)
+{button.attr('target','_self');button.attr('href','http://co2ok.eco/faq-co2ok-ninja-without-extension/#ninja-without-extension-desktop');}else if(navigator.userAgent.match(/i(Phone|Pod)/i))
+{button.attr('target','_self');button.attr('href','http://co2ok.eco/faq-co2ok-ninja-without-extension/#ninja-without-extension-desktop');}else{button.attr('target','_self');button.attr('href','http://co2ok.eco/faq-co2ok-ninja-without-extension/#ninja-without-extension-desktop');button.href='http://co2ok.eco/faq-co2ok-ninja-without-extension/#ninja-without-extension-desktop';}}
+if(jQuery('.thisIsTheNinjaPage, .thisIsANinjaPage ').length){jQuery('#menu-voorwebshops').text('Install');jQuery('#menu-voorwebshops').addClass('install-ninja-button');}
+jQuery('.install-ninja-button').click(function(e){installNinjaButton();});</script>
+	<div style="display:none">
+	</div>
+<script type='text/javascript' defer="defer" src='https://co2ok.eco/wp-content/plugins/mesmerize-companion/theme-data/mesmerize/assets/js/companion.bundle.min.js?ver=1.5.82'></script>
+<script type='text/javascript'>//<![CDATA[
+var wpcf7={"apiSettings":{"root":"https:\/\/co2ok.eco\/wp-json\/contact-form-7\/v1","namespace":"contact-form-7\/v1"},"recaptcha":{"messages":{"empty":"Graag verifi\u00ebren dat je geen robot bent."}}};
+//]]></script>
+<script type='text/javascript' src='https://co2ok.eco/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=5.0.3'></script>
+<script type='text/javascript' src='https://s0.wp.com/wp-content/js/devicepx-jetpack.js?ver=201850'></script>
+<script type='text/javascript' src='https://co2ok.eco/wp-content/plugins/social-polls-by-opinionstage/public/js/shortcodes.js?ver=19.3.3'></script>
+<script type='text/javascript'>//<![CDATA[
+var superpwa_sw={"url":"\/superpwa-sw.js"};
+//]]></script>
+<script type='text/javascript' src='https://co2ok.eco/wp-content/plugins/super-progressive-web-apps/public/js/register-sw.js'></script>
+<script type='text/javascript'>//<![CDATA[
+var leadin_wordpress={"userRole":"visitor","pageType":"page","leadinPluginVersion":"6.1.4"};
+//]]></script>
+<script type='text/javascript' async defer src='//js.hs-scripts.com/4008234.js?ver=4.9.9'></script>
+<script type='text/javascript' src='https://secure.gravatar.com/js/gprofiles.js?ver=2018Decaa'></script>
+<script type='text/javascript'>//<![CDATA[
+var WPGroHo={"my_hash":""};
+//]]></script>
+<script type='text/javascript' src='https://co2ok.eco/wp-content/plugins/jetpack/modules/wpgroho.js?ver=4.9.9'></script>
+<script type='text/javascript' defer="defer" src='https://co2ok.eco/wp-includes/js/imagesloaded.min.js?ver=3.2.0'></script>
+<script type='text/javascript' defer="defer" src='https://co2ok.eco/wp-includes/js/masonry.min.js?ver=3.3.2'></script>
+<script type='text/javascript'>//<![CDATA[
+var mesmerize_theme_pro_settings={"reveal-effect":{"enabled":false}};
+//]]></script>
+<script type='text/javascript' defer="defer" src='https://co2ok.eco/wp-content/themes/mesmerize-pro/pro/assets/js/theme.bundle.min.js?ver=4.9.9'></script>
+<script type='text/javascript' defer="defer" src='https://co2ok.eco/wp-includes/js/wp-embed.min.js?ver=4.9.9'></script>
+<script type='text/javascript' src='https://stats.wp.com/e-201850.js' async defer></script>
+<script type='text/javascript'>_stq=window._stq||[];_stq.push(['view',{v:'ext',j:'1:5.3',blog:'144621879',post:'2684',tz:'1',srv:'co2ok.eco'}]);_stq.push(['clickTrackerInit','144621879','2684']);</script>
+{% endblock %}

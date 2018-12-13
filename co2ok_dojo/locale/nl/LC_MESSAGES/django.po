@@ -97,7 +97,7 @@ msgstr "Welk percentage van mijn aankoop word gebruikt om CO₂-uitstoot te comp
 #: co2ok_dojo/templates/faq.html:76
 
 msgid "We invest 75&#37; of the commission in the CO₂ compensation. The remaining 25&#37; are much needed to keep CO₂ok going. We just started and our margin doesn’t even cover the costs. Our goal is to make an impact and give everybody the chance to easily fight climate change. Eventually, we will reduce our margin – we are not in this to become rich. We will always be open and transparent and therefore we will report our income and spending each year."
-msgstr "CO₂ok ontvangt tussen 1-6%% van de uiteindelijke aankoop, via de CO₂ok Ninja. Het percentage is afhankelijk van de webwinkel en het product. Hiervan gaat 75&#37; naar de non-profitorganisatie Atmosfair gaat, die zich inzetten voor ons klimaat. De overige 25%% gebruikt wordt voor het bedrijf zelf – we willen iedereen in staat stellen klimaatverandering te bestrijden, dus tijd om de wereld te veroveren! We doen dit niet om er rijk van te worden. Ook maken we onze inkomsten en uitgaven ieder jaar openbaar."
+msgstr "CO₂ok ontvangt tussen 1-6&#37&#37 van de uiteindelijke aankoop, via de CO₂ok Ninja. Het percentage is afhankelijk van de webwinkel en het product. Hiervan gaat 75&#37; naar de non-profitorganisatie Atmosfair gaat, die zich inzetten voor ons klimaat. De overige 25&#37&#37 gebruikt wordt voor het bedrijf zelf – we willen iedereen in staat stellen klimaatverandering te bestrijden, dus tijd om de wereld te veroveren! We doen dit niet om er rijk van te worden. Ook maken we onze inkomsten en uitgaven ieder jaar openbaar."
 
 
 #: co2ok_dojo/templates/faq.html:84
@@ -107,8 +107,8 @@ msgstr "Ik shop alleen op Amazon en gebruik ook al Amazon Smile programma, is er
 
 #: co2ok_dojo/templates/faq.html:90
 
-msgid "First of all, our partners usually donate 2-12 times more through the Ninja App (1-6%) than Amazon does through Amazon Smile (only 0.5% of the final price). So, if you care about having as big a positive impact on the world as you can, using the Ninja App either instead of or in addition to Amazon Smile is a way to achieve that. Moreover, there are a lot of products or services available in our partner stores that are not available on Amazon. For example, travel services (hotels, flights, train tickets, car rentals), financial products, or sport clubs’ official apparel."
-msgstr "Onze partners doneren 2 tot 12 keer meer via het programma Ninja en ontvangt 1-6%% van het aankoop bedrag terwijl dit bij Amazon Smile maar 0,5%% is. Ook heeft CO₂ok Ninja meer variatie in producten, zoals transport services, financiële producten en officiële kleding van verschillende clubs. Amazon Smile kan dit niet aanbieden."
+msgid "First of all, our partners usually donate 2-12 times more through the Ninja App (1-6&#37) than Amazon does through Amazon Smile (only 0.5&#37 of the final price). So, if you care about having as big a positive impact on the world as you can, using the Ninja App either instead of or in addition to Amazon Smile is a way to achieve that. Moreover, there are a lot of products or services available in our partner stores that are not available on Amazon. For example, travel services (hotels, flights, train tickets, car rentals), financial products, or sport clubs’ official apparel."
+msgstr "Onze partners doneren 2 tot 12 keer meer via het programma Ninja en ontvangt 1-6&#37&#37 van het aankoop bedrag terwijl dit bij Amazon Smile maar 0,5&#37&#37 is. Ook heeft CO₂ok Ninja meer variatie in producten, zoals transport services, financiële producten en officiële kleding van verschillende clubs. Amazon Smile kan dit niet aanbieden."
 
 
 #: co2ok_dojo/templates/faq.html:98
@@ -145,7 +145,7 @@ msgid "How does it work?"
 msgstr "Hoe werkt CO₂ok Ninja?"
 
 #: co2ok_dojo/templates/faq.html:146
-msgid "After installing the Ninja app you will see a our “Shop CO₂ok” box whilst shopping in one of our partner stores. Simply click this box and you will be redirected back to the partner store (exactly where you were before). From then on, whenever you buy something, CO₂ok receives a portion of the price you pay (usually between 1% and 6%). We donate our profits to carefully selected organisations such as Atmosfair. Some stores will require you to repeat the process after some time. You are a mobile Ninja - see here."
+msgid "After installing the Ninja app you will see a our “Shop CO₂ok” box whilst shopping in one of our partner stores. Simply click this box and you will be redirected back to the partner store (exactly where you were before). From then on, whenever you buy something, CO₂ok receives a portion of the price you pay (usually between 1&#37 and 6&#37). We donate our profits to carefully selected organisations such as Atmosfair. Some stores will require you to repeat the process after some time. You are a mobile Ninja - see here."
 msgstr "Na het installeren van het programma kunt u toestemming gegeven om CO2-uitstoot neutraal te shoppen. Tijdens het afrekenen zal er bij de webwinkel het CO2-uitstoot neutraal winkelen in kaart worden gebracht. Eenmaal afgerekend krijgt CO₂ok een deel van een bedrag via uw aankoop. Door de inkomsten via CO₂ok Ninja worden er donaties gedaan naar organisaties zoals Atmosfair."
 
 
@@ -420,3 +420,52 @@ msgstr "(We gaan dit een beetje minder onpersoonlijk maken in de toekomst)"
 #: login
 msgid "password"
 msgstr "wachtwoord"
+
+#: welcome_page/welcome.html
+msgid "welcome"
+msgstr "Welkom"
+
+msgid "You can help fight climate change!"
+msgstr "Jij kan helpen met de strijd tegen klimaatverandering!"
+
+msgid "Help us reach anyone who shops online!"
+msgstr "Help ons iedereen te bereiken die online shopt!"
+
+msgid "Click Here!"
+msgstr "INSTALLEER GRATIS"
+
+msgid "How it works:"
+msgstr "Hoe het werkt:"
+
+msgid "YOU INSTALL THE EXTENSION"
+msgstr "JE INSTALLEERT DE EXTENSIE"
+
+msgid "It doesn’t get easier! Just click the button below and then click “add to chrome”. Want to know more? Go to"
+msgstr "Het kan niet makkelijker! Klik op de knop hieronder en klik dan “toevoegen aan chrome”. Meer weten? Ga naar"
+
+msgid "WHEN YOU VISIT ONE OF OUR PARTNER’S STORES, YOU CAN START RAISING MONEY"
+msgstr "WANNEER JE DE WEBWINKEL BEZOEKT VAN EEN VAN ONZE PARTNERS, HELP JE MEE GELD OP TE HALEN"
+
+msgid "At the top of our partners’ online shops you will see a button giving you an opportunity to start raising money for the benefit of the environment from your purchases in that shop. Want to know more? Go to:"
+msgstr "Bovenaan de pagina van onze online shops zie je een button die je de mogelijkheid geeft om geld in te zamelen ten behoeve van het milieu door de aankopen die je maakt in die webshop. Wil je meer weten? Ga naar:"
+
+msgid "YOU BUY SOMETHING APPEALING, WE FINANCE THE CERTIFIED PARTNERS IN FIGHTING CLIMATE CHANGE"
+msgstr "JE KOOPT IETS MOOIS, WIJ FINANCIËREN DE GECERTIFICEERDE PARTNERS VOOR DE STRIJD TEGEN KLIMAAT VERANDERING"
+
+msgid "Using CO₂ok Ninja means you only have to press the button which says “Shop CO₂ok” and then you will be redirected back to the store. So when you buy something, CO₂ok receives a commission (usually between 2&#37 and 5&#37), depending on the store and we finance our certified partners in fighting climate change. We keep a quarter of the commission – not to get rich – but we need it to grow and to make as much impact in the fight against climate change as possible. Want to know more? Go to"
+msgstr "CO₂ok Ninja gebruiken betekent dat je alleen de button hoeft te klikken waarop staat “Shop CO₂ok” en dan zul je teruggestuurd worden naar de webshop. Dus als je iets koopt zal CO₂ok een commissie ontvangen (doorgaans tussen 2&#37 en 5&#37), afhankelijk van de winkel en we zullen onze gecertificeerde partners financieren die strijd leveren tegen klimaat verandering. We houden een kwart van de commissie – niet om rijk te worden – maar we hebben het nodig om te groeien en zoveel mogelijk te betekenen in de strijd tegen klimaat verandering. Wil je meer weten? Ga naar:"
+
+msgid "CHARITIES FIGHT CLIMATE CHANGE!"
+msgstr "GOEDE DOELEN STRIJDEN TEGEN KLIMAATVERANDERING!"
+
+msgid "The amount the online shop donates is used to finance sustainable energy and CO₂-emission reduction projects (via our certified partners). These projects actively reduce the amount of emitted CO₂, thereby making your purchase climate friendly. In fact, the compensation amount sometimes generates surplus, so in fact your purchase could help reducing CO₂ emissions, beyond the CO₂ emitted during the production and shipping of your products. This way you’re making a real difference benefiting the environment!"
+msgstr "De hoeveelheid die webshops doneren wordt gebruikt om duurzame energy en CO₂-emissie reductie projecten te financieren (middels onze gecertificeerde partners). Deze projecten reduceren actief de hoeveelheid CO₂ wordt uitgestoten en maakt je aankoop daarmee klimaatvriendelijk. Sterker nog, de compensatie hoeveelheid zorgt er soms voor dat er een overschot wordt betaald, dus je aankoop kan er zelfs voor zorgen dat je helpt met CO₂ uitstoot te reduceren, voorbij de hoeveelheid CO₂ er uitgestoten wordt voor de productie en het verzenden van jou producten. Op deze manier maak je een groot verschil ten behoeve van het milieu!"
+
+msgid "Read more about our certified partners:"
+msgstr "Lees meer over onze gecertificeerde partners:"
+
+msgid "SHARE ON FACEBOOK"
+msgstr "DEEL OP FACEBOOK"
+
+msgid "SHARE ON TWITTER"
+msgstr "DEEL OP TWITTER"
