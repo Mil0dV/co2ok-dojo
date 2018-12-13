@@ -1,2 +1,4 @@
-<h1>hallo there, welkom op de welkom pagina</h1>
-<h2>{{userid}}</h2>
+{% if user.is_authenticated %}
+    <h1>hallo there, welkom op de welkom pagina, you have the app</h1>
+    <h2>{{userid}}</h2>
+{% endif %}

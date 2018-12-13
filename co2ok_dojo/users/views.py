@@ -85,7 +85,6 @@ from django.shortcuts import render
 def profile(request):
     # username = request.user
     # password = request.user.password
-    # user.objects.filter().update(ninja_user=True)
     user_id = request.user.id
     trans = _("mot a traduire")
     # if int(id) == int(user_id):
