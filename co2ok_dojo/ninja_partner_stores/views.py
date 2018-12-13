@@ -26,6 +26,13 @@ import json
 #
 #     return render(request, "ninja_partner_stores/ninja-partner-stores.html",{})
 
+def en_to_us():
+    user_lang = translation.get_language()
+    if user_lang == 'en':
+        en_lang = 'us'
+    else:
+        en_lang = user_lang
+    return en_lang
 
 def partner_stores(request):
     stores_data = {
@@ -38,15 +45,12 @@ def partner_stores(request):
 
 def partner_stores_all(request):
     user_lang = translation.get_language()
+    en_lang = en_to_us()
     stores = Store.objects.filter(country__code=user_lang)[:100]
     stores_count = stores.count()
     # makeURLlink = Url_filter.makeURLlink(stores)
 
     if stores_count < 50:
-        if user_lang == 'en':
-            en_lang = 'us'
-        else:
-            en_lang = user_lang
         stores_extra = Store.objects.filter(country__code=en_lang)[:100]
     else:
         stores_extra = ''
@@ -61,25 +65,30 @@ def partner_stores_all(request):
 def partner_stores_search(request):
     if request.method == 'GET':
         user_lang = translation.get_language()
+        lang = en_to_us()
         search_value = request.GET.get('search_val')
-        search_result = Store.objects.filter(website__startswith=search_value,country__code=user_lang)[:100]
+        en_lang = en_to_us()
+        search_result = Store.objects.filter(website__startswith=search_value,country__code=lang)[:100]
         search_result_count = search_result.count()
         return render(request, "ninja_partner_stores/partner_stores_data.html",{'search_results': search_result, 'search_value':search_value, 'search_result_count':search_result_count})
 
 
 def partner_stores_category(request):
     user_lang = translation.get_language()
+    lang = en_to_us()
     category_val = request.GET.get('category_val')
-    category_result = Store.objects.filter(category__name=category_val,country__code=user_lang)[:100]
+    category_result = Store.objects.filter(category__name=category_val,country__code=lang)[:100]
+    no_category = Store.objects.all()[:100]
     category_resultcount_count = category_result.count()
     if category_resultcount_count < 50:
-        category_result_extra = Store.objects.filter(country__code=user_lang)[:100]
+        category_result_extra = Store.objects.filter(category__name=category_val,country__code=lang)[:100]
     else:
         category_result_extra = ''
     return render(request, "ninja_partner_stores/partner_stores_data.html",
      {
      'category_results': category_result,
      'category_resultcount_count':category_resultcount_count,
-     'category_result_extras':category_result_extra
+     'category_result_extras':category_result_extra,
+     'no_categories': no_category
      }
     )

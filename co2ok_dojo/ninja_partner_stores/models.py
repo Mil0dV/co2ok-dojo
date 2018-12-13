@@ -49,4 +49,4 @@ class Store(models.Model):
 
 
     def __str__(self):
-        return self.website
+        return str(self.website) + str(self.category.name)
