@@ -230,7 +230,7 @@
     letter-spacing: 1px;
     position: relative;
     top: 50px;
-    text-transform: lowercase;
+    text-transform: capitalize;
     white-space: nowrap;
     /* position: absolute;
     transform: translateX(-50%);
