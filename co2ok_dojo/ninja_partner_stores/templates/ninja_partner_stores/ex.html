@@ -1,0 +1,102 @@
+{% load static %}
+{% block partner_stores_data %}
+
+<!-- begin search result -->
+{% if search_results %}
+
+  {% if search_result_count > 0 %}
+
+     {% for search_result in search_results %}
+
+     {% with 'images/logos/'|add:search_result.website|add:'.png' as stores_image %}
+
+       <a href="{{ search_result.makeURLlink }}" class="img-fluid co2ok-featured-shop-image col-md-4" target="_blank" rel="noopener"
+       style="background-image: url('{% static stores_image %}');">
+
+           <span class="co2ok-featured-shop-text">
+               {{search_result.website | title }}
+           </span>
+
+       </a>
+
+      {% endwith %}
+
+     {% endfor %}
+     <!-- category extra -->
+     {% if category_result_extras %}
+
+         {% for category_result_extra in category_result_extras %}
+
+           {% with 'images/logos/'|add:category_result_extra.website|add:'.png' as stores_image %}
+
+               <a href="{{ category_result_extra.makeURLlink }}" class="img-fluid co2ok-featured-shop-image col-md-4 category_stores" id="{{category_result.website}}" target="_blank" rel="noopener"
+               style="background-image: url('{% static stores_image %}');">
+                   <span class="co2ok-featured-shop-text">
+                       {{category_result_extra.website | title}}
+                   </span>
+               </a>
+
+           {% endwith %}
+
+         {% endfor %}
+
+     {% endif %}
+
+  {% else %}
+    <h3>niets gevonden...</h3>
+  {% endif %}
+
+{% endif %}
+
+<!-- end search result -->
+
+<!-- begin cateory result -->
+
+{% if category_results %}
+
+   {% if category_result_count > 0 %}
+
+      {% for category_result in category_results %}
+
+      {% with 'images/logos/'|add:category_result.website|add:'.png' as stores_image %}
+
+        <a href="{{ category_result.makeURLlink }}" class="img-fluid co2ok-featured-shop-image col-md-4 category_stores" id="{{category_result.website}}" target="_blank" rel="noopener"
+        style="background-image: url('{% static stores_image %}');">
+
+            <span class="co2ok-featured-shop-text">
+                {{category_result.website | title}}
+            </span>
+
+        </a>
+
+      {% endwith %}
+
+      {% endfor %}
+
+   {% else %}
+      <h1>{{category_result_count}}</h1>
+   {% endif %}
+
+{% endif %}
+<!-- ebd category search -->
+
+<!-- begin store display -->
+
+{% if stores %}
+
+   {% for store in stores %}
+
+     {% with 'images/logos/'|add:store.website|add:'.png' as stores_image %}
+       <a href="{{ store.makeURLlink }}" class="img-fluid co2ok-featured-shop-image col-md-4" target="_blank" rel="noopener"
+       style="background-image: url('{% static stores_image %}');">
+           <span class="co2ok-featured-shop-text store_name">
+               {{store.website | title}}
+           </span>
+       </a>
+     {% endwith %}
+
+   {% endfor %}
+
+{% endif %}
+
+<!-- end store display -->

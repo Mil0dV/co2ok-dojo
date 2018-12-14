@@ -14,6 +14,7 @@ from django.conf.urls.i18n import i18n_patterns
 
 from search import views as search_views
 from users import views as users_views
+from welcome import views as welcome_views
 from ninja_partner_stores import views as ninja_partner_stores_views
 
 urlpatterns = [
@@ -44,6 +45,7 @@ urlpatterns = [
     url(r'^partner-stores-all/$', ninja_partner_stores_views.partner_stores_all, name='partner_stores_all'),
     url(r'^partner-stores-search/$', ninja_partner_stores_views.partner_stores_search, name='partner_stores_search'),
     url(r'^partner-stores-category/$', ninja_partner_stores_views.partner_stores_category, name='partner-stores-category'),
+    url(r'^welcome/$', welcome_views.welcome, name='welcome'),
 
     # For anything not caught by a more specific rule above, hand over to
     # Wagtail's page serving mechanism. This should be the last pattern in

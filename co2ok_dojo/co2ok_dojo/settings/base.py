@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'search',
     'users',
     'ninja_partner_stores',
+    'welcome',
     # 'partner_stores',
     'cuser',
 

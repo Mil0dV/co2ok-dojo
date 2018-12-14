@@ -17,7 +17,7 @@ from wagtail.core.models import Page
 from wagtail.search.models import Query
 
 from .forms import RegisterForm, LoginForm
-from .models import Rewards
+from .models import Profile
 
 
 def signup(request):
@@ -38,7 +38,7 @@ def signup(request):
             if user_email_count == 0:
                 cuser.objects.create_user(email, password)
                 user = authenticate(email=email, password=password)
-                Rewards.objects.create(user_id=user.id, points=0)
+                Profile.objects.create(user=user, points=0)
                 login(request, user)
                 # return redirect('/{0}'.format(user.id))
                 return redirect('/accounts/profile')
@@ -89,7 +89,7 @@ def profile(request):
     trans = _("mot a traduire")
     # if int(id) == int(user_id):
     try:
-        user_points = Rewards.objects.get(user_id = user_id).points
+        user_points = Profile.objects.get(user__pk = user_id).points
     except:
         user_points = 9042
     profile_data = {
@@ -126,13 +126,13 @@ def invited_sign(request, user_id):
             if user_email_count == 0:
                 cuser.objects.create_user(email, password)
                 invited_user = authenticate(email=email, password=password)
-                Rewards.objects.create(user_id=invited_user.id, points=0)
-                print('updated_user_who_invite_points' + updated_user_who_invite_points)
+                Profile.objects.create(user=invited_user, points=0)
+                # print('updated_user_who_invite_points' + updated_user_who_invite_points)
                 #updating user points
-                user_who_invite_points = Rewards.objects.get(user_id=user_id).points
+                user_who_invite_points = Profile.objects.get(user__pk=user_id).points
                 updated_user_who_invite_points = user_who_invite_points + 1
-                Rewards.objects.filter(user_id=user_id).update(points=updated_user_who_invite_points)
-                print('updated_user_who_invite_points' + updated_user_who_invite_points)
+                Profile.objects.filter(user__pk=user_id).update(points=updated_user_who_invite_points)
+                # print('updated_user_who_invite_points' + updated_user_who_invite_points)
                 login(request, invited_user)
                 return redirect('/accounts/profile')
     else:
