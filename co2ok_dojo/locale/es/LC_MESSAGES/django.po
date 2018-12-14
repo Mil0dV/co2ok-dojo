@@ -368,3 +368,46 @@ msgstr ""
 #: login
 msgid "password"
 msgstr "Contraseña"
+
+#: welcome_page/welcome.html
+msgid "welcome"
+msgstr ""
+
+msgid "You can help fight climate change!"
+msgstr ""
+
+msgid "Help us reach anyone who shops online!"
+msgstr ""
+
+msgid "Click Here!"
+msgstr ""
+
+msgid "How it works:"
+msgstr ""
+
+msgid "YOU INSTALL THE EXTENSION"
+msgstr ""
+
+msgid "It doesn’t get easier! Just click the button below and then click “add to chrome”. Want to know more? Go to"
+msgstr ""
+
+msgid "WHEN YOU VISIT ONE OF OUR PARTNER’S STORES, YOU CAN START RAISING MONEY"
+msgstr ""
+
+msgid "At the top of our partners’ online shops you will see a button giving you an opportunity to start raising money for the benefit of the environment from your purchases in that shop. Want to know more? Go to:"
+msgstr ""
+
+msgid "YOU BUY SOMETHING APPEALING, WE FINANCE THE CERTIFIED PARTNERS IN FIGHTING CLIMATE CHANGE"
+msgstr ""
+
+msgid "Using CO₂ok Ninja means you only have to press the button which says “Shop CO₂ok” and then you will be redirected back to the store. So when you buy something, CO₂ok receives a commission (usually between 2% and 5%), depending on the store and we finance our certified partners in fighting climate change. We keep a quarter of the commission – not to get rich – but we need it to grow and to make as much impact in the fight against climate change as possible. Want to know more? Go to "
+msgstr ""
+
+msgid "CHARITIES FIGHT CLIMATE CHANGE!"
+msgstr ""
+
+msgid "The amount the online shop donates is used to finance sustainable energy and CO₂-emission reduction projects (via our certified partners). These projects actively reduce the amount of emitted CO₂, thereby making your purchase climate friendly. In fact, the compensation amount sometimes generates surplus, so in fact your purchase could help reducing CO₂ emissions, beyond the CO₂ emitted during the production and shipping of your products. This way you’re making a real difference benefiting the environment!"
+msgstr ""
+
+msgid "Read more about our certified partners:"
+msgstr ""
