@@ -369,6 +369,20 @@ msgstr "Partner winkels lijst"
 msgid "You raise money for the fight against climate change when you shop in one of these online stores."
 msgstr "Je haalt geld op voor de strijd tegen klimaatverandering wanneer je op één van deze webwinkels komt."
 
+# Ninja Partner Stores (light_box)
+
+#: ninja_partner_stores/templates/ninja_partner_stores/ninja-partner-stores.html:44
+msgid "You can install the Mobile Ninja app on your device so you can easily access your favorite online shops and automatically compensate CO2 emissions."
+msgstr "Je kan de Mobile Ninja app installeren op je toestel zodat je makkelijk je favoriete webshops kan bezoeken en automatisch CO2 uitstoot kan compenseren."
+
+#: ninja_partner_stores/templates/ninja_partner_stores/ninja-partner-stores.html:48
+msgid "1) Tap the Action button on the toolbar."
+msgstr "1) Tap de Actie knop op de toolbar."
+
+#: ninja_partner_stores/templates/ninja_partner_stores/ninja-partner-stores.html:52
+msgid "2) Tap the Add to Home Screen button from the Share Sheet."
+msgstr "2) Tap de Add to Home Screen knop van de Share Sheet."
+
 #: users/templates/users/profile.html:56
 msgid "Profile"
 msgstr "Profiel"
@@ -384,6 +398,34 @@ msgstr "CO₂ gecompenseerd"
 #: users/templates/users/profile.html:100
 msgid "Pick a cause"
 msgstr "Kies een doel"
+
+#: co2ok_dojo/templates/menu.html:100
+msgid "The power of Ninja is together!"
+msgstr "De kracht van Ninja is samen!"
+
+#: co2ok_dojo/templates/menu.html:100
+msgid "Tell your friends and family about the Ninja App and share the link to fight climate change."
+msgstr "Vertel je vrienden en familie over de Ninja App en deel de link om klimaatverandering tegen te gaan."
+
+#: co2ok_dojo/templates/menu.html:100
+msgid "The online shop makes your purchase climate neutral and that way we actively compensate CO2 through a sustainable project."
+msgstr "De webshop maakt jouw aankoop klimaatneutraal en zo compenseren we actief CO2 d.m.v. een duurzaam project."
+
+#: co2ok_dojo/templates/menu.html:100
+msgid "Make sure every penny is worth it so we can live on a green and clean planet."
+msgstr "Zorg dat elke cent het waard is om samen in een groene en schone wereld te leven."
+
+#: co2ok_dojo/templates/menu.html:100
+msgid "Share our vision, make others happy with the Ninja App. (Want to know more?)"
+msgstr "Deel je onze visie, maak anderen ook gelukkig met de Ninja app. (Meer weten?)"
+
+#: co2ok_dojo/templates/menu.html:100
+msgid "(Our developers are working hard to make the CO₂ counter work in the near future.)"
+msgstr "(Onze programmeurs zijn aan de slag om de CO₂ teller werkend te krijgen in de nabije toekomst.)"
+
+#: co2ok_dojo/templates/menu.html:100
+msgid "Ninja Stars"
+msgstr "Ninja Sterren"
 
 #: users/views.py:87
 msgid "mot a traduire"
