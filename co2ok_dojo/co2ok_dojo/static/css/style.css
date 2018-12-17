@@ -1056,3 +1056,128 @@ and (max-width : 480px) {
    margin-bottom: -15px;
 
 }
+
+.welcome-heart-section {
+    padding-top: 120px;
+    padding-bottom: 50px;
+    background-attachment: fixed;
+}
+
+.welcome-page-content-spacer {
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.image-col {
+    background-position: center center;
+    background-size: cover;
+    min-height: 100%;
+    padding-top: 300px;
+    flex-basis: 100%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    margin: 0px;
+}
+
+.first-xs {
+    order: -1;
+}
+
+.welcome-row {
+    flex-basis:auto;
+    flex-direction:row;
+    flex-grow:0;
+    flex-shrink:1;
+}
+
+.share-btn {
+background-attachment:scroll;
+background-clip:border-box;
+background-image:none;
+background-origin:padding-box;
+background-position-x:0%;
+background-position-y:0%;
+background-repeat-x:;
+background-repeat-y:;
+background-size:auto;
+border-radius:8px;
+border-style:solid;
+border-bottom-width:2px;
+border-image-outset:0px;
+border-image-repeat:stretch;
+border-image-slice:100%;
+border-image-source:none;
+border-image-width:1;
+border-left-width:2px;
+border-right-width:2px;
+border-top-width:2px;
+box-sizing:border-box;
+color:rgb(255, 255, 255);
+cursor:pointer;
+display:inline-block;
+font-family:"Open Sans";
+font-size:11.9px;
+font-weight:600;
+height:40.375px;
+letter-spacing:1px;
+line-height:21px;
+margin-bottom:10.5px;
+margin-left:0px;
+margin-right:3px;
+margin-top:0px;
+min-width:98px;
+outline-color:rgb(255, 255, 255);
+outline-style:none;
+outline-width:0px;
+overflow-wrap:break-word;
+padding-bottom:7.7px;
+padding-left:21px;
+padding-right:21px;
+padding-top:7.7px;
+text-align:center;
+text-decoration-color:rgb(255, 255, 255);
+text-decoration-line:none;
+text-decoration-style:solid;
+transition-delay:0s;
+transition-duration:0.3s;
+transition-property:all;
+transition-timing-function:linear;
+vertical-align:middle;
+width:175.922px;
+-webkit-appearance:none;
+-webkit-box-direction:normal;
+white-space: nowrap;
+}
+
+.share-button-fb {
+    background-color:rgb(59, 89, 152);
+    border-color:rgb(59, 89, 152);
+}
+
+.share-button-twitter {
+    background-color:#1da1f2;
+    border-color:#1da1f2;
+}
+
+.btn-welcome-page {
+    font-family: "Open Sans";
+    font-size: 1.5rem;
+    color: #fff;
+    background: linear-gradient(#1DEFAC 10.09%, #11D071 51.05%, #10CC6B 56.81%, #05B139 100%);
+    border-color: linear-gradient(#1DEFAC 10.09%, #11D071 51.05%, #10CC6B 56.81%, #05B139 100%);
+    border-color: #11D073;
+    border-radius: 5px;
+    min-width: 7rem;
+    padding: 1.3rem 2.3rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-block;
+    line-height: 1.5rem;
+    border-radius: 8px;
+    vertical-align: middle;
+    -webkit-appearance: none;
+    margin-bottom: .75rem;
+}
