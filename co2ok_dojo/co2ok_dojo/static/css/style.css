@@ -535,13 +535,31 @@ figure.effect-bubba:hover p {
 --------------------*/
 
 .partner-logo {
-    height: 40px;
+    height: 70px;
     text-align: center;
 }
 
 .partner-logo img {
     height: 100%;
     width: auto !important;
+}
+
+@media (max-width: 350px) {
+    .partner-logo {
+        height: 26px;
+    }
+}
+
+@media (min-width: 350px) and (max-width: 380px) {
+    .partner-logo {
+        height: 30px;
+    }
+}
+
+@media (min-width: 380px) and (max-width: 768px) {
+    .partner-logo {
+        height: 35px;
+    }
 }
 
 /*--------------------
@@ -877,16 +895,23 @@ and (max-width : 480px) {
 
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 360px) {
     .intro_head {
-        margin-top: 250px;
+        margin-top: 85px;
         margin-bottom: -180px;
     }
 }
 
-@media only screen and (max-width: 670px) and (min-width: 400px) {
+@media only screen and (min-width: 361px) and (max-width: 400px) {
     .intro_head {
-        margin-top: 180px;
+        margin-top: 75px;
+        margin-bottom: -180px;
+    }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 400px) {
+    .intro_head {
+        margin-top: 90px;
         margin-bottom: -180px;
     }
 }
@@ -936,6 +961,7 @@ and (max-width : 480px) {
     .ninja_world_bol {
         background-size: 100%;
         width: 100%;
+        margin-top: 150px;
     }
 }
 
@@ -943,6 +969,7 @@ and (max-width : 480px) {
     .ninja_world_bol {
         background-size: 95%;
         width: 100%;
+        margin-top: 100px;
     }
 }
 
