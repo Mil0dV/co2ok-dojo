@@ -15,11 +15,11 @@
 <!-- {% include 'language.html' %} -->
     <div class="intro_head">
 
-       <h2 style="color:#fff; font-size: 26px;font-weight:600;">{% trans "Fight climate change while you shop online" %}</h2>
-       <p style="color: #fff; font-size:16px; color: white; width: 70%;font-size: 17px;">
+       <h2 class="landing-page-title">{% trans "Fight climate change while you shop online" %}</h2>
+       <p class="landing-page-subtitle">
 
         {% trans "Become a CO₂ok Ninja with our Ninja App. You shop and the store pays a CO₂ compensation at no extra cost for you. Fighting climate change was never this easy." %}
-        <a href="#about" style="color: #fbff3f;">{% trans "How it works" %}</a>
+        <a href="#about" style="color: #76ffa1;">{% trans "How it works" %}</a>
 
        </p>
 
@@ -43,10 +43,10 @@
 
     <div class="slider_partners">
 
-      <h3 class="black-bg-bar" style="color:rgb(255, 255, 255); font-size:20px; margin-top:-1px; margin-bottom:1px; padding-left: 30px; padding-right: 30px;"> {% trans "CHOOSE FROM " %}<a href="https://co2ok.eco/ninja-partner-stores/" style="color: #4effa9;">{% trans " 22.000+ INTERNATIONAL SHOPS" %}</a></h3>
+      <h3 class="black-bg-bar" style="color: rgb(255, 255, 255); font-size:20px; margin-top:-1px; margin-bottom:1px; padding-left: 30px; padding-right: 30px;"> {% trans "CHOOSE FROM " %}<a href="https://co2ok.eco/ninja-partner-stores/" class="international-shops-link" style="color: #00d644;">{% trans " 22.000+ INTERNATIONAL SHOPS" %}</a></h3>
 
       <!-- <div class="col-lg-6 text-center white-bg-bar"> -->
-        <div class="owl-carousel ">
+        <!-- <div class="owl-carousel ">
           <div class="item">
             <a href="https://ds1.nl/c/?si=7630&li=1354896&wi=303581&ws=&dl=" class="button" target="_blank" rel="noopener"></a>
               <div class="partner-logo">
@@ -79,9 +79,31 @@
           </a>
           </div>
 
-        </div>
+        </div> -->
 
-    <!-- </div> -->
+        <div class="container">
+            <div class="row" style="text-align:center;">
+              <div class="home-page-logos" >
+        <a href="https://ds1.nl/c/?si=7630&li=1354896&wi=303581&ws=&dl=" class="button" target="_blank" rel="noopener"></a>
+          <div class="partner-logo"><img src="{% static 'images/demo/aliexpress_button.png' %}" alt="partners"></div>
+        </a></div><div class="home-page-logos">
+        <a href="https://partner.bol.com/click/click?p=2&t=url&s=51851&f=TXL&url=http%3A%2F%2Fbol.com%2F" class="button" target="_blank" rel="noopener">
+          <div class="partner-logo"><img src="{% static 'images/demo/bol_button.png' %}" alt="partners"></div>
+        </a></div><div class="home-page-logos">
+        <a href="http://booking.com/?aid=1627502&label=chex" class="button" target="_blank" rel="noopener">
+          <div class="partner-logo"><img src="{% static 'images/demo/booking_button.png' %}" alt="partners"></div>
+        </a></div><div class="home-page-logos">
+        <a href="https://prf.hn/click/camref:1011l3qZq/destination:http%3A%2F%2Fcoolblue.nl%2F" class="button" target="_blank" rel="noopener">
+          <div class="partner-logo"><img src="{% static 'images/demo/coolblue_button.png' %}" alt="partners"></div>
+        </a></div><div class="home-page-logos">
+        <a href="http://dx.com/?TC=USD&&Utm_rid=78139600&Utm_source=affiliate" class="button" target="_blank" rel="noopener">
+          <div class="partner-logo"><img src="{% static 'images/demo/dx_button.png' %}" alt="partners"></div>
+        </a></div><div class="home-page-logos">
+        <a href="http://rover.ebay.com/rover/1/711-53200-19255-0/1?ff3=4&pub=5575349754&toolid=11800&campid=5338219191&customid=chex&mpre=http%3A%2F%2Febay.com%2F" class="button" target="_blank" rel="noopener">
+          <div class="partner-logo"><img src="{% static 'images/demo/ebay_button.png' %}" alt="partners"></div>
+        </a></div>
+      </div>
+    </div>
 
   </div>
 

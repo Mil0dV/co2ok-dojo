@@ -37,3 +37,8 @@
    display: inline-block;
 
 }
+
+.co2ok-navbar {
+  background-color: #03bb65 !important;
+  border-color: #858585 !important;
+}
