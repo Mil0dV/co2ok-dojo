@@ -102,6 +102,7 @@ def profile(request):
       'trans': trans,
       'co2_compensated': int(random.random()*100),
       'user_app': user_app,
+      # 'user_app': user_app,
       # Milo: ik denk dat de strip niet nodig is. YOLO 'm weg als je je dapper voelt, maar test wel op productie :P
       'domainname': request.get_host() if request.get_host().strip() else 'test.co2ok.ninja'
 
