@@ -1,3 +1,38 @@
+.landing-page-title {
+    color:#fff;
+    font-size: 26px;
+    font-weight:600;
+}
+
+.landing-page-subtitle {
+    color: #ffffff;
+    font-size:16px;
+    width: 70%;
+    font-size: 17px;
+}
+
+@media (max-width: 360px) {
+    .landing-page-title {
+        font-size: 19px;
+    }
+    .landing-page-subtitle {
+        width: 90%;
+        font-size: 13px;
+        line-height: 13px;
+    }
+}
+
+@media (min-width: 361px) and (max-width: 768px) {
+    .landing-page-title {
+        font-size: 21px;
+    }
+    .landing-page-subtitle {
+        width: 95%;
+        font-size: 15px;
+        line-height: 15px;
+    }
+}
+
 .install-button {
     font-family: "Open Sans";
     /* font-size: 0.85rem; */
@@ -22,10 +57,24 @@
     word-wrap: break-word;
     box-sizing: border-box;
     color: #ffffff;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+.home-page-logos {
+    /* float: initial; */
+    flex: 17,5%;
+    width: 17,5%;
+    padding: 0px;
+    display: inline-block;
 }
 
 .black-bg-bar {
     background-image: linear-gradient(to right, rgba(010,010,010,0), rgba(010,010,010,0.9), rgba(010,010,010,0.9) , rgba(010,010,010,0.9) , rgba(010,010,010,0.9),  rgba(010,010,010,0.9), rgba(010,010,010,0));
+}
+
+.international-shops-link {
+    color: #00d644;
+    font-weight: 600;
 }
 
 .white-bg-bar {
