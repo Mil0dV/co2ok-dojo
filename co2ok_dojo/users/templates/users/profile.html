@@ -50,7 +50,7 @@
           <div class="slider-container" >
             <div class="intro-text">
               <!-- <div class="intro-lead-in">Welcome To Our Studio!</div> -->
-              <div class="col-12 co2ok-ninja-account-title" style="text-align: center; margin-top: 110px; margin-bottom: 0px;"><h1>{% trans "Profile" %}</h1></div>
+              <div class="col-12 co2ok-ninja-account-title" style="text-align: center; margin-top: 110px; margin-bottom: 0px;"><h1>{% trans "Profile" %}</h1><h2>{{user_app}}</h2></div>
               <div class="col-12 " style="text-align: center; margin-top: 10px; margin-bottom: 30px;"><h4 style="color:#09b540; font-weight:700;">{% trans "The power of Ninja is together!" %} </h4>
               </div>
 
@@ -92,7 +92,7 @@
                         <div class="row">
                         <div class="col-lg-3 col-sm-12 co2ok-ninja-compensated-shuriken-box text-center">
                             <p>{% trans "CO₂ compensated" %}</p>
-                            <img src="{% static 'images/chimneys-co2-compensated.png' %}" class="co2ok-ninja-currency-img"><div class="co2ok-ninja-currency-text">69 kgs</div>
+                            <img src="{% static 'images/chimneys-co2-compensated.png' %}" class="co2ok-ninja-currency-img"><div class="co2ok-ninja-currency-text">{{co2_compensated}} kgs</div>
                             <br>
                             <br>
                             <p>{% trans "Ninja Stars" %}</p>

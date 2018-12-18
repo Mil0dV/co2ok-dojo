@@ -3,6 +3,7 @@ from django.core.paginator import EmptyPage, PageNotAnInteger, Paginator
 from django.contrib.auth import login, authenticate, get_user_model
 # from django.contrib.auth.forms import UserCreationForm
 from cuser.forms import UserCreationForm
+import random
 # from django.contrib.gis.geoip2 import GeoIP2
 # from django.utils import translation
 
@@ -90,13 +91,17 @@ def profile(request):
     # if int(id) == int(user_id):
     try:
         user_points = Profile.objects.get(user__pk = user_id).points
+        user_app = Profile.objects.get(user__pk = user_id).ninja_user
     except:
         user_points = 9042
+        user_app = False
     profile_data = {
 
       'current_path': user_id,
       'user_points': user_points,
       'trans': trans,
+      'co2_compensated': int(random.random()*100),
+      'user_app': user_app,
       # Milo: ik denk dat de strip niet nodig is. YOLO 'm weg als je je dapper voelt, maar test wel op productie :P
       'domainname': request.get_host() if request.get_host().strip() else 'test.co2ok.ninja'
 
