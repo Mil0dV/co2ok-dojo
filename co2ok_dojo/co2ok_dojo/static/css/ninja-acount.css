@@ -58,3 +58,10 @@
   margin-right:auto;
   box-sizing: border-box;
 }
+
+.profile-point-box {
+    border: 2px solid #14746b;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    box-shadow: inset 0px 0px 5px 0px rgba(0,0,0,0.7);
+}
