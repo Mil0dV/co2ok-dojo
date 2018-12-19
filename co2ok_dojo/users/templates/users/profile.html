@@ -104,37 +104,63 @@
 
                           </div>
                       </div>
-                    <p style="font-size:11px; color:#14746b;">
+                    <p style="font-size:11px; color:#14746b; line-height: 1.2;">
                       {% trans "The online shop makes your purchase climate neutral and that way we actively compensate CO2 through a sustainable project." %} </br>
                       {% trans "Make sure every penny is worth it so we can live on a green and clean planet." %} </br>
                       {% trans "Share our vision, make others happy with the Ninja App. (Want to know more?)" %} </br>
                     </p>
-                    <div class="container">
-                        <div class="row">
-                        <div class="col-lg-3 col-sm-12 co2ok-ninja-compensated-shuriken-box text-center">
-                            <p>{% trans "CO₂ compensated" %}</p>
-                            <img src="{% static 'images/chimneys-co2-compensated.png' %}" class="co2ok-ninja-currency-img"><div class="co2ok-ninja-currency-text">{{co2_compensated}} kgs</div>
-                            <br>
-                            <br>
-                            <p>{% trans "Ninja Stars" %}</p>
-                            <img src="{% static 'images/shurikens-new-temp.png' %}" class="co2ok-ninja-currency-img"><div class="co2ok-ninja-currency-text">{{user_points}}</div>
-                        </div>
-                        <div class="col-lg-3 text-center" style="margin-top:50px;">
+                    <!-- <div class="container"> -->
+
+                      <!-- <div class="row"> -->
+
+                        <div class="co2ok-ninja-compensated-shuriken-box">
+
+                          <div class="conpasated_points_container">
+
+                              <div class=" profile-point-box">
+                                <div class="img_txt">
+                                  <p>{% trans "CO₂ compensated" %}</p>
+                                  <img src="{% static 'images/chimneys-co2-compensated.png' %}" class="co2ok-ninja-currency-img">
+                                </div>
+                                <div class="co2ok-ninja-currency-text">
+                                  <h2 style="font-size:3rem; font-weight: 600; text-decoration: underline; margin-bottom: 10px;">69 kgs</h2>
+                                  <p>{% trans "(Our developer are working hard to make the CO2 counter work in the near future)" %}</p>
+                                </div>
+                              </div>
+
+                              <div class=" profile-point-box">
+
+                                <div class="img_txt">
+                                  <p>{% trans "Ninja Stars" %}</p>
+                                  <img src="{% static 'images/shurikens-new-temp.png' %}" class="co2ok-ninja-currency-img">
+                                </div>
+                                <div class="col-sm-6 co2ok-ninja-currency-text">
+                                  <div class="co2ok-ninja-currency-text" style="margin:auto; font-size:3rem;">{{user_points}}</div>
+                                </div>
+
+                             </div>
+
+                          </div>
+
+                        <div class="pick_cause_container" style="">
                           <img src="{% static 'images/ninjaDesign_headicon_mindful.png' %}" class="co2ok-ninja-offer-img" style="width: 280px; height: 200px;"></br>
-                          <div class="install-button pick_cause_butt" style="padding:10px 20px; margin-left:15%;">{% trans "Pick A Cause" %}</div>
+
+                          <div class="install-button pick_cause_butt" style="padding:10px 20px; margin-left:15%; white-space: nowrap;">{% trans "Pick A Cause" %}</div>
+
                         </div>
-                  </div>
+
                     </div>
-                    </div>
-                  </div>
-                </div>
 
+                  <!-- </div> -->
 
+                <!-- </div> -->
 
-
+              </div>
             </div>
-          </div>
+
         </div>
+      </div>
+    </div>
 
 
       <p id="back-top">
