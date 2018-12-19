@@ -2,7 +2,7 @@
 {% load static %}
 {% load i18n %}
 
-<!-- begin linghtbox -->
+<!-- begin user have app linghtbox -->
 
   {% block lightboxContent %}
 
@@ -38,17 +38,33 @@
   {% endblock %}
 <!-- end lightbox -->
 
+
 {% block content %}
 <head>
 <link rel="stylesheet" type="text/css" href="{% static 'css/ninja-main.css' %}">
 <link rel="stylesheet" type="text/css" href="{% static 'css/ninja-acount.css' %}">
 <link href="{% static 'css/profil.css' %}" rel="stylesheet">
 </head>
+<!-- pick a cause light_box_header -->
+<div class="light_box_container pick_cause_container" style="transform: scale(0,0);">
+
+  <div class="close_light_box">
+    <img src="{% static 'images/close.svg' %}" alt="">
+  </div>
+
+  <div class="light_box_header pick-a-cause-lightbox">
+
+  </div>
+
+  <div class="light_box_body">
+
+  </div>
+
+</div>
+<!-- end pick a cause lightbox -->
 
   {% if user.is_authenticated %}
-      <!-- begin lightbox -->
 
-      <!-- end lightbox -->
       {% include 'menu.html' %}
 
         <div class="container profile-container-padder">
@@ -105,7 +121,7 @@
                         </div>
                         <div class="col-lg-3 text-center" style="margin-top:50px;">
                           <img src="{% static 'images/ninjaDesign_headicon_mindful.png' %}" class="co2ok-ninja-offer-img" style="width: 280px; height: 200px;"></br>
-                          <div class="install-button" style="padding:10px 20px; margin-left:15%;">{% trans "Pick A Cause" %}</div>
+                          <div class="install-button pick_cause_butt" style="padding:10px 20px; margin-left:15%;">{% trans "Pick A Cause" %}</div>
                         </div>
                   </div>
                     </div>
