@@ -2,36 +2,42 @@
 {% load static %}
 {% load i18n %}
 
-<!-- begin linghtbox -->
-{% block lightboxContent %}
+<!-- begin user have app linghtbox -->
 
-<link href="{% static 'css/menu.css' %}" rel="stylesheet">
-    <div class="light_box_header lightboxActive">
+  {% block lightboxContent %}
 
-    </div>
+    {% if user_app == False %}
 
-    <div class="light_box_body">
-      <p style="font-weight: 500; color: #ff3100;">
-        <!-- Nog 2 keer klikken en je strijd mee tegen klimaatverandering! -->
-        {% trans "NOTE: CO₂ok Ninja only needs to know which website you are visiting. We do not record your website visits or any other data. We do not make changes on your computer. The Google notice that you see as you click further is different from what the Ninja app does." %}
+      <link href="{% static 'css/menu.css' %}" rel="stylesheet">
+        <div class="light_box_header lightboxActive">
 
-      </p>
-      {% get_current_language as LANGUAGE_CODE %}
-      {% with 'images/ninja_app_install_'|add:LANGUAGE_CODE|add:'.png' as image_static %}
-        <img src="{% static image_static %}" alt="" class="ninja_app_install">
-      {% endwith %}
-
-      <div class="images"></div>
-
-      <a href="https://chrome.google.com/webstore/detail/co2okninja/omlkdocjhkgbllabpihhdggplladfipe?hl=nl" class="install-ninja-button">
-        <div class="light_box_footer">
-          <button class="btn install-button" style="background-color:#05b139;">{% trans "GET THE APP" %}</button>
         </div>
-      </a>
-    </div>
 
-{% endblock %}
+        <div class="light_box_body">
+          <p style="font-weight: 500; color: #ff3100;">
+            <!-- Nog 2 keer klikken en je strijd mee tegen klimaatverandering! -->
+            {% trans "NOTE: CO₂ok Ninja only needs to know which website you are visiting. We do not record your website visits or any other data. We do not make changes on your computer. The Google notice that you see as you click further is different from what the Ninja app does." %}
+
+          </p>
+          {% get_current_language as LANGUAGE_CODE %}
+          {% with 'images/ninja_app_install_'|add:LANGUAGE_CODE|add:'.png' as image_static %}
+            <img src="{% static image_static %}" alt="" class="ninja_app_install">
+          {% endwith %}
+
+          <div class="images"></div>
+
+          <a href="https://chrome.google.com/webstore/detail/co2okninja/omlkdocjhkgbllabpihhdggplladfipe?hl=nl" class="install-ninja-button">
+            <div class="light_box_footer">
+              <button class="btn install-button" style="background-color:#05b139;">{% trans "GET THE APP" %}</button>
+            </div>
+          </a>
+        </div>
+
+    {% endif %}
+
+  {% endblock %}
 <!-- end lightbox -->
+
 
 {% block content %}
 <head>
@@ -39,18 +45,33 @@
 <link rel="stylesheet" type="text/css" href="{% static 'css/ninja-acount.css' %}">
 <link href="{% static 'css/profil.css' %}" rel="stylesheet">
 </head>
+<!-- pick a cause light_box_header -->
+<div class="light_box_container pick_cause_container" style="transform: scale(0,0); position: fixed;">
+
+  <div class="close_light_box">
+    <img src="{% static 'images/close.svg' %}" alt="">
+  </div>
+
+  <div class="light_box_header pick-a-cause-lightbox">
+
+  </div>
+
+  <div class="light_box_body">
+    <p style="font-weight: 800; font-size:1.4rem;">We're working hard so in the near future you can pick a project where the donated Ninja money will be spent.</p>
+  </div>
+
+</div>
+<!-- end pick a cause lightbox -->
 
   {% if user.is_authenticated %}
-      <!-- begin lightbox -->
 
-      <!-- end lightbox -->
       {% include 'menu.html' %}
 
         <div class="container profile-container-padder">
           <div class="slider-container" >
             <div class="intro-text">
               <!-- <div class="intro-lead-in">Welcome To Our Studio!</div> -->
-              <div class="col-12 co2ok-ninja-account-title" style="text-align: center; margin-top: 110px; margin-bottom: 0px;"><h1>{% trans "Profile" %}</h1><h2>{{user_app}}</h2></div>
+              <div class="col-12 co2ok-ninja-account-title" style="text-align: center; margin-top: 110px; margin-bottom: 0px;"><h1>{% trans "Profile" %}</h1></div>
               <div class="col-12 " style="text-align: center; margin-top: 10px; margin-bottom: 30px;"><h4 style="color:#09b540; font-weight:700;">{% trans "The power of Ninja is together!" %} </h4>
               </div>
 
@@ -123,7 +144,9 @@
 
                         <div class="pick_cause_container" style="">
                           <img src="{% static 'images/ninjaDesign_headicon_mindful.png' %}" class="co2ok-ninja-offer-img" style="width: 280px; height: 200px;"></br>
-                          <div class="install-button" style="padding:10px 20px; margin-left:15%; white-space: nowrap;">{% trans "Pick A Cause" %}</div>
+
+                          <div class="install-button pick_cause_butt" style="padding:10px 20px; margin-left:15%; white-space: nowrap;">{% trans "Pick A Cause" %}</div>
+
                         </div>
 
                     </div>

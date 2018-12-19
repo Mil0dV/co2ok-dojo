@@ -5,7 +5,7 @@
 // })
 
 
-$(function(){
+// $(function(){
 
    // display lightbox
    var tl = new TimelineMax();
@@ -26,4 +26,4 @@ $(function(){
      console.log('lightbox is not active on this page...');
    }
 
-})
+// })
