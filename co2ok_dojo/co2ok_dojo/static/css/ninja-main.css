@@ -203,7 +203,21 @@
 
 }
 
-.search_result .co2ok-featured-shop-image {
+.project-content-wrapper
+{
+
+   width: 100%;
+   height: auto;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+   position: relative;
+
+}
+
+.search_result .co2ok-featured-shop-image, .co2ok-featured-shop-image  {
     box-sizing: border-box;
     border-radius: 30px;
     background-color: rgba(255, 255, 255, 1);
@@ -222,6 +236,11 @@
     box-shadow: 0px 2px 6px rgba(0,0,0,0.6);
 }
 
+.co2ok-featured-project-image {
+    background-size: auto 100%;
+    margin: 3px 20px 45px 20px;
+}
+
 .search_result .co2ok-featured-shop-image .co2ok-featured-shop-text {
   /* font-size: 1.2rem; */
     font-size: 15px;
@@ -238,6 +257,17 @@
     margin-right: auto;
     text-align: center; */
     /* font-weight: 400; */
+}
+
+.co2ok-featured-project-text {
+    font-size: 13px;
+    color: rgb(0, 0, 0);
+    font-family: "Open Sans";
+    letter-spacing: 1px;
+    position: relative;
+    top: 80px;
+    text-transform: capitalize;
+    white-space: nowrap;
 }
 
 .userlink
