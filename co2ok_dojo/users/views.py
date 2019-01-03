@@ -153,3 +153,15 @@ def invited_sign(request, user_id):
 
     }
     return render(request,'users/invited_sign_page.html', user_obj)
+
+def pick_a_project(request):
+    user_picked_project = 'biogasInstallation'
+    x = request.POST['co2ok_pick_project_button']
+    # user_picked_project = co2ok_pick_project_button
+
+    if x == 'biogasInstallation':
+        user_picked_project = 'biogasInstallation'
+    elif x == 'solarPanel':
+        user_picked_project = 'solarPanel'
+    elif x == 'save80cookingStove':
+        user_picked_project = 'save80cookingStove'
