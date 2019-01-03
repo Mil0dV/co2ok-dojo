@@ -22,7 +22,7 @@
 //
 // })
 
-// $(function(){
+ $(function(){
 
    var pickCauseButt = document.querySelector('.pick_cause_butt');
    var pick_cause_container = document.querySelector('.pick_cause_container');
@@ -41,5 +41,34 @@
 
    })
 
+   $('.co2ok-featured-project-image').click(function(e){
 
-// })
+      var currentCause = e.currentTarget.id;
+      pickACause(currentCause);
+
+   })
+
+   function pickACause(causePicked)
+   {
+
+
+     $.ajax({
+
+       type: "GET",
+       url: '/accounts/profile/',
+       data: {
+         cause: causePicked
+       },
+       success: function(data){
+
+          //return nothing
+
+       },
+       dataType: 'html'
+
+     })
+
+   }
+
+
+ })
