@@ -71,4 +71,17 @@
    }
 
 
+   function co2compensated()
+   {
+
+     var co2compensated_num = document.querySelector('.co2compensated_num');
+     setInterval(function(){
+
+        co2compensated_num.innerHTML = Math.floor(Math.random() * 101)+" kgs";
+
+     }, 5000);
+
+   }
+   co2compensated();
+
  })

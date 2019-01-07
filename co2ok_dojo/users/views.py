@@ -88,6 +88,7 @@ def profile(request):
     # password = request.user.password
     user_id = request.user.id
     trans = _("mot a traduire")
+
     # if int(id) == int(user_id):
     try:
         user_points = Profile.objects.get(user__pk = user_id).points
@@ -100,7 +101,7 @@ def profile(request):
       'current_path': user_id,
       'user_points': user_points,
       'trans': trans,
-      'co2_compensated': int(random.random()*100),
+      # 'co2_compensated': int(random.random()*100),
       'user_app': user_app,
       # 'user_app': user_app,
       # Milo: ik denk dat de strip niet nodig is. YOLO 'm weg als je je dapper voelt, maar test wel op productie :P
