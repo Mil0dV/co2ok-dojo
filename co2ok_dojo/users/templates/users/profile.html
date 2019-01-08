@@ -16,7 +16,7 @@
         <div class="light_box_body">
           <p style="font-weight: 500; color: #000397;">
             <!-- Nog 2 keer klikken en je strijd mee tegen klimaatverandering! -->
-            {% trans "Register and install the App. The App is safe, open source and respects your privacy. We don't collect/use any personal data" %}
+            {% trans "Register and install the App. The App is safe, open source and " %}<a href="/#CO2ok-Ninja-Privacy-Policy" style="color: #00b93a;" target="_blank">{% trans "respects your privacy. "%}</a>
 
           </p>
           {% get_current_language as LANGUAGE_CODE %}
@@ -28,7 +28,7 @@
 
           <a href="https://chrome.google.com/webstore/detail/co2okninja/omlkdocjhkgbllabpihhdggplladfipe?hl=nl" class="install-ninja-button">
             <div class="light_box_footer">
-              <button class="btn install-button" style="background-color:#05b139;">{% trans "GET THE APP" %}</button>
+              <button class="btn install-button" style="background-color:#008b2a;">{% trans "GET THE APP" %}</button>
             </div>
           </a>
         </div>
