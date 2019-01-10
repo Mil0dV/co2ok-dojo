@@ -39,7 +39,7 @@ def signup(request):
             if user_email_count == 0:
                 cuser.objects.create_user(email, password)
                 user = authenticate(email=email, password=password)
-                Profile.objects.create(user=user, points=0)
+                Profile.objects.create(user=user, points=0, user_picked_project=0)
                 login(request, user)
                 # return redirect('/{0}'.format(user.id))
                 return redirect('/accounts/profile')
@@ -88,19 +88,30 @@ def profile(request):
     # password = request.user.password
     user_id = request.user.id
     trans = _("mot a traduire")
+    # picked_project = request.GET.get('causePicked')
+    # if picked_project != None:
+    #     picked_project = request.GET.get('causePicked')
+    # else:
+    #     picked_project = ''
 
     # if int(id) == int(user_id):
     try:
         user_points = Profile.objects.get(user__pk = user_id).points
         user_app = Profile.objects.get(user__pk = user_id).ninja_user
+        user_project = Profile.objects.get(user__pk = user_id).user_picked_project
     except:
         user_points = 9042
         user_app = False
+        user_project = 0
+
     profile_data = {
 
       'current_path': user_id,
       'user_points': user_points,
       'trans': trans,
+      'user_id': user_id,
+      'user_project': user_project,
+      # 'picked_project': picked_project,
       # 'co2_compensated': int(random.random()*100),
       'user_app': user_app,
       # 'user_app': user_app,
@@ -114,6 +125,14 @@ def profile(request):
     #     #return redirect('/{0}'.format(id))
     #     form = RegisterForm(request.POST)
     #     return render(request, 'users/invited_sign_page.html', {'userid': id, 'form': form})
+
+
+def picked_cause(request):
+    picked_project = request.GET.get('causePicked')
+    user_id = request.user.id
+    user_pickedproject = Profile.objects.filter(user__pk = user_id).update(user_picked_project=picked_project)
+    # user_project = Profile.objects.get(user__pk = user_id).email
+    return render(request, 'ajax_data.html',{'picked_project': picked_project})
 
 
 def invited_sign(request, user_id):

@@ -45,6 +45,8 @@
 
       var currentCause = e.currentTarget.id;
       pickACause(currentCause);
+      // ligthbox sluiten
+      tl.to('.pick_cause_container', 0.5, {scale: 0, ease: Quad.easeOut});
 
    })
 
@@ -55,13 +57,14 @@
      $.ajax({
 
        type: "GET",
-       url: '/accounts/profile/',
+       url: '/picked_cause/',
        data: {
-         cause: causePicked
+         causePicked: causePicked
+         // csrfmiddlewaretoken: $('input[csrfmiddlewaretoken]').val()
        },
        success: function(data){
 
-          //return nothing
+          $('.cause').html(data);
 
        },
        dataType: 'html'

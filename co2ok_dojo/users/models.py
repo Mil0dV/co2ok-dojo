@@ -6,7 +6,7 @@ class Profile(models.Model):
     user = models.OneToOneField(get_user_model(), on_delete=models.CASCADE)
     points = models.IntegerField()
     ninja_user = models.BooleanField(default=False)
-    user_picked_project = models.CharField(max_length=200)
+    user_picked_project = models.IntegerField()
 
 
 
