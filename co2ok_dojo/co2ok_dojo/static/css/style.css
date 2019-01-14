@@ -1003,7 +1003,7 @@ and (max-width : 480px) {
    align-items: center;
    position: relative;
    left: 10px;
-   top: 30px;
+   top: 50px;
 
 }
 
@@ -1059,7 +1059,7 @@ and (max-width : 480px) {
 .ninja_world_bol a
 {
 
-  margin-top: 23px;
+  margin-top: 78px;
   width: auto;
   padding-top: 13px;
   padding-bottom: 13px;
