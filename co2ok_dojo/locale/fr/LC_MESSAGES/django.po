@@ -365,6 +365,16 @@ msgstr ""
 msgid "mot a traduire"
 msgstr ""
 
+# Profile Lightbox
+
+#: co2ok_dojo/users/templates/users/profile.html:19
+msgid "Register and install the App. The App is safe, open source and "
+msgstr "Inscrivez-vous et installer l'application. L'applicatio est securise, open source et "
+
+#: co2ok_dojo/users/templates/users/profile.html:19
+msgid "respects your privacy. "
+msgstr "respect votre vie privée."
+
 #: welcome_page/welcome.html
 msgid "welcome"
 msgstr ""
