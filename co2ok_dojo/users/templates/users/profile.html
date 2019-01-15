@@ -46,9 +46,8 @@
 <link href="{% static 'css/profil.css' %}" rel="stylesheet">
 </head>
 <!-- pick a cause light_box_header -->
-{% if user_project == 0 %}
 
-<div class="light_box_container pick_cause_container" style="transform: scale(0,0); position: fixed;">
+<div class="light_box_cause_container pick_cause_container" style="transform: scale(0,0); position: fixed;">
 
   <div class="close_light_box">
     <img src="{% static 'images/close.svg' %}" alt="">
@@ -84,7 +83,6 @@
 
 </div>
 
-{% endif %}
 <!-- end pick a cause lightbox -->
 
   {% if user.is_authenticated %}
