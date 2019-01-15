@@ -35,6 +35,7 @@ urlpatterns = [
 
     url(r'^logout/$', LogoutView, name='logout'),
     url(r'^oauth/', include('social_django.urls', namespace='social')),
+    url(r'^accounts/', include('allauth.urls')),
 
     # url(r'^(?P<id>\d+)/$', users_views.profil, name='profil'),
      url(r'^accounts/profile/$', users_views.profile, name='profile'),

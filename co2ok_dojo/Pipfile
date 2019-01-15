@@ -11,6 +11,7 @@ social-auth-app-django = "*"
 gunicorn = "*"
 django-username-email = "*"
 django-progressive-web-app = "*"
+django-allauth = "*"
 
 [dev-packages]
 django-sslserver = "*"

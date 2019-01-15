@@ -28,7 +28,7 @@
    var pick_cause_container = document.querySelector('.pick_cause_container');
    var tl = new TimelineMax();
    pickCauseButt.addEventListener('click', function(){
-
+alert();
      tl.to('.pick_cause_container', 0.5, {scale: 1, ease: Quad.easeInOut});
 
      // close lightbox

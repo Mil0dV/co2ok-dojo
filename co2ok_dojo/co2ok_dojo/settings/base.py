@@ -14,6 +14,7 @@ https://docs.djangoproject.com/en/2.1/ref/settings/
 import os
 import environ
 from django.utils.translation import ugettext_lazy as _
+# from allauth.socialaccount.models import SocialApp
 
 ROOT_DIR = environ.Path(__file__) - 3  # ({{ cookiecutter.project_slug }}/config/settings/base.py - 3 = {{ cookiecutter.project_slug }}/)
 
@@ -37,27 +38,28 @@ ALLOWED_HOSTS = ['co2ok.ninja.dev', 'test.co2ok.ninja', 'co2ok.ninja']
 
 # Application definition
 
-INSTALLED_APPS = [
-    'home',
-    'search',
-    'users',
-    'ninja_partner_stores',
-    'welcome',
-    # 'partner_stores',
-    'cuser',
+PREREQ_APPS = [
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.humanize',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+]
 
-    'social_django',
+AUTH_APPS = [
+    'django.contrib.sites',
+    'allauth',
+    'allauth.account',
+    'allauth.socialaccount',
+    'allauth.socialaccount.providers.facebook',
+    'allauth.socialaccount.providers.google',
+    'allauth.socialaccount.providers.twitter',
+]
 
-    'pwa',
+WAGTAIL_APPS = [
 
-    # alleen DEV
-    # "sslserver",
-
-    'wagtail.contrib.forms',
-    'wagtail.contrib.redirects',
-    # 'django.contrib.messages',
-    # 'django.contrib.messages.context_processors.messages',
-    'wagtail.embeds',
     'wagtail.sites',
     'wagtail.users',
     'wagtail.snippets',
@@ -67,16 +69,79 @@ INSTALLED_APPS = [
     'wagtail.admin',
     'wagtail.core',
 
-    'modelcluster',
-    'taggit',
+    'wagtail.contrib.forms',
+    'wagtail.contrib.redirects',
 
-    'django.contrib.admin',
-    'django.contrib.auth',
-    'django.contrib.contenttypes',
-    'django.contrib.sessions',
-    'django.contrib.messages',
-    'django.contrib.staticfiles',
+    # 'wagtailfontawesome',
+    # 'wagtailerrorpages',
+    # 'wagtailgridder',
+    'taggit',
+    'modelcluster',
 ]
+
+PROJECT_APPS = [
+  'home',
+  'search',
+  'users',
+  'ninja_partner_stores',
+  'welcome',
+  'cuser',
+
+  'social_django',
+
+  'pwa',
+
+  # "sslserver",
+]
+
+INSTALLED_APPS = PREREQ_APPS + WAGTAIL_APPS + PROJECT_APPS + AUTH_APPS
+
+# INSTALLED_APPS = [
+#     'home',
+#     'search',
+#     'users',
+#     'ninja_partner_stores',
+#     'welcome',
+#     'cuser',
+#
+#     'social_django',
+#
+#     'pwa',
+#
+#     # alleen DEV
+#     # "sslserver",
+#
+#     'wagtail.contrib.forms',
+#     'wagtail.contrib.redirects',
+#     # 'django.contrib.messages',
+#     # 'django.contrib.messages.context_processors.messages',
+#
+#     # ---------------a decomenter=---------
+#     # 'wagtail.embeds',
+#     # 'wagtail.sites',
+#     # 'wagtail.users',
+#     # 'wagtail.snippets',
+#     # 'wagtail.documents',
+#     # 'wagtail.images',
+#     # 'wagtail.search',
+#     # 'wagtail.admin',
+#     # 'wagtail.core',
+#     #
+#     # 'modelcluster',
+#     # 'taggit',
+#     # ----------------------------------
+#
+#     # 'django.contrib.admin',
+#     # 'django.contrib.auth',
+#     # 'django.contrib.contenttypes',
+#     # 'django.contrib.sessions',
+#     # 'django.contrib.messages',
+#     # 'django.contrib.staticfiles',
+#     # 'django.contrib.sites',
+#
+# ]
+
+SITE_ID = 2
 
 MIDDLEWARE = [
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -200,6 +265,7 @@ AUTHENTICATION_BACKENDS = (
     'social_core.backends.facebook.FacebookOAuth2',
 
     'django.contrib.auth.backends.ModelBackend',
+    'allauth.account.auth_backends.AuthenticationBackend',
 )
 
 # Internationalization

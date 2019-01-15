@@ -12,6 +12,7 @@ from django.shortcuts import render, redirect, get_object_or_404
 from django.http import HttpResponse, Http404
 from django.contrib import messages
 from django.utils.translation import ugettext as _
+from allauth.socialaccount.models import SocialApp
 
 
 from wagtail.core.models import Page
@@ -48,6 +49,13 @@ def signup(request):
     else:
         messages.error(request, '')
         form = RegisterForm()
+
+    # FB = SocialApp.objects.create(
+    #     provider="facebook",
+    #     name="Facebook",
+    #     client_id='269480360407732',
+    #     secret='a7ad22eea155123f9328eb4cbbf9830c',
+    #  )
 
     #return render(request,'users/login.html',{'form': register_form})
     return render(request, 'registration/register.html', {'form': form, 'full_path': request.get_full_path()})
@@ -87,7 +95,6 @@ def profile(request):
     # username = request.user
     # password = request.user.password
     user_id = request.user.id
-    trans = _("mot a traduire")
     # if int(id) == int(user_id):
     try:
         user_points = Profile.objects.get(user__pk = user_id).points
@@ -99,7 +106,6 @@ def profile(request):
 
       'current_path': user_id,
       'user_points': user_points,
-      'trans': trans,
       'co2_compensated': int(random.random()*100),
       'user_app': user_app,
       # 'user_app': user_app,
