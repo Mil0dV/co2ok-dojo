@@ -11,6 +11,10 @@ social-auth-app-django = "*"
 gunicorn = "*"
 django-username-email = "*"
 django-progressive-web-app = "*"
+pytest = "*"
+pytest-django = "*"
+pytest-cov = "*"
+mixer = "*"
 
 [dev-packages]
 django-sslserver = "*"
