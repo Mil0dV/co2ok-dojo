@@ -51,7 +51,7 @@ INSTALLED_APPS = [
     'pwa',
 
     # alleen DEV
-    # "sslserver",
+    "sslserver",
 
     'wagtail.contrib.forms',
     'wagtail.contrib.redirects',
