@@ -427,6 +427,16 @@ msgstr "(Unsere Nerds arbeiten hart daran den CO₂ Zähler zeitnah ans Laufen z
 msgid "Ninja Stars"
 msgstr "Ninja Sterne"
 
+# Profile Lightbox
+
+#: co2ok_dojo/users/templates/users/profile.html:19
+msgid "Register and install the App. The App is safe, open source and "
+msgstr "Registrieren und App installieren. Die App ist sicher, open source und "
+
+#: co2ok_dojo/users/templates/users/profile.html:19
+msgid "respects your privacy. "
+msgstr "respektiert deine Privatsphäre."
+
 #  #: users/views.py:87
 #  msgid "Bestrijd klimaatverandering terwijl je online shopt"
 #  msgstr "Bekämpfe den Klimawandel während du online einkaufst"

@@ -361,6 +361,54 @@ msgstr "CO2 compensado"
 msgid "Pick a cause"
 msgstr "Escoge una causa"
 
+#: co2ok_dojo/users/templates/users/profile.html:100
+msgid "The power of Ninja is together!"
+msgstr "!La unión del poder Ninja!"
+
+#: co2ok_dojo/users/templates/users/profile.html:100
+msgid "Tell your friends and family about the Ninja App and share the link to fight climate change."
+msgstr "Pon al día a tus amigos y familiares sobre la aplicación Ninja y comparte el enlace para combatir el cambio climático."
+
+#: co2ok_dojo/users/templates/users/profile.html:100
+msgid "The online shop makes your purchase climate neutral and that way we actively compensate CO2 through a sustainable project."
+msgstr "La tienda en línea hace que tu compra online tenga un efecto neutral con respecto al cambio climático: compensamos el CO2 producido financiando un proyecto sostenible."
+
+#: co2ok_dojo/users/templates/users/profile.html:100
+msgid "Make sure every penny is worth it so we can live on a green and clean planet."
+msgstr "Asegurate de que cada céntimo tenga un buen impacto en el manaña para que podamos vivir en un planeta verde y limpio."
+
+#: co2ok_dojo/users/templates/users/profile.html:100
+msgid "Share our vision, make others happy with the Ninja App. (Want to know more?)"
+msgstr "Comparte nuestra visión, alegra el día a los tuyos con la aplicación Ninja. (¿Quieres saber más?)"
+
+#: co2ok_dojo/users/templates/users/profile.html:100
+msgid "(Our developers are working hard to make the CO₂ counter work in the near future.)"
+msgstr "(Nuestros informáticos están trabajando arduamente para el lanzamiento del contador de CO₂)"
+
+#: co2ok_dojo/users/templates/users/profile.html:100
+msgid "Ninja Stars"
+msgstr "Estrellas ninjas"
+
+# Invited Sign Page
+
+#: users/templates/users/menu.html:18
+msgid "Join Us!"
+msgstr "Join Us!"
+
+#: users/templates/users/menu.html:19
+msgid "You've been invited by an anonymous Ninja!"
+msgstr "¡Has sido invitado por un Ninja anónimo!"
+
+# Profile Lightbox
+
+#: co2ok_dojo/users/templates/users/profile.html:19
+msgid "Register and install the App. The App is safe, open source and "
+msgstr "Regístrese e instale la aplicación. La aplicación es segura, de código abierto "
+
+#: co2ok_dojo/users/templates/users/profile.html:19
+msgid "respects your privacy. "
+msgstr "y respeta su privacidad. "
+
 #: users/views.py:87
 msgid "mot a traduire"
 msgstr ""
