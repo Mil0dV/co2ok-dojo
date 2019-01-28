@@ -811,7 +811,7 @@ and (max-width : 480px) {
 }
 .get_involved_button span{
 
-    font-size: 11px;
+    font-size: 13px;
     font-weight: 600px;
     width: 100%;
     text-align: center;
@@ -1065,7 +1065,7 @@ and (max-width : 480px) {
   width: auto;
   padding-top: 13px;
   padding-bottom: 13px;
-  font-size: 10px;
+  font-size: 13px;
   position: absolute;
 
 }
