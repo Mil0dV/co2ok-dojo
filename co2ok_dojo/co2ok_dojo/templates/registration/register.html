@@ -70,17 +70,16 @@
 									<!-- <h2>{% trans "Sign up via:" %}</h2> -->
 										<div data-type="group" data-dynamic-mod="true" class="footer-social-icons">
 
-											<!-- <a class="social-icon" href="{% url 'social:begin' 'facebook' %}?next={{ request.path }}">
+											<a class="social-icon" href="{% url 'social:begin' 'facebook' %}?next={{ request.GET.next }}">
 												<i class="fa fa-facebook-square" style="color:#2a5297; font-size: 60px;"></i>
-											</a> -->
-
+											</a>
 											<!-- <a target="_blank" class="social-icon" href="https://twitter.com/CO2ok_eco">
 												<i class="fa fa-twitter-square" style="color:#1da1f3; font-size: 60px;"></i>
 											</a>
 
 											<a target="_blank" class="social-icon" href="https://www.instagram.com/co2ok.eco/">
 												<i class="fa fa-google-plus-square" style="color:#c60000; font-size: 60px;" ></i>
-											</a> -->
+											</a>
 
 										</div>
 							  </div>
@@ -96,8 +95,7 @@
 										</a>
 									</div>
 								</div>
-								<!-- <a href="{% provider_login_url "facebook" method="oauth2" %}">Facebook OAuth2</a> -->
-								<!-- <a href="{% provider_login_url "facebook" method="js_sdk" %}">Facebook Connect</a> -->
+
 
 
 						<!-- </div>

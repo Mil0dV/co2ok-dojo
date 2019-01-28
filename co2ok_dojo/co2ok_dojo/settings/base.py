@@ -91,7 +91,7 @@ PROJECT_APPS = [
 
   'pwa',
 
-  # "sslserver",
+  "sslserver",
 ]
 
 INSTALLED_APPS = PREREQ_APPS + WAGTAIL_APPS + PROJECT_APPS + AUTH_APPS
@@ -195,16 +195,16 @@ PWA_APP_ICONS = [
 ]
 
 # muh - werkt dus niet
-# SOCIAL_AUTH_PIPELINE = (
-#     'social_core.pipeline.social_auth.social_details',
-#     'social_core.pipeline.social_auth.social_uid',
-#     'social_core.pipeline.social_auth.auth_allowed',
-#     'social_core.pipeline.social_auth.social_user',
-#     'social_core.pipeline.social_auth.associate_by_email',
-#     # 'social_core.pipeline.social_auth.associate_user',
-#     'social_core.pipeline.social_auth.load_extra_data',
-#     'social_core.pipeline.user.user_details',
-# )
+SOCIAL_AUTH_PIPELINE = (
+    'social_core.pipeline.social_auth.social_details',
+    'social_core.pipeline.social_auth.social_uid',
+    'social_core.pipeline.social_auth.auth_allowed',
+    'social_core.pipeline.social_auth.social_user',
+    'social_core.pipeline.social_auth.associate_by_email',
+    # 'social_core.pipeline.social_auth.associate_user',
+    'social_core.pipeline.social_auth.load_extra_data',
+    'social_core.pipeline.user.user_details',
+)
 
 TEMPLATES = [
     {
@@ -332,6 +332,9 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
 # GEOIP_PATH = os.path.join(BASE_DIR, 'geoip')
 PWA_SERVICE_WORKER_PATH = os.path.join(BASE_DIR, 'home/static/js', 'serviceworker.js')
+
+SOCIAL_AUTH_LOGIN_REDIRECT_URL = 'profile'
+
 
 
 # Wagtail settings
