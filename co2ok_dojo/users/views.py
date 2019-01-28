@@ -96,7 +96,7 @@ def profile(request):
     # username = request.user
     # password = request.user.password
     user_id = request.user.id
-    # if int(id) == int(user_id):
+    user = request.user
     try:
         user_points = Profile.objects.get(user__pk = user_id).points
         user_app = Profile.objects.get(user__pk = user_id).ninja_user
@@ -104,10 +104,10 @@ def profile(request):
         user_points = 9042
         user_app = False
 
-    # try:
-    #     facebook_login = user.social_auth.get(provider='facebook')
-    # except UserSocialAuth.DoesNotExist:
-    #     facebook_login = None
+    try:
+        facebook_login = user.social_auth.get(provider='facebook')
+    except UserSocialAuth.DoesNotExist:
+        facebook_login = None
 
     profile_data = {
 
@@ -115,7 +115,7 @@ def profile(request):
       'user_points': user_points,
       'co2_compensated': int(random.random()*100),
       'user_app': user_app,
-      # 'facebook_login': facebook_login,
+      'facebook_login': facebook_login,
       # 'user_app': user_app,
       # Milo: ik denk dat de strip niet nodig is. YOLO 'm weg als je je dapper voelt, maar test wel op productie :P
       'domainname': request.get_host() if request.get_host().strip() else 'test.co2ok.ninja'
