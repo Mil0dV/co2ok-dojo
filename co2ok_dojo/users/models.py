@@ -12,11 +12,3 @@ class Profile(models.Model):
 
     def __str__(self):
         return self.user.email
-
-
-# class Rewards(models.Model):
-#     user_id = models.IntegerField()
-#     points = models.IntegerField(default = 0)
-#
-#     # def __str__(self):
-#     #     return self.username

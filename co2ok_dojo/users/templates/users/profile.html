@@ -15,7 +15,6 @@
 
         <div class="light_box_body">
           <p style="font-weight: 500; color: #ff3100;">
-            <!-- Nog 2 keer klikken en je strijd mee tegen klimaatverandering! -->
             {% trans "NOTE: CO₂ok Ninja only needs to know which website you are visiting. We do not record your website visits or any other data. We do not make changes on your computer. The Google notice that you see as you click further is different from what the Ninja app does." %}
 
           </p>
@@ -58,26 +57,32 @@
   </div>
 
   <div class="light_box_body">
+    <p style="font-weight: 800; font-size:1.4rem; margin-top: 20px;">choose your CO2 compensation project</p>
     <div class="project-content-wrapper">
-      <button href="" class="img-fluid co2ok-featured-shop-image co2ok-featured-project-image col-md-4 category_stores" id="1" target="" rel=""
-      style="background-image: url({% static 'images/cropped-cropped-klimaschutzprojekt-indien.jpg' %});" name="co2ok_pick_project_button" value="biogasInstallation" method="post" type="submit">
-          <span class="co2ok-featured-project-text">
-              Biogas installations
-          </span>
-        </button>
-      <button href="" class="img-fluid co2ok-featured-shop-image co2ok-featured-project-image col-md-4 category_stores" id="2" target="_blank" rel="noopener"
-      style="background-image: url({% static 'images/cropped-cropped-zon-en-wind-winter.jpg' %});" name="co2ok_pick_project_button" value="solarPanel" method="post" type="submit">
-          <span class="co2ok-featured-project-text">
-              Solar panels
-          </span>
-        </button>
-      <button href="" class="img-fluid co2ok-featured-shop-image co2ok-featured-project-image col-md-4 category_stores" id="3" target="_blank" rel="noopener"
-      style="background-image: url({% static 'images/Save80cookingstove.jpg' %});" name="co2ok_pick_project_button" value="save80cookingStove" method="post" type="submit">
-          <span class="co2ok-featured-project-text">
-              Save80 cookers
-          </span>
-        </button>
-    <p style="font-weight: 800; font-size:1.4rem; margin-top: 20px;">We're working hard so in the near future you can pick a project where the donated Ninja money will be spent.</p>
+
+        <div class="projects-container">
+           <img src="{% static 'images/cropped-cropped-klimaschutzprojekt-indien.jpg' %}" alt="">
+           <div class="project-text">
+              <span>Biogas installations</span>
+              <a href="https://www.atmosfair.de/en/climate-protection-projects/biogas-biomass/"target="_blank"  style="background-image:url({% static 'images/info.svg' %});"></a>
+           </div>
+        </div>
+
+        <div class="projects-container">
+           <img src="{% static 'images/cropped-cropped-zon-en-wind-winter.jpg' %}" alt="">
+           <div class="project-text">
+              <span>Solar panels</span>
+           </div>
+        </div>
+
+        <div class="projects-container">
+           <img src="{% static 'images/Save80cookingstove.jpg' %}" alt="">
+           <div class="project-text">
+              <span>Save80 cookers</span>
+              <a href="https://www.atmosfair.de/en/climate-protection-projects/energy_efficiency/" target="_blank" style="background-image:url({% static 'images/info.svg' %});"></a>
+           </div>
+        </div>
+
   </div>
 </div>
 
@@ -92,7 +97,6 @@
         <div class="container profile-container-padder">
           <div class="slider-container" >
             <div class="intro-text">
-              <!-- <div class="intro-lead-in">Welcome To Our Studio!</div> -->
               <div class="col-12 co2ok-ninja-account-title" style="text-align: center; margin-top: 110px; margin-bottom: 0px;"><h1>{% trans "Profile" %}</h1></div>
               <div class="col-12 " style="text-align: center; margin-top: 10px; margin-bottom: 30px;"><h4 style="color:#09b540; font-weight:700;">{% trans "The power of Ninja is together!" %} </h4>
               </div>
@@ -111,7 +115,6 @@
                       <div class="social-image-align col-12">
                           <div data-type="group" data-dynamic-mod="true" class="footer-social-icons">
 
-                            <!-- <a target="_blank" class="social-icon" href="https://www.facebook.com/sharer?u=https%3A%2F%2Ftest.co2ok.ninja%2F{{user.id}}"> -->
                               <a target="_blank" class="social-icon" href="https://www.facebook.com/sharer?u=https%3A%2F%2Fco2ok.ninja%2F{{user.id}}">
                                 <i class="fa fa-facebook-square" style="color:#2a5297; font-size: 60px;"></i>
                               </a>
@@ -120,10 +123,6 @@
                                 <i class="fa fa-twitter-square" style="color:#1da1f3; font-size: 60px;"></i>
                               </a>
 
-                              <!-- <a target="_blank" class="social-icon" href="https://www.instagram.com/co2ok.eco/">
-                                <i class="fa fa-google-plus-square" style="color:#c60000; font-size: 60px;" ></i>
-                              </a> -->
-
                           </div>
                       </div>
                     <p style="font-size:15px; color:#14746b; line-height: 1.2;">
@@ -131,9 +130,6 @@
                       {% trans "Make sure every penny is worth it so we can live on a green and clean planet." %} </br>
                       {% trans "Share our vision, make others happy with the Ninja App. (Want to know more?)" %} </br>
                     </p>
-                    <!-- <div class="container"> -->
-
-                      <!-- <div class="row"> -->
 
                         <div class="co2ok-ninja-compensated-shuriken-box">
 
@@ -172,10 +168,6 @@
                         </div>
 
                     </div>
-
-                  <!-- </div> -->
-
-                <!-- </div> -->
 
               </div>
             </div>

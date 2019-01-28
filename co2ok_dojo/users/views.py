@@ -111,20 +111,13 @@ def profile(request):
       'trans': trans,
       'user_id': user_id,
       'user_project': user_project,
-      # 'picked_project': picked_project,
-      # 'co2_compensated': int(random.random()*100),
       'user_app': user_app,
-      # 'user_app': user_app,
       # Milo: ik denk dat de strip niet nodig is. YOLO 'm weg als je je dapper voelt, maar test wel op productie :P
       'domainname': request.get_host() if request.get_host().strip() else 'test.co2ok.ninja'
 
     }
     return render(request,'users/profile.html', profile_data)
-    # else:
-    #     #return HttpResponse('you are not connected! {0}'.format(user_id))
-    #     #return redirect('/{0}'.format(id))
-    #     form = RegisterForm(request.POST)
-    #     return render(request, 'users/invited_sign_page.html', {'userid': id, 'form': form})
+
 
 
 def picked_cause(request):
@@ -145,7 +138,6 @@ def invited_sign(request, user_id):
 
         if form.is_valid():
 
-            #form.save()
             email = form.cleaned_data['email']
             password = form.cleaned_data['password']
             user_email_count = cuser.objects.filter(email=email).count()
@@ -153,12 +145,10 @@ def invited_sign(request, user_id):
                 cuser.objects.create_user(email, password)
                 invited_user = authenticate(email=email, password=password)
                 Profile.objects.create(user=invited_user, points=0)
-                # print('updated_user_who_invite_points' + updated_user_who_invite_points)
                 #updating user points
                 user_who_invite_points = Profile.objects.get(user__pk=user_id).points
                 updated_user_who_invite_points = user_who_invite_points + 1
                 Profile.objects.filter(user__pk=user_id).update(points=updated_user_who_invite_points)
-                # print('updated_user_who_invite_points' + updated_user_who_invite_points)
                 login(request, invited_user)
                 return redirect('/accounts/profile')
     else:
