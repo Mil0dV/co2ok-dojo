@@ -85,6 +85,7 @@ def partner_stores_category(request):
      {
      'category_results': category_result,
      'category_result_count':category_result_count,
-     'category_result_extras':category_result_extra
+     'category_result_extras':category_result_extra,
+     'category_val': category_val
      }
     )

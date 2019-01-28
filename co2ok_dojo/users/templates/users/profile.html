@@ -14,10 +14,9 @@
         </div>
 
         <div class="light_box_body">
-          <p style="font-weight: 500; color: #000397;">
-            <!-- Nog 2 keer klikken en je strijd mee tegen klimaatverandering! -->
-            {% trans "Register and install the App. The App is safe, open source and " %}<a href="/#CO2ok-Ninja-Privacy-Policy" style="color: #00b93a;" target="_blank">{% trans "respects your privacy. "%}</a>
 
+          <p style="font-weight: 500; color: #ff3100;">
+            {% trans "NOTE: CO₂ok Ninja only needs to know which website you are visiting. We do not record your website visits or any other data. We do not make changes on your computer. The Google notice that you see as you click further is different from what the Ninja app does." %}
           </p>
           {% get_current_language as LANGUAGE_CODE %}
           {% with 'images/ninja_app_install_'|add:LANGUAGE_CODE|add:'.png' as image_static %}
@@ -46,7 +45,8 @@
 <link href="{% static 'css/profil.css' %}" rel="stylesheet">
 </head>
 <!-- pick a cause light_box_header -->
-<div class="light_box_container pick_cause_container" style="transform: scale(0,0); position: fixed;">
+
+<div class="light_box_cause_container pick_cause_container" style="transform: scale(0,0); position: fixed;">
 
   <div class="close_light_box">
     <img src="{% static 'images/close.svg' %}" alt="">
@@ -57,10 +57,37 @@
   </div>
 
   <div class="light_box_body">
-    <p style="font-weight: 800; font-size:1.4rem;">We're working hard so in the near future you can pick a project where the donated Ninja money will be spent.</p>
+    <p style="font-weight: 800; font-size:1.4rem; margin-top: 20px;">choose your CO2 compensation project</p>
+    <div class="project-content-wrapper">
+
+        <div class="projects-container">
+           <img src="{% static 'images/cropped-cropped-klimaschutzprojekt-indien.jpg' %}" alt="">
+           <div class="project-text">
+              <span>Biogas installations</span>
+              <a href="https://www.atmosfair.de/en/climate-protection-projects/biogas-biomass/"target="_blank"  style="background-image:url({% static 'images/info.svg' %});"></a>
+           </div>
+        </div>
+
+        <div class="projects-container">
+           <img src="{% static 'images/cropped-cropped-zon-en-wind-winter.jpg' %}" alt="">
+           <div class="project-text">
+              <span>Solar panels</span>
+           </div>
+        </div>
+
+        <div class="projects-container">
+           <img src="{% static 'images/Save80cookingstove.jpg' %}" alt="">
+           <div class="project-text">
+              <span>Save80 cookers</span>
+              <a href="https://www.atmosfair.de/en/climate-protection-projects/energy_efficiency/" target="_blank" style="background-image:url({% static 'images/info.svg' %});"></a>
+           </div>
+        </div>
+
   </div>
+</div>
 
 </div>
+
 <!-- end pick a cause lightbox -->
 
   {% if user.is_authenticated %}
@@ -70,7 +97,6 @@
         <div class="container profile-container-padder">
           <div class="slider-container" >
             <div class="intro-text">
-              <!-- <div class="intro-lead-in">Welcome To Our Studio!</div> -->
               <div class="col-12 co2ok-ninja-account-title" style="text-align: center; margin-top: 110px; margin-bottom: 0px;"><h1>{% trans "Profile" %}</h1></div>
               <div class="col-12 " style="text-align: center; margin-top: 10px; margin-bottom: 30px;"><h4 style="color:#09b540; font-weight:700;">{% trans "The power of Ninja is together!" %} </h4>
               </div>
@@ -89,7 +115,6 @@
                       <div class="social-image-align col-12">
                           <div data-type="group" data-dynamic-mod="true" class="footer-social-icons">
 
-                            <!-- <a target="_blank" class="social-icon" href="https://www.facebook.com/sharer?u=https%3A%2F%2Ftest.co2ok.ninja%2F{{user.id}}"> -->
                               <a target="_blank" class="social-icon" href="https://www.facebook.com/sharer?u=https%3A%2F%2Fco2ok.ninja%2F{{user.id}}">
                                 <i class="fa fa-facebook-square" style="color:#2a5297; font-size: 60px;"></i>
                               </a>
@@ -98,10 +123,6 @@
                                 <i class="fa fa-twitter-square" style="color:#1da1f3; font-size: 60px;"></i>
                               </a>
 
-                              <!-- <a target="_blank" class="social-icon" href="https://www.instagram.com/co2ok.eco/">
-                                <i class="fa fa-google-plus-square" style="color:#c60000; font-size: 60px;" ></i>
-                              </a> -->
-
                           </div>
                       </div>
                     <p style="font-size:15px; color:#14746b; line-height: 1.2;">
@@ -109,9 +130,6 @@
                       {% trans "Make sure every penny is worth it so we can live on a green and clean planet." %} </br>
                       {% trans "Share our vision, make others happy with the Ninja App. (Want to know more?)" %} </br>
                     </p>
-                    <!-- <div class="container"> -->
-
-                      <!-- <div class="row"> -->
 
                         <div class="co2ok-ninja-compensated-shuriken-box">
 
@@ -123,7 +141,7 @@
                                   <img src="{% static 'images/chimneys-co2-compensated.png' %}" class="co2ok-ninja-currency-img">
                                 </div>
                                 <div class="co2ok-ninja-currency-text">
-                                  <h2 style="font-size:3rem; font-weight: 600; text-decoration: underline; margin-bottom: 10px;">69 kgs</h2>
+                                  <h2 style="font-size:3rem; font-weight: 600; text-decoration: underline; margin-bottom: 10px;" class="co2compensated_num">69 kgs</h2>
                                   <p>{% trans "(Our developer are working hard to make the CO2 counter work in the near future)" %}</p>
                                 </div>
                               </div>
@@ -150,10 +168,6 @@
                         </div>
 
                     </div>
-
-                  <!-- </div> -->
-
-                <!-- </div> -->
 
               </div>
             </div>
