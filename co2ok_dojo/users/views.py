@@ -39,7 +39,7 @@ def signup(request):
             if user_email_count == 0:
                 cuser.objects.create_user(email, password)
                 user = authenticate(email=email, password=password)
-                Profile.objects.create(user=user, points=0)
+                Profile.objects.create(user=user, points=0, user_picked_project=0)
                 login(request, user)
                 # return redirect('/{0}'.format(user.id))
                 return redirect('/accounts/profile')
@@ -88,31 +88,44 @@ def profile(request):
     # password = request.user.password
     user_id = request.user.id
     trans = _("mot a traduire")
+    # picked_project = request.GET.get('causePicked')
+    # if picked_project != None:
+    #     picked_project = request.GET.get('causePicked')
+    # else:
+    #     picked_project = ''
+
     # if int(id) == int(user_id):
     try:
         user_points = Profile.objects.get(user__pk = user_id).points
         user_app = Profile.objects.get(user__pk = user_id).ninja_user
+        user_project = Profile.objects.get(user__pk = user_id).user_picked_project
     except:
         user_points = 9042
         user_app = False
+        user_project = 0
+
     profile_data = {
 
       'current_path': user_id,
       'user_points': user_points,
       'trans': trans,
-      'co2_compensated': int(random.random()*100),
+      'user_id': user_id,
+      'user_project': user_project,
       'user_app': user_app,
-      # 'user_app': user_app,
       # Milo: ik denk dat de strip niet nodig is. YOLO 'm weg als je je dapper voelt, maar test wel op productie :P
       'domainname': request.get_host() if request.get_host().strip() else 'test.co2ok.ninja'
 
     }
     return render(request,'users/profile.html', profile_data)
-    # else:
-    #     #return HttpResponse('you are not connected! {0}'.format(user_id))
-    #     #return redirect('/{0}'.format(id))
-    #     form = RegisterForm(request.POST)
-    #     return render(request, 'users/invited_sign_page.html', {'userid': id, 'form': form})
+
+
+
+def picked_cause(request):
+    picked_project = request.GET.get('causePicked')
+    user_id = request.user.id
+    user_pickedproject = Profile.objects.filter(user__pk = user_id).update(user_picked_project=picked_project)
+    # user_project = Profile.objects.get(user__pk = user_id).email
+    return render(request, 'ajax_data.html',{'picked_project': picked_project})
 
 
 def invited_sign(request, user_id):
@@ -125,7 +138,6 @@ def invited_sign(request, user_id):
 
         if form.is_valid():
 
-            #form.save()
             email = form.cleaned_data['email']
             password = form.cleaned_data['password']
             user_email_count = cuser.objects.filter(email=email).count()
@@ -133,12 +145,10 @@ def invited_sign(request, user_id):
                 cuser.objects.create_user(email, password)
                 invited_user = authenticate(email=email, password=password)
                 Profile.objects.create(user=invited_user, points=0)
-                # print('updated_user_who_invite_points' + updated_user_who_invite_points)
                 #updating user points
                 user_who_invite_points = Profile.objects.get(user__pk=user_id).points
                 updated_user_who_invite_points = user_who_invite_points + 1
                 Profile.objects.filter(user__pk=user_id).update(points=updated_user_who_invite_points)
-                # print('updated_user_who_invite_points' + updated_user_who_invite_points)
                 login(request, invited_user)
                 return redirect('/accounts/profile')
     else:
@@ -153,3 +163,15 @@ def invited_sign(request, user_id):
 
     }
     return render(request,'users/invited_sign_page.html', user_obj)
+
+def pick_a_project(request):
+    user_picked_project = 'biogasInstallation'
+    x = request.POST['co2ok_pick_project_button']
+    # user_picked_project = co2ok_pick_project_button
+
+    if x == 'biogasInstallation':
+        user_picked_project = 'biogasInstallation'
+    elif x == 'solarPanel':
+        user_picked_project = 'solarPanel'
+    elif x == 'save80cookingStove':
+        user_picked_project = 'save80cookingStove'

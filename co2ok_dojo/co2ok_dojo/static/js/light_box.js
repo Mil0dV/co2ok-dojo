@@ -16,9 +16,10 @@
      tl.to('.light_box_container', 0.5, {scale: 1, ease: Quad.easeInOut});
 
      // close lightbox
-     $('.close_light_box').click(function(){
-
-       tl.to('.light_box_container', 0.5, {scale: 0, ease: Quad.easeOut});
+     $('.close_light_box').click(function(e){
+       // lb staat voor lightbopx
+       var currentLb = e.currentTarget.parentNode;
+       tl.to(currentLb, 0.5, {scale: 0, ease: Quad.easeOut});
 
      })
 

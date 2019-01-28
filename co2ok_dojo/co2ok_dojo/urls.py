@@ -38,6 +38,7 @@ urlpatterns = [
 
     # url(r'^(?P<id>\d+)/$', users_views.profil, name='profil'),
      url(r'^accounts/profile/$', users_views.profile, name='profile'),
+     url(r'^picked_cause/$', users_views.picked_cause, name='picked_cause'),
 
     url(r'^(?P<user_id>\d+)/$', users_views.invited_sign, name='invitation_page'),
 
