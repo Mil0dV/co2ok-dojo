@@ -919,7 +919,6 @@ and (max-width : 480px) {
 .world_bol_container
 {
     margin-top: -2%;
-    z-index: -1;
   width: 100%;
   height: 75%;
   display: flex;
