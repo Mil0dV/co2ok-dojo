@@ -36,7 +36,7 @@ class Store(models.Model):
         elif(self.network == "ebay"):
             return "http://rover.ebay.com/rover/1/" + self.tussenstukje + "/1?ff3=4&pub=5575349754&toolid=11800&campid=5338219191&customid=chex&mpre=http%3A%2F%2F" + self.website + "%2F"
         elif(self.network == "dx"):
-            return self.website + "?TC=USD&&Utm_rid=78139600&Utm_source=affiliate"
+            return "https://" + self.website + "?TC=USD&&Utm_rid=78139600&Utm_source=affiliate"
         elif(self.network == "booking"):
             return "http://booking.com?aid=1627502&label=chex"
         elif(self.network == "tc.tradetracker"):
