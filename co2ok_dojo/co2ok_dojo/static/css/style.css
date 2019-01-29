@@ -896,10 +896,17 @@ and (max-width : 480px) {
 
 }
 
+.choose-from-shops-h3 {
+    font-size: 20px;
+}
+
 @media only screen and (max-width: 360px) {
     .intro_head {
         margin-top: 85px;
         margin-bottom: -180px;
+    }
+    .choose-from-shops-h3 {
+        font-size: 15px;
     }
 }
 
@@ -908,12 +915,18 @@ and (max-width : 480px) {
         margin-top: 75px;
         margin-bottom: -180px;
     }
+    .choose-from-shops-h3 {
+        font-size: 18px;
+    }
 }
 
 @media only screen and (max-width: 768px) and (min-width: 400px) {
     .intro_head {
         margin-top: 90px;
         margin-bottom: -180px;
+    }
+    .choose-from-shops-h3 {
+        font-size: 18px;
     }
 }
 
