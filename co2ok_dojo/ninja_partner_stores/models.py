@@ -57,7 +57,7 @@ class Store(models.Model):
         network = getattr(self, 'network')
         encode = urllib.parse.quote_plus(url)
         uri_encode = urllib.parse.quote_plus("https://" + str(self.website) + "/")
-        
+
         # print("http://r.srvtrck.com/v1/redirect?url=http%3A%2F%2F" + url + "%2Fapi_key=6192753faa5975d8d9450690274e77dd&site_id=249c53bccf944c4c8f010cf6c914f30c&type=url&source=https%3A%2F%2Fco2ok.ninja")
         if(self.network == "awin"):
             return "http://www.awin1.com/cread.php?awinmid=http%3A%2F%2F" + self.tussenstukje + "&awinaffid=533371&clickref=chex&p=http%3A%2F%2F" + encode + "%2F"
@@ -83,7 +83,6 @@ class Store(models.Model):
             return "https://www." + self.website + "/" + self.tussenstukje + "/?tt=" + self.tussenstukjetwee + "_0_315369_"
         elif(self.network == "yieldkit"):
             return "http://r.srvtrck.com/v1/redirect?url=http%3A%2F%2F" + encode + "%2F&api_key=6192753faa5975d8d9450690274e77dd&site_id=249c53bccf944c4c8f010cf6c914f30c&type=url&source=https%3A%2F%2Fco2ok.ninja"
-        return "henk"
 
 
     def __str__(self):

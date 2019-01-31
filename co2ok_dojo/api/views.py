@@ -15,6 +15,5 @@ def redirectURL(request):
     urlSplit = urlParse.netloc.strip('www.')
 
     response = Store.objects.filter(website__startswith=urlSplit)[0].makeredirectURLlink(url)
-    print(response)
 
     return HttpResponseRedirect(response)
