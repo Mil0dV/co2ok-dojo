@@ -9,98 +9,56 @@
 	<link href="{% static 'css/ninja-landing.css' %}" rel="stylesheet">
 </head>
 
-  {% include 'menu.html' %}
-		<!-- Header -->
-		<header class="header-register">
 
-			<div class="header_background header-signup">
-<div class="container">
-	<div class="row">
-				<div class="header_text text-center sign-up-header" style="width: 100%; margin-top: 100px;">
-					<h2 style="color: #000;">{% trans "Join us!" %}</h2>
-				</div>
-			</div>
-			<div class="row">
-				<div class = "sign-up-info" style="color:#000;">
-					<h2 style="color: #000;">{% trans "Join us to:" %}</h2>
-					{% trans "💚 See the kg of CO₂ you prevented" %}</br>
-					{% trans "💚 Choose your CO₂ compensation project" %}</br>
-					{% trans "💚 Earn secret rewards in the Ninja referral program" %}</br>
-				</div>
-			</div>
-			</div>
+		<!-- Header -->
+	<header class="header-register">
+    {% include 'menu.html' %}
+		<div class="header_background header-signup">
+
+        	<div class="ninja-armony">
+							<h2 style="color: #000;">{% trans "Join us!" %}</h2>
+							<div class="nijnjas"></div>
+					</div>
+
+					<div class="ninja-infos">
+							<div class="info-text-container"><span>💚</span><p>{% trans "See the kg of CO₂<br> you prevented" %}</p></div>
+							<div class="info-text-container"><span>💚</span><p>{% trans "Choose your CO₂ <br>compensation project" %}</p></div>
+							<div class="info-text-container"><span>💚</span><p>{% trans "Earn secret rewards in<br> the Ninja referral program" %}</p></div>
+					</div>
+
 		</div>
 
-			<!-- <div class="container register-container-padder">
-				<div class="slider-container" >
-					<div class="intro-text">
-						<!-- <div class="intro-lead-in">Welcome To Our Studio!</div> -->
-						<!-- <div class="intro-heading " style="margin-top: -50px; padding-bottom:20px; color:#fff; font-size: 36px;">{% trans "Sign Up" %}
+			<section class="white-bg-bar form_session register-page-whitebar" style="padding: 0px 0px; height: auto;  padding-top: 10px;padding-bottom: 30px;">
 
-							</div>
-						</div>
+					<div class="form_social_container">
 
-					</div>
-				</div> -->
+						<div class="form-container">
 
-			<section class="white-bg-bar form_session register-page-whitebar" style="height: 300px; padding: 0px 0px;">
-					<!-- <div class="container">
-						<div class="row"> -->
+							{% include "messages.html" %}
 
-							<div class="col-md-6 text-center">
-								<div class="skills-text">
-
-									 <!-- <h2>Sign up via email:</h2> -->
-									{% include "messages.html" %}
-
-                  					<form method="post" class="register_form">
-                      				{% csrf_token %}
-						        	{{ form.as_p }}
+								<form method="post" class="register_form">
+										{% csrf_token %}
+										{{ form.as_p }}
 										<div class="form_footer">
 											<button type="submit" class=" color2 install-ninja-button btn btn-xl install-button join-us-button" style="padding: 15px; position: relative; display: inline-block; ">{% trans "Join us!" %}</button>
 											<p class="signup-privacy-disclaimer">{% trans "We won't share your email adress or other user data, read here about our" %} <a href="/#CO2ok-Ninja-Privacy-Policy" target="_blank">{% trans " Privacy Policy" %}</a></p>
 										</div>
-                 					</form>
+								</form>
 
-								</div>
-							</div>
+						</div>
 
-							<div class="col-12 col-md-3 text-center">
-								<div class="skills-text social_container">
-									<!-- <h2>{% trans "Sign up via:" %}</h2> -->
-										<div data-type="group" data-dynamic-mod="true" class="footer-social-icons">
+						<div class="social_container" >
 
-											 <a class="social-icon" href="{% url 'social:begin' 'facebook' %}?next={{ request.path }}">
-												<i class="fa fa-facebook-square" style="color:#2a5297; font-size: 60px;"></i>
-											</a>
+							<h3 style="">{% trans "Continue without registering" %}</h3>
+							<a href="/signup" data-cp-link="1" data-icon="fa-chrome" rel="noopener" class=" color1 install-ninja-button btn btn-xl install-button install-get-the-app-button" style="padding: 15px 20px;">
+								<span class=""> {% trans "Get the app" %}</span>
+							</a>
 
-											<!-- <a target="_blank" class="social-icon" href="https://twitter.com/CO2ok_eco">
-												<i class="fa fa-twitter-square" style="color:#1da1f3; font-size: 60px;"></i>
-											</a>
+						</div>
 
-											<a target="_blank" class="social-icon" href="https://www.instagram.com/co2ok.eco/">
-												<i class="fa fa-google-plus-square" style="color:#c60000; font-size: 60px;" ></i>
-											</a> -->
+					</div>
 
-										</div>
-							  </div>
-							</div>
-							<!-- <div class="col-md-6 text-center" style="border-left: 3px solid gray;"> -->
-								<!-- skill bar item -->
-
-								<div class="col-12 col-md-3 text-center">
-									<div class="skills-text social_container" >
-										<h3 style="margin-top: -30px;">{% trans "Continue without registering" %}</h3>
-										<a href="/signup" data-cp-link="1" data-icon="fa-chrome" rel="noopener" class=" color1 install-ninja-button btn btn-xl install-button install-get-the-app-button" style="padding: 15px 20px;">
-											<span class=""> {% trans "Get the app" %}</span>
-										</a>
-									</div>
-								</div>
-
-
-						<!-- </div>
-					</div> -->
-				</section>
+			</section>
 		</header>
 
 		<p id="back-top">
@@ -108,7 +66,27 @@
 		</p>
 		<footer>
 			{% include 'contact.html' %}
-		</footer>
 
+		</footer>
+		<script type="text/javascript">
+
+			window.addEventListener('load', function(){
+				let nijnjas = document.querySelector('.nijnjas');
+				let nijnjasSrc = ['ninjaDesign_headicon_mindful.png','ninjaDesign_headicon_mindful2_asian.png','ninjaDesign_headicon_mindful2_asian2.png','ninjaDesign_headicon_mindful2_black.png'];
+				let counter = 0;
+
+				function animateNinjas(){
+					nijnjas.style.backgroundImage = `url(../../static/images/ninjas/${nijnjasSrc[counter]})`;
+					counter++;
+					if(counter >= 3){
+						counter = 0;
+					}
+
+				}
+
+				setInterval(animateNinjas, 2000);
+			})
+
+		</script>
 
 {% endblock %}

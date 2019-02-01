@@ -7,12 +7,13 @@
     height: auto;
 }
 .header-signup {
-  background-image: url(../images/ninjaDesign_mindful_BG.svg) !important;
+  /* background-image: url(../images/ninjaDesign_mindful_BG.svg) !important; */
 }
 .register-container-padder{
     padding-top: 100px;
     padding-bottom: 340px;
 }
+
 
 @media only screen and (max-width: 400px) {
   .register-container-padder {
@@ -28,53 +29,129 @@
 
 .header_background{
 
-   background-image: url(../images/ninjaDesign_install_BG.svg);
+   /* background-image: url(../images/ninjaDesign_install_BG.svg); */
    display: flex;
+   flex-direction: column;
    justify-content: center;
    align-items: center;
    width: 100%;
    height: 65vh;
-   background-position: top;
-   background-size: cover;
-   background-repeat: no-repeat;
-}
-
-.header_text{
-
-   width: 50%;
-   height: 65%;
-   display: flex;
-   justify-content: center;
+   margin-top: 80px;
 
 }
 
-.header_text h2
+.ninja-armony{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.ninja-armony h2 {
+  color: white;
+  font-weight: 600;
+  text-align: center;
+  text-align: center;
+}
+
+.ninja-armony .nijnjas{
+  background-image: url(../images/ninjas/ninjaDesign_headicon_mindful.png);
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 300px;
+  height: 200px;
+}
+
+.ninja-infos
 {
+  width: 55%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
 
-   color: white;
-   font-weight: 600;
-   text-align: center;
+.info-text-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: auto;
+  /* margin-left: 10px;
+  margin-right: 10px; */
+}
 
+.info-text-container span{
+  text-align: center;
+  font-size: 30px;
+}
+
+.ninja-infos p{
+  font-size: 17px;
+  font-weight: 600;
+  text-align: left;
+  width: auto;
+  height: auto;
+  position: relative;
+  top: 10px;
+  line-height: 16px;
 }
 
 .form_session
 {
 
    display: flex;
-   flex-direction: row;
    justify-content: center;
-   align-items: center;
+   align-items: flex-start;
    flex-wrap: wrap;
    width: 100%;
-   height: auto;
+   padding-top: 10px;
+   padding-bottom: 20px;
 
+}
+
+.form_social_container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  width: 55%;
+}
+
+.form-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 55%;
+  height: auto;
+  margin-top: 20px;
+  padding-top: 3px;
+  border: 1px solid #e3e3e3;
 }
 
 .social_container
 {
-   width: 100%;
-   height: 200px;
-   /* border-right: 2px solid gray; */
+   width: 43%;
+   height: auto;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+   align-items: center;
+   border: 1px solid #e3e3e3;
+   margin-top: 20px;
+   padding: 3px;
+}
+
+.social_container h3{
+  margin-top: 0px;
 }
 
 .social_container_invited_signup
@@ -111,19 +188,22 @@
 .register_form
 {
 
-   width: 100%;
+   width: 95%;
    height: auto;
    display: flex;
    flex-direction: column;
    justify-content: center;
    align-items: center;
+   /* position: relative;
+   left: 70px; */
+   padding: 0px;
 
 }
 
 .register_form p
 {
 
-   width: 90%;
+   width: 100%;
    height: auto;
 
 }
@@ -131,7 +211,7 @@
 
 .register_form p input{
 
-  width: 90%;
+  width: 100%;
   height: 45px;
   border: 1px solid #e3e3e3;
   border-radius: 5px;
@@ -172,8 +252,8 @@
    height: auto;
    display: flex;
    flex-direction: row;
-   justify-content: space-between;
-   align-items: center;
+   justify-content: flex-start;
+   align-items: flex-start;
 
 }
 
@@ -188,18 +268,18 @@
 }
 
 @media only screen and (max-width: 660px) {
-  .invited-signup-signup-email {
+  /* .invited-signup-signup-email {
     padding-top: 150px;
   }
   .invited-signup-signup-padder {
     padding-top: 0px !important;
     padding-bottom: 340px !important;
-  }
+  } */
 }
 
 .sign-up-info {
-  text-align: left; 
-  margin-top: 100px; 
+  text-align: left;
+  margin-top: 100px;
   margin-left: 0%;
   /* margin-top: 20px; */
   font-size: 18px;
@@ -207,16 +287,17 @@
 }
 
 .join-us-button {
-  margin-left: 9%;
-  margin-right: 2%;
+  /* margin-left: 9%;
+  margin-right: 2%; */
 }
 
 .signup-privacy-disclaimer {
-  margin-right: 8%;
+  margin-left: 15px;
+  text-align: center;
 }
 
 @media only screen and (max-width: 660px) {
-  .sign-up-info {
+  /* .sign-up-info {
     padding-left: 10%;
     margin-top: 100px;
     padding-right: 10%;
@@ -231,7 +312,7 @@
   }
   .signup-privacy-disclaimer {
     margin-right: 7%;
-  }
+  } */
 }
 
 
@@ -240,7 +321,65 @@
 }
 
 @media only screen and (max-width: 660px) {
-  .register-page-whitebar {
+  /* .register-page-whitebar {
     height: 600px !important;
+  } */
+  .social_container{
+    width: 90%;
   }
+
+  .form-container{
+    width: 90%;
+  }
+
+  .form_footer{
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  .form_footer button{
+    /* right: 35px; */
+  }
+
+  .form_footer p{
+    text-align: left;
+    margin-top: 5px;
+  }
+
+  .header_background{
+    flex-direction: column;
+  }
+
+  .ninja-armony{
+    width: 50%;
+  }
+
+  .ninja-infos{
+    flex-direction: column;
+    /* align-items: flex-start; */
+  }
+
+  .info-text-container{
+    margin-bottom: 10px;
+  }
+
+  .ninja-infos p{
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 1040px) {
+  .form_social_container{
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* .social_container{
+    width: 55%;
+  } */
+
+
 }
