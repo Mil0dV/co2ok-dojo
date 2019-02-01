@@ -900,6 +900,11 @@ and (max-width : 480px) {
     font-size: 20px;
 }
 
+.ninja-infographic {
+    width: 1000px; 
+    height: auto;
+}
+
 @media only screen and (max-width: 360px) {
     .intro_head {
         margin-top: 85px;
@@ -907,6 +912,9 @@ and (max-width : 480px) {
     }
     .choose-from-shops-h3 {
         font-size: 15px;
+    }
+    .ninja-infographic {
+        width: 300px; 
     }
 }
 
@@ -918,6 +926,9 @@ and (max-width : 480px) {
     .choose-from-shops-h3 {
         font-size: 18px;
     }
+    .ninja-infographic {
+        width: 340px; 
+    }
 }
 
 @media only screen and (max-width: 768px) and (min-width: 400px) {
@@ -927,6 +938,9 @@ and (max-width : 480px) {
     }
     .choose-from-shops-h3 {
         font-size: 18px;
+    }
+    .ninja-infographic {
+        width: 380px; 
     }
 }
 
