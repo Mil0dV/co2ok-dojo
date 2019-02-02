@@ -326,7 +326,7 @@
   transform: scale(1.1,1.1);
 }
 
-/* .search_result .co2ok-featured-shop-image, .co2ok-featured-shop-image  {
+.search_result .co2ok-featured-shop-image, .co2ok-featured-shop-image  {
     box-sizing: border-box;
     border-radius: 30px;
     background-color: rgba(255, 255, 255, 1);
@@ -343,7 +343,7 @@
     min-height: 100px;
     max-width: 130px;
     box-shadow: 0px 2px 6px rgba(0,0,0,0.6);
-} */
+}
 
 
 .co2ok-featured-project-image {
