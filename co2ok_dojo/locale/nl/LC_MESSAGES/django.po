@@ -198,14 +198,14 @@ msgstr "Strijd mee!"
 msgid "Join us to:"
 msgstr "Strijd mee en:"
 
-msgid "💚 See the kg of CO₂ you prevented"
-msgstr "💚 Zie hoeveel kg CO₂ je voorkomen hebt"
+msgid "See the kg of CO₂<br> you prevented"
+msgstr "Zie hoeveel kg CO₂<br> je voorkomen hebt"
 
-msgid "💚 Choose your CO₂ compensation project"
-msgstr "💚 Kies je CO₂ compensatieprojekt"
+msgid "Choose your CO₂ <br>compensation project"
+msgstr "Kies je CO₂ <br>compensatieprojekt"
 
-msgid "💚 Earn secret rewards in the Ninja referral program"
-msgstr "💚 Verdien geheime beloningen in het Ninja referral program"
+msgid "Earn secret rewards in<br> the Ninja referral program"
+msgstr "Verdien geheime beloningen<br> in het Ninja referral program"
 
 msgid "Continue without registering"
 msgstr "Verder zonder registreren"
