@@ -286,7 +286,7 @@ msgstr "Comment"
 
 #: home/templates/home/home_page.html:231
 msgid "CO₂ compensation"
-msgstr "Compensation Co2"
+msgstr "Compensation CO₂"
 
 #: home/templates/home/home_page.html:231
 msgid "works. Read more in the "

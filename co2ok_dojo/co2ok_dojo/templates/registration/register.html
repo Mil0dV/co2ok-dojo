@@ -17,7 +17,7 @@
 
         	<div class="ninja-armony">
 							<h2 style="color: #000;">{% trans "Join us!" %}</h2>
-							<div class="nijnjas"></div>
+							<div class="ninjas"></div>
 					</div>
 
 					<div class="ninja-infos">
@@ -71,12 +71,12 @@
 		<script type="text/javascript">
 
 			window.addEventListener('load', function(){
-				let nijnjas = document.querySelector('.nijnjas');
-				let nijnjasSrc = ['ninjaDesign_headicon_mindful.png','ninjaDesign_headicon_mindful2_asian.png','ninjaDesign_headicon_mindful2_asian2.png','ninjaDesign_headicon_mindful2_black.png'];
+				let ninjas = document.querySelector('.ninjas');
+				let ninjasSrc = ['ninjaDesign_headicon_mindful.png','ninjaDesign_headicon_mindful2_asian.png','ninjaDesign_headicon_mindful2_asian2.png','ninjaDesign_headicon_mindful2_black.png'];
 				let counter = 0;
 
 				function animateNinjas(){
-					nijnjas.style.backgroundImage = `url(../../static/images/ninjas/${nijnjasSrc[counter]})`;
+					ninjas.style.backgroundImage = `url(../../static/images/ninjas/${ninjasSrc[counter]})`;
 					counter++;
 					if(counter >= 3){
 						counter = 0;

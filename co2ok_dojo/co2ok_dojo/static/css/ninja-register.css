@@ -57,7 +57,7 @@
   text-align: center;
 }
 
-.ninja-armony .nijnjas{
+.ninja-armony .ninjas{
   background-image: url(../images/ninjas/ninjaDesign_headicon_mindful.png);
   background-position: center;
   /* background-size: cover; */
@@ -370,7 +370,7 @@
     font-size: 15px;
   }
 
-  .ninja-armony .nijnjas{
+  .ninja-armony .ninjas{
     background-size: 75%;
     width: 100%;
   }
@@ -390,7 +390,7 @@
     align-items: center;
   }
 
-  .ninja-armony .nijnjas{
+  .ninja-armony .ninjas{
     background-size: 70%;
     width: 50%;
   }
