@@ -41,7 +41,7 @@
 
    })
 
-   $('.co2ok-featured-project-image').click(function(e){
+   $('.project-img').click(function(e){
 
       var currentCause = e.currentTarget.id;
       pickACause(currentCause);

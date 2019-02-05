@@ -61,7 +61,7 @@
     <div class="project-content-wrapper">
 
         <div class="projects-container">
-           <img src="{% static 'images/cropped-cropped-klimaschutzprojekt-indien-square.jpg' %}" alt="">
+           <img src="{% static 'images/cropped-cropped-klimaschutzprojekt-indien-square.jpg' %}" alt="" class="project-img" id="1">
            <div class="project-text">
               <span>Biogas installations</span>
               <a href="https://www.atmosfair.de/en/climate-protection-projects/biogas-biomass/"target="_blank"  style="background-image:url({% static 'images/info.svg' %});"></a>
@@ -69,14 +69,14 @@
         </div>
 
         <div class="projects-container">
-           <img src="{% static 'images/cropped-cropped-zon-en-wind-winter-square.jpg' %}" alt="">
+           <img src="{% static 'images/cropped-cropped-zon-en-wind-winter-square.jpg' %}" alt="" class="project-img" id="2">
            <div class="project-text">
               <span>Solar panels</span>
            </div>
         </div>
 
         <div class="projects-container">
-           <img src="{% static 'images/Save80cookingstove-square.jpg' %}" alt="">
+           <img src="{% static 'images/Save80cookingstove-square.jpg' %}" alt="" class="project-img" id="3">
            <div class="project-text">
               <span>Save80 cookers</span>
               <a href="https://www.atmosfair.de/en/climate-protection-projects/energy_efficiency/" target="_blank" style="background-image:url({% static 'images/info.svg' %});"></a>
@@ -103,12 +103,14 @@
 
 
 
-              <div class="container" >
-                  <div class="row">
-                    <div class="col-lg-2 col-sm-2"><img src="{% static 'images/ninjaDesignSuperman_greenfeet_uitsnede.png' %}" class="co2ok-ninja-level-01" style="margin-left: 20%;"></div>
-                    <div class="col-lg-3 col-sm-3"><img src="{% static 'images/Icon-Ninja-more.png' %}" class="" style="width:180px; margin-left:23%;margin-top:20px;"></div>
-                    <div class="col-lg-7 col-sm-7"><p style="font-weight:500; color:#14746b;">{% trans "Tell your friends and family about the Ninja App and share the link to fight climate change." %} </br>
-                    </p>
+              <div class="container profile-container-body" >
+                  <!-- <div class="row"> -->
+                    <div class="ninja-profile-foto-container">
+                      <div class="profile-foto"><img src="{% static 'images/ninjaDesignSuperman_greenfeet_uitsnede.png' %}" class="co2ok-ninja-level-01" style=""></div>
+                      <div class="co2ok-shopping"><img src="{% static 'images/Icon-Ninja-more.png' %}" class="" style=""></div>
+                    </div>
+                    <div class="ninja-link-social-container">
+                      <p style="font-weight:500; color:#14746b;">{% trans "Tell your friends and family about the Ninja App and share the link to fight climate change." %} </br></p>
                       <div class="ninja-auto-link col-12">
                           <input type="text" name="" value="https://{{domainname}}/{{current_path}}" readonly>
                         </div></br>
@@ -170,8 +172,7 @@
                     </div>
 
               </div>
-            </div>
-
+            <!-- </div> -->
         </div>
       </div>
     </div>
