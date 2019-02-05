@@ -387,18 +387,6 @@ msgstr "MISSION"
 msgid "Profile"
 msgstr "Profil"
 
-#: co2ok_dojo/templates/menu.html:88
-msgid "Tell your friends about CO₂ok Ninja by sharing the above link, so you get shurikens"
-msgstr "Erzähle deinen Freunden von der CO₂ok Ninja App, indem du den obigen Link teilst. So können wir unsere Ninja Truppe vergrößern und zusammen die Welt zu einem besseren Ort machen."
-
-#: co2ok_dojo/templates/menu.html:93
-msgid "CO₂ compensated"
-msgstr "CO₂ kompensiert"
-
-#: co2ok_dojo/templates/menu.html:100
-msgid "Pick a cause"
-msgstr "Wähle ein Projekt"
-
 #: co2ok_dojo/templates/menu.html:100
 msgid "The power of Ninja is together!"
 msgstr "Die Power von allen Ninjas zusammen."
@@ -416,8 +404,8 @@ msgid "Make sure every penny is worth it so we can live on a green and clean pla
 msgstr "Sorge dafür das jeder Cent zählt, sodass wir auf einem grünen und sauberen Planeten leben können."
 
 #: co2ok_dojo/templates/menu.html:100
-msgid "Share our vision, make others happy with the Ninja App. (Want to know more?)"
-msgstr "Teile unsere Vision und mach andere Menschen mit unserer Ninja App glücklich (erfahre mehr)"
+msgid "Share our vision, make others happy with the Ninja App."
+msgstr "Teile unsere Vision und mach andere Menschen mit unserer Ninja App glücklich."
 
 #: co2ok_dojo/templates/menu.html:100
 msgid "(Our developers are working hard to make the CO₂ counter work in the near future.)"
@@ -436,6 +424,27 @@ msgstr "Registrieren und App installieren. Die App ist sicher, open source und "
 #: co2ok_dojo/users/templates/users/profile.html:19
 msgid "respects your privacy. "
 msgstr "respektiert deine Privatsphäre."
+
+msgid "Tell your friends about CO₂ok Ninja by sharing the above link, so you get shurikens"
+msgstr "Erzähle deinen Freunden von der CO₂ok Ninja App, indem du den obigen Link teilst. So können wir unsere Ninja Truppe vergrößern und zusammen die Welt zu einem besseren Ort machen."
+
+msgid "CO₂ compensated"
+msgstr "CO₂ kompensiert"
+
+msgid "Pick a cause"
+msgstr "Wähle ein Projekt"
+
+msgid "Choose your CO₂ compensation project"
+msgstr "Wähle dein CO₂ Kompensationsprojekt"
+
+msgid "Biogas installations"
+msgstr "Biogas Anlagen"
+
+msgid "Solar panels"
+msgstr "Solar Module"
+
+msgid "Save80 cookers"
+msgstr "Save80 Kochöfen"
 
 #  #: users/views.py:87
 #  msgid "Bestrijd klimaatverandering terwijl je online shopt"

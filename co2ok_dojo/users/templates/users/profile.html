@@ -57,13 +57,13 @@
   </div>
 
   <div class="light_box_body">
-    <p style="font-weight: 800; font-size:1.4rem; margin-top: 20px;">choose your CO2 compensation project</p>
+    <p style="font-weight: 800; font-size:1.4rem; margin-top: 20px;">{% trans "Choose your CO₂ compensation project" %}</p>
     <div class="project-content-wrapper">
 
         <div class="projects-container">
            <img src="{% static 'images/cropped-cropped-klimaschutzprojekt-indien-square.jpg' %}" alt="" class="project-img" id="1">
            <div class="project-text">
-              <span>Biogas installations</span>
+              <span>{% trans "Biogas installations" %}</span>
               <a href="https://www.atmosfair.de/en/climate-protection-projects/biogas-biomass/"target="_blank"  style="background-image:url({% static 'images/info.svg' %});"></a>
            </div>
         </div>
@@ -71,14 +71,14 @@
         <div class="projects-container">
            <img src="{% static 'images/cropped-cropped-zon-en-wind-winter-square.jpg' %}" alt="" class="project-img" id="2">
            <div class="project-text">
-              <span>Solar panels</span>
+              <span>{% trans "Solar panels" %}</span>
            </div>
         </div>
 
         <div class="projects-container">
            <img src="{% static 'images/Save80cookingstove-square.jpg' %}" alt="" class="project-img" id="3">
            <div class="project-text">
-              <span>Save80 cookers</span>
+              <span>{% trans "Save80 cookers" %}</span>
               <a href="https://www.atmosfair.de/en/climate-protection-projects/energy_efficiency/" target="_blank" style="background-image:url({% static 'images/info.svg' %});"></a>
            </div>
         </div>
@@ -130,7 +130,8 @@
                     <p style="font-size:15px; color:#14746b; line-height: 1.2;">
                       {% trans "The online shop makes your purchase climate neutral and that way we actively compensate CO2 through a sustainable project." %}
                       {% trans "Make sure every penny is worth it so we can live on a green and clean planet." %} </br>
-                      {% trans "Share our vision, make others happy with the Ninja App. (Want to know more?)" %} </br>
+                    </br>
+                      {% trans "Share our vision, make others happy with the Ninja App." %} </br>
                     </p>
 
                         <div class="co2ok-ninja-compensated-shuriken-box">

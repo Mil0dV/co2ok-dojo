@@ -213,6 +213,7 @@ msgstr "Verder zonder registreren"
 msgid "Get the app"
 msgstr "Installeer de App"
 
+
 #: co2ok_dojo/templates/registration/register.html:67
 msgid "We won't share your email adress or other user data, read here about our"
 msgstr "We zullen je email en andere gebruikersdata niet delen, lees hier over onze"
@@ -416,8 +417,8 @@ msgid "Make sure every penny is worth it so we can live on a green and clean pla
 msgstr "Zorg dat elke cent het waard is om samen in een groene en schone wereld te leven."
 
 #: co2ok_dojo/users/templates/users/profile.html:100
-msgid "Share our vision, make others happy with the Ninja App. (Want to know more?)"
-msgstr "Deel je onze visie, maak anderen ook gelukkig met de Ninja app. (Meer weten?)"
+msgid "Share our vision, make others happy with the Ninja App."
+msgstr "Deel je onze visie, maak anderen ook gelukkig met de Ninja app."
 
 #: co2ok_dojo/users/templates/users/profile.html:100
 msgid "(Our developers are working hard to make the CO₂ counter work in the near future.)"
@@ -436,6 +437,18 @@ msgstr "Registreer je en installeer de App. De App is veilig, open source en "
 #: co2ok_dojo/users/templates/users/profile.html:19
 msgid "respects your privacy. "
 msgstr "respecteert je privacy. "
+
+msgid "Choose your CO₂ compensation project"
+msgstr "Kies je CO₂ compensatieproject"
+
+msgid "Biogas installations"
+msgstr "Biogas installaties"
+
+msgid "Solar panels"
+msgstr "Zonnepanelen"
+
+msgid "Save80 cookers"
+msgstr "Save80 kookstellen"
 
 #: users/views.py:87
 msgid "mot a traduire"

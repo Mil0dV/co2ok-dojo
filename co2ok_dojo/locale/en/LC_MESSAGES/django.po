@@ -417,8 +417,8 @@ msgid "Make sure every penny is worth it so we can live on a green and clean pla
 msgstr "Make sure every penny is worth it so we can live on a green and clean planet."
 
 #: co2ok_dojo/users/templates/users/profile.html:100
-msgid "Share our vision, make others happy with the Ninja App. (Want to know more?)"
-msgstr "Share our vision, make others happy with the Ninja App. (Want to know more?)"
+msgid "Share our vision, make others happy with the Ninja App."
+msgstr "Share our vision, make others happy with the Ninja App."
 
 #: co2ok_dojo/users/templates/users/profile.html:100
 msgid "(Our developers are working hard to make the CO₂ counter work in the near future.)"

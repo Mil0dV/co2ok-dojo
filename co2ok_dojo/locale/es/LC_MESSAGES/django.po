@@ -378,8 +378,8 @@ msgid "Make sure every penny is worth it so we can live on a green and clean pla
 msgstr "Asegurate de que cada céntimo tenga un buen impacto en el manaña para que podamos vivir en un planeta verde y limpio."
 
 #: co2ok_dojo/users/templates/users/profile.html:100
-msgid "Share our vision, make others happy with the Ninja App. (Want to know more?)"
-msgstr "Comparte nuestra visión, alegra el día a los tuyos con la aplicación Ninja. (¿Quieres saber más?)"
+msgid "Share our vision, make others happy with the Ninja App."
+msgstr "Comparte nuestra visión, alegra el día a los tuyos con la aplicación Ninja."
 
 #: co2ok_dojo/users/templates/users/profile.html:100
 msgid "(Our developers are working hard to make the CO₂ counter work in the near future.)"
