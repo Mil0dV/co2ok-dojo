@@ -104,8 +104,8 @@ $(function(){
    {
 
      var tl = new TimelineMax();
-     tl.to('.mobile_ninja_menu', 0.5, {height: 'auto', paddingBottom: 0, ease: Quad.easeInOut}, 0.2);
-     tl.to('.neutral-ninja', 0.4, {scale: 1, display: 'flex', ease: Quad.easeInOut}, 0.2);
+      tl.to('.neutral-ninja', 0.3, {scale: 1, display: 'flex', ease: Quad.easeInOut}, 0.2);
+     tl.to('.mobile_ninja_menu', 0.4, {height: 'auto', paddingBottom: 0, ease: Quad.easeInOut}, 0.2);
      tl.to('.categoryContainer', 0.3, {top: 220, ease: Quad.easeInOut}, 0.1);
      tl.to('.categoryDropDown', 0.3, {top: 240, ease: Quad.easeInOut}, 0.1);
      tl.to('.search_result', 0.3, {position: 'relative',top: 120, ease: Quad.easeInOut}, 0.1);
