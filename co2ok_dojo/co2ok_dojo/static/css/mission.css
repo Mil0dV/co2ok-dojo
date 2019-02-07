@@ -52,7 +52,11 @@
 }
 
 .txt_img-container p{
+<<<<<<< HEAD
   text-align: right;
+=======
+  text-align: left;
+>>>>>>> missie pagina
 }
 
 @media (max-width: 500px) {
