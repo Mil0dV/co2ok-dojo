@@ -31,15 +31,14 @@
   flex-direction: row;
   justify-content: space-around;
   align-items: flex-start;
-  margin-bottom: 20px;
 }
 
 .group-img{
-  width: 30%;
+  width: 300px;
   height: 300px;
-  background-position: center;
+  background-position: top;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
 }
 
 
@@ -47,19 +46,21 @@
   text-align: left;
   font-size: 17px;
   font-weight: 300;
-  width: 65%;
-  height: 350px;
+  width: 70%;
+  height: auto;
 }
 
 .txt_img-container p{
-<<<<<<< HEAD
-  text-align: right;
-=======
   text-align: left;
->>>>>>> missie pagina
+  margin-right: 25px;
 }
 
-@media (max-width: 500px) {
+.img_txt-container p{
+  margin-left: 25px;
+>>>>>>> missie pagina helemaal bijgewerkt
+}
+
+@media (max-width: 600px) {
   .txt_img-container, .img_txt-container{
     flex-direction: column;
     width: 100%;
@@ -69,7 +70,7 @@
 
   .group-img{
     width: 100%;
-    margin-top: 20px;
+    background-size: cover;
   }
 
   .txt_img-container p, .img_txt-container p{
@@ -79,9 +80,27 @@
 
   .txt_img-container p{
     text-align: left;
+    margin-right: 0px;
+  }
+
+  .img_txt-container p{
+    text-align: left;
+    margin-left: 0px;
   }
 
   .img_txt-container{
     flex-direction: column-reverse;
+  }
+}
+
+@media (min-width: 1200px) {
+  .txt_img-container, .img_txt-container{
+    width: 900px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .txt_img-container{
+    margin-bottom: 20px;
   }
 }
