@@ -148,15 +148,9 @@
       <div class="mobile-button">
 
         <!-- <button name="button" class="hanburger-menu"></button> -->
-        <button type="button" class="co2ok-navbar navbar-toggle hanburger-menu" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        </button>
 
         <div class="navbar-brand page-scroll" href="/#page-top" style="margin-bottom: 10px; float: right;">
-          <div class="dropdown" style="">
+          <div class="dropdown flags-list" style="">
             <!-- <img src="{% static 'images/flags/en.png' %}"> -->
               {% get_current_language as LANGUAGE_CODE %}
               {% get_available_languages as LANGUAGES %}
@@ -190,6 +184,13 @@
             </div>
           </div>
         </div>
+
+        <button type="button" class="co2ok-navbar navbar-toggle hanburger-menu" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        </button>
 
       </div>
 
