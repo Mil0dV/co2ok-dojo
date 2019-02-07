@@ -1,13 +1,13 @@
 {% load static %}
 {% load i18n %}
 {% block menu %}
-  	<link href="{% static 'css/menu.css' %}" rel="stylesheet">
-  <nav class="navbar navbar-default navbar-fixed-top" style="background-color: #222 !important; padding-bottom: 0px;">
-    <script type="text/javascript" src="{% static 'js/menu.js' %}"></script>
+  <link href="{% static 'css/menu.css' %}" rel="stylesheet">
 
-    <div class="container">
+  <!-- <nav class="navbar navbar-default navbar-fixed-top" style="background-color: #222 !important; padding-bottom: 0px;">
+
+    <div class="container"> -->
       <!-- Brand and toggle get grouped for better mobile display -->
-      <div class="navbar-header page-scroll">
+      <!-- <div class="navbar-header page-scroll">
         <button type="button" class="co2ok-navbar navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
@@ -16,54 +16,16 @@
         </button>
         <a class="navbar-brand page-scroll" href="/"><img src="{% static 'images/logo_licht.png' %}" alt="Lattes theme logo" style="height:40px; width:auto; margin-top:5px; margin-left:5px;"></a>
 
-        <div class="navbar-brand page-scroll" href="/#page-top" style="margin-top:5px; margin-right:20px; margin-left:15px; margin-bottom: 0px; float: right;">
-
-          <div class="dropdown" style="">
-              <!-- <img src="{% static 'images/flags/en.png' %}"> -->
-                {% get_current_language as LANGUAGE_CODE %}
-                {% get_available_languages as LANGUAGES %}
-                {% get_language_info_list for LANGUAGES as languages %}
-              <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="    background-image: url(/static/images/flags/en.png);
-              background-size: 40px 30px;
-              height: 30px;
-              width: 40px;
-              background-color: none;
-              background-repeat: no-repeat;">
-              </button>
-              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-
-                  {% for language in languages %}
-                    <form action="{% url 'set_language' %}" method="post" class="languages">{% csrf_token %}
-                        <!-- <input name="next" type="hidden" value="{{ redirect_to }}"> -->
-                       <select name="language" style="display: none;">
-                          <option value="{{ language.code }}"{% if language.code == LANGUAGE_CODE %} selected{% endif %}>
-                            {{ language.name_local }} ({{ language.code }})
-                          </option>
-
-                       </select>
-
-                        {% with 'images/flags/'|add:language.code|add:'.png' as image_static %}
-                          <button type="submit" class="lang_choice {{language.code}}" style="background-image:url({% static image_static %})">
-                          </button>
-                        {% endwith %}
-
-                    </form>
-                  {% endfor %}
-              </div>
-            </div>
-
-        </div>
-
-      </div>
+      </div> -->
       <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <!-- <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav navbar-right" style="font-size: 17px;">
           <li class="hidden">
             <a href="/#page-top"></a>
           </li>
 
           <li>
-            <a class="page-scroll" href="{% url 'mission' %}">{% trans "MISSION" %}</a>
+            <a class="page-scroll" href="https://co2ok.eco/missie/" target="_blank">{% trans "MISSION" %}</a>
           </li>
           <li>
             <a class="page-scroll" href="/#about">{% trans "How it works" %}</a>
@@ -71,11 +33,7 @@
           <li>
             <a class="page-scroll" href="/#faq">{% trans "FAQ" %}</a>
           </li>
-          <li>
-
-
-
-
+          <li> -->
 
             <!-- {% get_current_language as LANGUAGE_CODE %}
             {% get_available_languages as LANGUAGES %}
@@ -86,11 +44,11 @@
 
             {% endfor %} -->
 
-          </li>
+          <!-- </li> -->
           <!-- <li>
 
           </li> -->
-          <li>
+          <!-- <li>
             {% if user.is_authenticated %}
               <a href="{% url 'profile' %}" class="page-scroll btn btn-sm install-button" style="max-width: 150px;  font-size: 15px; padding:10px; margin-top:4px;">Profile</a>
             {% else %}
@@ -106,11 +64,162 @@
             {% endif %}
 
           </li>
+
         </ul>
-      </div>
+      </div> -->
       <!-- /.navbar-collapse -->
-    </div>
+    <!-- </div>
+    <div class="navbar-brand page-scroll" href="/#page-top" style="margin-top:5px; margin-right:20px; margin-left:15px; margin-bottom: 0px; float: right;">
+
+      <div class="dropdown" style="">
+          <!-- <img src="{% static 'images/flags/en.png' %}"> -->
+            <!-- {% get_current_language as LANGUAGE_CODE %}
+            {% get_available_languages as LANGUAGES %}
+            {% get_language_info_list for LANGUAGES as languages %}
+          <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="    background-image: url(/static/images/flags/en.png);
+          background-size: 40px 30px;
+          height: 30px;
+          width: 40px;
+          background-color: none;
+          background-repeat: no-repeat;">
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+
+              {% for language in languages %}
+                <form action="{% url 'set_language' %}" method="post" class="languages">{% csrf_token %}  -->
+                    <!-- <input name="next" type="hidden" value="{{ redirect_to }}"> -->
+                   <!-- <select name="language" style="display: none;">
+                      <option value="{{ language.code }}"{% if language.code == LANGUAGE_CODE %} selected{% endif %}>
+                        {{ language.name_local }} ({{ language.code }})
+                      </option>
+
+                   </select>
+
+                    {% with 'images/flags/'|add:language.code|add:'.png' as image_static %}
+                      <button type="submit" class="lang_choice {{language.code}}" style="background-image:url({% static image_static %})">
+                      </button>
+                    {% endwith %}
+
+                </form>
+              {% endfor %}
+          </div>
+        </div> -->
+
+    <!-- </div> -->
     <!-- /.container-fluid -->
+  <!-- </nav> -->
+
+
+
+
+  <nav class="co2ok-menu">
+    <div class="desktop-mobile">
+      <a class="co2oklogo-link" href="/"><img src="{% static 'images/logo_licht.png' %}" alt="Lattes theme logo" style="height:40px; width:auto; margin-left: 20px;"></a>
+      <div class="desktop-menu">
+
+        <div class="menu-items">
+
+          <ul class="menu-list">
+            <li><a class="page-scroll" href="https://co2ok.eco/missie/" target="_blank">{% trans "MISSION" %}</a></li>
+            <li><a class="page-scroll" href="/#about">{% trans "How it works" %}</a></li>
+            <li><a class="page-scroll" href="/#faq">{% trans "FAQ" %}</a></li>
+            <li>
+              {% if user.is_authenticated %}
+                <a href="{% url 'profile' %}" class="user-profile install-button btn btn-sm page-scroll" style="max-width: 150px;  font-size: 15px;">Profile</a>
+              {% else %}
+                {% if full_path == '/signup/' %}
+
+                   <a href="{% url 'login' %}" class="sign-in install-button btn btn-sm page-scroll" style="max-width: 150px;  font-size: 15px;">Sign in</a>
+
+                {% else %}
+
+                   <a href="{% url 'signup' %}" class="sign-up install-button btn btn-sm page-scroll" style="max-width: 150px;  font-size: 15px;">Sign up</a>
+
+                {% endif %}
+              {% endif %}
+            </li>
+
+          </ul>
+
+        </div>
+
+      </div>
+
+      <div class="mobile-button">
+
+        <!-- <button name="button" class="hanburger-menu"></button> -->
+        <button type="button" class="co2ok-navbar navbar-toggle hanburger-menu" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        </button>
+
+        <div class="navbar-brand page-scroll" href="/#page-top" style="margin-bottom: 10px; float: right;">
+          <div class="dropdown" style="">
+            <!-- <img src="{% static 'images/flags/en.png' %}"> -->
+              {% get_current_language as LANGUAGE_CODE %}
+              {% get_available_languages as LANGUAGES %}
+              {% get_language_info_list for LANGUAGES as languages %}
+            <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="    background-image: url(/static/images/flags/en.png);
+            background-size: 40px 30px;
+            height: 30px;
+            width: 40px;
+            background-color: none;
+            background-repeat: no-repeat;">
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="left: -116px;">
+
+                {% for language in languages %}
+                  <form action="{% url 'set_language' %}" method="post" class="languages">{% csrf_token %}
+                      <!-- <input name="next" type="hidden" value="{{ redirect_to }}"> -->
+                     <select name="language" style="display: none;">
+                        <option value="{{ language.code }}"{% if language.code == LANGUAGE_CODE %} selected{% endif %}>
+                          {{ language.name_local }} ({{ language.code }})
+                        </option>
+
+                     </select>
+
+                      {% with 'images/flags/'|add:language.code|add:'.png' as image_static %}
+                        <button type="submit" class="lang_choice {{language.code}}" style="background-image:url({% static image_static %})">
+                        </button>
+                      {% endwith %}
+
+                  </form>
+                {% endfor %}
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="mobile-menu">
+
+      <li><a class="page-scroll" href="https://co2ok.eco/missie/" target="_blank">{% trans "MISSION" %}</a></li>
+      <li><a class="page-scroll" href="/#about">{% trans "How it works" %}</a></li>
+      <li><a class="page-scroll" href="/#faq">{% trans "FAQ" %}</a></li>
+
+      {% if user.is_authenticated %}
+        <a href="{% url 'profile' %}" class="user-profile install-button btn btn-sm page-scroll" style="max-width: 150px;  font-size: 15px;">Profile</a>
+      {% else %}
+        {% if full_path == '/signup/' %}
+
+           <a href="{% url 'login' %}" class="sign-in install-button btn btn-sm page-scroll" style="max-width: 150px;  font-size: 15px;">Sign in</a>
+
+        {% else %}
+
+           <a href="{% url 'signup' %}" class="sign-up install-button btn btn-sm page-scroll" style="max-width: 150px;  font-size: 15px;">Sign up</a>
+
+        {% endif %}
+      {% endif %}
+
+    </div>
   </nav>
 
+{% endblock %}
+
+{% block extra_js %}
+    <script type="text/javascript" src="{% static 'js/menu.js' %}"></script>
 {% endblock %}

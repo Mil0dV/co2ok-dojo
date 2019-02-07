@@ -1,4 +1,4 @@
-// window.addEventListener('load', function(){
+window.addEventListener('load', function(){
 //
 //    var dropdownMenuButton = document.getElementById('dropdownMenuButton');
 //    var lang_choice = document.querySelectorAll('.lang_choice');
@@ -30,6 +30,27 @@
 //      })
 //
 //    }
-//
-//
-// })
+
+var mobileMenu = document.querySelector('.hanburger-menu');
+var mobileMenuStatus = false;
+function showMobileMenu(){
+  var tl = new TimelineMax();
+  tl.to('.mobile-menu', 0.5, {marginTop: 0, ease: Quad.easeInOut});
+}
+
+function hideMobileMenu(){
+  var tl = new TimelineMax();
+  tl.to('.mobile-menu', 0.5, {marginTop: -200, ease: Quad.easeIn});
+}
+
+mobileMenu.addEventListener('click', function(){
+   mobileMenuStatus = !mobileMenuStatus;
+   if(mobileMenuStatus){
+     showMobileMenu();
+   }else{
+     hideMobileMenu();
+   }
+})
+
+
+})
