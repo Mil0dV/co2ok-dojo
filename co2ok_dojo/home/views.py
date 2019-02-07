@@ -12,3 +12,6 @@ def home(request):
 def base_layout(request):
 	template='home/base.html'
 	return render(request,template)
+
+def mission(request):
+    return render(request,'home/mission.html')
