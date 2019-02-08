@@ -16,15 +16,15 @@
             <li><a class="page-scroll" href="/#faq">{% trans "FAQ" %}</a></li>
             <li>
               {% if user.is_authenticated %}
-                <a href="{% url 'profile' %}" class="user-profile install-button btn btn-sm page-scroll" style="max-width: 150px;  font-size: 15px;">Profile</a>
+                <a href="{% url 'profile' %}" class="user-profile menu-install-button install-button btn btn-sm page-scroll" style="max-width: 150px;  font-size: 15px;">Profile</a>
               {% else %}
                 {% if full_path == '/signup/' %}
 
-                   <a href="{% url 'login' %}" class="sign-in install-button btn btn-sm page-scroll" style="max-width: 150px;  font-size: 15px;">Sign in</a>
+                   <a href="{% url 'login' %}" class="sign-in menu-install-button install-button btn btn-sm page-scroll" style="max-width: 150px;  font-size: 15px;">Sign in</a>
 
                 {% else %}
 
-                   <a href="{% url 'signup' %}" class="sign-up install-button btn btn-sm page-scroll" style="max-width: 150px;  font-size: 15px;">Sign up</a>
+                   <a href="{% url 'signup' %}" class="sign-up menu-install-button install-button btn btn-sm page-scroll" style="max-width: 150px;  font-size: 15px;">Sign up</a>
 
                 {% endif %}
               {% endif %}
@@ -89,20 +89,20 @@
 
     <div class="mobile-menu">
 
-      <li><a class="page-scroll" href="https://co2ok.eco/missie/" target="_blank">{% trans "MISSION" %}</a></li>
+      <li><a class="page-scroll" href="/mission">{% trans "MISSION" %}</a></li>
       <li><a class="page-scroll" href="/#about">{% trans "How it works" %}</a></li>
       <li><a class="page-scroll" href="/#faq">{% trans "FAQ" %}</a></li>
 
       {% if user.is_authenticated %}
-        <a href="{% url 'profile' %}" class="user-profile install-button btn btn-sm page-scroll" style="max-width: 150px;  font-size: 15px;">Profile</a>
+        <a href="{% url 'profile' %}" class="user-profile menu-install-button install-button btn btn-sm page-scroll" style="max-width: 150px;  font-size: 15px;">Profile</a>
       {% else %}
         {% if full_path == '/signup/' %}
 
-           <a href="{% url 'login' %}" class="sign-in install-button btn btn-sm page-scroll" style="max-width: 150px;  font-size: 15px;">Sign in</a>
+           <a href="{% url 'login' %}" class="sign-in menu-install-button install-button btn btn-sm page-scroll" style="max-width: 150px;  font-size: 15px;">Sign in</a>
 
         {% else %}
 
-           <a href="{% url 'signup' %}" class="sign-up install-button btn btn-sm page-scroll" style="max-width: 150px;  font-size: 15px;">Sign up</a>
+           <a href="{% url 'signup' %}" class="sign-up menu-install-button install-button btn btn-sm page-scroll" style="max-width: 150px;  font-size: 15px;">Sign up</a>
 
         {% endif %}
       {% endif %}

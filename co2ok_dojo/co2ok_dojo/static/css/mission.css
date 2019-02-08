@@ -58,6 +58,12 @@
   margin-left: 25px;
 }
 
+@media (max-width: 400px) {
+  .mission-subtitle{
+    font-size: 16px;
+  }
+}
+
 @media (max-width: 600px) {
   .txt_img-container, .img_txt-container{
     flex-direction: column;
