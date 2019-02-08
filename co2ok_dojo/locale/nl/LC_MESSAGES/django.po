@@ -294,8 +294,8 @@ msgid "The CO₂ compensation is fully covered by the shop."
 msgstr "De CO₂ compensatie wordt volledig gedekt door de webwinkel."
 
 #: home/templates/home/home_page.html:201
-msgid "Doe mee & bestrijd klimaatverandering"
-msgstr ""
+msgid "Get involved & fight climate change"
+msgstr "Doe mee & bestrijd klimaatverandering"
 
 #: home/templates/home/home_page.html:229
 msgid "See how much difference you can make"
@@ -332,6 +332,18 @@ msgstr "Wij voorkomen minstens evenveel uitstoot"
 #: home/templates/home/home_page.html:258
 msgid "With the help of your clicks we support these sustainable projects!"
 msgstr "Dankzij je kliks realiseren we samen deze duurzame projecten!"
+
+#: home/templates/home/home_page.html
+msgid "Read more about the various "
+msgstr "Lees meer over de verschillende "
+
+#: home/templates/home/home_page.html
+msgid "https://co2ok.eco/en/#projects"
+msgstr "https://co2ok.eco/#projecten"
+
+#: home/templates/home/home_page.html
+msgid "projects</a> we finance."
+msgstr "projecten</a> die we financieren."
 
 #: home/templates/home/home_page.html:272
 msgid "REGISTER & FIGHT CLIMATE CHANGE"
