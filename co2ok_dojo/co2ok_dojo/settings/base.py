@@ -141,7 +141,7 @@ INSTALLED_APPS = PREREQ_APPS + WAGTAIL_APPS + PROJECT_APPS + AUTH_APPS
 #
 # ]
 
-SITE_ID = 2
+SITE_ID = 1
 
 MIDDLEWARE = [
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -170,6 +170,10 @@ LOGIN_REDIRECT_URL = 'profile'
 SOCIAL_AUTH_FACEBOOK_KEY = env.str('SOCIAL_AUTH_FACEBOOK_KEY')
 SOCIAL_AUTH_FACEBOOK_SECRET = env.str('SOCIAL_AUTH_FACEBOOK_SECRET')
 SOCIAL_AUTH_FACEBOOK_SCOPE = ['email']
+SOCIAL_AUTH_USERNAME_IS_FULL_EMAIL = True
+SOCIAL_AUTH_FACEBOOK_PROFILE_EXTRA_PARAMS = {
+'fields': 'id, name, email', }
+# 'fields': 'id, name, email, age_range', }
 
 # django PWA_SERVICE_WORKER_PATHPWA_APP_NAME = 'My Kickass App'
 PWA_APP_NAME = 'CO₂ok Ninja'
@@ -200,6 +204,8 @@ SOCIAL_AUTH_PIPELINE = (
     'social_core.pipeline.social_auth.social_uid',
     'social_core.pipeline.social_auth.auth_allowed',
     'social_core.pipeline.social_auth.social_user',
+    'social_core.pipeline.user.get_username',
+    'social_core.pipeline.user.create_user',
     'social_core.pipeline.social_auth.associate_by_email',
     # 'social_core.pipeline.social_auth.associate_user',
     'social_core.pipeline.social_auth.load_extra_data',
