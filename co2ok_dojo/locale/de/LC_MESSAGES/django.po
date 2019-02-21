@@ -61,12 +61,12 @@ msgid "Become a CO₂ok Ninja"
 msgstr "Werde ein CO₂ok Ninja"
 
 #: home/templates/home/home_page.html:167
-msgid "Simply register with us and install the app. The app is safe, open source, and respects your privacy."
+msgid "Simply register with us and install the app. The app is safe, open source, and respects your privacy"
 msgstr "Einfach registrieren und die App installieren. Die App ist sicher, open source und respektiert deine Privatsphäre."
 
 #: home/templates/home/home_page.html:168
-msgid "We don’t use / store your personal shopping data - our Privacy Policy"
-msgstr "Weder benutzen noch speichern wir persönliche Einkaufsdaten - Unser Datenschutz"
+msgid "- our Privacy Policy"
+msgstr "- unser Datenschutz"
 
 #: home/templates/home/home_page.html:176
 msgid "Shop"
@@ -199,8 +199,8 @@ msgid "What stores does the Ninja App work with?"
 msgstr "Bei welchen Onlineshops kann ich die Ninja App benutzen?"
 
 #: co2ok_dojo/templates/faq.html:57
-msgid "We have partnered with several big e-commerce businesses such as Ebay, Bol.com, Booking.com, CoolBlue, Aliexpress, Etsy, and over 1000 others. <a href \"https://co2ok.eco/en/ninja-partner-stores/\">Here you can find a list of all participating stores.</a>"
-msgstr "Wir sind Partner von verschiedenen großen und kleinen Onlineshops, wie Ebay, Booking.com, Aliexpress und über 2000 mehr. <a href \"https://co2ok.eco/en/ninja-partner-stores/\">Hier findest du eine Liste der teilnehmenden Onlineshops.</a>"
+msgid "We have partnered with several big e-commerce businesses such as Ebay, Bol.com, Booking.com, CoolBlue, Aliexpress, Etsy, and over 22000 others. See the <a href=\"/partner-stores/\">list of all participating stores.</a>"
+msgstr "Wir sind Partner von verschiedenen großen und kleinen Onlineshops, wie Ebay, Booking.com, Aliexpress und über 22000 mehr. <a href=\"/partner-stores/\">Hier findest du eine Liste der teilnehmenden Onlineshops.</a>"
 
 #: co2ok_dojo/templates/faq.html:64
 msgid "How do shops benefit from being in CO₂ok Ninja program?"
@@ -232,7 +232,7 @@ msgid "I only shop at Amazon and already use Amazon Smile program, is there any 
 msgstr "Ich kauf allein bei Amazon ein und verwende Amazon Smile. Gibt es einen Grund für mich die Ninja App zu installieren?  "
 
 #: co2ok_dojo/templates/faq.html:102
-msgid "First of all, our partners usually donate 2-12 times more through the Ninja App (1-6&#37) than Amazon does through Amazon Smile (only 0.5&#37 of the final price). So, if you care about having as big a positive impact on the world as you can, using the Ninja App either instead of or in addition to Amazon Smile is a way to achieve that. Moreover, there are a lot of products or services available in our partner stores that are not available on Amazon. For example, travel services (hotels, flights, train tickets, car rentals), financial products, or sport clubs’ official apparel."
+msgid "First of all, our partners usually donate 2-12 times more through the Ninja App (1-6&#37;) than Amazon does through Amazon Smile (only 0.5&#37; of the final price). So, if you care about having as big a positive impact on the world as you can, using the Ninja App either instead of or in addition to Amazon Smile is a way to achieve that. Moreover, there are a lot of products or services available in our partner stores that are not available on Amazon. For example, travel services (hotels, flights, train tickets, car rentals), financial products, or sport clubs’ official apparel."
 msgstr "Zuerst ist zu sagen, dass unsere Partner durch die Ninja App im Normalfall zwischen 2-12 (1-6&#37) mal mehr spenden als Amazon mit Amazon Smile (0,5&#37 vom Endpreis). Wenn du also eine größere Auswirkung auf die Welt machen willst, solltest du überlegen, ob du die Ninja App entweder anstatt oder zusätzlich zu Amazon Smile verwenden willst um dies zu erreichen. Zudem gibt es auch Produkte in unseren Partnershops, die du nicht auf Amazon findest. Wie zum Beispiel Reisen (Hotels, Flüge, Zugtickets, Autoverleihe), Finanzprodukte, Sportclubs oder spezielle Marken."
 
 #: co2ok_dojo/templates/faq.html:110
@@ -481,7 +481,7 @@ msgstr "Nachdem du die Ninja App installiert hast, wirst Du beim shoppen unsere 
 msgid "YOU BUY SOMETHING APPEALING, WE FINANCE THE CERTIFIED PARTNERS IN FIGHTING CLIMATE CHANGE"
 msgstr "DU KAUFST EIN UND WIR FINANZIEREN CO₂ AUSGLEICHSPROJEKTE"
 
-msgid "Using CO₂ok Ninja means you only have to press the button which says “Shop CO₂ok” and then you will be redirected back to the store. So when you buy something, CO₂ok receives a commission (usually between 2&#37 and 5&#37), depending on the store and we finance our certified partners in fighting climate change. We keep a quarter of the commission – not to get rich – but we need it to grow and to make as much impact in the fight against climate change as possible. Want to know more? Go to"
+msgid "Using CO₂ok Ninja means you only have to press the button which says “Shop CO₂ok” and then you will be redirected back to the store. So when you buy something, CO₂ok receives a commission (usually between 1&#37; and 5&#37;), depending on the store and we finance our certified partners in fighting climate change. We keep a quarter of the commission – not to get rich – but we need it to grow and to make as much impact in the fight against climate change as possible. Want to know more? Go to"
 msgstr "Nachdem du unsere “Shop CO₂ok Box” angeklickt hast, erhalten wir eine Kommission (normalerweise zwischen 1 - 6&#37), wenn du einen Kauf abschließt. Wir spenden dann 75&#37 dieser Summe an sorgfältig ausgesuchte Umweltschutzorganisationen wie etwa Atmosfair. Die restlichen 25&#37 benötigen wir um CO₂ok zu finanzieren.  Unser Ziel ist es einen Unterschied zu machen und jedem die Chance zu geben den Klimawandel mit einfachen Mitteln zu bekämpfen. Letztlich wollen wir unseren Anteil reduzieren - wir mache dies hier nicht um reich zu werden. Wir arbeiten offen und transparent und wir werden zu jedem Jahresende unsere Einnahmen und Ausgaben offen legen."
 
 msgid "CHARITIES FIGHT CLIMATE CHANGE!"
