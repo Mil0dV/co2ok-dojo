@@ -2,7 +2,7 @@
 
 1. pipenv install
 1. pipenv shell
-1. .env aan maken
+1. .env aan maken (naast de Pipfile)
 1. in de .env file de keys doen (om vragen)
 1. `python manage.py migrate && python manage.py runserver`
 
