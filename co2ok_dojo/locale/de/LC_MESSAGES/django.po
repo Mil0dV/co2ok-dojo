@@ -498,3 +498,20 @@ msgstr "AUF  FACEBOOK TEILEN"
 
 msgid "SHARE ON TWITTER"
 msgstr "AUF TWITTER TEILEN"
+
+#mission page
+#: home/templates/home/mission.html:15
+msgid "Mission"
+msgstr "Missie"
+
+#: home/templates/home/mission.html:17
+msgid "Climate change is a serious problem.<br> Whether you are poor or rich, it affects us all!"
+msgstr "Der Klimawandel ist ein ernstes Problem.<br> Egal ob arm oder reich, es betrifft uns alle!"
+
+#: home/templates/home/mission.html:21
+msgid "In March 2017, Milo was on the ski slope looking at a sign with the CO₂ emissions for a week of winter sports. How strange that you can not compensate for that, he thought. You can do that with a plane ticket. Back home he read that products and clothing have more impact on the environment than cars, aeroplanes and the consumption of meat together. Shouldn’t you be able to compensate these products?<br><br> If the government doesn’t take action, then I will, Milo decided. He quit his job and registered at the Chamber of Commerce. And so he started CO₂ok on October 4, 2017. His goal? Enabling everyone to make their purchases climate-neutral. At the same time, he wants to ensure that the standard of living of people in third world countries is increased. In short: creating a win-win situation."
+msgstr "Im März 2017 war Milo auf der Skipiste und sah ein Schild mit den CO₂ -Emissionen, die bei einer Woche Wintersport entstehen. Er fand es seltsam, dass man das nicht kompensieren kann wie etwa ein Flugticket. Zu Hause las er, dass Produkte und Kleidung die Umwelt stärker beeinflussen als Autos, Flugzeuge und der Konsum von Fleisch zusammen.<br><br> Sollten man diese Produkte nicht auch kompensieren können? Wenn die Regierung nichts unternimmt, mache ich es halt, entschied Milo. Er kündigte seinen Job und meldete sich bei der Handelskammer an. Und so startete er am 4. Oktober 2017 mit CO₂ok. Sein Ziel? Jeder kann seine Einkäufe klimaneutral machen. Gleichzeitig möchte er sicherstellen, dass der Lebensstandard der Menschen in Ländern der Dritten Welt erhöht wird. Kurz gesagt: eine Win-Win-Situation schaffen. "
+
+#: home/templates/home/mission.html:36
+msgid "Since October 2018 Jos is co-owner of CO₂ok. Jos has a commercial background and wanted to start for himself. He also wanted to use his knowledge for the environment. When he heard about CO₂ok he was immediately enthusiastic. He called Milo and soon their cooperation was a fact. Milo is responsible for the ideas and technology and Jos for the management.<br><br> They have gathered a team of young climate conscious people around them who are highly motivated and willing to make a difference. These young professionals have various skills - from coding to marketing and together we, at CO₂ok, will create a brighter future. <br> <br> Our dream? That one day all products will be produced in a climate-neutral way and you will no longer need to compensate for your purchases."
+msgstr "Seit Oktober 2018 ist Jos Miteigentümer von CO₂ok. Jos hat einen kaufmännischen Hintergrund und wollte sich selbstständig machen. Er wollte auch sein Wissen für die Umwelt einsetzen. Als er von CO₂ok hörte, war er sofort begeistert. Er rief Milo an und schon bald war ihre Zusammenarbeit eingetütet. Milo ist für die Ideen und die Technologie und Jos für das Management verantwortlich. Ihr Traum? Eines Tages werden alle Produkte klimaneutral produziert und man muss die Einkäufe nicht mehr  kompensieren.<br><br> Sie haben ein Team junger, klimabewusster Menschen zusammengestellt, die hoch motiviert und bereit sind, etwas zu verändern. Das Team verfügt über verschiedene Fähigkeiten - vom Programmieren bis zum Marketing. Gemeinsam werden wir eine bessere Zukunft schaffen."
