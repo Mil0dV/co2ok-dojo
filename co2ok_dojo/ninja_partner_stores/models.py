@@ -43,6 +43,8 @@ class Store(models.Model):
             return "http://tc.tradetracker.net/?c=" + self.tussenstukje + "&m=12&a=315369&u="
         elif(self.network == "tradetracker"):
             return "https://www." + self.website + "/" + self.tussenstukje + "/?tt=" + self.tussenstukjetwee + "_0_315369_"
+        elif(self.network == "linkpizza"):
+            return 'https://pzz.to/click?uid=56243&target_url=http%3A%2F%2F' + self.website + '&referrer=https%3A%2F%2Fco2ok.ninja'
         elif(self.network == "yieldkit"):
             return "http://r.srvtrck.com/v1/redirect?url=http%3A%2F%2F" + self.website + "%2F&api_key=6192753faa5975d8d9450690274e77dd&site_id=249c53bccf944c4c8f010cf6c914f30c&type=url&source=https%3A%2F%2Fco2ok.ninja"
 
