@@ -38,6 +38,14 @@ def partner_stores(request):
     }
     return render(request, "ninja_partner_stores/ninja-partner-stores.html", stores_data)
 
+def partner_stores_cat(request):
+    stores_data = {
+
+       'domainname': request.get_host() if request.get_host().strip() else 'test.co2ok.ninja'
+
+    }
+    return render(request, "ninja_partner_stores/ninja-partner-stores-cat.html", stores_data)
+
 
 def partner_stores_all(request):
     country_code = determine_country_code()
