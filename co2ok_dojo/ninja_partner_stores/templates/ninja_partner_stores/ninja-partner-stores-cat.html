@@ -1,0 +1,348 @@
+{% load pwa %}
+{% load static %}
+{% load i18n %}
+{% include 'tracking_code.html' %}
+
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    {% progressive_web_app_meta %}
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="icon" type="image/png" href="{% static 'images/co2ok-logo-favicon.png' %}"/>
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" type="text/css" href="{% static 'css/ninja-main.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/mobile-ninja-lightbox.css' %}">
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"> </script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Partner stores list</title>
+
+
+  </head>
+
+  <title>Ninja partner winkels - CO₂ok</title>
+
+<!-- <body style="overflow-x:hidden; margin-top: 0px; background-image: linear-gradient(to right, #01ec6b , #002712);"> -->
+
+
+    <!-- Menu -->
+    <div class="mobile-ninja-container">
+
+      <!-- <div style="background-image: linear-gradient(to right, rgb(34, 34, 34) , rgb(80, 80, 80));" class="mobile_ninja_menu"> -->
+              <div class="row justify-content-md-center logo-share-container">
+                  <div class="col-xs-4" style="cursor: pointer;"> <a href="https://co2ok.ninja/"><img src="{% static 'images/co2ok-logo.png' %}" class="co2ok-logo-main-ninja" style="margin-left: 85px; margin-top: 30px; height: 160px; !important;"></a></div>
+                  <!-- <div class="col-xs-6 " style="text-align:center;color:#fff"><h3 style="font-size: 1.25rem;">Mobile Ninja</h3></div> -->
+                  <div class="col-xs-1 ninja_share" style="">
+
+                     <!-- <img src="{% static 'images/share-mobile-button.png' %}" class="co2ok-logo-main-ninja" style="position: relative;bottom: 5px;height: 160px; max-height: 55px !important; padding:5px;"> -->
+
+                  </div>
+                  <!-- <div class="col-xs-1" style="cursor: pointer;"><a href="/accounts/profile"> <img src="{% static 'images/profile-mobile-mindul_cropped.png' %}" class="co2ok-logo-main-ninja" style="position: relative;bottom: 10px;height: 160px; max-height: 60px !important; padding:5px;"></a></div> -->
+              </div>
+              <form action="{% url 'partner-stores' %}" class="no-gutters form-horizontal search_form" style="width: 100%; display: flex;justify-content: center;align-items:center;" method="get">{% csrf_token %}
+                  <div class="" style="width: 100%;display: flex; flex-direction: row; justify-content: center;align-items:center;">
+                      <!-- <div class="col-xs-3"> <img src="images/co2ok-logo.png" class="co2ok-logo-main-ninja"></div> -->
+                      <div class="col-xs-12" style="width: 80%; padding-bottom: 40px;margin-top: 50px;display: flex;justify-content: center;align-items:center;"><input class="form-control" id="serachInput" type="search" name="query" {% if search_query %} value="{{ search_query }}"{% endif %} placeholder="Search topics or keywords" aria-label="Search"></div>
+                      <!-- {% csrf_token %}
+                      {{ form.as_p }} -->
+                      <button  class="btn btn-success search-submit" type="submit" style="margin-top: 10px; height: 38px; !important;"><i class="fa fa-search"></i></button>
+                  </div>
+              </form>
+
+              <!-- <div class="row justify-content-md-center neutral-ninja" style="width: 100%;"> -->
+                  <!-- <div class="col-xs-6" style="margin-left: 7px;"> <img src="{% static 'images/ninjaDesign_Hadouken.png' %}" class="co2ok-logo-main-ninja" style="height: 160px; max-height: 130px !important;"></div> -->
+                  <!-- <div class="col-xs-6" style="color:#fff; text-align:center; margin-top:18px;"><h3 style="font-size: 1rem;">Make shopping </br> climate neutral!</h3></div> -->
+              </div>
+
+
+
+  <!-- <div style="background-image: linear-gradient(to right, #01ec6b , #002712);" class="ninja-partner-store-bg"> -->
+
+<!--
+      <div class="container-fluid categoryContainer" style="z-index: 3; display: none; background-image: linear-gradient(to right, #01ec6b , #002712); border-bottom:1px solid rgba(1, 236, 107, 0.5);">
+          <div class="categories" style="">
+                  <button type="button" class="btn-mobile-ninja-caroussel btn-primary" style="background-image: url(/static/images/categories/cat_fashion.jpg); background-size: 140% 100%;">Fashion</button>
+                  <button type="button" class="btn-mobile-ninja-caroussel btn-primary" style="background-image: url(/static/images/categories/cat_electronics.jpg); background-size: 100% 110%;">Electronics</button>
+                <button type="button" class="btn-mobile-ninja-caroussel btn-primary" style="background-image: url(/static/images/categories/cat_toysChristmas.jpg); background-size: 100% 100%;">Toys</button>
+                      <button type="button" class="btn-mobile-ninja-caroussel btn-primary" style="background-image: url(/static/images/categories/cat_booksMedia.jpg); background-size: 100% 100%;">Books & Media</button>
+                <button type="button" class="btn-mobile-ninja-caroussel btn-primary" style="background-image: url(/static/images/categories/cat_homeGardenPets.jpg); background-size: 100% 190%;">Home, Garden & Pets</button>
+                    <button type="button" class="btn-mobile-ninja-caroussel btn-primary" style="background-image: url(/static/images/categories/cat_holidayWinter.jpg); background-size: 100% 100%;">Holiday</button>
+                      <button type="button" class="btn-mobile-ninja-caroussel btn-primary" style="background-image: url(/static/images/categories/cat_giftsGadgets.jpg); background-size: 100% 140%;">Gifts & Gadgets</button>
+                      <button type="button" class="btn-mobile-ninja-caroussel btn-primary" style="background-image: url(/static/images/categories/cat_food.jpg); background-size: 100% 100%;">Food</button>
+                      <button type="button" class="btn-mobile-ninja-caroussel btn-primary" style="background-image: url(/static/images/categories/cat_health.jpg); background-size: 100% 100%;">Health</button>
+                  <button type="button" class="btn-mobile-ninja-caroussel btn-primary" style="background-image: url(/static/images/categories/cat_erotica.jpg); background-size: 100% 100%;">Erotica</button>
+                  <button type="button" class="btn-mobile-ninja-caroussel btn-primary" style="background-image: url(/static/images/categories/cat_party.jpg); background-size: 100% 100%;">Party</button>
+                  <button type="button" class="btn-mobile-ninja-caroussel btn-primary" style="background-image: url(/static/images/categories/cat_hobby.jpg); background-size: 100% 100%;">Hobby</button>
+                  <button type="button" class="btn-mobile-ninja-caroussel btn-primary" style="background-image: url(/static/images/categories/cat_itOffice.jpg); background-size: 100% 100%;">IT & Office</button>
+                  <button type="button" class="btn-mobile-ninja-caroussel btn-primary" style="background-image: url(/static/images/categories/cat_vehicles.jpg); background-size: 100% 100%;">Vehicles</button>
+                  <button type="button" class="btn-mobile-ninja-caroussel btn-primary" style="background-image: url(/static/images/categories/cat_departmentStore.jpg); background-size: 100% 140%;">Department Stores</button>
+                <button type="button" class="btn-mobile-ninja-caroussel btn-primary" style="background-image: url(/static/images/categories/cat_sportsRecreation.jpg); background-size: 100% 130%;">Sports & Recreation</button>
+                <button type="button" class="btn-mobile-ninja-caroussel btn-primary" style="background-image: url(/static/images/categories/cat_dating.jpg); background-size: 100% 100%;">Dating</button>
+                  <button type="button" class="btn-mobile-ninja-caroussel btn-primary" style="background-image: url(/static/images/categories/cat_other.jpg); background-size: 100% 100%;">Other</button>
+              </div>
+          </div>
+          <form class="categoryDropDown" action="" method="" style="display: none">
+             <select class="categorySelect" name="">
+               <option value="">Kies een categorie</option>
+               <option value="Fashion" class="btn-mobile-ninja-caroussel btn-primary">Fashion</option>
+               <option value="Electronics" class="btn-mobile-ninja-caroussel btn-primary">Electronics</option>
+               <option value="Toys" class="btn-mobile-ninja-caroussel btn-primary">Toys</option>
+               <option value="Books & Media" class="btn-mobile-ninja-caroussel btn-primary">Books & Media</option>
+               <option value="Home, Garden & Pets" class="btn-mobile-ninja-caroussel btn-primary">Home, Garden & Pets</option>
+               <option value="Holiday" class="btn-mobile-ninja-caroussel btn-primary">Holiday</option>
+               <option value="Gifts & Gadgets" class="btn-mobile-ninja-caroussel btn-primary">Gifts & Gadgets</option>
+               <option value="Food" class="btn-mobile-ninja-caroussel btn-primary">Food</option>
+               <option value="Health" class="btn-mobile-ninja-caroussel btn-primary">Health</option>
+               <option value="Erotica" class="btn-mobile-ninja-caroussel btn-primary">Erotica</option>
+               <option value="Party" class="btn-mobile-ninja-caroussel btn-primary">Party</option>
+               <option value="Hobby" class="btn-mobile-ninja-caroussel btn-primary">Hobby</option>
+               <option value="IT & Office" class="btn-mobile-ninja-caroussel btn-primary">IT & Office</option>
+               <option value="Vehicles" class="btn-mobile-ninja-caroussel btn-primary">Vehicles</option>
+               <option value="Department Stores" class="btn-mobile-ninja-caroussel btn-primary">Department Stores</option>
+               <option value="Sports & Recreation" class="btn-mobile-ninja-caroussel btn-primary">Sports & Recreation</option>
+               <option value="Dating" class="btn-mobile-ninja-caroussel btn-primary">Dating</option>
+               <option value="Other" class="btn-mobile-ninja-caroussel btn-primary">Other</option>
+             </select>
+          </form>
+      </div>
+    </div>
+-->
+
+     <script src="https://code.jquery.com/jquery-3.1.1.min.js">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="{% static 'js/partner_stores.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/mobile-ninja-lightbox.js' %}"></script>
+
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.0/css/bulma.min.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+
+  <!-- <section class="hero">
+    <div class="hero-body">
+      <div class="container">
+        <figure class="image center">
+          <a href="index.html">
+            <img src="logo.png" style="max-width: 100px; margin-left: 5px; margin-top: 20px;">
+          </a>
+        </figure>
+      </div>
+    </div>
+  </section> -->
+
+
+    <div class="tile is-parent is-flex-mobile">
+      <a href="fashion.html" class="tile is-child notification has-background-danger">
+        <p class="title has-text-black">Fashion</p>
+        <p class="subtitle"></p>
+        <div class="content">
+          <img src="../../../static/images/fashion.png" style="max-width: 55px; margin-left: 230px;">
+        </div>
+      </a>
+    </div>
+    <div class="tile is-parent is-flex-mobile">
+      <a href="dating.html" class="tile is-child notification has-background-warning">
+        <p class="title has-text-black">Dating</p>
+        <p class="subtitle"></p>
+        <div class="content">
+          <img src="../../../static/images/rose.png" style="max-width: 55px; margin-left: 230px;">
+        </div>
+      </a>
+    </div>
+    <div class="tile is-parent is-flex-mobile">
+      <a href="books.html" class="tile is-child notification has-background-success">
+        <p class="title has-text-black">Food</p>
+        <p class="subtitle"></p>
+        <div class="content">
+          <img src="../../../static/images/food.png" style="max-width: 55px; margin-left: 230px;">
+        </div>
+      </a>
+    </div>
+    <div class="tile is-parent is-flex-mobile">
+      <a href="electronics.html" class="tile is-child notification has-background-link">
+        <p class="title has-text-black">Electronics</p>
+        <p class="subtitle"></p>
+        <div class="content">
+          <img src="../../../static/images/electronics.png" style="max-width: 55px; margin-left: 230px;">
+        </div>
+      </a>
+    </div>
+
+    <div class="tile is-parent is-flex-mobile">
+      <a href="holiday.html" class="tile is-child notification has-background-warning">
+        <p class="title has-text-black">Holiday</p>
+        <p class="subtitle"></p>
+        <div class="content">
+          <img src="../../../static/images/holiday.png" style="max-width: 55px; margin-left: 230px;">
+        </div>
+      </a>
+    </div>
+
+    <div class="tile is-parent is-flex-mobile">
+      <a href="toys.html" class="tile is-child notification has-background-primary">
+        <p class="title has-text-black">Toys</p>
+        <p class="subtitle"></p>
+        <div class="content">
+          <img src="../../../static/images/toys.png" style="max-width: 55px; margin-left: 230px;">
+        </div>
+      </a>
+    </div>
+
+    <div class="tile is-parent is-flex-mobile">
+      <a href="sport.html" class="tile is-child notification has-background-success">
+        <p class="title has-text-black">Sport</p>
+        <p class="subtitle"></p>
+        <div class="content">
+          <img src="../../../static/images/sports.png" style="max-width: 55px; margin-left: 230px;">
+        </div>
+      </a>
+    </div>
+    <div class="tile is-parent is-flex-mobile">
+      <a href="books.html" class="tile is-child notification has-background-grey">
+        <p class="title has-text-black">Books</p>
+        <p class="subtitle"></p>
+        <div class="content">
+          <img src="../../../static/images/books.png" style="max-width: 55px; margin-left: 230px;">
+        </div>
+      </a>
+    </div>
+
+    <div class="tile is-parent is-flex-mobile">
+      <a href="health.html" class="tile is-child notification has-background-primary">
+        <p class="title has-text-black">Health</p>
+        <p class="subtitle"></p>
+        <div class="content">
+          <img src="../../../static/images/health.png" style="max-width: 55px; margin-left: 230px;">
+        </div>
+      </a>
+    </div>
+
+    <div class="tile is-parent is-flex-mobile">
+      <a href="party.html" class="tile is-child notification has-background-link">
+        <p class="title has-text-black">Party</p>
+        <p class="subtitle"></p>
+        <div class="content">
+          <img src="../../../static/images/party.png" style="max-width: 55px; margin-left: 230px;">
+        </div>
+      </a>
+    </div>
+
+    <div class="tile is-parent is-flex-mobile">
+      <a href="homegardenandpets.html" class="tile is-child notification has-background-success">
+        <p class="title has-text-black">Home, garden & pets</p>
+        <p class="subtitle"></p>
+        <div class="content">
+          <img src="../../../static/images/pets.png" style="max-width: 55px; margin-left: 230px;">
+        </div>
+      </a>
+    </div>
+
+    <div class="tile is-parent is-flex-mobile">
+      <a href="giftsandgadgets.html" class="tile is-child notification has-background-info">
+        <p class="title has-text-black">Gifts & gadgets</p>
+        <p class="subtitle"></p>
+        <div class="content">
+          <img src="../../../static/images/gifts.png" style="max-width: 55px; margin-left: 230px;">
+        </div>
+      </a>
+    </div>
+
+    <div class="tile is-parent is-flex-mobile">
+      <a href="hobby.html" class="tile is-child notification has-background-warning">
+        <p class="title has-text-black">Hobby</p>
+        <p class="subtitle"></p>
+        <div class="content">
+          <img src="../../../static/images/hobby.png" style="max-width: 55px; margin-left: 230px;">
+        </div>
+      </a>
+    </div>
+
+    <div class="tile is-parent is-flex-mobile">
+      <a href="erotica.html" class="tile is-child notification has-background-danger">
+        <p class="title has-text-black">Erotica</p>
+        <p class="subtitle"></p>
+        <div class="content">
+          <img src="../../../static/images/erotics.png" style="max-width: 55px; margin-left: 230px;">
+        </div>
+      </a>
+    </div>
+
+    <div class="tile is-parent is-flex-mobile">
+      <a href="itandoffice.html" class="tile is-child notification has-background-link">
+        <p class="title has-text-black">IT & office</p>
+        <p class="subtitle"></p>
+        <div class="content">
+          <img src="../../../static/images/office.png" style="max-width: 55px; margin-left: 230px;">
+        </div>
+      </a>
+    </div>
+
+    <div class="tile is-parent is-flex-mobile">
+      <a href="departmentstores.html" class="tile is-child notification has-background-danger">
+        <p class="title has-text-black">Department stores</p>
+        <p class="subtitle"></p>
+        <div class="content">
+          <img src="../../../static/images/stores.png" style="max-width: 55px; margin-left: 230px;">
+        </div>
+      </a>
+    </div>
+
+    <div class="tile is-parent is-flex-mobile">
+      <a href="others.html" class="tile is-child notification has-background-grey">
+        <p class="title has-text-black">Others</p>
+        <p class="subtitle"></p>
+        <div class="content">
+          <img src="../../../static/images/other.png" style="max-width: 55px; margin-left: 230px;">
+        </div>
+      </a>
+    </div>
+
+    <div class="tile is-parent is-flex-mobile">
+      <a href="vehicles.html" class="tile is-child notification has-background-primary">
+        <p class="title has-text-black">Vehicles</p>
+        <p class="subtitle"></p>
+        <div class="content">
+          <img src="../../../static/images/vehicles.png" style="max-width: 55px; margin-left: 230px;">
+        </div>
+      </a>
+    </div>
+
+    <div class="tile is-parent is-flex-mobile">
+      <a class="tile is-child notification has-background-white">
+        <p class="title has-text-white">Vehicles</p>
+        <p class="subtitle"></p>
+        <div class="content">
+        </div>
+      </a>
+    </div>
+
+
+</body>
+
+<footer>
+  <nav class="navbar is-fixed-bottom" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <img src="../../../static/images/home.png" style="max-width: 50px; margin-left: 30px;">
+
+
+      <img src="../../../static/images/search.png" style="max-width: 50px; margin-left: 60px;">
+
+
+      <img src="../../../static/images/ninja.png" style="max-width: 70px; margin-left: 50px;">
+      </div>
+      </nav>
+    </footer>
+
+</html>
+-->
