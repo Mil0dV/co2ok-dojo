@@ -24,7 +24,9 @@
       </div>
 
       <div class="img_txt-container">
-         <div class="group-img" style="background-image: url('{% static 'images/groupphoto.jpg' %}')"></div>
+        <a href="#" id="pop2">
+         <img class="group-img" id="imageresource2" src="{% static 'images/groupphoto.jpg' %}">
+         </a>
          <p>
          {% trans "Since October 2018 Jos is co-owner of CO₂ok. Jos has a commercial background and wanted to start for himself. He also wanted to use his knowledge for the environment. When he heard about CO₂ok he was immediately enthusiastic. He called Milo and soon their cooperation was a fact. Milo is responsible for the ideas and technology and Jos for the management.<br><br> They have gathered a team of young climate conscious people around them who are highly motivated and willing to make a difference. These young professionals have various skills - from coding to marketing and together we, at CO₂ok, will create a brighter future. <br> <br> Our dream? That one day all products will be produced in a climate-neutral way and you will no longer need to compensate for your purchases." %}
         </p>
@@ -32,10 +34,27 @@
 
    </div>
 
+<div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="myModalLabel">Image preview</h4>
+      </div>
+      <div class="modal-body">
+        <img src="" id="imagepreview" >
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="sign-up menu-install-button install-button btn btn-sm page-scroll" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
    {% include 'contact.html' %}
 
 {% endblock %}
 
 {% block extra_js %}
-
+    <script type="text/javascript" src="{% static 'js/mission.js' %}"></script>
 {% endblock %}
